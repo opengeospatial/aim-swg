@@ -234,7 +234,7 @@ Try it via [http://agroportal.lirmm.fr/annotator](http://agroportal.lirmm.fr/ann
 ## How to create your JSON-LD content using AIM
 
 JSON-LD is designed around the concept of a "context" to provide mappings from JSON to a shared/common model, allowing applications to use shortcut terms to communicate with one another more efficiently, but without losing accuracy.
-The context links terms in a JSON document to elements in an ontology or vocabulary, i.e., AIM in the case of DEMETER.
+The context links terms in a JSON document to elements in an ontology or vocabulary, e.g., AIM.
 So, in order to generate AIM-based JSON-LD content, you need to define the @context in your JSON document, and reference AIM context(s) from there.
 In general, the simplest method is to specify just the main AIM context as below, which includes all terms in AIM (from the cross-domain and domain layer)
 
