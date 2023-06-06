@@ -61,7 +61,7 @@ domains (reusing the cross-domain layer).
 ## Examples
 
 There are some examples of how to represent data that is compliant with the AIM. 
-Please check examples at [https://github.com/rapw3k/DEMETER/tree/master/models/examples](https://github.com/rapw3k/DEMETER/tree/master/models/examples). In particular:
+Please check examples at [https://github.com/opengeospatial/aim-swg/tree/main/examples](examples folder). In particular:
 
 * simple-farm-instance-AIM_v3.* is a valid instance of a simple farm, in json-ld and turtle respectively
 
@@ -72,7 +72,7 @@ Please check examples at [https://github.com/rapw3k/DEMETER/tree/master/models/e
 * timeSeries-example1_v3.* is a valid instance to represent time series following sosa/ssn approach (cross-domain)
 
 > Note1: previous examples have been moved to v1.0 folder, and json-ld examples have been slightly modified to include the cross-domain context. 
-> Note2: to understand how to use DEMETER AIM context(s) see section "How to create your JSON-LD content using AIM" below.
+> Note2: to understand how to use AIM context(s) see section "How to create your JSON-LD content using AIM" below.
 
 ## Discussion of key terms
 The three underlying models have concepts to represent a portion of land where crops or animals are grown, 
