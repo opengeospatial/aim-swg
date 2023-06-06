@@ -61,7 +61,7 @@ domains (reusing the cross-domain layer).
 ## Examples
 
 There are some examples of how to represent data that is compliant with the AIM. 
-Please check examples at [https://github.com/opengeospatial/aim-swg/tree/main/examples](examples folder). In particular:
+Please check examples at [examples folder](https://github.com/opengeospatial/aim-swg/tree/main/examples). In particular:
 
 * simple-farm-instance-AIM_v3.* is a valid instance of a simple farm, in json-ld and turtle respectively
 
