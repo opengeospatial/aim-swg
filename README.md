@@ -5,7 +5,7 @@ This repository contains the modules comprising all the layers of the Agricultur
 The Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions. 
 AIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated 
 semantics/meaning for information exchange.  Built upon a thorough analysis of the related state of the art and practice, and driven by the elicited 
-stakeholder requirements in DEMETER project, AIM aims to establish the basis of a common agricultural data space and enable the interoperability 
+stakeholder requirements in H2020 DEMETER project, AIM aims to establish the basis of a common agricultural data space and enable the interoperability 
 of different systems, potentially from different vendors. This will in turn enable the analysis of data produced by those systems in an integrated 
 manner to make economically and environmentally sound decisions.
 
@@ -19,7 +19,7 @@ maintaining its consistency and compliance. In particular, AIM comprises the fol
 * the domain layer defining agri-specific concepts and properties covering different aspects of interest of agri applications, and which enables the integration of relevant vocabularies in the sector.
 * The pilot-specific layer defining additional concepts and properties that are of specific use for particular applications. 
 
-Additionally, AIM defines a metadata model that can be used to describe datasets, services or applications in DEMETER.
+Additionally, AIM defines a metadata model that can be used to describe datasets, services or applications in agri-related projects/applications.
 
 The cross-domain module has been created by reusing and alignment existing standard ontologies/vocabularies, including: OGC/W3C sosa/ssn, OGC Geosparql, 
 W3C Time ontology, W3C Data Cube ontology, ISO 191xx standards, WGS84, QUDT, W3C PROV-O, as well as well-known vocabularies like FOAF, Schema.org, and Dublin Core.
@@ -36,7 +36,7 @@ JSON-LD contexts enabling services to exchange AIM-compliant data based on the a
 of data against AIM semantics. AIM specification includes guidelines on how to find and identify relevant terms, how to create AIM-based JSON-LD content, 
 as well as instructions to validate the generated content.
 
-AIM was originally developed as part of DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other 
+AIM was originally developed as part of H2020 DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other 
 domains (reusing the cross-domain layer).
 
 > Version 3.0 of AIM has been released (03/2023). It includes:
