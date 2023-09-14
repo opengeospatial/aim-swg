@@ -1,4 +1,4 @@
-////
+
 [cols="1,4",width="90%"]
 |===
 2+|*Requirements Class* {set:cellbgcolor:#CACCCE}
@@ -15,7 +15,7 @@ requirement description {set:cellbgcolor:#FFFFFF}
 requirement description
 {set:cellbgcolor:#FFFFFF}
 |===
-////
+
 
 
 [requirement,type="class",id="http://www.opengis.net/spec/AIM/1.0/req/req-class-core",obligation="requirement"]
