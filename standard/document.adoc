@@ -2,9 +2,9 @@
 :doctype: standard
 :encoding: utf-8
 :lang: en
-:status: draft
+:status: Draft
 :committee: technical
-:draft: 3.0
+:draft: 1.0
 :external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 :docnumber: YY-999
 :received-date: 2029-03-30
@@ -12,7 +12,7 @@
 :published-date: 2029-03-30
 :fullname: Editor One
 :fullname_2: Editor Two
-:docsubtype: Interface
+:docsubtype: implementation
 :keywords: ogcdoc, OGC document, API, openapi, html
 :submitting-organizations: Organization One; Organization Two
 :mn-document-class: ogc

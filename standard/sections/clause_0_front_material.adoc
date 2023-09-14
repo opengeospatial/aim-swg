@@ -30,17 +30,37 @@ Attention is drawn to the possibility that some of the elements of this document
 [abstract]
 == Abstract
 
-<Insert Abstract Text here>
+AIM is a multi-tier and modular domain model aligning, profiling, and/or extending well known agriculture related and generic ontologies, including existing ontologies published by the OGC. Recognizing that this is an innovative approach to publish such a domain model as a modular ontology the SWG will address both identification of best practices for this specialization approach and the development of a series of complementary models.
+
+AIM provides a common language for agriculture applications to harmonize and improve data and metadata exchange by defining the data elements, including concepts, properties, and relationships relevant to agriculture applications, as well as their associated semantics/meaning for information exchange.
+
+AIM is published as both human and implementation-ready machine-actionable resources. Machine-actionable resources include the canonical ontology representation of the AIM in the Web Ontology Language (OWL) as well as other related artifacts to support implementation.
+
+The SWG will develop implementations of the AIM model compatible with OGC APIs, including:
+
+* JSON schemas supported by OGC APIS;
+* JSON-LD contexts allowing identification and validation of AIM-compliant data; and
+* SHACL shapes enabling the validation of data against AIM semantics.
+
+In addition, other forms may be derived or supplied to support reusability of the AIM model, according to requirements identified by the SWG:
+
+* UML representation of AIM conceptual model;
+* UML representation of one or more logical models for AIM implementation; and
+
+Formal profiles for implementation of AIM using GeoJSON, FG-JSON, CoverageJSON, and other relevant generic schemas
+
+In line with OGC policies and FAIR principles, the AIM will be published using persistent and resolvable URI identifiers, consistent with OGC Naming Authority processes for publishing semantic resources.
 
 == Keywords
 
-//Keywords inserted here by Metanorma
+agriculture, data model
 
 == Preface
 
 [NOTE]
 ====
-Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. >
+The Agriculture Information Model was initially developed in the Demeter project and used as the common reference ontology for the multi-actor System of Systems.
+
 Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
 
 Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
@@ -69,7 +89,7 @@ All questions regarding this submission should be directed to the editor or the 
 
 |===
 |*Name* |*Affiliation*
-| |
+| name of the person | Organisation X
 |===
 
 == Contributors
