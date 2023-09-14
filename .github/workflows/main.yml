@@ -11,6 +11,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Get build container
       id: adocbuild
-      uses: metanorma/metanorma
+      uses: metanorma/metanorma@latest
       with:
           program: "metanorma compile -x html,doc -t iso standard/document.adoc"
