@@ -5,12 +5,12 @@ on: [workflow_dispatch, push]
 jobs:
   adoc_build:
     runs-on: ubuntu-latest
-      name: asciidoctor aim standard
-      steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Get build container
-        id: adocbuild
-        uses: metanorma/metanorma
-        with:
-            program: "metanorma compile -x html,doc -t iso standard/document.adoc"
+    name: asciidoctor aim standard
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Get build container
+      id: adocbuild
+      uses: metanorma/metanorma
+      with:
+          program: "metanorma compile -x html,doc -t iso standard/document.adoc"
