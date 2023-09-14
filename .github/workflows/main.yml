@@ -13,4 +13,4 @@ jobs:
       id: adocbuild
       uses: metanorma/metanorma@v1.8
       with:
-          program: "metanorma compile -x html,doc -t iso standard/document.adoc"
+          program: "docker run  -v $(pwd):/metanorma metanorma/metanorma:latest metanorma compile -x html,doc -t iso standard/document.adoc"
