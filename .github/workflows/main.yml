@@ -11,6 +11,5 @@ jobs:
       uses: actions/checkout@v2
     - name: Get build container
       id: adocbuild
-      uses: metanorma/metanorma@v1.8
       with:
           program: "docker run  -v $(pwd):/metanorma metanorma/metanorma:latest metanorma compile -x html,doc -t iso standard/document.adoc"
