@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-04",
+  "dateOfLastChange": "2023-09-18",
   "dependsOn": [
     "ogc.model.agriculture.conceptual.farm"
   ],
@@ -21,7 +21,7 @@
   ],
   "shaclRules": {},
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/geosparql-ld/farm/",
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/geosparql-ld/farm/",
   "description": "## Agriculture Information Model Closure\n\nDefines dependencies for the complete Agriculture Information Model based on reusable modular components.\n\n\n\n\n",
   "examples": [

@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.model.agriculture.geosparql-ld.farm - Farm (SAREF) - GeoSPARQL",
   "bblockName": "Farm (SAREF) - GeoSPARQL",
   "bblockId": "ogc.model.agriculture.geosparql-ld.farm",
-  "generated": "2024-07-04T05:31:18.893125+00:00",
-  "result": false,
+  "generated": "2024-07-04T08:07:01.527922+00:00",
+  "result": true,
   "items": [
     {
       "source": {
@@ -15,7 +15,7 @@
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "GENERAL",
@@ -60,15 +60,10 @@
       ]
     }
   ],
-  "globalErrors": {
-    "JSON_SCHEMA": {
-      "isError": true,
-      "message": "TypeError: a string or stream input is required"
-    }
-  },
+  "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 0,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   }
 }
