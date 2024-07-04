@@ -1,0 +1,23 @@
+{
+  "name": "Farm",
+  "abstract": "Conceptual model for Farm (independent of JSON or other schema encoding).",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "dependsOn": [
+    "https://w3id.org/def/saref4agri"
+  ],
+  "ontology": "https://w3id.org/demeter/agri/agriFeature",
+  "shaclShapes": [
+    "../../../../SHACL/agriFeature-SHACL.ttl"
+  ],
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "AIM", "conceptual", "ontology"
+  ]
+}
