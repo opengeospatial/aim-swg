@@ -11,8 +11,8 @@
   "version": "0.1",
   "dateOfLastChange": "2023-09-18",
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.model.agriculture.conceptual.farm"
+    "ogc.model.agriculture.conceptual.farm",
+    "ogc.geo.features.feature"
   ],
   "ontology": "",
   "sources": [],

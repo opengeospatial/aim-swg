@@ -44,9 +44,9 @@ Defines dependencies for the complete Agriculture Information Model based on reu
 
 The following sets of SHACL shapes are used for validating this building block:
 
-* PROV <small><code>ogc.model.cross-domain.prov</code></small>
-  * [http://qudt.org/2.1/schema/shacl/qudt](http://qudt.org/2.1/schema/shacl/qudt)
 * QUDT <small><code>ogc.model.cross-domain.qudt</code></small>
+  * [http://qudt.org/2.1/schema/shacl/qudt](http://qudt.org/2.1/schema/shacl/qudt)
+* PROV <small><code>ogc.model.cross-domain.prov</code></small>
   * [http://qudt.org/2.1/schema/shacl/qudt](http://qudt.org/2.1/schema/shacl/qudt)
 
 # For developers
