@@ -1,0 +1,61 @@
+
+
+{
+  "itemIdentifier": "ogc.model.agriculture.features.farm",
+  "name": "Farm - GeoJSON",
+  "abstract": "GeoJSON binding for Farm class",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2024-07-04",
+  "dependsOn": [
+    "ogc.geo.features.feature",
+    "ogc.model.agriculture.conceptual.farm"
+  ],
+  "ontology": "",
+  "sources": [],
+  "scope": "dev",
+  "tags": [
+    "Closure"
+  ],
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/farm/",
+  "description": "## Agriculture Information Model Closure\n\nDefines dependencies for the complete Agriculture Information Model based on reusable modular components.\n\n\n\n\n",
+  "examples": [
+    {
+      "title": "Simple Farm Instance GeoSPARQL schema",
+      "content": "Example from AIM  using a GeoJSON schema. \n",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/farm_saref.json",
+          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"saref4agri:Farm\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      11.3,\n      44.12\n    ]\n  },\n  \"properties\": {\n    \"name\": \"Wheat farm\",\n    \"description\": \"A farm producing wheat\"\n  }\n}",
+          "url": "https://ogcincubator.github.io/aim-swg/build/tests/model/agriculture/features/farm/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"featureType\": \"saref4agri:Farm\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      11.3,\n      44.12\n    ]\n  },\n  \"properties\": {\n    \"name\": \"Wheat farm\",\n    \"description\": \"A farm producing wheat\"\n  },\n  \"@context\": \"https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld\"\n}",
+          "url": "https://ogcincubator.github.io/aim-swg/build/tests/model/agriculture/features/farm/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/f1> a geojson:Feature ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 1.13e+01 4.412e+01 ) ] .\n\n",
+          "url": "https://ogcincubator.github.io/aim-swg/build/tests/model/agriculture/features/farm/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example of a sinmple GeoJSON Feature specialisation\n$defs:\n  MyFeature:\n    allOf:\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n    - properties:\n        properties:\n          name: string\n          description: string\nanyOf:\n- $ref: '#/$defs/MyFeature'\n",
+  "gitRepository": "https://github.com/ogcincubator/aim-swg",
+  "gitPath": "_sources/features/farm"
+}

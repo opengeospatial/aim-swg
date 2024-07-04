@@ -1,0 +1,17 @@
+{
+  "id": "f1",
+  "type": "Feature",
+  "featureType": "saref4agri:Farm",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      11.3,
+      44.12
+    ]
+  },
+  "properties": {
+    "name": "Wheat farm",
+    "description": "A farm producing wheat"
+  },
+  "@context": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld"
+}

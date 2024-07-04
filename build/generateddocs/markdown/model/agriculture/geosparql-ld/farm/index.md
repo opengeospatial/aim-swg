@@ -1,0 +1,104 @@
+
+# Farm (SAREF) - GeoSPARQL (Model)
+
+`ogc.model.agriculture.geosparql-ld.farm` *v0.1*
+
+Defines JSON-LD structures mappable directly to the semantic models, i.e. GeoSPARQL instead of GeoJSON
+
+[*Status*](http://www.opengis.net/def/status): Under development
+
+## Description
+
+## Agriculture Information Model Closure
+
+Defines dependencies for the complete Agriculture Information Model based on reusable modular components.
+
+
+
+
+
+## Examples
+
+### Simple Farm Instance GeoSPARQL schema
+Example from AIM  using a GeoSPARQL JSON-LD schema. 
+
+#### json
+```json
+{
+  "@context": [
+  		"https://w3id.org/demeter/agri-context.jsonld"
+   ],
+  "@id": "urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a",
+  "@type": "Farm",
+  "name": "Wheat farm",
+  "description": "A farm producing wheat",
+  "hasGeometry": {
+    "@id": "urn:ngsi-ld:AgriFarm:geo:72d9fb43-53f8-4ec8-a33c-fa931360259x",
+    "@type": "Point",
+    "asWKT": "POINT(11.3 44.12)"
+  },
+  "containsPlot":[
+    {
+      "@id": "urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a",
+      "@type": "Plot",
+      "hasGeometry": {
+        "@id": "urn:ngsi-ld:plot:geo:72d9fb43-53f8-4ec8-a33c-fa931360259y",
+        "@type": "Polygon",
+        "asWKT": "POLYGON (100 0, 101 0, 101 1, 100 1, 100 0)"
+      },
+      "area": 2012120,
+      "description": "Spring wheat parcel",
+      "category": "arable",
+      "crop": {
+        "@id": "urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4",
+        "@type": "Crop",
+        "cropSpecies":{
+          "@id": "urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4",
+		      "@type": "CropType",
+          "name": "Wheat",
+          "alternateName": "Triticum aestivum",
+          "agroVocConcept": "http://aims.fao.org/aos/agrovoc/c_7951",
+          "description": "Spring wheat"
+        },
+        "cropStatus": "seeded",
+        "lastPlantedAt": "2016-08-23T10:18:16Z"
+      }
+    },
+    {
+      "@id": "urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b",
+      "@type": "Plot",
+      "hasGeometry": {
+        "@id": "urn:ngsi-ld:AgriParcel:geo:72d9fb43-53f8-4ec8-a33c-fa931360259z",
+        "@type": "Polygon",
+        "asWKT": "POLYGON (100 0, 101 0, 101 1, 100 1, 100 1)"
+      },
+      "area": 200,
+      "description": "Spring barley parcel",
+      "category": "arable",
+      "crop": {
+        "@id": "urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5",
+        "@type": "Crop",
+        "cropSpecies":{
+          "@id": "urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5",
+		      "@type": "CropType",
+          "name": "Barley",
+          "alternateName": "Ordeum",
+          "agroVocConcept": "http://aims.fao.org/aos/agrovoc/c_7952",
+          "description": "Spring barley"
+        },
+        "cropStatus": "seeded",
+        "lastPlantedAt": "2016-08-23T10:18:16Z"
+      }
+    }
+  ]
+}
+```
+
+
+# For developers
+
+The source code for this Building Block can be found in the following repository:
+
+* URL: [https://github.com/ogcincubator/aim-swg](https://github.com/ogcincubator/aim-swg)
+* Path: `_sources/geosparql-ld/farm`
+
