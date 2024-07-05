@@ -1,5 +1,5 @@
 "$schema": https://json-schema.org/draft/2020-12/schema
-description: 'Farm as GeoJSON'
+description: 'Foodie Farm Plot'
 $defs:
   MyFeature:
     allOf:
@@ -8,13 +8,13 @@ $defs:
         properties:
           properties:
             properties:
-              "name":
-                type: string
+              "crop":
+                type: object
               "description":
                 type: string
-              "containsPlot":
-                type: array
-                items:
-                  $ref: bblocks://ogc.model.agriculture.features.plot
+              "area":
+                type: number
+            required:
+              - area
 anyOf:
   - $ref: "#/$defs/MyFeature"

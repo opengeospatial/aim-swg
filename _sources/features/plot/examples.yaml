@@ -1,0 +1,10 @@
+- title: Plot - GeoJSON
+  content: |
+    Example from AIM  using a GeoJSON schema. 
+
+  snippets:
+    - language: json
+      ref: examples/plot.json
+
+
+

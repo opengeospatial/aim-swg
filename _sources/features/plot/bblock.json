@@ -1,6 +1,6 @@
 {
-  "name": "Farm - GeoJSON",
-  "abstract": "GeoJSON binding for Farm class",
+  "name": "Plot - GeoJSON",
+  "abstract": "GeoJSON binding for Plot class",
   "status": "under-development",
   "dateTimeAddition": "2023-09-18T00:00:00Z",
   "itemClass": "schema",
@@ -8,7 +8,7 @@
   "version": "0.1",
   "dateOfLastChange": "2023-09-18",
   "dependsOn": [
-    "ogc.model.agriculture.conceptual.farm"
+    "ogc.model.agriculture.conceptual.plot"
   ],
   "ldContext": "../../../jsonld/agriFeature-context.jsonld",
   "sources": [

@@ -1,10 +1,27 @@
-- title: Simple Farm Instance GeoSPARQL schema
+- title: Simple Farm Instance GeoJSON
   content: |
     Example from AIM  using a GeoJSON schema. 
 
   snippets:
     - language: json
-      ref: examples/farm_saref.json
+      ref: examples/farm_simple.json
+
+- title: Farm with Plots GeoJSON
+  content: |
+    Example from AIM  using a GeoJSON schema. 
+
+  snippets:
+    - language: json
+      ref: examples/farm_w_plot.json
+
+- title: Farm, Plots, Crops GeoJSON
+  content: |
+    Example from AIM  using a GeoJSON schema. 
+
+  snippets:
+    - language: json
+      ref: examples/farm_w_crop.json
+
 
 
 

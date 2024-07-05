@@ -1,6 +1,6 @@
-## Agriculture Information Model Closure
+## Farm
 
-Defines dependencies for the complete Agriculture Information Model based on reusable modular components.
+Fg-JSON/GeoJSON binding for saref4agri:Farm
 
 
 
