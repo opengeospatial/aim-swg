@@ -106,7 +106,7 @@
   "name": "Building Blocks - Agriculture Information Model",
   "abstract": "The Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions.\nAIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated \nsemantics/meaning for information exchange.  This repository defines implementation bindings for native RDF as JSON-LD, OGC Features (GeoJSON and FG-JSON variants) and NGSI-LD.\n",
   "description": "\nThis repository contains the modules comprising all the layers of the Agriculture Information Model (AIM). \n\nThe Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions. \nAIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated \nsemantics/meaning for information exchange.  Built upon a thorough analysis of the related state of the art and practice, and driven by the elicited \nstakeholder requirements in H2020 DEMETER project, AIM aims to establish the basis of a common agricultural data space and enable the interoperability \nof different systems, potentially from different vendors. This will in turn enable the analysis of data produced by those systems in an integrated \nmanner to make economically and environmentally sound decisions.\n\nAIM has been designed following a layered and modular approach, and is realised as a suite of ontologies implemented in line with best practices, \nreusing existing standards and well-scoped dominant models as much as possible and establishing alignments between them to enable their interoperability \nand the integration of existing data. AIM is scalable and can be easily extended in order to address additional needs and incorporate new concepts,\nmaintaining its consistency and compliance. In particular, AIM comprises the following layers:\n\n* the meta-model layer defining the building blocks of AIM and enabling the back-and-forth conversion between datasets that are based on the property graph model and linked data datasets\n* the cross-domain layer defining relevant concepts and properties that are common across multiple domains, and which enable the interoperability with existing standard models and vocabularies\n* the domain layer defining agri-specific concepts and properties covering different aspects of interest of agri applications, and which enables the integration of relevant vocabularies in the sector.\n* The pilot-specific layer defining additional concepts and properties that are of specific use for particular applications. \n\nAdditionally, AIM defines a metadata model that can be used to describe datasets, services or applications in agri-related projects/applications.\n\nThe cross-domain module has been created by reusing and alignment existing standard ontologies/vocabularies, including: OGC/W3C sosa/ssn, OGC Geosparql,\nW3C Time ontology, W3C Data Cube ontology, ISO 191xx standards, WGS84, QUDT, W3C PROV-O, as well as well-known vocabularies like FOAF, Schema.org, and Dublin Core.\n\nThe domain modules have been created by reusing well-known ontologies and models related to the agri-food sector, namely the ETSI standard [Saref4Agri](https://saref.etsi.org/saref4agri/v1.1.2/) and the underlying Smart Applications REFerence [SAREF ontology](https://saref.etsi.org/core/v3.1.1/),\n[INPIRE/FOODIE ontology](http://agroportal.lirmm.fr/ontologies/FOODIE) and\n[SmartDataModel (aka.FIWARE) agrifood related models](https://smartdatamodels.org/).\n\nA key value provided by AIM is that it harmonises and aligns relevant cross-domain standards with domain-specific models \nbridging various views on the agriculture data and providing a formal representation enabling unambiguous translations between them.\n\nAIM is published as both human and implementation-ready machine-actionable resources, including the formal specifications as ontology modules (OWL ontologies), \nJSON-LD contexts enabling services to exchange AIM-compliant data based on the already successful JSON format, and SHACL shapes enabling the validation \nof data against AIM semantics. AIM specification includes guidelines on how to find and identify relevant terms, how to create AIM-based JSON-LD content, \nas well as instructions to validate the generated content.\n\nAIM was originally developed as part of H2020 DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other \ndomains (reusing the cross-domain layer).\n",
-  "modified": "2024-07-04T08:20:33.870008",
+  "modified": "2024-07-05T08:11:17.158389",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"395002a93757949267ed1a2829aa814e546f0cd4",
@@ -131,20 +131,20 @@
   "skos:prefLabel": "Building Blocks - Agriculture Information Model",
   "hasConcepts": [
     {
-      "itemIdentifier": "ogc.model.agriculture.conceptual.farm",
-      "name": "Farm",
-      "abstract": "Conceptual model for Farm (independent of JSON or other schema encoding).",
+      "itemIdentifier": "ogc.model.agriculture.conceptual.plot",
+      "name": "Plot",
+      "abstract": "Conceptual model for Plot/Parcel (independent of JSON or other schema encoding).",
       "status": "under-development",
       "dateTimeAddition": "2023-09-18T00:00:00Z",
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2023-09-18",
+      "dateOfLastChange": "2024-07-05",
       "dependsOn": [
-        "https://w3id.org/def/saref4agri"
+        "ogc.model.agriculture.conceptual.croptype"
       ],
       "shaclShapes": [
-        "../../../../SHACL/agriFeature-SHACL.ttl"
+        "../../../SHACL/agriFeature-SHACL.ttl"
       ],
       "sources": [],
       "scope": "dev",
@@ -155,22 +155,22 @@
       ],
       "shaclRules": {},
       "ontology": "https://w3id.org/demeter/agri/agriFeature",
-      "remoteCacheDir": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/conceptual/farm/remote_cache/",
-      "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/farm/",
+      "remoteCacheDir": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/conceptual/plot/remote_cache/",
+      "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/plot/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/conceptual/farm/",
+      "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/conceptual/plot/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/farm/index.md"
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/plot/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/farm/index.json"
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/plot/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.farm"
+          "url": "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.plot"
         }
       },
       "@type": [
@@ -188,7 +188,7 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2023-09-18",
+      "dateOfLastChange": "2024-07-05",
       "dependsOn": [
         "ogc.model.agriculture.conceptual"
       ],
@@ -221,6 +221,108 @@
       ]
     },
     {
+      "itemIdentifier": "ogc.model.agriculture.conceptual.farm",
+      "name": "Farm",
+      "abstract": "Conceptual model for Farm (independent of JSON or other schema encoding).",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "model",
+      "register": "ogc-incubator",
+      "version": "0.1",
+      "dateOfLastChange": "2024-07-05",
+      "dependsOn": [
+        "https://w3id.org/def/foodie",
+        "ogc.model.agriculture.conceptual.plot"
+      ],
+      "ldContext": "../../../../jsonld/agriFeature-context.jsonld",
+      "shaclShapes": [
+        "../../../../SHACL/agriFeature-SHACL.ttl"
+      ],
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "AIM",
+        "conceptual",
+        "ontology"
+      ],
+      "shaclRules": {},
+      "ontology": "https://w3id.org/demeter/agri/agriFeature",
+      "remoteCacheDir": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/conceptual/farm/remote_cache/",
+      "sourceLdContext": "https://ogcincubator.github.io/aim-swg/../../jsonld/agriFeature-context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/farm/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/conceptual/farm/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/farm/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/farm/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.farm"
+        }
+      },
+      "@type": [
+        "bblocks:Model",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
+      "itemIdentifier": "ogc.model.agriculture.features.plot",
+      "name": "Plot - GeoJSON",
+      "abstract": "GeoJSON binding for Plot class",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "0.1",
+      "dateOfLastChange": "2024-07-05",
+      "dependsOn": [
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.model.agriculture.conceptual.plot"
+      ],
+      "ldContext": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/context.jsonld",
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "Closure"
+      ],
+      "shaclRules": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/aim-swg/_sources/features/plot/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/features/plot/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/plot/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/plot/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/plot/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.features.plot"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
       "itemIdentifier": "ogc.model.agriculture.conceptual.agriFeature",
       "name": "Agri Feature Conceptual",
       "abstract": "References the set of spatial features defined or adopted from other standards by the Agriculture Information Model",
@@ -229,7 +331,7 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2023-09-18",
+      "dateOfLastChange": "2024-07-05",
       "dependsOn": [
         "ogc.model.agriculture.conceptual.farm"
       ],
@@ -265,56 +367,6 @@
       ]
     },
     {
-      "itemIdentifier": "ogc.model.agriculture.features.farm",
-      "name": "Farm - GeoJSON",
-      "abstract": "GeoJSON binding for Farm class",
-      "status": "under-development",
-      "dateTimeAddition": "2023-09-18T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-incubator",
-      "version": "0.1",
-      "dateOfLastChange": "2023-09-18",
-      "dependsOn": [
-        "ogc.model.agriculture.conceptual.farm",
-        "ogc.geo.features.feature"
-      ],
-      "ontology": "",
-      "sources": [],
-      "scope": "dev",
-      "tags": [
-        "Closure"
-      ],
-      "shaclRules": {},
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/schema.yaml",
-      "ldContext": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/farm/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/farm/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/farm/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.features.farm"
-        }
-      },
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
       "itemIdentifier": "ogc.model.agriculture.geosparql-ld.farm",
       "name": "Farm (SAREF) - GeoSPARQL",
       "abstract": "Defines JSON-LD structures mappable directly to the semantic models, i.e. GeoSPARQL instead of GeoJSON",
@@ -323,7 +375,7 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2023-09-18",
+      "dateOfLastChange": "2024-07-05",
       "dependsOn": [
         "ogc.model.agriculture.conceptual.farm"
       ],
@@ -358,6 +410,57 @@
       ]
     },
     {
+      "itemIdentifier": "ogc.model.agriculture.features.farm",
+      "name": "Farm - GeoJSON",
+      "abstract": "GeoJSON binding for Farm class",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "0.1",
+      "dateOfLastChange": "2024-07-05",
+      "dependsOn": [
+        "ogc.model.agriculture.features.plot",
+        "ogc.geo.json-fg.feature-lenient",
+        "ogc.model.agriculture.conceptual.farm"
+      ],
+      "ldContext": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld",
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "Closure"
+      ],
+      "shaclRules": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/farm/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/farm/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/farm/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.features.farm"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
       "itemIdentifier": "ogc.model.agriculture.conceptual.all",
       "name": "Agriculture Information Model - RDF",
       "abstract": "All modules of the Agriculture Information Model implemented by pure RDF, including JSON-LD based on JSON structures mappable directly to the semantic models defined in the Cross-Domain Model.",
@@ -366,13 +469,13 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2023-09-18",
+      "dateOfLastChange": "2024-07-05",
       "dependsOn": [
         "ogc.model.cross-domain.qudt-basic",
-        "ogc.model.cross-domain.datacube",
         "ogc.model.cross-domain.geosparql",
-        "ogc.model.cross-domain.prov",
+        "ogc.model.cross-domain.datacube",
         "ogc.model.agriculture.conceptual.agriFeature",
+        "ogc.model.cross-domain.prov",
         "ogc.model.cross-domain.sosa"
       ],
       "sources": [],

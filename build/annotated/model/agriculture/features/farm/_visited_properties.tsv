@@ -19,6 +19,234 @@ path	@id
 /links/hreflang	http://purl.org/dc/terms/language
 /links/title	http://www.w3.org/2000/01/rdf-schema#label
 /links/length	http://purl.org/dc/terms/extent
+/featureType	@type
+/time	http://purl.org/dc/terms/time
+/time/date	http://www.w3.org/2006/time#hasTime
+/time/timestamp	http://www.w3.org/2006/time#hasTime
+/time/interval	http://www.w3.org/2006/time#hasTime
+/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/coordRefSys/type	
+/coordRefSys/href	
+/coordRefSys/epoch	
+/coordRefSys/single-refsys/type	
+/coordRefSys/single-refsys/href	
+/coordRefSys/single-refsys/epoch	
+/coordRefSys/refsys-byref/type	
+/coordRefSys/refsys-byref/href	
+/coordRefSys/refsys-byref/epoch	
+/coordRefSys/refsys-custom/type	
+/place	http://purl.org/dc/terms/spatial
+/place/type	
+/place/coordRefSys	
+/place/coordRefSys/type	
+/place/coordRefSys/href	
+/place/coordRefSys/epoch	
+/place/coordRefSys/single-refsys/type	
+/place/coordRefSys/single-refsys/href	
+/place/coordRefSys/single-refsys/epoch	
+/place/coordRefSys/refsys-byref/type	
+/place/coordRefSys/refsys-byref/href	
+/place/coordRefSys/refsys-byref/epoch	
+/place/coordRefSys/refsys-custom/type	
+/place/coordinates	
+/place/bbox	
+/place/base	
+/place/base/type	
+/place/base/coordRefSys	
+/place/base/coordRefSys/type	
+/place/base/coordRefSys/href	
+/place/base/coordRefSys/epoch	
+/place/base/coordRefSys/single-refsys/type	
+/place/base/coordRefSys/single-refsys/href	
+/place/base/coordRefSys/single-refsys/epoch	
+/place/base/coordRefSys/refsys-byref/type	
+/place/base/coordRefSys/refsys-byref/href	
+/place/base/coordRefSys/refsys-byref/epoch	
+/place/base/coordRefSys/refsys-custom/type	
+/place/base/coordinates	
+/place/base/bbox	
+/place/lower	
+/place/upper	
+/place/prisms	
+/place/prisms/type	
+/place/prisms/coordRefSys	
+/place/prisms/coordRefSys/type	
+/place/prisms/coordRefSys/href	
+/place/prisms/coordRefSys/epoch	
+/place/prisms/coordRefSys/single-refsys/type	
+/place/prisms/coordRefSys/single-refsys/href	
+/place/prisms/coordRefSys/single-refsys/epoch	
+/place/prisms/coordRefSys/refsys-byref/type	
+/place/prisms/coordRefSys/refsys-byref/href	
+/place/prisms/coordRefSys/refsys-byref/epoch	
+/place/prisms/coordRefSys/refsys-custom/type	
+/place/prisms/base	
+/place/prisms/base/type	
+/place/prisms/base/coordRefSys	
+/place/prisms/base/coordRefSys/type	
+/place/prisms/base/coordRefSys/href	
+/place/prisms/base/coordRefSys/epoch	
+/place/prisms/base/coordRefSys/single-refsys/type	
+/place/prisms/base/coordRefSys/single-refsys/href	
+/place/prisms/base/coordRefSys/single-refsys/epoch	
+/place/prisms/base/coordRefSys/refsys-byref/type	
+/place/prisms/base/coordRefSys/refsys-byref/href	
+/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/place/prisms/base/coordRefSys/refsys-custom/type	
+/place/prisms/base/coordinates	
+/place/prisms/base/bbox	
+/place/prisms/lower	
+/place/prisms/upper	
+/place/prisms/bbox	
+/geometry/coordRefSys	
+/geometry/coordRefSys/type	
+/geometry/coordRefSys/href	
+/geometry/coordRefSys/epoch	
+/geometry/coordRefSys/single-refsys/type	
+/geometry/coordRefSys/single-refsys/href	
+/geometry/coordRefSys/single-refsys/epoch	
+/geometry/coordRefSys/refsys-byref/type	
+/geometry/coordRefSys/refsys-byref/href	
+/geometry/coordRefSys/refsys-byref/epoch	
+/geometry/coordRefSys/refsys-custom/type	
+/geometry/geometries/coordRefSys	
+/geometry/geometries/coordRefSys/type	
+/geometry/geometries/coordRefSys/href	
+/geometry/geometries/coordRefSys/epoch	
+/geometry/geometries/coordRefSys/single-refsys/type	
+/geometry/geometries/coordRefSys/single-refsys/href	
+/geometry/geometries/coordRefSys/single-refsys/epoch	
+/geometry/geometries/coordRefSys/refsys-byref/type	
+/geometry/geometries/coordRefSys/refsys-byref/href	
+/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/geometry/geometries/coordRefSys/refsys-custom/type	
+/properties/name	
+/properties/description	http://foodie-cloud.com/model/foodie#description
+/properties/containsPlot	http://foodie-cloud.com/model/foodie#containsPlot
+/properties/containsPlot/MyFeature/type	@type
+/properties/containsPlot/MyFeature/id	@id
+/properties/containsPlot/MyFeature/properties	@nest
+/properties/containsPlot/MyFeature/geometry	https://purl.org/geojson/vocab#geometry
+/properties/containsPlot/MyFeature/geometry/type	@type
+/properties/containsPlot/MyFeature/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/properties/containsPlot/MyFeature/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/properties/containsPlot/MyFeature/geometry/geometries	
+/properties/containsPlot/MyFeature/geometry/geometries/type	@type
+/properties/containsPlot/MyFeature/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/properties/containsPlot/MyFeature/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/properties/containsPlot/MyFeature/bbox	https://purl.org/geojson/vocab#bbox
+/properties/containsPlot/MyFeature/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/properties/containsPlot/MyFeature/links/href	http://www.w3.org/ns/oa#hasTarget
+/properties/containsPlot/MyFeature/links/rel	http://www.iana.org/assignments/relation
+/properties/containsPlot/MyFeature/links/anchor	
+/properties/containsPlot/MyFeature/links/type	http://purl.org/dc/terms/type
+/properties/containsPlot/MyFeature/links/hreflang	http://purl.org/dc/terms/language
+/properties/containsPlot/MyFeature/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/properties/containsPlot/MyFeature/links/length	http://purl.org/dc/terms/extent
+/properties/containsPlot/MyFeature/featureType	@type
+/properties/containsPlot/MyFeature/time	http://purl.org/dc/terms/time
+/properties/containsPlot/MyFeature/time/date	http://www.w3.org/2006/time#hasTime
+/properties/containsPlot/MyFeature/time/timestamp	http://www.w3.org/2006/time#hasTime
+/properties/containsPlot/MyFeature/time/interval	http://www.w3.org/2006/time#hasTime
+/properties/containsPlot/MyFeature/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/properties/containsPlot/MyFeature/coordRefSys/type	
+/properties/containsPlot/MyFeature/coordRefSys/href	
+/properties/containsPlot/MyFeature/coordRefSys/epoch	
+/properties/containsPlot/MyFeature/coordRefSys/single-refsys/type	
+/properties/containsPlot/MyFeature/coordRefSys/single-refsys/href	
+/properties/containsPlot/MyFeature/coordRefSys/single-refsys/epoch	
+/properties/containsPlot/MyFeature/coordRefSys/refsys-byref/type	
+/properties/containsPlot/MyFeature/coordRefSys/refsys-byref/href	
+/properties/containsPlot/MyFeature/coordRefSys/refsys-byref/epoch	
+/properties/containsPlot/MyFeature/coordRefSys/refsys-custom/type	
+/properties/containsPlot/MyFeature/place	http://purl.org/dc/terms/spatial
+/properties/containsPlot/MyFeature/place/type	
+/properties/containsPlot/MyFeature/place/coordRefSys	
+/properties/containsPlot/MyFeature/place/coordRefSys/type	
+/properties/containsPlot/MyFeature/place/coordRefSys/href	
+/properties/containsPlot/MyFeature/place/coordRefSys/epoch	
+/properties/containsPlot/MyFeature/place/coordRefSys/single-refsys/type	
+/properties/containsPlot/MyFeature/place/coordRefSys/single-refsys/href	
+/properties/containsPlot/MyFeature/place/coordRefSys/single-refsys/epoch	
+/properties/containsPlot/MyFeature/place/coordRefSys/refsys-byref/type	
+/properties/containsPlot/MyFeature/place/coordRefSys/refsys-byref/href	
+/properties/containsPlot/MyFeature/place/coordRefSys/refsys-byref/epoch	
+/properties/containsPlot/MyFeature/place/coordRefSys/refsys-custom/type	
+/properties/containsPlot/MyFeature/place/coordinates	
+/properties/containsPlot/MyFeature/place/bbox	
+/properties/containsPlot/MyFeature/place/base	
+/properties/containsPlot/MyFeature/place/base/type	
+/properties/containsPlot/MyFeature/place/base/coordRefSys	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/type	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/href	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/epoch	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/single-refsys/type	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/single-refsys/href	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/single-refsys/epoch	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-byref/type	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-byref/href	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-byref/epoch	
+/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-custom/type	
+/properties/containsPlot/MyFeature/place/base/coordinates	
+/properties/containsPlot/MyFeature/place/base/bbox	
+/properties/containsPlot/MyFeature/place/lower	
+/properties/containsPlot/MyFeature/place/upper	
+/properties/containsPlot/MyFeature/place/prisms	
+/properties/containsPlot/MyFeature/place/prisms/type	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/type	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/href	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/epoch	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/single-refsys/type	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/single-refsys/href	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/single-refsys/epoch	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-byref/type	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-byref/href	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-byref/epoch	
+/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-custom/type	
+/properties/containsPlot/MyFeature/place/prisms/base	
+/properties/containsPlot/MyFeature/place/prisms/base/type	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/type	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/href	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/epoch	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/single-refsys/type	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/single-refsys/href	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/single-refsys/epoch	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-byref/type	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-byref/href	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-custom/type	
+/properties/containsPlot/MyFeature/place/prisms/base/coordinates	
+/properties/containsPlot/MyFeature/place/prisms/base/bbox	
+/properties/containsPlot/MyFeature/place/prisms/lower	
+/properties/containsPlot/MyFeature/place/prisms/upper	
+/properties/containsPlot/MyFeature/place/prisms/bbox	
+/properties/containsPlot/MyFeature/geometry/coordRefSys	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/type	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/href	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/epoch	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/single-refsys/type	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/single-refsys/href	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/single-refsys/epoch	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-byref/type	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-byref/href	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-byref/epoch	
+/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-custom/type	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/type	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/href	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/epoch	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/single-refsys/type	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/single-refsys/href	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/single-refsys/epoch	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-byref/type	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-byref/href	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-custom/type	
+/properties/containsPlot/MyFeature/properties/crop	http://foodie-cloud.com/model/foodie#crop
+/properties/containsPlot/MyFeature/properties/description	http://foodie-cloud.com/model/foodie#description
+/properties/containsPlot/MyFeature/properties/area	https://smartdatamodels.org/dataModel.Agrifood/area
 /MyFeature/type	@type
 /MyFeature/id	@id
 /MyFeature/properties	@nest
@@ -39,3 +267,355 @@ path	@id
 /MyFeature/links/hreflang	http://purl.org/dc/terms/language
 /MyFeature/links/title	http://www.w3.org/2000/01/rdf-schema#label
 /MyFeature/links/length	http://purl.org/dc/terms/extent
+/MyFeature/featureType	@type
+/MyFeature/time	http://purl.org/dc/terms/time
+/MyFeature/time/date	http://www.w3.org/2006/time#hasTime
+/MyFeature/time/timestamp	http://www.w3.org/2006/time#hasTime
+/MyFeature/time/interval	http://www.w3.org/2006/time#hasTime
+/MyFeature/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/MyFeature/coordRefSys/type	
+/MyFeature/coordRefSys/href	
+/MyFeature/coordRefSys/epoch	
+/MyFeature/coordRefSys/single-refsys/type	
+/MyFeature/coordRefSys/single-refsys/href	
+/MyFeature/coordRefSys/single-refsys/epoch	
+/MyFeature/coordRefSys/refsys-byref/type	
+/MyFeature/coordRefSys/refsys-byref/href	
+/MyFeature/coordRefSys/refsys-byref/epoch	
+/MyFeature/coordRefSys/refsys-custom/type	
+/MyFeature/place	http://purl.org/dc/terms/spatial
+/MyFeature/place/type	
+/MyFeature/place/coordRefSys	
+/MyFeature/place/coordRefSys/type	
+/MyFeature/place/coordRefSys/href	
+/MyFeature/place/coordRefSys/epoch	
+/MyFeature/place/coordRefSys/single-refsys/type	
+/MyFeature/place/coordRefSys/single-refsys/href	
+/MyFeature/place/coordRefSys/single-refsys/epoch	
+/MyFeature/place/coordRefSys/refsys-byref/type	
+/MyFeature/place/coordRefSys/refsys-byref/href	
+/MyFeature/place/coordRefSys/refsys-byref/epoch	
+/MyFeature/place/coordRefSys/refsys-custom/type	
+/MyFeature/place/coordinates	
+/MyFeature/place/bbox	
+/MyFeature/place/base	
+/MyFeature/place/base/type	
+/MyFeature/place/base/coordRefSys	
+/MyFeature/place/base/coordRefSys/type	
+/MyFeature/place/base/coordRefSys/href	
+/MyFeature/place/base/coordRefSys/epoch	
+/MyFeature/place/base/coordRefSys/single-refsys/type	
+/MyFeature/place/base/coordRefSys/single-refsys/href	
+/MyFeature/place/base/coordRefSys/single-refsys/epoch	
+/MyFeature/place/base/coordRefSys/refsys-byref/type	
+/MyFeature/place/base/coordRefSys/refsys-byref/href	
+/MyFeature/place/base/coordRefSys/refsys-byref/epoch	
+/MyFeature/place/base/coordRefSys/refsys-custom/type	
+/MyFeature/place/base/coordinates	
+/MyFeature/place/base/bbox	
+/MyFeature/place/lower	
+/MyFeature/place/upper	
+/MyFeature/place/prisms	
+/MyFeature/place/prisms/type	
+/MyFeature/place/prisms/coordRefSys	
+/MyFeature/place/prisms/coordRefSys/type	
+/MyFeature/place/prisms/coordRefSys/href	
+/MyFeature/place/prisms/coordRefSys/epoch	
+/MyFeature/place/prisms/coordRefSys/single-refsys/type	
+/MyFeature/place/prisms/coordRefSys/single-refsys/href	
+/MyFeature/place/prisms/coordRefSys/single-refsys/epoch	
+/MyFeature/place/prisms/coordRefSys/refsys-byref/type	
+/MyFeature/place/prisms/coordRefSys/refsys-byref/href	
+/MyFeature/place/prisms/coordRefSys/refsys-byref/epoch	
+/MyFeature/place/prisms/coordRefSys/refsys-custom/type	
+/MyFeature/place/prisms/base	
+/MyFeature/place/prisms/base/type	
+/MyFeature/place/prisms/base/coordRefSys	
+/MyFeature/place/prisms/base/coordRefSys/type	
+/MyFeature/place/prisms/base/coordRefSys/href	
+/MyFeature/place/prisms/base/coordRefSys/epoch	
+/MyFeature/place/prisms/base/coordRefSys/single-refsys/type	
+/MyFeature/place/prisms/base/coordRefSys/single-refsys/href	
+/MyFeature/place/prisms/base/coordRefSys/single-refsys/epoch	
+/MyFeature/place/prisms/base/coordRefSys/refsys-byref/type	
+/MyFeature/place/prisms/base/coordRefSys/refsys-byref/href	
+/MyFeature/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/MyFeature/place/prisms/base/coordRefSys/refsys-custom/type	
+/MyFeature/place/prisms/base/coordinates	
+/MyFeature/place/prisms/base/bbox	
+/MyFeature/place/prisms/lower	
+/MyFeature/place/prisms/upper	
+/MyFeature/place/prisms/bbox	
+/MyFeature/geometry/coordRefSys	
+/MyFeature/geometry/coordRefSys/type	
+/MyFeature/geometry/coordRefSys/href	
+/MyFeature/geometry/coordRefSys/epoch	
+/MyFeature/geometry/coordRefSys/single-refsys/type	
+/MyFeature/geometry/coordRefSys/single-refsys/href	
+/MyFeature/geometry/coordRefSys/single-refsys/epoch	
+/MyFeature/geometry/coordRefSys/refsys-byref/type	
+/MyFeature/geometry/coordRefSys/refsys-byref/href	
+/MyFeature/geometry/coordRefSys/refsys-byref/epoch	
+/MyFeature/geometry/coordRefSys/refsys-custom/type	
+/MyFeature/geometry/geometries/coordRefSys	
+/MyFeature/geometry/geometries/coordRefSys/type	
+/MyFeature/geometry/geometries/coordRefSys/href	
+/MyFeature/geometry/geometries/coordRefSys/epoch	
+/MyFeature/geometry/geometries/coordRefSys/single-refsys/type	
+/MyFeature/geometry/geometries/coordRefSys/single-refsys/href	
+/MyFeature/geometry/geometries/coordRefSys/single-refsys/epoch	
+/MyFeature/geometry/geometries/coordRefSys/refsys-byref/type	
+/MyFeature/geometry/geometries/coordRefSys/refsys-byref/href	
+/MyFeature/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/MyFeature/geometry/geometries/coordRefSys/refsys-custom/type	
+/MyFeature/properties/name	
+/MyFeature/properties/description	http://foodie-cloud.com/model/foodie#description
+/MyFeature/properties/containsPlot	http://foodie-cloud.com/model/foodie#containsPlot
+/MyFeature/properties/containsPlot/type	@type
+/MyFeature/properties/containsPlot/id	@id
+/MyFeature/properties/containsPlot/properties	@nest
+/MyFeature/properties/containsPlot/geometry	https://purl.org/geojson/vocab#geometry
+/MyFeature/properties/containsPlot/geometry/type	@type
+/MyFeature/properties/containsPlot/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/MyFeature/properties/containsPlot/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/MyFeature/properties/containsPlot/geometry/geometries	
+/MyFeature/properties/containsPlot/geometry/geometries/type	@type
+/MyFeature/properties/containsPlot/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/MyFeature/properties/containsPlot/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/MyFeature/properties/containsPlot/bbox	https://purl.org/geojson/vocab#bbox
+/MyFeature/properties/containsPlot/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/MyFeature/properties/containsPlot/links/href	http://www.w3.org/ns/oa#hasTarget
+/MyFeature/properties/containsPlot/links/rel	http://www.iana.org/assignments/relation
+/MyFeature/properties/containsPlot/links/anchor	
+/MyFeature/properties/containsPlot/links/type	http://purl.org/dc/terms/type
+/MyFeature/properties/containsPlot/links/hreflang	http://purl.org/dc/terms/language
+/MyFeature/properties/containsPlot/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/MyFeature/properties/containsPlot/links/length	http://purl.org/dc/terms/extent
+/MyFeature/properties/containsPlot/featureType	@type
+/MyFeature/properties/containsPlot/time	http://purl.org/dc/terms/time
+/MyFeature/properties/containsPlot/time/date	http://www.w3.org/2006/time#hasTime
+/MyFeature/properties/containsPlot/time/timestamp	http://www.w3.org/2006/time#hasTime
+/MyFeature/properties/containsPlot/time/interval	http://www.w3.org/2006/time#hasTime
+/MyFeature/properties/containsPlot/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/MyFeature/properties/containsPlot/coordRefSys/type	
+/MyFeature/properties/containsPlot/coordRefSys/href	
+/MyFeature/properties/containsPlot/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/place	http://purl.org/dc/terms/spatial
+/MyFeature/properties/containsPlot/place/type	
+/MyFeature/properties/containsPlot/place/coordRefSys	
+/MyFeature/properties/containsPlot/place/coordRefSys/type	
+/MyFeature/properties/containsPlot/place/coordRefSys/href	
+/MyFeature/properties/containsPlot/place/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/place/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/place/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/place/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/place/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/place/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/place/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/place/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/place/coordinates	
+/MyFeature/properties/containsPlot/place/bbox	
+/MyFeature/properties/containsPlot/place/base	
+/MyFeature/properties/containsPlot/place/base/type	
+/MyFeature/properties/containsPlot/place/base/coordRefSys	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/type	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/href	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/place/base/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/place/base/coordinates	
+/MyFeature/properties/containsPlot/place/base/bbox	
+/MyFeature/properties/containsPlot/place/lower	
+/MyFeature/properties/containsPlot/place/upper	
+/MyFeature/properties/containsPlot/place/prisms	
+/MyFeature/properties/containsPlot/place/prisms/type	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/type	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/href	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/place/prisms/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/place/prisms/base	
+/MyFeature/properties/containsPlot/place/prisms/base/type	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/type	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/href	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/place/prisms/base/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/place/prisms/base/coordinates	
+/MyFeature/properties/containsPlot/place/prisms/base/bbox	
+/MyFeature/properties/containsPlot/place/prisms/lower	
+/MyFeature/properties/containsPlot/place/prisms/upper	
+/MyFeature/properties/containsPlot/place/prisms/bbox	
+/MyFeature/properties/containsPlot/geometry/coordRefSys	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/type	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/href	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/geometry/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/type	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/href	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/geometry/geometries/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/properties/crop	http://foodie-cloud.com/model/foodie#crop
+/MyFeature/properties/containsPlot/properties/description	http://foodie-cloud.com/model/foodie#description
+/MyFeature/properties/containsPlot/properties/area	https://smartdatamodels.org/dataModel.Agrifood/area
+/MyFeature/properties/containsPlot/MyFeature/type	@type
+/MyFeature/properties/containsPlot/MyFeature/id	@id
+/MyFeature/properties/containsPlot/MyFeature/properties	@nest
+/MyFeature/properties/containsPlot/MyFeature/geometry	https://purl.org/geojson/vocab#geometry
+/MyFeature/properties/containsPlot/MyFeature/geometry/type	@type
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
+/MyFeature/properties/containsPlot/MyFeature/geometry/bbox	https://purl.org/geojson/vocab#bbox
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/type	@type
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
+/MyFeature/properties/containsPlot/MyFeature/bbox	https://purl.org/geojson/vocab#bbox
+/MyFeature/properties/containsPlot/MyFeature/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/MyFeature/properties/containsPlot/MyFeature/links/href	http://www.w3.org/ns/oa#hasTarget
+/MyFeature/properties/containsPlot/MyFeature/links/rel	http://www.iana.org/assignments/relation
+/MyFeature/properties/containsPlot/MyFeature/links/anchor	
+/MyFeature/properties/containsPlot/MyFeature/links/type	http://purl.org/dc/terms/type
+/MyFeature/properties/containsPlot/MyFeature/links/hreflang	http://purl.org/dc/terms/language
+/MyFeature/properties/containsPlot/MyFeature/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/MyFeature/properties/containsPlot/MyFeature/links/length	http://purl.org/dc/terms/extent
+/MyFeature/properties/containsPlot/MyFeature/featureType	@type
+/MyFeature/properties/containsPlot/MyFeature/time	http://purl.org/dc/terms/time
+/MyFeature/properties/containsPlot/MyFeature/time/date	http://www.w3.org/2006/time#hasTime
+/MyFeature/properties/containsPlot/MyFeature/time/timestamp	http://www.w3.org/2006/time#hasTime
+/MyFeature/properties/containsPlot/MyFeature/time/interval	http://www.w3.org/2006/time#hasTime
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/type	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/href	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/MyFeature/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/MyFeature/place	http://purl.org/dc/terms/spatial
+/MyFeature/properties/containsPlot/MyFeature/place/type	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/MyFeature/place/coordinates	
+/MyFeature/properties/containsPlot/MyFeature/place/bbox	
+/MyFeature/properties/containsPlot/MyFeature/place/base	
+/MyFeature/properties/containsPlot/MyFeature/place/base/type	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/MyFeature/place/base/coordinates	
+/MyFeature/properties/containsPlot/MyFeature/place/base/bbox	
+/MyFeature/properties/containsPlot/MyFeature/place/lower	
+/MyFeature/properties/containsPlot/MyFeature/place/upper	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/coordinates	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/base/bbox	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/lower	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/upper	
+/MyFeature/properties/containsPlot/MyFeature/place/prisms/bbox	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/type	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/href	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/MyFeature/geometry/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/type	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/href	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/single-refsys/type	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/single-refsys/href	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/single-refsys/epoch	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-byref/type	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-byref/href	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-byref/epoch	
+/MyFeature/properties/containsPlot/MyFeature/geometry/geometries/coordRefSys/refsys-custom/type	
+/MyFeature/properties/containsPlot/MyFeature/properties/crop	http://foodie-cloud.com/model/foodie#crop
+/MyFeature/properties/containsPlot/MyFeature/properties/description	http://foodie-cloud.com/model/foodie#description
+/MyFeature/properties/containsPlot/MyFeature/properties/area	https://smartdatamodels.org/dataModel.Agrifood/area

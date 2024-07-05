@@ -92,6 +92,16 @@ Example from AIM
 ```
 
 
+# JSON-LD Context
+
+```jsonld
+None
+```
+
+You can find the full JSON-LD context here:
+[agriFeature-context.jsonld](../../../../jsonld/agriFeature-context.jsonld)
+
+
 # For developers
 
 The source code for this Building Block can be found in the following repository:

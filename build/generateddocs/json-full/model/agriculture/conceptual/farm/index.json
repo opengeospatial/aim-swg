@@ -9,10 +9,12 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2023-09-18",
+  "dateOfLastChange": "2024-07-05",
   "dependsOn": [
-    "https://w3id.org/def/saref4agri"
+    "https://w3id.org/def/foodie",
+    "ogc.model.agriculture.conceptual.plot"
   ],
+  "ldContext": "../../../../jsonld/agriFeature-context.jsonld",
   "shaclShapes": [
     "../../../../SHACL/agriFeature-SHACL.ttl"
   ],
@@ -26,6 +28,7 @@
   "shaclRules": {},
   "ontology": "https://w3id.org/demeter/agri/agriFeature",
   "remoteCacheDir": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/conceptual/farm/remote_cache/",
+  "sourceLdContext": "https://ogcincubator.github.io/aim-swg/../../jsonld/agriFeature-context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/farm/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/conceptual/farm/",

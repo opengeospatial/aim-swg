@@ -122,6 +122,18 @@ TBD - how does this relate to the other equivalent classes supported by AIM?
 Example from AIM  
 
 
+
+# JSON-LD Context
+
+```json--ldContext
+None
+```
+
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=..%2F..%2F..%2F..%2Fjsonld%2FagriFeature-context.jsonld">View on JSON-LD Playground</a>
+
+You can find the full JSON-LD context here:
+<a href="../../../../jsonld/agriFeature-context.jsonld" target="_blank">../../../../jsonld/agriFeature-context.jsonld</a>
+
 # For developers
 
 The source code for this Building Block can be found in the following repository:

@@ -1,0 +1,157 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Foodie Farm Plot
+$defs:
+  MyFeature:
+    allOf:
+    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
+    - type: object
+      properties:
+        properties:
+          properties:
+            crop:
+              type: object
+              x-jsonld-id: http://foodie-cloud.com/model/foodie#crop
+              x-jsonld-type: '@id'
+            description:
+              type: string
+              x-jsonld-id: http://foodie-cloud.com/model/foodie#description
+              x-jsonld-type: http://www.w3.org/2001/XMLSchema#string
+            area:
+              type: number
+              x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/area
+          required:
+          - area
+anyOf:
+- $ref: '#/$defs/MyFeature'
+x-jsonld-extra-terms:
+  invalidatedAtTime:
+    x-jsonld-id: http://www.w3.org/ns/prov#invalidatedAtTime
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime
+  Crop: https://saref.etsi.org/saref4agri/Crop
+  hasAgriCrop:
+    x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/hasAgriCrop
+    x-jsonld-type: '@id'
+  affiliation: https://schema.org/affiliation
+  versionInfo: http://www.w3.org/2002/07/owl#versionInfo
+  generatedAtTime:
+    x-jsonld-id: http://www.w3.org/ns/prov#generatedAtTime
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime
+  validFrom:
+    x-jsonld-id: http://portele.de/ont/inspire/baseInspire#validFrom
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime
+  hasAgriParcelParent:
+    x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcelParent
+    x-jsonld-type: '@id'
+  Thing: http://www.w3.org/2002/07/owl#Thing
+  hasName:
+    x-jsonld-id: https://saref.etsi.org/saref4agri/hasName
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string
+  lastPlantedAt:
+    x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/lastPlantedAt
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime
+  OriginTypeValue: http://foodie-cloud.com/model/foodie#OriginTypeValue
+  originType:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#originType
+    x-jsonld-type: '@id'
+  maker: http://xmlns.com/foaf/0.1/maker
+  sfWithin:
+    x-jsonld-id: http://www.opengis.net/ont/geosparql#sfWithin
+    x-jsonld-type: '@id'
+  AgriFarm: https://smartdatamodels.org/dataModel.Agrifood/AgriFarm
+  activity:
+    x-jsonld-id: http://inspire.ec.europa.eu/schemas/af/3.0#activity
+    x-jsonld-type: '@id'
+  Feature: http://www.opengis.net/ont/geosparql#Feature
+  label: http://www.w3.org/2000/01/rdf-schema#label
+  contains:
+    x-jsonld-id: https://saref.etsi.org/saref4agri/contains
+    x-jsonld-type: '@id'
+  landLocation:
+    x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/landLocation
+    x-jsonld-type: '@id'
+  Concept: http://www.w3.org/2004/02/skos/core#Concept
+  homepage: http://xmlns.com/foaf/0.1/homepage
+  ActivityComplex: http://inspire.ec.europa.eu/schemas/act-core/3.0#ActivityComplex
+  holdingSite:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#holdingSite
+    x-jsonld-type: '@id'
+  creator: http://purl.org/dc/terms/creator
+  holdingPlot:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#holdingPlot
+    x-jsonld-type: '@id'
+  foaf.name: http://xmlns.com/foaf/0.1/name
+  holdingZone:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#holdingZone
+    x-jsonld-type: '@id'
+  cropStatus: https://smartdatamodels.org/dataModel.Agrifood/cropStatus
+  hasAgriSoil:
+    x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil
+    x-jsonld-type: '@id'
+  Building: https://saref.etsi.org/saref4agri/Building
+  isContainedIn:
+    x-jsonld-id: https://saref.etsi.org/saref4agri/isContainedIn
+    x-jsonld-type: '@id'
+  location:
+    x-jsonld-id: http://www.w3.org/2003/01/geo/wgs84_pos#location
+    x-jsonld-type: '@id'
+  TractorType: http://foodie-cloud.com/model/foodie#TractorType
+  AgriGreenhouse: https://smartdatamodels.org/dataModel.Agrifood/AgriGreenhouse
+  rights: http://purl.org/dc/terms/rights
+  containsPlot:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#containsPlot
+    x-jsonld-type: '@id'
+  Farm: https://saref.etsi.org/saref4agri/Farm
+  hasAgriParcel:
+    x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcel
+    x-jsonld-type: '@id'
+  machine:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#machine
+    x-jsonld-type: '@id'
+  isDefinedBy: http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+  hasGeometry:
+    x-jsonld-id: http://www.opengis.net/ont/geosparql#hasGeometry
+    x-jsonld-type: '@id'
+  sfContains:
+    x-jsonld-id: http://www.opengis.net/ont/geosparql#sfContains
+    x-jsonld-type: '@id'
+  title: http://purl.org/dc/terms/title
+  validTo:
+    x-jsonld-id: http://portele.de/ont/inspire/baseInspire#validTo
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime
+  Holding: http://inspire.ec.europa.eu/schemas/af/3.0#Holding
+  Parcel: https://saref.etsi.org/saref4agri/Parcel
+  Plot: http://foodie-cloud.com/model/foodie#Plot
+  Site: http://inspire.ec.europa.eu/schemas/af/3.0#Site
+  hasAgriParcelChildren:
+    x-jsonld-id: https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcelChildren
+    x-jsonld-type: '@id'
+  seeAlso: http://www.w3.org/2000/01/rdf-schema#seeAlso
+  MachineType: http://foodie-cloud.com/model/foodie#MachineType
+  notes:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#notes
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string
+  EconomicActivityNACEValue: http://inspire.ec.europa.eu/schemas/act-core/3.0#EconomicActivityNACEValue
+  BuildingSpace: https://saref.etsi.org/saref4agri/BuildingSpace
+  comment: http://www.w3.org/2000/01/rdf-schema#comment
+  contributor: http://purl.org/dc/terms/contributor
+  containsZone:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#containsZone
+    x-jsonld-type: '@id'
+  tractor:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#tractor
+    x-jsonld-type: '@id'
+  code:
+    x-jsonld-id: http://foodie-cloud.com/model/foodie#code
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#string
+  AgriParcel: https://smartdatamodels.org/dataModel.Agrifood/AgriParcel
+  prefLabel: http://www.w3.org/2004/02/skos/core#prefLabel
+  ManagementZone: http://foodie-cloud.com/model/foodie#ManagementZone
+  locationGeoJson:
+    x-jsonld-id: https://uri.etsi.org/ngsi-ld/location
+    x-jsonld-type: '@id'
+  containsSite:
+    x-jsonld-id: http://inspire.ec.europa.eu/schemas/af/3.0#contains
+    x-jsonld-type: '@id'
+x-jsonld-prefixes:
+  saref4agri: https://saref.etsi.org/saref4agri/
+  foodie: http://foodie-cloud.com/model/foodie#
