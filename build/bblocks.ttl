@@ -13,14 +13,14 @@
     rdfs:label "Agriculture Information Model - RDF" ;
     dct:abstract "All modules of the Agriculture Information Model implemented by pure RDF, including JSON-LD based on JSON structures mappable directly to the semantic models defined in the Cross-Domain Model." ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/all/index.md" ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.all" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/all/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/all/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/all/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.model.agriculture.conceptual.agriFeature>,
@@ -42,12 +42,12 @@
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/all/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.features.all" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/all/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/all/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.features.all" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.model.agriculture.conceptual> ;
@@ -67,7 +67,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/farm/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.geo.json-fg.feature-lenient>,
@@ -87,14 +87,14 @@
     rdfs:label "Farm (SAREF) - GeoSPARQL" ;
     dct:abstract "Defines JSON-LD structures mappable directly to the semantic models, i.e. GeoSPARQL instead of GeoJSON" ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.geosparql-ld.farm" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/geosparql-ld/farm/index.json" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/geosparql-ld/farm/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/geosparql-ld/farm/index.json" ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.geosparql-ld.farm" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.model.agriculture.conceptual.farm> ;
@@ -108,14 +108,14 @@
     rdfs:label "Agri Feature Conceptual" ;
     dct:abstract "References the set of spatial features defined or adopted from other standards by the Agriculture Information Model" ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.agriFeature" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/agriFeature/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/agriFeature/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/agriFeature/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.agriFeature" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "AIM",
         "conceptual" ;
@@ -130,14 +130,14 @@
     rdfs:label "Plot - GeoJSON" ;
     dct:abstract "GeoJSON binding for Plot class" ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.features.plot" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/plot/index.md" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/plot/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/plot/index.md" ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.features.plot" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.geo.json-fg.feature-lenient>,
@@ -155,14 +155,14 @@
     rdfs:label "Plot" ;
     dct:abstract "Conceptual model for Plot/Parcel (independent of JSON or other schema encoding)." ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.plot" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/plot/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/plot/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.plot" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/plot/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "AIM",
         "conceptual",
@@ -177,21 +177,21 @@
     rdfs:label "Farm" ;
     dct:abstract "Conceptual model for Farm (independent of JSON or other schema encoding)." ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/farm/index.json" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.farm" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/farm/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/farm/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/farm/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-05"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/aim-swg/> ;
     dcat:keyword "AIM",
         "conceptual",
         "ontology" ;
     bblocks:dependsOn <https://ogcincubator.github.io/ogc.model.agriculture.conceptual.plot>,
         <https://w3id.org/def/foodie> ;
-    bblocks:hasJsonLdContext <https://ogcincubator.github.io/jsonld/agriFeature-context.jsonld> ;
+    bblocks:hasJsonLdContext <https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld> ;
     bblocks:hasShaclRule <https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/aim-swg/../../jsonld/agriFeature-context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
@@ -251,15 +251,15 @@ domains (reusing the cross-domain layer).
         <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-07-05T09:09:55.635513"^^xsd:dateTime ;
-    prov:startedAtTime "2024-07-05T09:09:55.570843"^^xsd:dateTime ;
+    prov:endedAtTime "2024-07-05T09:12:59.954404"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-05T09:12:59.887731"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:4f6a11668d8045cc8abfcb3441e339df4b840de8" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/aim-swg/build/register.json> ] ;
+            dct:hasVersion "git:810db667c91d77ee20f03f8d7aa6c928b79f67d2" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/aim-swg/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

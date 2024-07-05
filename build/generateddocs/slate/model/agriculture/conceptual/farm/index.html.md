@@ -129,10 +129,10 @@ Example from AIM
 None
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=..%2F..%2F..%2Fjsonld%2FagriFeature-context.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2Faim-swg%2Fjsonld%2FagriFeature-context.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="../../../jsonld/agriFeature-context.jsonld" target="_blank">../../../jsonld/agriFeature-context.jsonld</a>
+<a href="https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld" target="_blank">https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld</a>
 
 # Validation
 
