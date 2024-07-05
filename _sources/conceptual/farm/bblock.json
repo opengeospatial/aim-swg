@@ -11,10 +11,10 @@
     "ogc.model.agriculture.conceptual.plot",
     "https://w3id.org/def/foodie"
   ],
-  "ldContext": "../../../../jsonld/agriFeature-context.jsonld",
+  "ldContext": "../../../jsonld/agriFeature-context.jsonld",
   "ontology": "https://w3id.org/demeter/agri/agriFeature",
-  "shaclShapes": [
-    "../../../../SHACL/agriFeature-SHACL.ttl"
+  "shaclRules": [
+    "../../../SHACL/agriFeature-SHACL.ttl"
   ],
   "sources": [
   ],
