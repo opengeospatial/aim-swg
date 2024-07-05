@@ -19,7 +19,11 @@
     "AIM",
     "conceptual"
   ],
-  "shaclRules": {},
+  "shaclRules": {
+    "ogc.model.agriculture.conceptual.farm": [
+      "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+    ]
+  },
   "ontology": "https://w3id.org/demeter/agri/agriFeature",
   "remoteCacheDir": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/conceptual/agriFeature/remote_cache/",
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/agriFeature/",

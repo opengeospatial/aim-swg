@@ -14,10 +14,12 @@
     "https://w3id.org/def/foodie",
     "ogc.model.agriculture.conceptual.plot"
   ],
-  "ldContext": "../../../../jsonld/agriFeature-context.jsonld",
-  "shaclShapes": [
-    "../../../../SHACL/agriFeature-SHACL.ttl"
-  ],
+  "ldContext": "../../../jsonld/agriFeature-context.jsonld",
+  "shaclRules": {
+    "ogc.model.agriculture.conceptual.farm": [
+      "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+    ]
+  },
   "sources": [],
   "scope": "dev",
   "tags": [
@@ -25,12 +27,11 @@
     "conceptual",
     "ontology"
   ],
-  "shaclRules": {},
   "ontology": "https://w3id.org/demeter/agri/agriFeature",
   "remoteCacheDir": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/conceptual/farm/remote_cache/",
   "sourceLdContext": "https://ogcincubator.github.io/aim-swg/../../jsonld/agriFeature-context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/farm/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/conceptual/farm/",
   "description": "## Farm (SAREF model)\n\nTBD - how does this relate to the other equivalent classes supported by AIM?\n\n\n\n\n",
   "examples": [

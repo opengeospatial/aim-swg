@@ -19,7 +19,11 @@
   "tags": [
     "Closure"
   ],
-  "shaclRules": {},
+  "shaclRules": {
+    "ogc.model.agriculture.conceptual.farm": [
+      "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+    ]
+  },
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/geosparql-ld/farm/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/geosparql-ld/farm/",

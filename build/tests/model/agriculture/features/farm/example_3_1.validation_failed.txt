@@ -1,0 +1,42 @@
+Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON
+Generated 2024-07-05T09:09:54.850394+00:00
+=== Files ===
+Using example_3_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_3_1.jsonld created
+Output Turtle example_3_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
+=== Unknown errors ===
+
+** Validation error **
+Traceback (most recent call last):
+,  File "/src/ogc/bblocks/validate.py", line 657, in _validate_resource
+    validate_inner()
+,  File "/src/ogc/bblocks/validate.py", line 583, in validate_inner
+    shacl_conforms, shacl_result, shacl_report, focus_nodes = shacl_validate(
+,  File "/src/ogc/bblocks/validate.py", line 960, in shacl_validate
+    conforms, shacl_result, shacl_report = validator.run()
+,  File "/venv/lib/python3.10/site-packages/pyshacl/validate.py", line 265, in run
+    _is_conform, _reports = s.validate(
+,  File "/venv/lib/python3.10/site-packages/pyshacl/shape.py", line 511, in validate
+    _is_conform, _reports = c.evaluate(target_graph, focus_value_nodes, _e_p)
+,  File "/venv/lib/python3.10/site-packages/pyshacl/constraints/core/shape_based_constraints.py", line 108, in evaluate
+    _nc, _r = _evaluate_property_shape(p_shape)
+,  File "/venv/lib/python3.10/site-packages/pyshacl/constraints/core/shape_based_constraints.py", line 102, in _evaluate_property_shape
+    _is_conform, _r = prop_shape.validate(target_graph, focus=v, _evaluation_path=_evaluation_path[:])
+,  File "/venv/lib/python3.10/site-packages/pyshacl/shape.py", line 508, in validate
+    raise e
+,  File "/venv/lib/python3.10/site-packages/pyshacl/shape.py", line 502, in validate
+    c = constraint_component(self)
+,  File "/venv/lib/python3.10/site-packages/pyshacl/constraints/core/cardinality_constraints.py", line 136, in __init__
+    raise ConstraintLoadError(
+,pyshacl.errors.ConstraintLoadError: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent
+
+=== End Unknown errors ===
+

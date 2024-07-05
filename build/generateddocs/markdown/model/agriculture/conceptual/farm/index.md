@@ -99,7 +99,7 @@ None
 ```
 
 You can find the full JSON-LD context here:
-[agriFeature-context.jsonld](../../../../jsonld/agriFeature-context.jsonld)
+[agriFeature-context.jsonld](../../../jsonld/agriFeature-context.jsonld)
 
 
 # For developers

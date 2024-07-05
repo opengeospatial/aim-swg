@@ -11,9 +11,9 @@
   "version": "0.1",
   "dateOfLastChange": "2024-07-05",
   "dependsOn": [
-    "ogc.model.agriculture.features.plot",
+    "ogc.model.agriculture.conceptual.farm",
     "ogc.geo.json-fg.feature-lenient",
-    "ogc.model.agriculture.conceptual.farm"
+    "ogc.model.agriculture.features.plot"
   ],
   "ldContext": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld",
   "sources": [],
@@ -21,7 +21,11 @@
   "tags": [
     "Closure"
   ],
-  "shaclRules": {},
+  "shaclRules": {
+    "ogc.model.agriculture.conceptual.farm": [
+      "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+    ]
+  },
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.yaml",
     "application/json": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.json"
@@ -29,7 +33,7 @@
   "sourceSchema": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/features/farm/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/farm/",
   "description": "## Farm\n\nFg-JSON/GeoJSON binding for saref4agri:Farm\n\n\n\n\n",
   "examples": [

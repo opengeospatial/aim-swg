@@ -29,8 +29,8 @@ GeoJSON binding for Farm class
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/farm/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/farm/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -1157,6 +1157,15 @@ Links to the schema:
 
 You can find the full JSON-LD context here:
 <a href="https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld" target="_blank">https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld</a>
+
+# Validation
+
+## SHACL Shapes
+
+The following sets of SHACL shapes are used for validating this building block:
+
+* Farm <small><code>ogc.model.agriculture.conceptual.farm</code></small>
+  * [https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl](https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl)
 
 # For developers
 

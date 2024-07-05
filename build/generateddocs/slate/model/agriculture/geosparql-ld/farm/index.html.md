@@ -126,6 +126,15 @@ Defines dependencies for the complete Agriculture Information Model based on reu
 Example from AIM  using a GeoSPARQL JSON-LD schema. 
 
 
+# Validation
+
+## SHACL Shapes
+
+The following sets of SHACL shapes are used for validating this building block:
+
+* Farm <small><code>ogc.model.agriculture.conceptual.farm</code></small>
+  * [https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl](https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl)
+
 # For developers
 
 The source code for this Building Block can be found in the following repository:

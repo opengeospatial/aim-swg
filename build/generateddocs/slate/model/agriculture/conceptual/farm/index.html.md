@@ -25,8 +25,8 @@ Conceptual model for Farm (independent of JSON or other schema encoding).
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/conceptual/farm/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/conceptual/farm/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -129,10 +129,19 @@ Example from AIM
 None
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=..%2F..%2F..%2F..%2Fjsonld%2FagriFeature-context.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=..%2F..%2F..%2Fjsonld%2FagriFeature-context.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="../../../../jsonld/agriFeature-context.jsonld" target="_blank">../../../../jsonld/agriFeature-context.jsonld</a>
+<a href="../../../jsonld/agriFeature-context.jsonld" target="_blank">../../../jsonld/agriFeature-context.jsonld</a>
+
+# Validation
+
+## SHACL Shapes
+
+The following sets of SHACL shapes are used for validating this building block:
+
+* Farm <small><code>ogc.model.agriculture.conceptual.farm</code></small>
+  * [https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl](https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl)
 
 # For developers
 

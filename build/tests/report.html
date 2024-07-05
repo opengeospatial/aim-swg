@@ -51,9 +51,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-07-05T08:11:25.689727+00:00</small>
-                <p class="summary fw-semibold text-success">
-                    Number of passing building blocks: 8 / 8 (100%)
+            <small class="datetime">Generated at 2024-07-05T09:09:55.569237+00:00</small>
+                <p class="summary fw-semibold text-danger">
+                    Number of passing building blocks: 6 / 8 (75%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -133,7 +133,7 @@
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.conceptual.farm" id="bblock-ogc.model.agriculture.conceptual.farm">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.conceptual\.farm">
                                     <div class="flex-fill">
@@ -141,17 +141,53 @@
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.conceptual.farm</small>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.model.agriculture.conceptual.farm">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.model.agriculture.conceptual.farm">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 1 / 1
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-unknown">Traceback (most recent call last):
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 657, in _validate_resource
+    validate_inner()
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 583, in validate_inner
+    shacl_conforms, shacl_result, shacl_report, focus_nodes = shacl_validate(
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 960, in shacl_validate
+    conforms, shacl_result, shacl_report = validator.run()
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/validate.py&quot;, line 265, in run
+    _is_conform, _reports = s.validate(
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/shape.py&quot;, line 511, in validate
+    _is_conform, _reports = c.evaluate(target_graph, focus_value_nodes, _e_p)
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/constraints/core/shape_based_constraints.py&quot;, line 108, in evaluate
+    _nc, _r = _evaluate_property_shape(p_shape)
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/constraints/core/shape_based_constraints.py&quot;, line 102, in _evaluate_property_shape
+    _is_conform, _r = prop_shape.validate(target_graph, focus=v, _evaluation_path=_evaluation_path[:])
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/shape.py&quot;, line 508, in validate
+    raise e
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/shape.py&quot;, line 502, in validate
+    c = constraint_component(self)
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/constraints/core/cardinality_constraints.py&quot;, line 136, in __init__
+    raise ConstraintLoadError(
+,pyshacl.errors.ConstraintLoadError: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent
+</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
@@ -165,11 +201,12 @@
                                                     <a href="model/agriculture/conceptual/farm/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
@@ -305,7 +342,7 @@
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.features.farm" id="bblock-ogc.model.agriculture.features.farm">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.features\.farm">
                                     <div class="flex-fill">
@@ -313,17 +350,53 @@
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.features.farm</small>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.model.agriculture.features.farm">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.model.agriculture.features.farm">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 3 / 3
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 3
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-unknown">Traceback (most recent call last):
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 657, in _validate_resource
+    validate_inner()
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 583, in validate_inner
+    shacl_conforms, shacl_result, shacl_report, focus_nodes = shacl_validate(
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 960, in shacl_validate
+    conforms, shacl_result, shacl_report = validator.run()
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/validate.py&quot;, line 265, in run
+    _is_conform, _reports = s.validate(
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/shape.py&quot;, line 511, in validate
+    _is_conform, _reports = c.evaluate(target_graph, focus_value_nodes, _e_p)
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/constraints/core/shape_based_constraints.py&quot;, line 108, in evaluate
+    _nc, _r = _evaluate_property_shape(p_shape)
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/constraints/core/shape_based_constraints.py&quot;, line 102, in _evaluate_property_shape
+    _is_conform, _r = prop_shape.validate(target_graph, focus=v, _evaluation_path=_evaluation_path[:])
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/shape.py&quot;, line 508, in validate
+    raise e
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/shape.py&quot;, line 502, in validate
+    c = constraint_component(self)
+,  File &quot;/venv/lib/python3.10/site-packages/pyshacl/constraints/core/cardinality_constraints.py&quot;, line 136, in __init__
+    raise ConstraintLoadError(
+,pyshacl.errors.ConstraintLoadError: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent
+</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
@@ -337,11 +410,12 @@
                                                     <a href="model/agriculture/features/farm/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
@@ -366,11 +440,12 @@
                                                     <a href="model/agriculture/features/farm/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_2_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
@@ -395,11 +470,12 @@
                                                     <a href="model/agriculture/features/farm/example_3_1.json" target="_blank">example_3_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-7">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_3_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
