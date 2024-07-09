@@ -2,12 +2,12 @@
   "name": "Agriculture Information Model",
   "abstract": "The Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions.\nAIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated \nsemantics/meaning for information exchange.  This repository defines implementation bindings for native RDF as JSON-LD, OGC Features (GeoJSON and FG-JSON variants) and NGSI-LD.\n",
   "description": "\nThis repository contains the modules comprising all the layers of the Agriculture Information Model (AIM). \n\nThe Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions. \nAIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated \nsemantics/meaning for information exchange.  Built upon a thorough analysis of the related state of the art and practice, and driven by the elicited \nstakeholder requirements in H2020 DEMETER project, AIM aims to establish the basis of a common agricultural data space and enable the interoperability \nof different systems, potentially from different vendors. This will in turn enable the analysis of data produced by those systems in an integrated \nmanner to make economically and environmentally sound decisions.\n\nAIM has been designed following a layered and modular approach, and is realised as a suite of ontologies implemented in line with best practices, \nreusing existing standards and well-scoped dominant models as much as possible and establishing alignments between them to enable their interoperability \nand the integration of existing data. AIM is scalable and can be easily extended in order to address additional needs and incorporate new concepts,\nmaintaining its consistency and compliance. In particular, AIM comprises the following layers:\n\n* the meta-model layer defining the building blocks of AIM and enabling the back-and-forth conversion between datasets that are based on the property graph model and linked data datasets\n* the cross-domain layer defining relevant concepts and properties that are common across multiple domains, and which enable the interoperability with existing standard models and vocabularies\n* the domain layer defining agri-specific concepts and properties covering different aspects of interest of agri applications, and which enables the integration of relevant vocabularies in the sector.\n* The pilot-specific layer defining additional concepts and properties that are of specific use for particular applications. \n\nAdditionally, AIM defines a metadata model that can be used to describe datasets, services or applications in agri-related projects/applications.\n\nThe cross-domain module has been created by reusing and alignment existing standard ontologies/vocabularies, including: OGC/W3C sosa/ssn, OGC Geosparql,\nW3C Time ontology, W3C Data Cube ontology, ISO 191xx standards, WGS84, QUDT, W3C PROV-O, as well as well-known vocabularies like FOAF, Schema.org, and Dublin Core.\n\nThe domain modules have been created by reusing well-known ontologies and models related to the agri-food sector, namely the ETSI standard [Saref4Agri](https://saref.etsi.org/saref4agri/v1.1.2/) and the underlying Smart Applications REFerence [SAREF ontology](https://saref.etsi.org/core/v3.1.1/),\n[INPIRE/FOODIE ontology](http://agroportal.lirmm.fr/ontologies/FOODIE) and\n[SmartDataModel (aka.FIWARE) agrifood related models](https://smartdatamodels.org/).\n\nA key value provided by AIM is that it harmonises and aligns relevant cross-domain standards with domain-specific models \nbridging various views on the agriculture data and providing a formal representation enabling unambiguous translations between them.\n\nAIM is published as both human and implementation-ready machine-actionable resources, including the formal specifications as ontology modules (OWL ontologies), \nJSON-LD contexts enabling services to exchange AIM-compliant data based on the already successful JSON format, and SHACL shapes enabling the validation \nof data against AIM semantics. AIM specification includes guidelines on how to find and identify relevant terms, how to create AIM-based JSON-LD content, \nas well as instructions to validate the generated content.\n\nAIM was originally developed as part of H2020 DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other \ndomains (reusing the cross-domain layer).\n",
-  "modified": "2024-07-05T09:12:48.651742",
+  "modified": "2024-07-09T07:22:32.447980",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"4389cc3b7f4fa8fc8c16025a47138cfbc5ce7d9d",
-      "shortCommitId": "\"4389cc",
-      "date": "2024-07-05T09:09:03+00:00\""
+      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
+      "shortCommitId": "\"59af8b",
+      "date": "2024-07-08T08:08:11+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/aim-swg",
@@ -112,8 +112,8 @@
       "version": "0.1",
       "dateOfLastChange": "2023-09-18",
       "dependsOn": [
-        "ogc.model.agriculture.conceptual.plot",
-        "https://w3id.org/def/foodie"
+        "https://w3id.org/def/foodie",
+        "ogc.model.agriculture.conceptual.plot"
       ],
       "ldContext": "https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld",
       "shaclRules": {
@@ -291,8 +291,8 @@
       "dateOfLastChange": "2023-09-18",
       "dependsOn": [
         "ogc.geo.json-fg.feature-lenient",
-        "ogc.model.agriculture.features.plot",
-        "ogc.model.agriculture.conceptual.farm"
+        "ogc.model.agriculture.conceptual.farm",
+        "ogc.model.agriculture.features.plot"
       ],
       "ldContext": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld",
       "sources": [],
@@ -340,12 +340,12 @@
       "version": "0.1",
       "dateOfLastChange": "2023-09-18",
       "dependsOn": [
-        "ogc.model.cross-domain.qudt-basic",
-        "ogc.model.cross-domain.datacube",
-        "ogc.model.cross-domain.prov",
         "ogc.model.cross-domain.sosa",
+        "ogc.model.cross-domain.datacube",
+        "ogc.model.cross-domain.qudt-basic",
         "ogc.model.agriculture.conceptual.agriFeature",
-        "ogc.model.cross-domain.geosparql"
+        "ogc.model.cross-domain.geosparql",
+        "ogc.model.cross-domain.prov"
       ],
       "sources": [],
       "scope": "dev",
@@ -356,11 +356,11 @@
         "ogc.model.cross-domain.qudt": [
           "http://qudt.org/2.1/schema/shacl/qudt"
         ],
-        "ogc.model.cross-domain.prov": [
-          "http://qudt.org/2.1/schema/shacl/qudt"
-        ],
         "ogc.model.agriculture.conceptual.farm": [
           "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "http://qudt.org/2.1/schema/shacl/qudt"
         ]
       },
       "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/all/",
