@@ -8,7 +8,7 @@
   "version": "0.1",
   "dateOfLastChange": "2023-09-18",
   "dependsOn": [
-    "ogc.model.agriculture.conceptual.croptype"
+    "ogc.model.agriculture.conceptual.crop"
   ],
   "ontology": "https://w3id.org/demeter/agri/agriFeature",
   "shaclShapes": [

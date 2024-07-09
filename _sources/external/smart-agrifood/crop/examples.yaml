@@ -1,0 +1,16 @@
+- title: AgriCrop example
+  content: |
+    Example from https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/examples/example-normalized.json
+
+  snippets:
+    - language: json
+      ref: https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/examples/example-normalized.json
+
+- title: AIM example
+  content: |
+    Example from AIM farm example
+
+  snippets:
+    - language: json
+      ref: examples/crop.json
+

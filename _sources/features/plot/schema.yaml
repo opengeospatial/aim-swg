@@ -9,7 +9,7 @@ $defs:
           properties:
             properties:
               "crop":
-                type: object
+                $ref: bblocks://ogc.model.agriculture.external.smart-agrifood.crop
               "description":
                 type: string
               "area":
