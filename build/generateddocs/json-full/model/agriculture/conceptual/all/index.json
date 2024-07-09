@@ -9,14 +9,14 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2023-09-18",
+  "dateOfLastChange": "2024-07-09",
   "dependsOn": [
-    "ogc.model.cross-domain.sosa",
-    "ogc.model.cross-domain.datacube",
-    "ogc.model.cross-domain.qudt-basic",
-    "ogc.model.agriculture.conceptual.agriFeature",
     "ogc.model.cross-domain.geosparql",
-    "ogc.model.cross-domain.prov"
+    "ogc.model.cross-domain.datacube",
+    "ogc.model.cross-domain.sosa",
+    "ogc.model.cross-domain.qudt-basic",
+    "ogc.model.cross-domain.prov",
+    "ogc.model.agriculture.conceptual.agriFeature"
   ],
   "sources": [],
   "scope": "dev",
@@ -27,11 +27,11 @@
     "ogc.model.cross-domain.qudt": [
       "http://qudt.org/2.1/schema/shacl/qudt"
     ],
-    "ogc.model.agriculture.conceptual.farm": [
-      "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
-    ],
     "ogc.model.cross-domain.prov": [
       "http://qudt.org/2.1/schema/shacl/qudt"
+    ],
+    "ogc.model.agriculture.conceptual.farm": [
+      "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
     ]
   },
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/all/",

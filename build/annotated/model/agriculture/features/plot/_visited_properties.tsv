@@ -121,6 +121,31 @@ path	@id
 /geometry/geometries/coordRefSys/refsys-byref/epoch	
 /geometry/geometries/coordRefSys/refsys-custom/type	
 /properties/crop	http://foodie-cloud.com/model/foodie#crop
+/properties/crop/id	
+/properties/crop/dateCreated	
+/properties/crop/dateModified	
+/properties/crop/source	
+/properties/crop/name	
+/properties/crop/alternateName	
+/properties/crop/description	
+/properties/crop/dataProvider	
+/properties/crop/owner	
+/properties/crop/seeAlso	
+/properties/crop/relatedSource	
+/properties/crop/relatedSource/application	
+/properties/crop/relatedSource/applicationEntityId	
+/properties/crop/type	@type
+/properties/crop/agroVocConcept	https://smartdatamodels.org/dataModel.Agrifood/agroVocConcept
+/properties/crop/hasAgriSoil	https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil
+/properties/crop/hasAgriFertiliser	https://smartdatamodels.org/dataModel.Agrifood/hasAgriFertiliser
+/properties/crop/hasAgriPest	https://smartdatamodels.org/dataModel.Agrifood/hasAgriPest
+/properties/crop/harvestingInterval	https://smartdatamodels.org/dataModel.Agrifood/harvestingInterval
+/properties/crop/harvestingInterval/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
+/properties/crop/harvestingInterval/description	http://purl.org/dc/terms/description
+/properties/crop/plantingFrom	https://smartdatamodels.org/dataModel.Agrifood/plantingFrom
+/properties/crop/plantingFrom/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
+/properties/crop/plantingFrom/description	http://purl.org/dc/terms/description
+/properties/crop/wateringFrequency	
 /properties/description	http://foodie-cloud.com/model/foodie#description
 /properties/area	https://smartdatamodels.org/dataModel.Agrifood/area
 /MyFeature/type	@type
@@ -245,5 +270,30 @@ path	@id
 /MyFeature/geometry/geometries/coordRefSys/refsys-byref/epoch	
 /MyFeature/geometry/geometries/coordRefSys/refsys-custom/type	
 /MyFeature/properties/crop	http://foodie-cloud.com/model/foodie#crop
+/MyFeature/properties/crop/id	
+/MyFeature/properties/crop/dateCreated	
+/MyFeature/properties/crop/dateModified	
+/MyFeature/properties/crop/source	
+/MyFeature/properties/crop/name	
+/MyFeature/properties/crop/alternateName	
+/MyFeature/properties/crop/description	
+/MyFeature/properties/crop/dataProvider	
+/MyFeature/properties/crop/owner	
+/MyFeature/properties/crop/seeAlso	
+/MyFeature/properties/crop/relatedSource	
+/MyFeature/properties/crop/relatedSource/application	
+/MyFeature/properties/crop/relatedSource/applicationEntityId	
+/MyFeature/properties/crop/type	@type
+/MyFeature/properties/crop/agroVocConcept	https://smartdatamodels.org/dataModel.Agrifood/agroVocConcept
+/MyFeature/properties/crop/hasAgriSoil	https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil
+/MyFeature/properties/crop/hasAgriFertiliser	https://smartdatamodels.org/dataModel.Agrifood/hasAgriFertiliser
+/MyFeature/properties/crop/hasAgriPest	https://smartdatamodels.org/dataModel.Agrifood/hasAgriPest
+/MyFeature/properties/crop/harvestingInterval	https://smartdatamodels.org/dataModel.Agrifood/harvestingInterval
+/MyFeature/properties/crop/harvestingInterval/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
+/MyFeature/properties/crop/harvestingInterval/description	http://purl.org/dc/terms/description
+/MyFeature/properties/crop/plantingFrom	https://smartdatamodels.org/dataModel.Agrifood/plantingFrom
+/MyFeature/properties/crop/plantingFrom/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
+/MyFeature/properties/crop/plantingFrom/description	http://purl.org/dc/terms/description
+/MyFeature/properties/crop/wateringFrequency	
 /MyFeature/properties/description	http://foodie-cloud.com/model/foodie#description
 /MyFeature/properties/area	https://smartdatamodels.org/dataModel.Agrifood/area

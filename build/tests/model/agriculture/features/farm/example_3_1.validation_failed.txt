@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON
-Generated 2024-07-09T07:22:38.748966+00:00
+Generated 2024-07-09T07:24:14.588213+00:00
 === Files ===
 Using example_3_1.json from examples
 JSON-LD context is present - uplifting
@@ -8,13 +8,253 @@ Output Turtle example_3_1.ttl created
 === End Files ===
 
 === JSON Schema ===
-Validation passed
+
+** Validation error **
+ValidationError: {'id': 'f1', 'type': 'Feature', 'featureType': 'saref4agri:Farm', 'geometry': {'type': 'Point', 'coordinates': [11.3, 44.12]}, 'properties': {'name': 'Wheat farm', 'description': 'A farm producing wheat', 'containsPlot': [{'@id': 'urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a', 'type': 'Feature', 'featureType': 'Plot', 'geometry': {'type': 'Polygon', 'coordinates': [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]}, 'properties': {'area': 2012120, 'description': 'Spring wheat parcel', 'category': 'arable', 'crop': {'@id': 'urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4', '@type': 'Crop', 'cropSpecies': {'@id': 'urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4', '@type': 'CropType', 'name': 'Wheat', 'alternateName': 'Triticum aestivum', 'agroVocConcept': 'http://aims.fao.org/aos/agrovoc/c_7951', 'description': 'Spring wheat'}, 'cropStatus': 'seeded', 'lastPlantedAt': '2016-08-23T10:18:16Z'}}}, {'@id': 'urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b', 'type': 'Feature', 'featureType': 'Plot', 'geometry': {'type': 'Polygon', 'coordinates': [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]}, 'properties': {'area': 200, 'description': 'Spring barley parcel', 'category': 'arable', 'crop': {'@id': 'urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5', '@type': 'Crop', 'cropSpecies': {'@id': 'urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5', '@type': 'CropType', 'name': 'Barley', 'alternateName': 'Ordeum', 'agroVocConcept': 'http://aims.fao.org/aos/agrovoc/c_7952', 'description': 'Spring barley'}, 'cropStatus': 'seeded', 'lastPlantedAt': '2016-08-23T10:18:16Z'}}}]}} is not valid under any of the given schemas
+
+Failed validating 'anyOf' in schema:
+    {'$defs': {'MyFeature': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml'},
+                                       {'properties': {'properties': {'properties': {'containsPlot': {'items': {'$ref': 'https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml'},
+                                                                                                      'type': 'array',
+                                                                                                      'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#containsPlot',
+                                                                                                      'x-jsonld-type': '@id'},
+                                                                                     'description': {'type': 'string',
+                                                                                                     'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#description',
+                                                                                                     'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'},
+                                                                                     'name': {'type': 'string'}}}},
+                                        'type': 'object'}]}},
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'anyOf': [{'$ref': '#/$defs/MyFeature'}],
+     'description': 'Farm as GeoJSON',
+     'x-jsonld-extra-terms': {'ActivityComplex': 'http://inspire.ec.europa.eu/schemas/act-core/3.0#ActivityComplex',
+                              'AgriFarm': 'https://smartdatamodels.org/dataModel.Agrifood/AgriFarm',
+                              'AgriGreenhouse': 'https://smartdatamodels.org/dataModel.Agrifood/AgriGreenhouse',
+                              'AgriParcel': 'https://smartdatamodels.org/dataModel.Agrifood/AgriParcel',
+                              'Building': 'https://saref.etsi.org/saref4agri/Building',
+                              'BuildingSpace': 'https://saref.etsi.org/saref4agri/BuildingSpace',
+                              'Concept': 'http://www.w3.org/2004/02/skos/core#Concept',
+                              'Crop': 'https://saref.etsi.org/saref4agri/Crop',
+                              'EconomicActivityNACEValue': 'http://inspire.ec.europa.eu/schemas/act-core/3.0#EconomicActivityNACEValue',
+                              'Farm': 'https://saref.etsi.org/saref4agri/Farm',
+                              'Feature': 'http://www.opengis.net/ont/geosparql#Feature',
+                              'Holding': 'http://inspire.ec.europa.eu/schemas/af/3.0#Holding',
+                              'MachineType': 'http://foodie-cloud.com/model/foodie#MachineType',
+                              'ManagementZone': 'http://foodie-cloud.com/model/foodie#ManagementZone',
+                              'OriginTypeValue': 'http://foodie-cloud.com/model/foodie#OriginTypeValue',
+                              'Parcel': 'https://saref.etsi.org/saref4agri/Parcel',
+                              'Plot': 'http://foodie-cloud.com/model/foodie#Plot',
+                              'Site': 'http://inspire.ec.europa.eu/schemas/af/3.0#Site',
+                              'Thing': 'http://www.w3.org/2002/07/owl#Thing',
+                              'TractorType': 'http://foodie-cloud.com/model/foodie#TractorType',
+                              'activity': {'x-jsonld-id': 'http://inspire.ec.europa.eu/schemas/af/3.0#activity',
+                                           'x-jsonld-type': '@id'},
+                              'affiliation': 'https://schema.org/affiliation',
+                              'area': 'https://smartdatamodels.org/dataModel.Agrifood/area',
+                              'code': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#code',
+                                       'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'},
+                              'comment': 'http://www.w3.org/2000/01/rdf-schema#comment',
+                              'contains': {'x-jsonld-id': 'https://saref.etsi.org/saref4agri/contains',
+                                           'x-jsonld-type': '@id'},
+                              'containsSite': {'x-jsonld-id': 'http://inspire.ec.europa.eu/schemas/af/3.0#contains',
+                                               'x-jsonld-type': '@id'},
+                              'containsZone': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#containsZone',
+                                               'x-jsonld-type': '@id'},
+                              'contributor': 'http://purl.org/dc/terms/contributor',
+                              'creator': 'http://purl.org/dc/terms/creator',
+                              'crop': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#crop',
+                                       'x-jsonld-type': '@id'},
+                              'cropStatus': 'https://smartdatamodels.org/dataModel.Agrifood/cropStatus',
+                              'foaf.name': 'http://xmlns.com/foaf/0.1/name',
+                              'generatedAtTime': {'x-jsonld-id': 'http://www.w3.org/ns/prov#generatedAtTime',
+                                                  'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},
+                              'hasAgriCrop': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriCrop',
+                                              'x-jsonld-type': '@id'},
+                              'hasAgriParcel': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcel',
+                                                'x-jsonld-type': '@id'},
+                              'hasAgriParcelChildren': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcelChildren',
+                                                        'x-jsonld-type': '@id'},
+                              'hasAgriParcelParent': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcelParent',
+                                                      'x-jsonld-type': '@id'},
+                              'hasAgriSoil': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil',
+                                              'x-jsonld-type': '@id'},
+                              'hasGeometry': {'x-jsonld-id': 'http://www.opengis.net/ont/geosparql#hasGeometry',
+                                              'x-jsonld-type': '@id'},
+                              'hasName': {'x-jsonld-id': 'https://saref.etsi.org/saref4agri/hasName',
+                                          'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'},
+                              'holdingPlot': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#holdingPlot',
+                                              'x-jsonld-type': '@id'},
+                              'holdingSite': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#holdingSite',
+                                              'x-jsonld-type': '@id'},
+                              'holdingZone': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#holdingZone',
+                                              'x-jsonld-type': '@id'},
+                              'homepage': 'http://xmlns.com/foaf/0.1/homepage',
+                              'invalidatedAtTime': {'x-jsonld-id': 'http://www.w3.org/ns/prov#invalidatedAtTime',
+                                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},
+                              'isContainedIn': {'x-jsonld-id': 'https://saref.etsi.org/saref4agri/isContainedIn',
+                                                'x-jsonld-type': '@id'},
+                              'isDefinedBy': 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
+                              'label': 'http://www.w3.org/2000/01/rdf-schema#label',
+                              'landLocation': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/landLocation',
+                                               'x-jsonld-type': '@id'},
+                              'lastPlantedAt': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/lastPlantedAt',
+                                                'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},
+                              'location': {'x-jsonld-id': 'http://www.w3.org/2003/01/geo/wgs84_pos#location',
+                                           'x-jsonld-type': '@id'},
+                              'locationGeoJson': {'x-jsonld-id': 'https://uri.etsi.org/ngsi-ld/location',
+                                                  'x-jsonld-type': '@id'},
+                              'machine': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#machine',
+                                          'x-jsonld-type': '@id'},
+                              'maker': 'http://xmlns.com/foaf/0.1/maker',
+                              'notes': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#notes',
+                                        'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'},
+                              'originType': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#originType',
+                                             'x-jsonld-type': '@id'},
+                              'prefLabel': 'http://www.w3.org/2004/02/skos/core#prefLabel',
+                              'rights': 'http://purl.org/dc/terms/rights',
+                              'seeAlso': 'http://www.w3.org/2000/01/rdf-schema#seeAlso',
+                              'sfContains': {'x-jsonld-id': 'http://www.opengis.net/ont/geosparql#sfContains',
+                                             'x-jsonld-type': '@id'},
+                              'sfWithin': {'x-jsonld-id': 'http://www.opengis.net/ont/geosparql#sfWithin',
+                                           'x-jsonld-type': '@id'},
+                              'title': 'http://purl.org/dc/terms/title',
+                              'tractor': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#tractor',
+                                          'x-jsonld-type': '@id'},
+                              'validFrom': {'x-jsonld-id': 'http://portele.de/ont/inspire/baseInspire#validFrom',
+                                            'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},
+                              'validTo': {'x-jsonld-id': 'http://portele.de/ont/inspire/baseInspire#validTo',
+                                          'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},
+                              'versionInfo': 'http://www.w3.org/2002/07/owl#versionInfo'},
+     'x-jsonld-prefixes': {'foodie': 'http://foodie-cloud.com/model/foodie#',
+                           'saref4agri': 'https://saref.etsi.org/saref4agri/'}}
+
+On instance:
+    {'featureType': 'saref4agri:Farm',
+     'geometry': {'coordinates': [11.3, 44.12], 'type': 'Point'},
+     'id': 'f1',
+     'properties': {'containsPlot': [{'@id': 'urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a',
+                                      'featureType': 'Plot',
+                                      'geometry': {'coordinates': [[[100,
+                                                                     0],
+                                                                    [101,
+                                                                     0],
+                                                                    [101,
+                                                                     1],
+                                                                    [100,
+                                                                     1],
+                                                                    [100,
+                                                                     0]]],
+                                                   'type': 'Polygon'},
+                                      'properties': {'area': 2012120,
+                                                     'category': 'arable',
+                                                     'crop': {'@id': 'urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4',
+                                                              '@type': 'Crop',
+                                                              'cropSpecies': {'@id': 'urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4',
+                                                                              '@type': 'CropType',
+                                                                              'agroVocConcept': 'http://aims.fao.org/aos/agrovoc/c_7951',
+                                                                              'alternateName': 'Triticum '
+                                                                                               'aestivum',
+                                                                              'description': 'Spring '
+                                                                                             'wheat',
+                                                                              'name': 'Wheat'},
+                                                              'cropStatus': 'seeded',
+                                                              'lastPlantedAt': '2016-08-23T10:18:16Z'},
+                                                     'description': 'Spring '
+                                                                    'wheat '
+                                                                    'parcel'},
+                                      'type': 'Feature'},
+                                     {'@id': 'urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b',
+                                      'featureType': 'Plot',
+                                      'geometry': {'coordinates': [[[100,
+                                                                     0],
+                                                                    [101,
+                                                                     0],
+                                                                    [101,
+                                                                     1],
+                                                                    [100,
+                                                                     1],
+                                                                    [100,
+                                                                     0]]],
+                                                   'type': 'Polygon'},
+                                      'properties': {'area': 200,
+                                                     'category': 'arable',
+                                                     'crop': {'@id': 'urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5',
+                                                              '@type': 'Crop',
+                                                              'cropSpecies': {'@id': 'urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5',
+                                                                              '@type': 'CropType',
+                                                                              'agroVocConcept': 'http://aims.fao.org/aos/agrovoc/c_7952',
+                                                                              'alternateName': 'Ordeum',
+                                                                              'description': 'Spring '
+                                                                                             'barley',
+                                                                              'name': 'Barley'},
+                                                              'cropStatus': 'seeded',
+                                                              'lastPlantedAt': '2016-08-23T10:18:16Z'},
+                                                     'description': 'Spring '
+                                                                    'barley '
+                                                                    'parcel'},
+                                      'type': 'Feature'}],
+                    'description': 'A farm producing wheat',
+                    'name': 'Wheat farm'},
+     'type': 'Feature'}
 === End JSON Schema ===
 
 === SHACL ===
 
 ** Validation error **
-Error running SHACL validation for SHACL/agriFeature-SHACL.ttl: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
-For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent
+Validation result for SHACL/agriFeature-SHACL.ttl:
+  Validation Report
+  Conforms: False
+  Results (6):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>
+  	Focus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
+  	Result Path: foodie:code
+  	Message: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>
+  	Focus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
+  	Result Path: foodie:code
+  	Message: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>
+  	Focus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
+  	Result Path: common:validFrom
+  	Message: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>
+  	Focus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
+  	Result Path: common:validFrom
+  	Message: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>
+  	Focus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
+  	Result Path: geo:hasGeometry
+  	Message: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>
+  	Focus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
+  	Result Path: geo:hasGeometry
+  	Message: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry
+  
+Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
+ - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
+ - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>
+ - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*
+
 === End SHACL ===
 

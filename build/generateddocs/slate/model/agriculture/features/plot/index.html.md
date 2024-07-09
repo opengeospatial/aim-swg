@@ -29,8 +29,8 @@ GeoJSON binding for Plot class
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/plot/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/features/plot/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -190,7 +190,8 @@ GeoJSON binding for Foodie:Plot
     foodie:description "Spring wheat parcel"^^xsd:string ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 100 0 ) ( 101 0 ) ( 101 1 ) ( 100 1 ) ( 100 0 ) ) ) ] ;
-    ns1:area 2012120 .
+    ns1:area 2012120 ;
+    ns1:category "arable" .
 
 <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4> a saref4agri:Crop ;
     ns1:cropStatus "seeded" ;
@@ -223,7 +224,7 @@ $defs:
         properties:
           properties:
             crop:
-              type: object
+              $ref: https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
               x-jsonld-id: http://foodie-cloud.com/model/foodie#crop
               x-jsonld-type: '@id'
             description:
@@ -474,6 +475,35 @@ Links to the schema:
       "@container": "@list"
     },
     "crop": {
+      "@context": {
+        "agroVocConcept": "https://smartdatamodels.org/dataModel.Agrifood/agroVocConcept",
+        "hasAgriFertiliser": "https://smartdatamodels.org/dataModel.Agrifood/hasAgriFertiliser",
+        "hasAgriPest": "https://smartdatamodels.org/dataModel.Agrifood/hasAgriPest",
+        "harvestingInterval": {
+          "@context": {
+            "dateRange": "https://smartdatamodels.org/dataModel.Agrifood/dateRange",
+            "description": "dct:description"
+          },
+          "@id": "https://smartdatamodels.org/dataModel.Agrifood/harvestingInterval"
+        },
+        "plantingFrom": {
+          "@context": {
+            "dateRange": "https://smartdatamodels.org/dataModel.Agrifood/dateRange",
+            "description": "dct:description"
+          },
+          "@id": "https://smartdatamodels.org/dataModel.Agrifood/plantingFrom"
+        },
+        "bbox": {
+          "@container": "@list",
+          "@id": "geojson:bbox"
+        },
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        },
+        "location": "ngsi-ld:location",
+        "seeAlso": "https://smartdatamodels.org/seeAlso"
+      },
       "@id": "foodie:crop",
       "@type": "@id"
     },
@@ -633,13 +663,160 @@ Links to the schema:
     "prefLabel": "http://www.w3.org/2004/02/skos/core#prefLabel",
     "ManagementZone": "foodie:ManagementZone",
     "locationGeoJson": {
-      "@id": "https://uri.etsi.org/ngsi-ld/location",
+      "@id": "ngsi-ld:location",
       "@type": "@id"
     },
     "containsSite": {
       "@id": "http://inspire.ec.europa.eu/schemas/af/3.0#contains",
       "@type": "@id"
     },
+    "AgriApp": "https://smartdatamodels.org/dataModel.Agrifood/AgriApp",
+    "AgriCrop": "https://smartdatamodels.org/dataModel.Agrifood/AgriCrop",
+    "AgriParcelOperation": "https://smartdatamodels.org/dataModel.Agrifood/AgriParcelOperation",
+    "AgriParcelRecord": "https://smartdatamodels.org/dataModel.Agrifood/AgriParcelRecord",
+    "AgriPest": "https://smartdatamodels.org/dataModel.Agrifood/AgriPest",
+    "AgriProductType": "https://smartdatamodels.org/dataModel.Agrifood/AgriProductType",
+    "AgriSoil": "https://smartdatamodels.org/dataModel.Agrifood/AgriSoil",
+    "Animal": "https://smartdatamodels.org/dataModel.Agrifood/Animal",
+    "AnimalDisease": "https://smartdatamodels.org/dataModel.Agrifood/AnimalDisease",
+    "AnimalMovement": "https://smartdatamodels.org/dataModel.Agrifood/AnimalMovement",
+    "Carcass": "https://smartdatamodels.org/dataModel.Agrifood/Carcass",
+    "Compartment": "https://smartdatamodels.org/dataModel.Agrifood/Compartment",
+    "FeedRegistry": "https://smartdatamodels.org/dataModel.Agrifood/FeedRegistry",
+    "MeatProduct": "https://smartdatamodels.org/dataModel.Agrifood/MeatProduct",
+    "Pen": "https://smartdatamodels.org/dataModel.Agrifood/Pen",
+    "VeterinarianTreatment": "https://smartdatamodels.org/dataModel.Agrifood/VeterinarianTreatment",
+    "additionalInfo": "https://smartdatamodels.org/dataModel.Agrifood/additionalInfo",
+    "address": "https://smartdatamodels.org/address",
+    "addressCountry": "https://smartdatamodels.org/addressCountry",
+    "addressLocality": "https://smartdatamodels.org/addressLocality",
+    "addressRegion": "https://smartdatamodels.org/addressRegion",
+    "alternateName": "https://smartdatamodels.org/alternateName",
+    "amount": "https://smartdatamodels.org/dataModel.Agrifood/amount",
+    "animal": "https://smartdatamodels.org/dataModel.Agrifood/animal",
+    "animals": "https://smartdatamodels.org/dataModel.Agrifood/animals",
+    "application": "https://smartdatamodels.org/dataModel.Agrifood/application",
+    "applicationEntityId": "https://smartdatamodels.org/dataModel.Agrifood/applicationEntityId",
+    "appliedProduct": "https://smartdatamodels.org/dataModel.Agrifood/appliedProduct",
+    "areaServed": "https://smartdatamodels.org/areaServed",
+    "arrivalTimestamp": "https://smartdatamodels.org/dataModel.Agrifood/arrivalTimestamp",
+    "atmosphericPressure": "https://smartdatamodels.org/dataModel.Agrifood/atmosphericPressure",
+    "availabilityRestriction": "https://smartdatamodels.org/availabilityRestriction",
+    "availableLanguage": "https://smartdatamodels.org/availableLanguage",
+    "avgGrowth": "https://smartdatamodels.org/dataModel.Agrifood/avgGrowth",
+    "avgWeight": "https://smartdatamodels.org/dataModel.Agrifood/avgWeight",
+    "belongsTo": "https://smartdatamodels.org/dataModel.Agrifood/belongsTo",
+    "birthdate": "https://smartdatamodels.org/dataModel.Agrifood/birthdate",
+    "breed": "https://smartdatamodels.org/dataModel.Agrifood/breed",
+    "buildingId": "https://smartdatamodels.org/dataModel.Agrifood/buildingId",
+    "calvedBy": "https://smartdatamodels.org/dataModel.Agrifood/calvedBy",
+    "carcass": "https://smartdatamodels.org/dataModel.Agrifood/carcass",
+    "category": "https://smartdatamodels.org/dataModel.Agrifood/category",
+    "co2": "https://smartdatamodels.org/dataModel.Agrifood/co2",
+    "companyId": "https://smartdatamodels.org/dataModel.Agrifood/companyId",
+    "compartmentId": "https://smartdatamodels.org/dataModel.Agrifood/compartmentId",
+    "contactOption": "https://smartdatamodels.org/contactOption",
+    "contactPoint": "https://smartdatamodels.org/contactPoint",
+    "contactType": "https://smartdatamodels.org/contactType",
+    "dailyLight": "https://smartdatamodels.org/dataModel.Agrifood/dailyLight",
+    "dataProvider": "https://smartdatamodels.org/dataProvider",
+    "date": "https://smartdatamodels.org/dataModel.Agrifood/date",
+    "dateCreated": "https://smartdatamodels.org/dateCreated",
+    "dateModified": "https://smartdatamodels.org/dateModified",
+    "deadAnimalsSinceDateOfArrival": "https://smartdatamodels.org/dataModel.Agrifood/deadAnimalsSinceDateOfArrival",
+    "deliveryNote": "https://smartdatamodels.org/dataModel.Agrifood/deliveryNote",
+    "depth": "https://smartdatamodels.org/dataModel.Agrifood/depth",
+    "diagnosticTest": "https://smartdatamodels.org/dataModel.Agrifood/diagnosticTest",
+    "disease": "https://smartdatamodels.org/dataModel.Agrifood/disease",
+    "district": "https://smartdatamodels.org/district",
+    "drainFlow": "https://smartdatamodels.org/dataModel.Agrifood/drainFlow",
+    "email": "https://smartdatamodels.org/email",
+    "empty": "https://smartdatamodels.org/dataModel.Agrifood/empty",
+    "endedAt": "https://smartdatamodels.org/dataModel.Agrifood/endedAt",
+    "endpoint": "ngsi-ld:endpoint",
+    "farm": "https://smartdatamodels.org/dataModel.Agrifood/farm",
+    "farmId": "https://smartdatamodels.org/dataModel.Agrifood/farmId",
+    "faxNumber": "https://smartdatamodels.org/faxNumber",
+    "fedWith": "https://smartdatamodels.org/dataModel.Agrifood/fedWith",
+    "feedConsumption": "https://smartdatamodels.org/dataModel.Agrifood/feedConsumption",
+    "hasAgriProductType": "https://smartdatamodels.org/dataModel.Agrifood/hasAgriProductType",
+    "hasAgriProductTypeChildren": "https://smartdatamodels.org/dataModel.Agrifood/hasAgriProductTypeChildren",
+    "hasAgriProductTypeParent": "https://smartdatamodels.org/dataModel.Agrifood/hasAgriProductTypeParent",
+    "hasAirQualityObserved": "https://smartdatamodels.org/dataModel.Agrifood/hasAirQualityObserved",
+    "hasBuilding": "https://smartdatamodels.org/dataModel.Agrifood/hasBuilding",
+    "hasDevice": "https://smartdatamodels.org/dataModel.Agrifood/hasDevice",
+    "hasOperator": "https://smartdatamodels.org/dataModel.Agrifood/hasOperator",
+    "hasProvider": "https://smartdatamodels.org/dataModel.Agrifood/hasProvider",
+    "hasWaterQualityObserved": "https://smartdatamodels.org/dataModel.Agrifood/hasWaterQualityObserved",
+    "hasWeatherObserved": "https://smartdatamodels.org/dataModel.Agrifood/hasWeatherObserved",
+    "healthCondition": "https://smartdatamodels.org/dataModel.Agrifood/healthCondition",
+    "humidity": "https://smartdatamodels.org/dataModel.Agrifood/humidity",
+    "initialWeight": "https://smartdatamodels.org/dataModel.Agrifood/initialWeight",
+    "irrigationRecord": "https://smartdatamodels.org/dataModel.Agrifood/irrigationRecord",
+    "irrigationSystemType": "https://smartdatamodels.org/dataModel.Agrifood/irrigationSystemType",
+    "lastUpdate": "https://smartdatamodels.org/dataModel.Agrifood/lastUpdate",
+    "leafRelativeHumidity": "https://smartdatamodels.org/dataModel.Agrifood/leafRelativeHumidity",
+    "leafTemperature": "https://smartdatamodels.org/dataModel.Agrifood/leafTemperature",
+    "leafWetness": "https://smartdatamodels.org/dataModel.Agrifood/leafWetness",
+    "legalId": "https://smartdatamodels.org/dataModel.Agrifood/legalId",
+    "locatedAt": "https://smartdatamodels.org/dataModel.Agrifood/locatedAt",
+    "luminosity": "https://smartdatamodels.org/dataModel.Agrifood/luminosity",
+    "maxValue": "https://smartdatamodels.org/dataModel.Agrifood/maxValue",
+    "minValue": "https://smartdatamodels.org/dataModel.Agrifood/minValue",
+    "movement": "https://smartdatamodels.org/dataModel.Agrifood/movement",
+    "name": "https://smartdatamodels.org/name",
+    "numAnimals": "https://smartdatamodels.org/dataModel.Agrifood/numAnimals",
+    "operationType": "https://smartdatamodels.org/dataModel.Agrifood/operationType",
+    "ownedBy": "https://smartdatamodels.org/dataModel.Agrifood/ownedBy",
+    "owner": "https://smartdatamodels.org/owner",
+    "parameter": "https://smartdatamodels.org/dataModel.Agrifood/parameter",
+    "parcel": "https://smartdatamodels.org/dataModel.Agrifood/parcel",
+    "parentCompartmentId": "https://smartdatamodels.org/dataModel.Agrifood/parentCompartmentId",
+    "pen": "https://smartdatamodels.org/dataModel.Agrifood/pen",
+    "phaseOutPeriod": "https://smartdatamodels.org/dataModel.Agrifood/phaseOutPeriod",
+    "phenologicalCondition": "https://smartdatamodels.org/dataModel.Agrifood/phenologicalCondition",
+    "plannedEndAt": "https://smartdatamodels.org/dataModel.Agrifood/plannedEndAt",
+    "plannedStartAt": "https://smartdatamodels.org/dataModel.Agrifood/plannedStartAt",
+    "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
+    "postalCode": "https://smartdatamodels.org/postalCode",
+    "productSupported": "https://smartdatamodels.org/productSupported",
+    "quantity": "https://smartdatamodels.org/dataModel.Agrifood/quantity",
+    "relatedSource": "https://smartdatamodels.org/dataModel.Agrifood/relatedSource",
+    "relativeHumidity": "https://smartdatamodels.org/dataModel.Agrifood/relativeHumidity",
+    "reportedAt": "https://smartdatamodels.org/dataModel.Agrifood/reportedAt",
+    "reproductiveCondition": "https://smartdatamodels.org/dataModel.Agrifood/reproductiveCondition",
+    "result": "https://smartdatamodels.org/dataModel.Agrifood/result",
+    "root": "https://smartdatamodels.org/dataModel.Agrifood/root",
+    "sex": "https://smartdatamodels.org/dataModel.Agrifood/sex",
+    "siredBy": "https://smartdatamodels.org/dataModel.Agrifood/siredBy",
+    "soilMoistureEC": "https://smartdatamodels.org/dataModel.Agrifood/soilMoistureEC",
+    "soilMoistureVwc": "https://smartdatamodels.org/dataModel.Agrifood/soilMoistureVwc",
+    "soilSalinity": "https://smartdatamodels.org/dataModel.Agrifood/soilSalinity",
+    "soilTemperature": "https://smartdatamodels.org/dataModel.Agrifood/soilTemperature",
+    "soilTextureType": "https://smartdatamodels.org/dataModel.Agrifood/soilTextureType",
+    "solarRadiation": "https://smartdatamodels.org/dataModel.Agrifood/solarRadiation",
+    "source": "https://smartdatamodels.org/source",
+    "species": "https://smartdatamodels.org/dataModel.Agrifood/species",
+    "startedAt": "https://smartdatamodels.org/dataModel.Agrifood/startedAt",
+    "status": "ngsi-ld:status",
+    "streetAddress": "https://smartdatamodels.org/streetAddress",
+    "streetNr": "https://smartdatamodels.org/streetNr",
+    "supplier": "https://smartdatamodels.org/dataModel.Agrifood/supplier",
+    "telephone": "https://smartdatamodels.org/telephone",
+    "temperature": "https://smartdatamodels.org/dataModel.Agrifood/temperature",
+    "unitText": "https://smartdatamodels.org/dataModel.Agrifood/unitText",
+    "url": "https://smartdatamodels.org/url",
+    "value": "ngsi-ld:hasValue",
+    "version": "https://smartdatamodels.org/dataModel.Agrifood/version",
+    "veterinarian": "https://smartdatamodels.org/dataModel.Agrifood/veterinarian",
+    "veterinarianTreatment": "https://smartdatamodels.org/dataModel.Agrifood/veterinarianTreatment",
+    "waterConsumption": "https://smartdatamodels.org/dataModel.Agrifood/waterConsumption",
+    "waterSource": "https://smartdatamodels.org/dataModel.Agrifood/waterSource",
+    "weight": "https://smartdatamodels.org/dataModel.Agrifood/weight",
+    "weightStDev": "https://smartdatamodels.org/dataModel.Agrifood/weightStDev",
+    "welfareCondition": "https://smartdatamodels.org/dataModel.Agrifood/welfareCondition",
+    "workOrder": "https://smartdatamodels.org/dataModel.Agrifood/workOrder",
+    "workRecord": "https://smartdatamodels.org/dataModel.Agrifood/workRecord",
     "geojson": "https://purl.org/geojson/vocab#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
@@ -648,6 +825,7 @@ Links to the schema:
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "saref4agri": "https://saref.etsi.org/saref4agri/",
     "foodie": "http://foodie-cloud.com/model/foodie#",
+    "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
     "@version": 1.1
   }
 }

@@ -9,7 +9,7 @@ $defs:
         properties:
           properties:
             crop:
-              type: object
+              $ref: https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
               x-jsonld-id: http://foodie-cloud.com/model/foodie#crop
               x-jsonld-type: '@id'
             description:
