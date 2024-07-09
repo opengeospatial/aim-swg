@@ -46,10 +46,10 @@ The following sets of SHACL shapes are used for validating this building block:
 
 * QUDT <small><code>ogc.model.cross-domain.qudt</code></small>
   * [http://qudt.org/2.1/schema/shacl/qudt](http://qudt.org/2.1/schema/shacl/qudt)
-* PROV <small><code>ogc.model.cross-domain.prov</code></small>
-  * [http://qudt.org/2.1/schema/shacl/qudt](http://qudt.org/2.1/schema/shacl/qudt)
 * Farm <small><code>ogc.model.agriculture.conceptual.farm</code></small>
   * [https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl](https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl)
+* PROV <small><code>ogc.model.cross-domain.prov</code></small>
+  * [http://qudt.org/2.1/schema/shacl/qudt](http://qudt.org/2.1/schema/shacl/qudt)
 
 # For developers
 

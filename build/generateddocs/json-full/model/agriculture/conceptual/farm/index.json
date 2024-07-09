@@ -11,8 +11,8 @@
   "version": "0.1",
   "dateOfLastChange": "2023-09-18",
   "dependsOn": [
-    "ogc.model.agriculture.conceptual.plot",
-    "https://w3id.org/def/foodie"
+    "https://w3id.org/def/foodie",
+    "ogc.model.agriculture.conceptual.plot"
   ],
   "ldContext": "https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld",
   "shaclRules": {
