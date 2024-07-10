@@ -9,11 +9,11 @@
   "itemClass": "schema",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-09",
+  "dateOfLastChange": "2024-07-10",
   "dependsOn": [
-    "ogc.geo.json-fg.feature-lenient",
     "ogc.model.agriculture.external.smart-agrifood.crop",
-    "ogc.model.agriculture.conceptual.plot"
+    "ogc.model.agriculture.conceptual.plot",
+    "ogc.geo.json-fg.feature-lenient"
   ],
   "ldContext": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/context.jsonld",
   "sources": [],

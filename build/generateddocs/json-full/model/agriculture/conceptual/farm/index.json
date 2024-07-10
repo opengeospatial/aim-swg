@@ -9,10 +9,10 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-09",
+  "dateOfLastChange": "2024-07-10",
   "dependsOn": [
-    "https://w3id.org/def/foodie",
-    "ogc.model.agriculture.conceptual.plot"
+    "ogc.model.agriculture.conceptual.plot",
+    "https://w3id.org/def/foodie"
   ],
   "ldContext": "https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld",
   "shaclRules": {
