@@ -1,7 +1,7 @@
-Validation report for ogc.model.agriculture.conceptual.farm - Farm
-Generated 2024-07-16T07:36:25.763350+00:00
+Validation report for ogc.model.agriculture.geosparql-ld.farm - Farm (SAREF) - GeoSPARQL
+Generated 2024-07-16T07:36:27.281065+00:00
 === Files ===
-Using example_1_1.ttl from examples
+Using example_1_1.jsonld from examples
 Output Turtle example_1_1.ttl created
 === End Files ===
 
@@ -44,7 +44,7 @@ Focus nodes for SHACL/agriFeature-SHACL.ttl:
  - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*
  - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
  - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*
- - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a>
  - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*
  - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
  - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*

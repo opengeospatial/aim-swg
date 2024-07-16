@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-10",
+  "dateOfLastChange": "2024-07-16",
   "dependsOn": [
     "ogc.model.agriculture.conceptual.farm"
   ],
@@ -25,7 +25,7 @@
     ]
   },
   "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/geosparql-ld/farm/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/aim-swg/blob/main/build/tests/model/agriculture/geosparql-ld/farm/",
   "description": "## Agriculture Information Model Closure\n\nDefines dependencies for the complete Agriculture Information Model based on reusable modular components.\n\n\n\n\n",
   "examples": [
@@ -34,10 +34,15 @@
       "content": "Example from AIM  using a GeoSPARQL JSON-LD schema. \n",
       "snippets": [
         {
-          "language": "json",
+          "language": "jsonld",
           "ref": "../../../examples/simple-farm-instance-AIM_v3.jsonld",
           "code": "{\n  \"@context\": [\n  \t\t\"https://w3id.org/demeter/agri-context.jsonld\"\n   ],\n  \"@id\": \"urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a\",\n  \"@type\": \"Farm\",\n  \"name\": \"Wheat farm\",\n  \"description\": \"A farm producing wheat\",\n  \"hasGeometry\": {\n    \"@id\": \"urn:ngsi-ld:AgriFarm:geo:72d9fb43-53f8-4ec8-a33c-fa931360259x\",\n    \"@type\": \"Point\",\n    \"asWKT\": \"POINT(11.3 44.12)\"\n  },\n  \"containsPlot\":[\n    {\n      \"@id\": \"urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a\",\n      \"@type\": \"Plot\",\n      \"hasGeometry\": {\n        \"@id\": \"urn:ngsi-ld:plot:geo:72d9fb43-53f8-4ec8-a33c-fa931360259y\",\n        \"@type\": \"Polygon\",\n        \"asWKT\": \"POLYGON (100 0, 101 0, 101 1, 100 1, 100 0)\"\n      },\n      \"area\": 2012120,\n      \"description\": \"Spring wheat parcel\",\n      \"category\": \"arable\",\n      \"crop\": {\n        \"@id\": \"urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4\",\n        \"@type\": \"Crop\",\n        \"cropSpecies\":{\n          \"@id\": \"urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4\",\n\t\t      \"@type\": \"CropType\",\n          \"name\": \"Wheat\",\n          \"alternateName\": \"Triticum aestivum\",\n          \"agroVocConcept\": \"http://aims.fao.org/aos/agrovoc/c_7951\",\n          \"description\": \"Spring wheat\"\n        },\n        \"cropStatus\": \"seeded\",\n        \"lastPlantedAt\": \"2016-08-23T10:18:16Z\"\n      }\n    },\n    {\n      \"@id\": \"urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b\",\n      \"@type\": \"Plot\",\n      \"hasGeometry\": {\n        \"@id\": \"urn:ngsi-ld:AgriParcel:geo:72d9fb43-53f8-4ec8-a33c-fa931360259z\",\n        \"@type\": \"Polygon\",\n        \"asWKT\": \"POLYGON (100 0, 101 0, 101 1, 100 1, 100 1)\"\n      },\n      \"area\": 200,\n      \"description\": \"Spring barley parcel\",\n      \"category\": \"arable\",\n      \"crop\": {\n        \"@id\": \"urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5\",\n        \"@type\": \"Crop\",\n        \"cropSpecies\":{\n          \"@id\": \"urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5\",\n\t\t      \"@type\": \"CropType\",\n          \"name\": \"Barley\",\n          \"alternateName\": \"Ordeum\",\n          \"agroVocConcept\": \"http://aims.fao.org/aos/agrovoc/c_7952\",\n          \"description\": \"Spring barley\"\n        },\n        \"cropStatus\": \"seeded\",\n        \"lastPlantedAt\": \"2016-08-23T10:18:16Z\"\n      }\n    }\n  ]\n}",
-          "url": "https://ogcincubator.github.io/aim-swg/build/tests/model/agriculture/geosparql-ld/farm/example_1_1.json"
+          "url": "https://ogcincubator.github.io/aim-swg/build/tests/model/agriculture/geosparql-ld/farm/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix ns1: <http://foodie-cloud.com/model/foodie#> .\n@prefix ns2: <https://smartdatamodels.org/> .\n@prefix ns3: <https://smartdatamodels.org/dataModel.Agrifood/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a> a <https://saref.etsi.org/saref4agri/Farm> ;\n    ns1:containsPlot <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,\n        <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n    ns1:description \"A farm producing wheat\"^^xsd:string ;\n    geo:hasGeometry <urn:ngsi-ld:AgriFarm:geo:72d9fb43-53f8-4ec8-a33c-fa931360259x> ;\n    ns2:name \"Wheat farm\" .\n\n<urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4> a ns1:CropType ;\n    ns1:description \"Spring wheat\"^^xsd:string ;\n    ns2:alternateName \"Triticum aestivum\" ;\n    ns3:agroVocConcept <http://aims.fao.org/aos/agrovoc/c_7951> ;\n    ns2:name \"Wheat\" .\n\n<urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5> a ns1:CropType ;\n    ns1:description \"Spring barley\"^^xsd:string ;\n    ns2:alternateName \"Ordeum\" ;\n    ns3:agroVocConcept <http://aims.fao.org/aos/agrovoc/c_7952> ;\n    ns2:name \"Barley\" .\n\n<urn:ngsi-ld:AgriFarm:geo:72d9fb43-53f8-4ec8-a33c-fa931360259x> a <http://www.opengis.net/ont/sf#Point> ;\n    geo:asWKT \"POINT(11.3 44.12)\"^^geo:wktLiteral .\n\n<urn:ngsi-ld:AgriParcel:geo:72d9fb43-53f8-4ec8-a33c-fa931360259z> a <http://www.opengis.net/ont/sf#Polygon> ;\n    geo:asWKT \"POLYGON (100 0, 101 0, 101 1, 100 1, 100 1)\"^^geo:wktLiteral .\n\n<urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4> a <https://saref.etsi.org/saref4agri/Crop> ;\n    ns1:cropSpecies <urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4> ;\n    ns3:cropStatus \"seeded\" ;\n    ns3:lastPlantedAt \"2016-08-23T10:18:16+00:00\"^^xsd:dateTime .\n\n<urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5> a <https://saref.etsi.org/saref4agri/Crop> ;\n    ns1:cropSpecies <urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5> ;\n    ns3:cropStatus \"seeded\" ;\n    ns3:lastPlantedAt \"2016-08-23T10:18:16+00:00\"^^xsd:dateTime .\n\n<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> a ns1:Plot ;\n    ns1:crop <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4> ;\n    ns1:description \"Spring wheat parcel\"^^xsd:string ;\n    geo:hasGeometry <urn:ngsi-ld:plot:geo:72d9fb43-53f8-4ec8-a33c-fa931360259y> ;\n    ns3:area 2012120 ;\n    ns3:category \"arable\" .\n\n<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> a ns1:Plot ;\n    ns1:crop <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5> ;\n    ns1:description \"Spring barley parcel\"^^xsd:string ;\n    geo:hasGeometry <urn:ngsi-ld:AgriParcel:geo:72d9fb43-53f8-4ec8-a33c-fa931360259z> ;\n    ns3:area 200 ;\n    ns3:category \"arable\" .\n\n<urn:ngsi-ld:plot:geo:72d9fb43-53f8-4ec8-a33c-fa931360259y> a <http://www.opengis.net/ont/sf#Polygon> ;\n    geo:asWKT \"POLYGON (100 0, 101 0, 101 1, 100 1, 100 0)\"^^geo:wktLiteral .\n\n",
+          "url": "https://ogcincubator.github.io/aim-swg/build/tests/model/agriculture/geosparql-ld/farm/example_1_1.ttl"
         }
       ]
     }
