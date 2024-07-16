@@ -1,0 +1,20 @@
+{
+  "name": "SMART AgriCrop",
+  "abstract": "Smart Data Models - Agri Food - Agri Crop model",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "dependsOn": [
+  ],
+  "schema": "https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/schema.json",
+  "ldContext": "https://raw.githubusercontent.com/smart-data-models/dataModel.Agrifood/master/context.jsonld",
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "Closure"
+  ]
+}

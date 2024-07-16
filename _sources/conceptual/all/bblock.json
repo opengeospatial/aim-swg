@@ -1,0 +1,24 @@
+{
+  "name": "Agriculture Information Model - RDF",
+  "abstract": "All modules of the Agriculture Information Model implemented by pure RDF, including JSON-LD based on JSON structures mappable directly to the semantic models defined in the Cross-Domain Model.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "dependsOn": [
+    "ogc.model.cross-domain.qudt-basic",
+    "ogc.model.cross-domain.sosa",
+    "ogc.model.cross-domain.prov",
+    "ogc.model.cross-domain.geosparql",
+    "ogc.model.cross-domain.datacube",
+    "ogc.model.agriculture.conceptual.agriFeature"
+  ],
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "Closure"
+  ]
+}

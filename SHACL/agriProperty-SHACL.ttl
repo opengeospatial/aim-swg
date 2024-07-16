@@ -54,7 +54,7 @@
 
 <https://astrea.linkeddata.es/shapes#82da3f9677527f027e33a454c4a094d8>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:quantitativeProperty .
 
@@ -78,8 +78,8 @@
 
 <https://astrea.linkeddata.es/shapes#543e2a89e69d8c46a81f97430c4a8bcb>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:propertyName .
 
@@ -103,7 +103,7 @@
 
 <https://astrea.linkeddata.es/shapes#0424178b00b48cf1e0659c49e2c59076>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:propertyType .
 
@@ -133,8 +133,8 @@
 
 <https://astrea.linkeddata.es/shapes#7622216c02606402eedf4c3ab4d0ead0>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:analysisDate .
 
@@ -393,7 +393,7 @@
 
 <https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:nonQuantitativeProperty .
 
@@ -471,7 +471,7 @@
 
 <https://astrea.linkeddata.es/shapes#64fa52c0b7adcbf451b13e34488a69e2>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:minCount  "1"^^xsd:nonNegativeInteger ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      saref:hasValue .
@@ -589,7 +589,7 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriProperty.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#8a984502d199f67a6d7f61cd4db71ebe>
         a                 sh:PropertyShape ;
