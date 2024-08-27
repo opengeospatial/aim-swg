@@ -968,7 +968,8 @@
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Distance"
     },
     "dateObserved" : {
-      "@id" : "https://smartdatamodels.org/dateObserved"
+      "@id" : "https://smartdatamodels.org/dateObserved",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "relatesToMeasurement" : {
       "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
@@ -1553,10 +1554,6 @@
     },
     "AgriParcel" : {
       "@id" : "https://smartdatamodels.org/dataModel.Agrifood/AgriParcel"
-    },
-    "observedAt" : {
-      "@id" : "https://smartdatamodels.org/observedAt",
-      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "OM_Observation" : {
       "@id" : "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"

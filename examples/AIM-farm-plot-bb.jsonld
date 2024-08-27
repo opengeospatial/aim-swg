@@ -1,0 +1,38 @@
+{
+  "@context": [
+  		"https://w3id.org/demeter/agri-context.jsonld"
+   ],
+  "@id": "urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a",
+  "@type": "Farm",
+  "name": "Wheat farm",
+  "description": "A farm producing wheat",
+  "hasGeometry": {
+    "@id": "urn:ngsi-ld:AgriFarm:geo:72d9fb43-53f8-4ec8-a33c-fa931360259x",
+    "@type": "Point",
+    "asWKT": "POINT(11.3 44.12)"
+  },
+  "containsPlot":[
+    {
+      "@id": "urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a",
+      "@type": "Plot",
+      "hasGeometry": {
+        "@id": "urn:ngsi-ld:plot:geo:72d9fb43-53f8-4ec8-a33c-fa931360259y",
+        "@type": "Polygon",
+        "asWKT": "POLYGON (100 0, 101 0, 101 1, 100 1, 100 0)"
+      },
+      "description": "Spring wheat parcel",
+      "category": "arable"      
+    },
+    {
+      "@id": "urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b",
+      "@type": "Plot",
+      "hasGeometry": {
+        "@id": "urn:ngsi-ld:AgriParcel:geo:72d9fb43-53f8-4ec8-a33c-fa931360259z",
+        "@type": "Polygon",
+        "asWKT": "POLYGON (100 0, 101 0, 101 1, 100 1, 100 1)"
+      },      
+      "description": "Spring barley parcel",
+      "category": "arable"      
+    }
+  ]
+}

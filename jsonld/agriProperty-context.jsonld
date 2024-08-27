@@ -184,7 +184,8 @@
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Distance"
     },
     "dateObserved" : {
-      "@id" : "https://smartdatamodels.org/dateObserved"
+      "@id" : "https://smartdatamodels.org/dateObserved",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "relatesToMeasurement" : {
       "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
@@ -315,10 +316,6 @@
     },
     "precipitation" : {
       "@id" : "https://smartdatamodels.org/dataModel.Weather/precipitation"
-    },
-    "observedAt" : {
-      "@id" : "https://smartdatamodels.org/observedAt",
-      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "prefLabel" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"

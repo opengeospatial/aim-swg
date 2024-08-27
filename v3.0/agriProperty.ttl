@@ -289,7 +289,7 @@ fiware-agrifood:relativeHumidity	a	owl:DatatypeProperty ;
         rdfs:isDefinedBy <https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriParcelRecord/schema.json> .
 
 ### https://smartdatamodels.org/dateObserved
-fiware:observedAt	a     owl:DatatypeProperty ;
+fiware:dateObserved	a     owl:DatatypeProperty ;
         rdfs:range      xsd:dateTime ;
         rdfs:label   		"date observed"@en ;
         rdfs:comment		"Date of the observed entity defined by the user" ;
