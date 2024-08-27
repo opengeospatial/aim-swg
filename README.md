@@ -5,7 +5,7 @@ This repository contains the modules comprising all the layers of the Agricultur
 The Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions. 
 AIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated 
 semantics/meaning for information exchange.  Built upon a thorough analysis of the related state of the art and practice, and driven by the elicited 
-stakeholder requirements in DEMETER project, AIM aims to establish the basis of a common agricultural data space and enable the interoperability 
+stakeholder requirements in H2020 DEMETER project, AIM aims to establish the basis of a common agricultural data space and enable the interoperability 
 of different systems, potentially from different vendors. This will in turn enable the analysis of data produced by those systems in an integrated 
 manner to make economically and environmentally sound decisions.
 
@@ -19,7 +19,7 @@ maintaining its consistency and compliance. In particular, AIM comprises the fol
 * the domain layer defining agri-specific concepts and properties covering different aspects of interest of agri applications, and which enables the integration of relevant vocabularies in the sector.
 * The pilot-specific layer defining additional concepts and properties that are of specific use for particular applications. 
 
-Additionally, AIM defines a metadata model that can be used to describe datasets, services or applications in DEMETER.
+Additionally, AIM defines a metadata model that can be used to describe datasets, services or applications in agri-related projects/applications.
 
 The cross-domain module has been created by reusing and alignment existing standard ontologies/vocabularies, including: OGC/W3C sosa/ssn, OGC Geosparql, 
 W3C Time ontology, W3C Data Cube ontology, ISO 191xx standards, WGS84, QUDT, W3C PROV-O, as well as well-known vocabularies like FOAF, Schema.org, and Dublin Core.
@@ -36,7 +36,7 @@ JSON-LD contexts enabling services to exchange AIM-compliant data based on the a
 of data against AIM semantics. AIM specification includes guidelines on how to find and identify relevant terms, how to create AIM-based JSON-LD content, 
 as well as instructions to validate the generated content.
 
-AIM was originally developed as part of DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other 
+AIM was originally developed as part of H2020 DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other 
 domains (reusing the cross-domain layer).
 
 > Version 3.0 of AIM has been released (03/2023). It includes:
@@ -61,7 +61,7 @@ domains (reusing the cross-domain layer).
 ## Examples
 
 There are some examples of how to represent data that is compliant with the AIM. 
-Please check examples at [https://github.com/rapw3k/DEMETER/tree/master/models/examples](https://github.com/rapw3k/DEMETER/tree/master/models/examples). In particular:
+Please check examples at [examples folder](https://github.com/opengeospatial/aim-swg/tree/main/examples). In particular:
 
 * simple-farm-instance-AIM_v3.* is a valid instance of a simple farm, in json-ld and turtle respectively
 
@@ -72,7 +72,7 @@ Please check examples at [https://github.com/rapw3k/DEMETER/tree/master/models/e
 * timeSeries-example1_v3.* is a valid instance to represent time series following sosa/ssn approach (cross-domain)
 
 > Note1: previous examples have been moved to v1.0 folder, and json-ld examples have been slightly modified to include the cross-domain context. 
-> Note2: to understand how to use DEMETER AIM context(s) see section "How to create your JSON-LD content using AIM" below.
+> Note2: to understand how to use AIM context(s) see section "How to create your JSON-LD content using AIM" below.
 
 ## Discussion of key terms
 The three underlying models have concepts to represent a portion of land where crops or animals are grown, 
@@ -234,7 +234,7 @@ Try it via [http://agroportal.lirmm.fr/annotator](http://agroportal.lirmm.fr/ann
 ## How to create your JSON-LD content using AIM
 
 JSON-LD is designed around the concept of a "context" to provide mappings from JSON to a shared/common model, allowing applications to use shortcut terms to communicate with one another more efficiently, but without losing accuracy.
-The context links terms in a JSON document to elements in an ontology or vocabulary, i.e., AIM in the case of DEMETER.
+The context links terms in a JSON document to elements in an ontology or vocabulary, e.g., AIM.
 So, in order to generate AIM-based JSON-LD content, you need to define the @context in your JSON document, and reference AIM context(s) from there.
 In general, the simplest method is to specify just the main AIM context as below, which includes all terms in AIM (from the cross-domain and domain layer)
 
