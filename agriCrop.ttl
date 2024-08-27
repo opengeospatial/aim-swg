@@ -158,7 +158,7 @@ demeterAgriCrop:expectedBloomingEnd a owl:DatatypeProperty ;
 
 ###  https://w3id.org/demeter/agri/agriCrop#numberOfHivesNeeded
 demeterAgriCrop:numberOfHivesNeeded a owl:DatatypeProperty ;
-         rdfs:range xsd:dateTime ;
+         rdfs:range xsd:integer ;
          rdfs:label "Number Of Hives Needed" ;
          rdfs:comment "Number Of Hives Needed" ;
          rdfs:isDefinedBy <https://w3id.org/demeter/agri/agriCrop#> .
