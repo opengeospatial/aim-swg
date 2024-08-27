@@ -1,5 +1,8 @@
 {
   "@context" : {
+    "PhotonFluxDensity" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#PhotonFluxDensity"
+    },
     "implements" : {
       "@id" : "http://www.w3.org/ns/ssn/implements",
       "@type" : "@id"
@@ -73,8 +76,18 @@
     "Procedure" : {
       "@id" : "http://www.w3.org/ns/sosa/Procedure"
     },
+    "DiffusionCoefficient" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"
+    },
+    "asGeoJSON" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asGeoJSON",
+      "@type" : "http://www.opengis.net/ont/geosparql#geoJSONLiteral"
+    },
     "Organization" : {
       "@id" : "https://schema.org/Organization"
+    },
+    "Volume" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Volume"
     },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -104,6 +117,12 @@
       "@id" : "http://www.w3.org/ns/ssn/hasOutput",
       "@type" : "@id"
     },
+    "Angle" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Angle"
+    },
+    "TemperatureDrift" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"
+    },
     "RotationalSpeed" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#RotationalSpeed"
     },
@@ -121,6 +140,9 @@
     },
     "Geometry" : {
       "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "NumberPerArea" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea"
     },
     "depiction" : {
       "@id" : "http://xmlns.com/foaf/0.1/depiction"
@@ -208,6 +230,9 @@
       "@id" : "http://www.w3.org/2006/time#numericDuration",
       "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
     },
+    "ElectricConductivity" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#ElectricConductivity"
+    },
     "Temperature" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Temperature"
     },
@@ -246,6 +271,9 @@
     "resultTime" : {
       "@id" : "http://www.w3.org/ns/sosa/resultTime",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "VolumeDensityRate" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#VolumeDensityRate"
     },
     "Agent" : {
       "@id" : "http://xmlns.com/foaf/0.1/Agent"
@@ -288,6 +316,9 @@
     "hasInput" : {
       "@id" : "http://www.w3.org/ns/ssn/hasInput",
       "@type" : "@id"
+    },
+    "Mass" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Mass"
     },
     "implementedBy" : {
       "@id" : "http://www.w3.org/ns/ssn/implementedBy",
@@ -346,14 +377,23 @@
     "Quantity" : {
       "@id" : "http://qudt.org/schema/qudt/Quantity"
     },
+    "MassFlowRate" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#MassFlowRate"
+    },    
     "qu.QuantityKind" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind"
+    },
+    "SpatialObjectCollection" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObjectCollection"
     },
     "Distance" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Distance"
     },
     "deprecated" : {
       "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "Radiance" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"
     },
     "Duration" : {
       "@id" : "http://www.w3.org/2006/time#Duration"
@@ -416,6 +456,9 @@
     "LinearRing" : {
       "@id" : "http://www.opengis.net/ont/sf#LinearRing"
     },
+    "Molality" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Molality"
+    },
     "inXSDDateTimeStamp" : {
       "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
@@ -437,8 +480,14 @@
       "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
       "@type" : "@id"
     },
+    "NumberPerLength" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerLength"
+    },
     "lat" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "VolumeFlowRate" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#VolumeFlowRate"
     },
     "SpecificEntropy" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#SpecificEntropy"
@@ -457,6 +506,9 @@
     "madeObservation" : {
       "@id" : "http://www.w3.org/ns/sosa/madeObservation",
       "@type" : "@id"
+    },
+    "FeatureCollection" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#FeatureCollection"
     },
     "unit" : {
       "@id" : "http://qudt.org/schema/qudt/unit",
@@ -540,6 +592,9 @@
     },
     "Dimensionless" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Dimensionless"
+    },
+    "Area" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Area"
     },
     "Sampling" : {
       "@id" : "http://www.w3.org/ns/sosa/Sampling"
