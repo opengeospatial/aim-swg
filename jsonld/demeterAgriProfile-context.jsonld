@@ -1759,7 +1759,7 @@
       "@id" : "https://uri.etsi.org/ngsi-ld/hasObject",
       "@type" : "@id"
     },
-        "PhotonFluxDensity" : {
+    "PhotonFluxDensity" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#PhotonFluxDensity"
     },
     "DiffusionCoefficient" : {
