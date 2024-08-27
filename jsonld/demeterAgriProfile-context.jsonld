@@ -103,8 +103,7 @@
       "@type" : "@id"
     },
     "numberOfHivesNeeded" : {
-      "@id" : "https://w3id.org/demeter/agri/agriCrop#numberOfHivesNeeded",
-      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id" : "https://w3id.org/demeter/agri/agriCrop#numberOfHivesNeeded"
     },
     "alertValidFrom" : {
       "@id" : "https://smartdatamodels.org/dataModel.Weather/validFrom",
@@ -121,7 +120,7 @@
       "@type" : "@id"
     },
     "width" : {
-      "@id" : "https://schema.org/width"
+      "@id" : "http://qudt.org/schema/qudt/width"
     },
     "Concentration" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Concentration"
@@ -263,7 +262,7 @@
       "@type" : "@id"
     },
     "height" : {
-      "@id" : "https://schema.org/height"
+      "@id" : "http://qudt.org/schema/qudt/height"
     },
     "TemporalUnit" : {
       "@id" : "http://www.w3.org/2006/time#TemporalUnit"
@@ -1759,6 +1758,64 @@
     "object" : {
       "@id" : "https://uri.etsi.org/ngsi-ld/hasObject",
       "@type" : "@id"
+    },
+        "PhotonFluxDensity" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#PhotonFluxDensity"
+    },
+    "DiffusionCoefficient" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#DiffusionCoefficient"
+    },
+    "asGeoJSON" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asGeoJSON",
+      "@type" : "http://www.opengis.net/ont/geosparql#geoJSONLiteral"
+    },
+    "Volume" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Volume"
+    },
+    "Angle" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Angle"
+    },
+    "TemperatureDrift" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#TemperatureDrift"
+    },
+    "NumberPerArea" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerArea"
+    },
+    "ElectricConductivity" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#ElectricConductivity"
+    },
+    "VolumeDensityRate" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#VolumeDensityRate"
+    },
+    "Mass" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Mass"
+    },
+    "MassFlowRate" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#MassFlowRate"
+    }, 
+    "SpatialObjectCollection" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObjectCollection"
+    },
+    "Radiance" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Radiance"
+    },
+    "Molality" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Molality"
+    },
+    "NumberPerLength" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#NumberPerLength"
+    },
+    "VolumeFlowRate" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#VolumeFlowRate"
+    },
+    "FeatureCollection" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#FeatureCollection"
+    },
+    "Area" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Area"
+    },
+    "length" : {
+      "@id" : "http://qudt.org/schema/qudt/length"
     }
   }
 }

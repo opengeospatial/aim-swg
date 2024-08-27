@@ -22,7 +22,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "width" : {
-      "@id" : "https://schema.org/width"
+      "@id" : "http://qudt.org/schema/qudt/width"
     },
     "FarmHolding" : {
       "@id" : "https://saref.etsi.org/saref4agri/FarmHolding"
@@ -46,7 +46,7 @@
       "@type" : "@id"
     },
     "height" : {
-      "@id" : "https://schema.org/height"
+      "@id" : "http://qudt.org/schema/qudt/height"
     },
     "addressRegion" : {
       "@id" : "https://schema.org/addressRegion"
@@ -222,6 +222,9 @@
     },
     "name" : {
       "@id" : "https://smartdatamodels.org/name"
+    },
+    "length" : {
+      "@id" : "http://qudt.org/schema/qudt/length"
     }
   }
 }

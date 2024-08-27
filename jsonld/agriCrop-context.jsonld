@@ -37,8 +37,7 @@
       "@type" : "@id"
     },
     "numberOfHivesNeeded" : {
-      "@id" : "https://w3id.org/demeter/agri/agriCrop#numberOfHivesNeeded",
-      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id" : "https://w3id.org/demeter/agri/agriCrop#numberOfHivesNeeded"
     },
     "validFrom" : {
       "@id" : "http://portele.de/ont/inspire/baseInspire#validFrom",

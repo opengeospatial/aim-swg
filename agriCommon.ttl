@@ -272,7 +272,7 @@ demeterAgriCommon:imageURL a owl:DatatypeProperty ;
 
 ###  https://w3id.org/demeter/agri/agriCommon#imageHeight
 demeterAgriCommon:imageHeight a owl:DatatypeProperty ;
-        rdfs:subPropertyOf <https://schema.org/height> , saref:hasValue ;
+        rdfs:subPropertyOf qudt:height , saref:hasValue ;
         rdfs:domain  demeterAgriCommon:Image ;
         rdfs:label "imageHeight" ;
         rdfs:comment "The height of the image, e.g., 3 or 3 cm^^cdt:ucum" ;
@@ -280,7 +280,7 @@ demeterAgriCommon:imageHeight a owl:DatatypeProperty ;
 
 ###  https://w3id.org/demeter/agri/agriCommon#imageWidth
 demeterAgriCommon:imageWidth a owl:DatatypeProperty ;
-        rdfs:subPropertyOf <https://schema.org/width> , saref:hasValue ;   
+        rdfs:subPropertyOf qudt:width , saref:hasValue ;   
         rdfs:domain  demeterAgriCommon:Image ;     
         rdfs:label "imageWidth" ;
         rdfs:comment "The width of the image, e.g., 3 or 3 cm^^cdt:ucum" ;
@@ -325,6 +325,31 @@ schema:streetAddress a owl:DatatypeProperty ;
         rdfs:comment "he street address. For example, 1600 Amphitheatre Pkwy." ;
         rdfs:isDefinedBy <https://schema.org/streetAddress> .                
 
+## qudt ##
+
+###  http://qudt.org/schema/qudt/length
+qudt:length
+  a rdf:Property ;
+  rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
+  rdfs:label "length" ;
+  rdfs:range xsd:integer ;
+.
+
+###  http://qudt.org/schema/qudt/height
+qudt:height
+  a owl:DatatypeProperty ;
+  rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
+  rdfs:label "height" ;
+  rdfs:range xsd:string ;
+.
+
+###  http://qudt.org/schema/qudt/width
+qudt:width
+  a owl:DatatypeProperty ;
+  rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
+  rdfs:label "width" ;
+  rdfs:range xsd:string ;
+.
 
 #################################################################
 #    Classes
