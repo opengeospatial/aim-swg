@@ -593,7 +593,7 @@ foodie:operator owl:equivalentProperty fiware-agrifood:hasOperator .
 fiware-agrifood:startedAt rdfs:subPropertyOf common:validFrom .
 fiware-agrifood:endedAt rdfs:subPropertyOf common:validTo .
 foodie:treatmentProduct owl:equivalentProperty fiware-agrifood:hasAgriProductType .
-foodie:quantity owl:equivalentProperty fiware-agrifood:quantity .
+#foodie:quantity owl:equivalentProperty fiware-agrifood:quantity .
 
 #################################################################
 #    Individuals
