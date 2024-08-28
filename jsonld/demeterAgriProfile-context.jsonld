@@ -1856,8 +1856,8 @@
       "@id" : "http://www.w3.org/ns/locn#fullAddress",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "DatatypeProperty" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#DatatypeProperty"
+    "locatorName" : {
+      "@id" : "http://www.w3.org/ns/locn#locatorName"
     },
     "adminUnitL2" : {
       "@id" : "http://www.w3.org/ns/locn#adminUnitL2"
