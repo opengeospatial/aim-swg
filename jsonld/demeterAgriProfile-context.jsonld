@@ -1816,6 +1816,51 @@
     },
     "length" : {
       "@id" : "http://qudt.org/schema/qudt/length"
+    },
+    "Address" : {
+      "@id" : "http://www.w3.org/ns/locn#Address"
+    },
+    "addressId" : {
+      "@id" : "http://www.w3.org/ns/locn#addressId",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "adminUnitL1" : {
+      "@id" : "http://www.w3.org/ns/locn#adminUnitL1"
+    },
+    "familyName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/familyName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "lastName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/lastName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "vatID" : {
+      "@id" : "https://schema.org/vatID"
+    },
+    "givenName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/givenName"
+    },
+    "firstName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/firstName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "addressArea" : {
+      "@id" : "http://www.w3.org/ns/locn#addressArea",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "telephone" : {
+      "@id" : "https://schema.org/telephone"
+    },
+    "fullAddress" : {
+      "@id" : "http://www.w3.org/ns/locn#fullAddress",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "DatatypeProperty" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#DatatypeProperty"
+    },
+    "adminUnitL2" : {
+      "@id" : "http://www.w3.org/ns/locn#adminUnitL2"
     }
   }
 }

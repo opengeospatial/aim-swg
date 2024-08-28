@@ -4,11 +4,18 @@
       "@id" : "https://w3id.org/demeter/agri/ecrop/contractSeller",
       "@type" : "@id"
     },
+    "Address" : {
+      "@id" : "http://www.w3.org/ns/locn#Address"
+    },
     "affiliation" : {
       "@id" : "https://schema.org/affiliation"
     },
     "TAXRANK_0000000" : {
       "@id" : "http://purl.obolibrary.org/obo/TAXRANK_0000000"
+    },
+    "addressId" : {
+      "@id" : "http://www.w3.org/ns/locn#addressId",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
@@ -70,15 +77,29 @@
     "TAXRANK_1000000" : {
       "@id" : "http://purl.obolibrary.org/obo/TAXRANK_1000000"
     },
+    "adminUnitL1" : {
+      "@id" : "http://www.w3.org/ns/locn#adminUnitL1"
+    },
+    "familyName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/familyName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
     "contractBuyer" : {
       "@id" : "https://w3id.org/demeter/agri/ecrop/contractBuyer",
       "@type" : "@id"
+    },
+    "lastName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/lastName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "imageHeight" : {
       "@id" : "https://w3id.org/demeter/agri/agriCommon#imageHeight"
     },
     "homepage" : {
       "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "vatID" : {
+      "@id" : "https://schema.org/vatID"
     },
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
@@ -91,6 +112,9 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "givenName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/givenName"
     },
     "contentUrl" : {
       "@id" : "https://schema.org/contentUrl"
@@ -115,6 +139,17 @@
     "Farm" : {
       "@id" : "https://saref.etsi.org/saref4agri/Farm"
     },
+    "firstName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/firstName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "addressArea" : {
+      "@id" : "http://www.w3.org/ns/locn#addressArea",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "telephone" : {
+      "@id" : "https://schema.org/telephone"
+    },
     "userName" : {
       "@id" : "https://w3id.org/demeter/agri/agriCommon#userName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -131,6 +166,10 @@
     "validTo" : {
       "@id" : "http://portele.de/ont/inspire/baseInspire#validTo",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fullAddress" : {
+      "@id" : "http://www.w3.org/ns/locn#fullAddress",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "source" : {
       "@id" : "https://smartdatamodels.org/source"
@@ -197,6 +236,9 @@
       "@id" : "https://saref.etsi.org/core/hasTimestamp",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
+    "DatatypeProperty" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#DatatypeProperty"
+    },
     "code" : {
       "@id" : "http://foodie-cloud.com/model/foodie#code",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -219,6 +261,9 @@
     },
     "Farmer" : {
       "@id" : "https://saref.etsi.org/saref4agri/Farmer"
+    },
+    "adminUnitL2" : {
+      "@id" : "http://www.w3.org/ns/locn#adminUnitL2"
     },
     "name" : {
       "@id" : "https://smartdatamodels.org/name"
