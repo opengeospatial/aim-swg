@@ -400,7 +400,7 @@ qudt:width
 
 ## locn ##
 ### http://www.w3.org/ns/locn#addressArea
-locn:addressArea a rdf:DatatypeProperty ;
+locn:addressArea a owl:DatatypeProperty ;
     rdfs:label "address area"@en ;    
     rdfs:comment "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. The domain of locn:addressArea is locn:Address."@en ;
     rdfs:domain locn:Address ;
@@ -408,7 +408,7 @@ locn:addressArea a rdf:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 ### http://www.w3.org/ns/locn#addressId
-locn:addressId a rdf:DatatypeProperty ;
+locn:addressId a owl:DatatypeProperty ;
     rdfs:label "address ID"@en ;    
     rdfs:comment "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. The domain of locn:addressId is locn:Address."@en ;
     rdfs:domain locn:Address ;
@@ -416,21 +416,21 @@ locn:addressId a rdf:DatatypeProperty ;
     rdfs:range rdfs:Literal .
 
 ### http://www.w3.org/ns/locn#adminUnitL1
-locn:adminUnitL1 a rdf:DatatypeProperty ;
+locn:adminUnitL1 a owl:DatatypeProperty ;
     rdfs:label "admin unit level 1"@en ;        
     rdfs:comment "The uppermost administrative unit for the address, almost always a country. The domain of locn:adminUnitL1 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
     rdfs:domain locn:Address ;
     rdfs:isDefinedBy <http://www.w3.org/ns/locn> .
 
 ### http://www.w3.org/ns/locn#adminUnitL2
-locn:adminUnitL2 a rdf:DatatypeProperty ;
+locn:adminUnitL2 a owl:DatatypeProperty ;
     rdfs:label "admin unit level 2"@en ;   
     rdfs:comment "The region of the address, usually a county, state or other such area that typically encompasses several localities. The domain of  locn:adminUnitL2 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
     rdfs:domain locn:Address ;
     rdfs:isDefinedBy <http://www.w3.org/ns/locn> .
 
 ### http://www.w3.org/ns/locn#fullAddress
-locn:fullAddress a rdf:DatatypeProperty ;
+locn:fullAddress a owl:DatatypeProperty ;
     rdfs:label "full address"@en ;    
     rdfs:comment "The complete address written as a string, with or without formatting. The domain of locn:fullAddress is locn:Address."@en ;
     rdfs:domain locn:Address ;
@@ -438,7 +438,7 @@ locn:fullAddress a rdf:DatatypeProperty ;
     rdfs:range rdfs:Literal  .
     
 ### http://www.w3.org/ns/locn#locatorName
-locn:locatorName a rdf:Property ;
+locn:locatorName a owl:DatatypeProperty ;
     rdfs:label "locator name"@en ;    
     rdfs:comment """Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. 
     """@en ;
