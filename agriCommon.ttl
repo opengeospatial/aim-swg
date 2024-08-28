@@ -31,6 +31,7 @@
 @prefix demeterAgriCommon: <https://w3id.org/demeter/agri/agriCommon#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix ecrop: <https://w3id.org/demeter/agri/ecrop/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
 @base <https://w3id.org/demeter/> .
 
 <https://w3id.org/demeter/agri/agriCommon> a owl:Ontology ;
@@ -120,6 +121,40 @@ ecrop:contractSeller a      owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+### http://xmlns.com/foaf/0.1/firstName
+foaf:firstName
+  a rdf:Property, owl:DatatypeProperty ; 
+  rdfs:label "firstName" ;
+  rdfs:comment "The first name of a person." ;
+  rdfs:domain foaf:Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:isDefinedBy foaf: .
+
+### http://xmlns.com/foaf/0.1/lastName
+foaf:lastName
+  a rdf:Property, owl:DatatypeProperty ;
+  rdfs:label "lastName" ;
+  rdfs:comment "The last name of a person." ;
+  rdfs:domain foaf:Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:isDefinedBy foaf: .
+
+### http://xmlns.com/foaf/0.1/givenName
+foaf:givenName
+  a rdf:Property, owl:DatatypeProperty ;  
+  rdfs:label "Given name" ;
+  rdfs:comment "The given name of some person." ;
+  rdfs:isDefinedBy foaf: .
+
+### http://xmlns.com/foaf/0.1/familyName
+foaf:familyName
+  a rdf:Property, owl:DatatypeProperty ;
+  rdfs:label "familyName" ;
+  rdfs:comment "The family name of some person." ;
+  rdfs:domain foaf:Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:isDefinedBy foaf: .
+  
 ###  https://w3id.org/demeter/agri/agriCommon#userName
 demeterAgriCommon:userName a owl:DatatypeProperty ;
          rdfs:range xsd:string ;
@@ -325,6 +360,18 @@ schema:streetAddress a owl:DatatypeProperty ;
         rdfs:comment "he street address. For example, 1600 Amphitheatre Pkwy." ;
         rdfs:isDefinedBy <https://schema.org/streetAddress> .                
 
+### https://schema.org/vatID
+schema:vatID a owl:DatatypeProperty ;
+  			rdfs:label "vatID" ;
+  			rdfs:comment "The Value-added Tax ID of the organization or person" ;
+  			rdfs:isDefinedBy <https://schema.org/vatID> .
+  			
+### https://schema.org/telephone
+schema:telephone a owl:DatatypeProperty ;
+  			rdfs:label "telephone" ;
+  			rdfs:comment "The telephone number" ;
+  			rdfs:isDefinedBy <https://schema.org/telephone> .  			
+
 ## qudt ##
 
 ###  http://qudt.org/schema/qudt/length
@@ -350,6 +397,52 @@ qudt:width
   rdfs:label "width" ;
   rdfs:range xsd:string ;
 .
+
+## locn ##
+### http://www.w3.org/ns/locn#addressArea
+locn:addressArea a rdf:DatatypeProperty ;
+    rdfs:label "address area"@en ;    
+    rdfs:comment "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. The domain of locn:addressArea is locn:Address."@en ;
+    rdfs:domain locn:Address ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/locn> ;
+    rdfs:range rdfs:Literal .
+
+### http://www.w3.org/ns/locn#addressId
+locn:addressId a rdf:DatatypeProperty ;
+    rdfs:label "address ID"@en ;    
+    rdfs:comment "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. The domain of locn:addressId is locn:Address."@en ;
+    rdfs:domain locn:Address ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/locn> ;
+    rdfs:range rdfs:Literal .
+
+### http://www.w3.org/ns/locn#adminUnitL1
+locn:adminUnitL1 a rdf:DatatypeProperty ;
+    rdfs:label "admin unit level 1"@en ;        
+    rdfs:comment "The uppermost administrative unit for the address, almost always a country. The domain of locn:adminUnitL1 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
+    rdfs:domain locn:Address ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/locn> .
+
+### http://www.w3.org/ns/locn#adminUnitL2
+locn:adminUnitL2 a rdf:DatatypeProperty ;
+    rdfs:label "admin unit level 2"@en ;   
+    rdfs:comment "The region of the address, usually a county, state or other such area that typically encompasses several localities. The domain of  locn:adminUnitL2 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
+    rdfs:domain locn:Address ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/locn> .
+
+### http://www.w3.org/ns/locn#fullAddress
+locn:fullAddress a rdf:DatatypeProperty ;
+    rdfs:label "full address"@en ;    
+    rdfs:comment "The complete address written as a string, with or without formatting. The domain of locn:fullAddress is locn:Address."@en ;
+    rdfs:domain locn:Address ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/locn> ;
+    rdfs:range rdfs:Literal  .
+    
+### http://www.w3.org/ns/locn#locatorName
+locn:locatorName a rdf:Property ;
+    rdfs:label "locator name"@en ;    
+    rdfs:comment """Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. 
+    """@en ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/locn> .    
 
 #################################################################
 #    Classes
@@ -411,6 +504,11 @@ ecrop:AgriculturalCertificate a owl:Class ;
         rdfs:comment "The written or spoken contract between two or more parties for the expressed purpose of specifying the required agricultural produce, products or services" ;
         rdfs:isDefinedBy <https://unece.org/fileadmin/DAM/cefact/brs/BRS_eCROP_v1.pdf> .
 
+### http://www.w3.org/ns/locn#Address
+locn:Address a rdfs:Class ;
+    rdfs:label "Address"@en ;    
+    rdfs:comment "An \"address representation\" as conceptually defined by the INSPIRE Address Representation data type. The locn:addressId property may be used to link this locn:Address to other representations."@en ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/locn> .
 
 #################################################################
 #    Alignments
