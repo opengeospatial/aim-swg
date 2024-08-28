@@ -71,6 +71,9 @@
     "maker" : {
       "@id" : "http://xmlns.com/foaf/0.1/maker"
     },
+    "locatorName" : {
+      "@id" : "http://www.w3.org/ns/locn#locatorName"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -235,9 +238,6 @@
     "hasTimestamp" : {
       "@id" : "https://saref.etsi.org/core/hasTimestamp",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "DatatypeProperty" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#DatatypeProperty"
     },
     "code" : {
       "@id" : "http://foodie-cloud.com/model/foodie#code",
