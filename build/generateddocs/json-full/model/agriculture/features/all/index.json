@@ -1,0 +1,28 @@
+
+
+{
+  "itemIdentifier": "ogc.model.agriculture.features.all",
+  "name": "OGC Features - Agriculture ",
+  "abstract": "All modules of the OGC Features compatible JSON schema implementation of the Agriculture Information Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2024-07-16",
+  "dependsOn": [
+    "ogc.model.agriculture.conceptual"
+  ],
+  "sources": [],
+  "scope": "dev",
+  "tags": [
+    "Closure"
+  ],
+  "shaclRules": {},
+  "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/features/all/",
+  "validationPassed": true,
+  "description": "## QUDT - basic profile\n\nDefines just the basic parts of QUDT used..\n\n\n\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/ogcincubator/aim-swg",
+  "gitPath": "_sources/features/all"
+}

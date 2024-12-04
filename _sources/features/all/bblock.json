@@ -1,0 +1,19 @@
+{
+  "name": "OGC Features - Agriculture ",
+  "abstract": "All modules of the OGC Features compatible JSON schema implementation of the Agriculture Information Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "dependsOn": [
+    "ogc.model.agriculture.conceptual"
+  ],
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "Closure"
+  ]
+}

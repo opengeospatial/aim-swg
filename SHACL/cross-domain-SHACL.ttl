@@ -249,7 +249,7 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/cross-domain.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#eab2ccb77e56d3ad473395331d814f3d>
         a                 sh:NodeShape ;
@@ -469,7 +469,7 @@
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <http://purl.org/linked-data/cube> ;
         rdfs:label        "order"@en , "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"@en ;
-        sh:datatype       xsd:int ;
+        sh:datatype       xsd:integer ;
         sh:description    "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"@en ;
         sh:maxInclusive   2147483647 ;
         sh:minInclusive   -2147483648 ;

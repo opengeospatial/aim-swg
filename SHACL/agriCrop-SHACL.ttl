@@ -64,7 +64,7 @@
 
 <https://astrea.linkeddata.es/shapes#e8ce284036033c966b9722d835b4029e>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validTo .
 
@@ -90,7 +90,7 @@
 
 <https://astrea.linkeddata.es/shapes#c1d94919533707da4d2e988f54400b77>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:cropArea .
 
@@ -107,7 +107,7 @@
 
 <https://astrea.linkeddata.es/shapes#2706167f0ebae7dce7551be561fd997d>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:invalidatedAtTime .
 
@@ -134,14 +134,14 @@
 
 <https://astrea.linkeddata.es/shapes#b8f175b6e568edf4370bf8eab7d42a31>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:variety .
 
 <https://astrea.linkeddata.es/shapes#b9e9e73c6123c8053c9666090d3e157b>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:productionDate .
 
@@ -152,11 +152,11 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriCrop.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#cf7e863fd9342e2ab72c18692e43a4eb>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:description .
 
@@ -173,7 +173,7 @@
 
 <https://astrea.linkeddata.es/shapes#414c107a93104e5ad3d18d9fa7af096a>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:productionAmount .
 
@@ -217,7 +217,7 @@
 
 <https://astrea.linkeddata.es/shapes#79a04f1d699cb1e0e48e5173b01db57f>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:notes .
 
@@ -259,13 +259,13 @@
 
 <https://astrea.linkeddata.es/shapes#462450f3abc9cf4b91404bbb742bed03>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:generatedAtTime .
 
 <https://astrea.linkeddata.es/shapes#4f091202afbb5b2e8a21aa53fa07a10a>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:species .
 
@@ -292,8 +292,8 @@
 
 <https://astrea.linkeddata.es/shapes#456f7c6743f2b12f83abbd722d752719>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:variety .
 
@@ -346,20 +346,20 @@
 
 <https://astrea.linkeddata.es/shapes#795c744f2b69f0f3a4226675a18c617e>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:code .
 
 <https://astrea.linkeddata.es/shapes#da70ad3187c2035f4ab0d283e0408deb>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:genus .
 
 <https://astrea.linkeddata.es/shapes#cdad82710db50439354480e1ec4d6365>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validFrom .
 
@@ -375,8 +375,8 @@
 
 <https://astrea.linkeddata.es/shapes#3905f69417199738ee7b95f8a221b361>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:cropSpecies .
 
@@ -392,7 +392,7 @@
 
 <https://astrea.linkeddata.es/shapes#f444727b0a1b6a2ceb7f3f5dd96f2e16>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:family .
 

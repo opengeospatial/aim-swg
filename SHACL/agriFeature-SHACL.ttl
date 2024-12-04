@@ -30,8 +30,8 @@
 
 <https://astrea.linkeddata.es/shapes#1234d42ca03d2db81542faa103549017>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validFrom .
 
@@ -74,7 +74,7 @@
 
 <https://astrea.linkeddata.es/shapes#075d79900df48b92bccf0febfd6f6ecb>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      saref4agri:hasName .
 
@@ -99,15 +99,15 @@
 
 <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:code .
 
 <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validFrom .
 
@@ -137,19 +137,19 @@
 
 <https://astrea.linkeddata.es/shapes#4e2656b0e2a32e06c1a88a6a3133fd04>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:description .
 
 <https://astrea.linkeddata.es/shapes#9698dc4a8537d2e9cd91560f11e157da>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:generatedAtTime .
 
 <https://astrea.linkeddata.es/shapes#100f1a0fde90405f1c26850ca86d085e>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validTo .
 
@@ -164,14 +164,14 @@
 
 <https://astrea.linkeddata.es/shapes#7656edcbaa7adbdb325bfe2856838bc6>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:invalidatedAtTime .
 
 <https://astrea.linkeddata.es/shapes#77cce3bcdaf17172ebb7f37f1c99b4d1>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:generatedAtTime .
 
@@ -206,8 +206,8 @@
 
 <https://astrea.linkeddata.es/shapes#c2c26428d6d9e54285a52c4b4d4745a5>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:code .
 
@@ -233,7 +233,7 @@
 
 <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      geo:hasGeometry .
 
@@ -249,7 +249,7 @@
 
 <https://astrea.linkeddata.es/shapes#021432ba9c751b4d4033997503c1f902>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      af-inspire:activity .
 
@@ -260,7 +260,7 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriFeature.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#c509e281fc42c3d5de278a4ba65f429c>
         a                 sh:PropertyShape ;
@@ -274,14 +274,14 @@
 
 <https://astrea.linkeddata.es/shapes#ec92439b303570f321576b28135fe664>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      geo:hasGeometry .
 
 <https://astrea.linkeddata.es/shapes#14306bd799bd4ee4de065efc914e4a55>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:containsPlot .
 
@@ -292,19 +292,19 @@
 
 <https://astrea.linkeddata.es/shapes#c59d4953fd243e041443fc088566f8b8>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:generatedAtTime .
 
 <https://astrea.linkeddata.es/shapes#ae908c904944a56cefec54c488a89327>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:notes .
 
 <https://astrea.linkeddata.es/shapes#7139ac3bac1fb96b85203ca83f019ef6>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      geo:hasGeometry .
 
@@ -328,7 +328,7 @@
 
 <https://astrea.linkeddata.es/shapes#720f22d4e1f7459c8db8ecaa13211f49>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:nonNegativeInteger ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      saref4agri:hasName .
 
@@ -343,14 +343,14 @@
 
 <https://astrea.linkeddata.es/shapes#bf3bc9f168c46a0a3e0fe3c379bbe0d7>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:code .
 
 <https://astrea.linkeddata.es/shapes#d5cfa76e1be0f91bfc1d3c44ef0b8ae0>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validTo .
 
@@ -405,7 +405,7 @@
 
 <https://astrea.linkeddata.es/shapes#bf42292cb0c5051a51b20e6f2fa77392>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:invalidatedAtTime .
 
@@ -430,7 +430,7 @@
 
 <https://astrea.linkeddata.es/shapes#9b924293881f2d5e050aebe0296bcc65>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validTo .
 
@@ -464,7 +464,7 @@
 
 <https://astrea.linkeddata.es/shapes#79f9049ac8c7b059d503662569e881fe>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      af-inspire:contains .
 
@@ -506,20 +506,20 @@
 
 <https://astrea.linkeddata.es/shapes#92ec9f4a340443ce661beb8dfaf279a7>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      common:validFrom .
 
 <https://astrea.linkeddata.es/shapes#ffa228fbe9acf17ea0b9d1fa1bf85040>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      geo:hasGeometry .
 
 <https://astrea.linkeddata.es/shapes#f7b2b5e404a15b049376007758affc7e>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:invalidatedAtTime .
 

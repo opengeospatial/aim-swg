@@ -1,0 +1,25 @@
+{
+  "name": "Farm",
+  "abstract": "Conceptual model for Farm (independent of JSON or other schema encoding).",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "dependsOn": [
+    "ogc.model.agriculture.conceptual.plot",
+    "https://w3id.org/def/foodie"
+  ],
+  "ldContext": "../../../jsonld/agriFeature-context.jsonld",
+  "ontology": "https://w3id.org/demeter/agri/agriFeature",
+  "shaclRules": [
+    "../../../SHACL/agriFeature-SHACL.ttl"
+  ],
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "AIM", "conceptual", "ontology"
+  ]
+}

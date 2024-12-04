@@ -1,0 +1,20 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Farm as GeoJSON'
+$defs:
+  MyFeature:
+    allOf:
+      - $ref: bblocks://ogc.geo.json-fg.feature-lenient
+      - type: object
+        properties:
+          properties:
+            properties:
+              "name":
+                type: string
+              "description":
+                type: string
+              "containsPlot":
+                type: array
+                items:
+                  $ref: bblocks://ogc.model.agriculture.features.plot
+anyOf:
+  - $ref: "#/$defs/MyFeature"

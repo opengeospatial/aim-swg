@@ -34,7 +34,7 @@
 
 <https://astrea.linkeddata.es/shapes#096c0e70d50c2052dc106ec62a5928fa>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:storageHandling .
 
@@ -60,7 +60,7 @@
 
 <https://astrea.linkeddata.es/shapes#b7370a9404b09b09d8f745f67d63a0b9>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:manufacturer .
 
@@ -75,8 +75,8 @@
 
 <https://astrea.linkeddata.es/shapes#285a282cb7b44b493b7deab15b0dba4d>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:productQuantity .
 
@@ -114,7 +114,7 @@
 
 <https://astrea.linkeddata.es/shapes#cb19e1d4f9b1fa087da12b932e9137cf>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:nutrientMeasure .
 
@@ -130,13 +130,13 @@
 
 <https://astrea.linkeddata.es/shapes#0c264d7145a37cb616e5b9042b449c10>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:nutrientAmount .
 
 <https://astrea.linkeddata.es/shapes#37e742ea104967f9da32f501ccad63b7>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:description .
 
@@ -147,11 +147,11 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriProduct.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#c35dc4a09d15756696a1345c58857956>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:ingredientAmount .
 
@@ -166,8 +166,8 @@
 
 <https://astrea.linkeddata.es/shapes#40543ae31d15d62fa39b0fcb7a505b2f>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:ingredientName .
 
@@ -192,15 +192,15 @@
 
 <https://astrea.linkeddata.es/shapes#8d5bcd972e7d929efe8c5c4d60ed2e1b>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:productType .
 
 <https://astrea.linkeddata.es/shapes#c819de49cc619f614511d046937d3882>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:nutrientName .
 
@@ -247,7 +247,7 @@
 
 <https://astrea.linkeddata.es/shapes#d733db293e8dea5bd935b1ec5a78c686>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:price .
 
@@ -305,13 +305,13 @@
 
 <https://astrea.linkeddata.es/shapes#ea949a1d7d7468131cdb59f80cccbcfe>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:solventQuantity .
 
 <https://astrea.linkeddata.es/shapes#2ce18e4be99ca18a9a563f69681ec1d6>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:productName .
 
@@ -356,8 +356,8 @@
 
 <https://astrea.linkeddata.es/shapes#cf4cc8cb7188c322129720fac974c1a6>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:productKind .
 
@@ -385,14 +385,14 @@
 
 <https://astrea.linkeddata.es/shapes#3693dda63470591331f78f417dc9cacd>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:nutrientProduct .
 
 <https://astrea.linkeddata.es/shapes#eaf8048c422d6aac33295a6538729799>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:code .
 
@@ -424,8 +424,8 @@
 
 <https://astrea.linkeddata.es/shapes#006fb2dde1f5db028c8dc041c832068c>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:safetyPeriod .
 
@@ -468,7 +468,7 @@
 
 <https://astrea.linkeddata.es/shapes#c00c63a1734d13aa093a8ba3d31299dc>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:safetyInstructions .
 

@@ -1,0 +1,97 @@
+{
+  "title": "Validation report for ogc.model.agriculture.features.plot - Plot - GeoJSON",
+  "bblockName": "Plot - GeoJSON",
+  "bblockId": "ogc.model.agriculture.features.plot",
+  "generated": "2024-07-16T07:36:26.788691+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/model/agriculture/features/plot/example_1_1.json",
+        "url": "https://ogcincubator.github.io/aim-swg/build/tests/model/agriculture/features/plot/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 44,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "{'@id': 'urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a', 'type': 'Feature', 'featureType': 'foodie:Plot', 'geometry': {'type': 'Polygon', 'coordinates': [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]}, 'properties': {'area': 2012120, 'description': 'Spring wheat parcel', 'category': 'arable', 'crop': {'@id': 'urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4', '@type': 'Crop', 'cropSpecies': {'@id': 'urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4', '@type': 'CropType', 'name': 'Wheat', 'alternateName': 'Triticum aestivum', 'agroVocConcept': 'http://aims.fao.org/aos/agrovoc/c_7951', 'description': 'Spring wheat'}, 'cropStatus': 'seeded', 'lastPlantedAt': '2016-08-23T10:18:16Z'}}} is not valid under any of the given schemas",
+              "isError": true,
+              "message": "ValidationError: {'@id': 'urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a', 'type': 'Feature', 'featureType': 'foodie:Plot', 'geometry': {'type': 'Polygon', 'coordinates': [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]}, 'properties': {'area': 2012120, 'description': 'Spring wheat parcel', 'category': 'arable', 'crop': {'@id': 'urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4', '@type': 'Crop', 'cropSpecies': {'@id': 'urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4', '@type': 'CropType', 'name': 'Wheat', 'alternateName': 'Triticum aestivum', 'agroVocConcept': 'http://aims.fao.org/aos/agrovoc/c_7951', 'description': 'Spring wheat'}, 'cropStatus': 'seeded', 'lastPlantedAt': '2016-08-23T10:18:16Z'}}} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema:\n    {'$defs': {'MyFeature': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml'},\n                                       {'properties': {'properties': {'properties': {'area': {'type': 'number',\n                                                                                              'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/area'},\n                                                                                     'crop': {'$ref': 'https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml',\n                                                                                              'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#crop',\n                                                                                              'x-jsonld-type': '@id'},\n                                                                                     'description': {'type': 'string',\n                                                                                                     'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#description',\n                                                                                                     'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'}},\n                                                                      'required': ['area']}},\n                                        'type': 'object'}]}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'anyOf': [{'$ref': '#/$defs/MyFeature'}],\n     'description': 'Foodie Farm Plot',\n     'x-jsonld-extra-terms': {'ActivityComplex': 'http://inspire.ec.europa.eu/schemas/act-core/3.0#ActivityComplex',\n                              'AgriFarm': 'https://smartdatamodels.org/dataModel.Agrifood/AgriFarm',\n                              'AgriGreenhouse': 'https://smartdatamodels.org/dataModel.Agrifood/AgriGreenhouse',\n                              'AgriParcel': 'https://smartdatamodels.org/dataModel.Agrifood/AgriParcel',\n                              'Building': 'https://saref.etsi.org/saref4agri/Building',\n                              'BuildingSpace': 'https://saref.etsi.org/saref4agri/BuildingSpace',\n                              'Concept': 'http://www.w3.org/2004/02/skos/core#Concept',\n                              'Crop': 'https://saref.etsi.org/saref4agri/Crop',\n                              'EconomicActivityNACEValue': 'http://inspire.ec.europa.eu/schemas/act-core/3.0#EconomicActivityNACEValue',\n                              'Farm': 'https://saref.etsi.org/saref4agri/Farm',\n                              'Feature': 'http://www.opengis.net/ont/geosparql#Feature',\n                              'Holding': 'http://inspire.ec.europa.eu/schemas/af/3.0#Holding',\n                              'MachineType': 'http://foodie-cloud.com/model/foodie#MachineType',\n                              'ManagementZone': 'http://foodie-cloud.com/model/foodie#ManagementZone',\n                              'OriginTypeValue': 'http://foodie-cloud.com/model/foodie#OriginTypeValue',\n                              'Parcel': 'https://saref.etsi.org/saref4agri/Parcel',\n                              'Plot': 'http://foodie-cloud.com/model/foodie#Plot',\n                              'Site': 'http://inspire.ec.europa.eu/schemas/af/3.0#Site',\n                              'Thing': 'http://www.w3.org/2002/07/owl#Thing',\n                              'TractorType': 'http://foodie-cloud.com/model/foodie#TractorType',\n                              'activity': {'x-jsonld-id': 'http://inspire.ec.europa.eu/schemas/af/3.0#activity',\n                                           'x-jsonld-type': '@id'},\n                              'affiliation': 'https://schema.org/affiliation',\n                              'code': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#code',\n                                       'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'},\n                              'comment': 'http://www.w3.org/2000/01/rdf-schema#comment',\n                              'contains': {'x-jsonld-id': 'https://saref.etsi.org/saref4agri/contains',\n                                           'x-jsonld-type': '@id'},\n                              'containsPlot': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#containsPlot',\n                                               'x-jsonld-type': '@id'},\n                              'containsSite': {'x-jsonld-id': 'http://inspire.ec.europa.eu/schemas/af/3.0#contains',\n                                               'x-jsonld-type': '@id'},\n                              'containsZone': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#containsZone',\n                                               'x-jsonld-type': '@id'},\n                              'contributor': 'http://purl.org/dc/terms/contributor',\n                              'creator': 'http://purl.org/dc/terms/creator',\n                              'cropStatus': 'https://smartdatamodels.org/dataModel.Agrifood/cropStatus',\n                              'foaf.name': 'http://xmlns.com/foaf/0.1/name',\n                              'generatedAtTime': {'x-jsonld-id': 'http://www.w3.org/ns/prov#generatedAtTime',\n                                                  'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                              'hasAgriCrop': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriCrop',\n                                              'x-jsonld-type': '@id'},\n                              'hasAgriParcel': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcel',\n                                                'x-jsonld-type': '@id'},\n                              'hasAgriParcelChildren': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcelChildren',\n                                                        'x-jsonld-type': '@id'},\n                              'hasAgriParcelParent': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriParcelParent',\n                                                      'x-jsonld-type': '@id'},\n                              'hasAgriSoil': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil',\n                                              'x-jsonld-type': '@id'},\n                              'hasGeometry': {'x-jsonld-id': 'http://www.opengis.net/ont/geosparql#hasGeometry',\n                                              'x-jsonld-type': '@id'},\n                              'hasName': {'x-jsonld-id': 'https://saref.etsi.org/saref4agri/hasName',\n                                          'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'},\n                              'holdingPlot': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#holdingPlot',\n                                              'x-jsonld-type': '@id'},\n                              'holdingSite': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#holdingSite',\n                                              'x-jsonld-type': '@id'},\n                              'holdingZone': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#holdingZone',\n                                              'x-jsonld-type': '@id'},\n                              'homepage': 'http://xmlns.com/foaf/0.1/homepage',\n                              'invalidatedAtTime': {'x-jsonld-id': 'http://www.w3.org/ns/prov#invalidatedAtTime',\n                                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                              'isContainedIn': {'x-jsonld-id': 'https://saref.etsi.org/saref4agri/isContainedIn',\n                                                'x-jsonld-type': '@id'},\n                              'isDefinedBy': 'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',\n                              'label': 'http://www.w3.org/2000/01/rdf-schema#label',\n                              'landLocation': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/landLocation',\n                                               'x-jsonld-type': '@id'},\n                              'lastPlantedAt': {'x-jsonld-id': 'https://smartdatamodels.org/dataModel.Agrifood/lastPlantedAt',\n                                                'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                              'location': {'x-jsonld-id': 'http://www.w3.org/2003/01/geo/wgs84_pos#location',\n                                           'x-jsonld-type': '@id'},\n                              'locationGeoJson': {'x-jsonld-id': 'https://uri.etsi.org/ngsi-ld/location',\n                                                  'x-jsonld-type': '@id'},\n                              'machine': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#machine',\n                                          'x-jsonld-type': '@id'},\n                              'maker': 'http://xmlns.com/foaf/0.1/maker',\n                              'notes': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#notes',\n                                        'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#string'},\n                              'originType': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#originType',\n                                             'x-jsonld-type': '@id'},\n                              'prefLabel': 'http://www.w3.org/2004/02/skos/core#prefLabel',\n                              'rights': 'http://purl.org/dc/terms/rights',\n                              'seeAlso': 'http://www.w3.org/2000/01/rdf-schema#seeAlso',\n                              'sfContains': {'x-jsonld-id': 'http://www.opengis.net/ont/geosparql#sfContains',\n                                             'x-jsonld-type': '@id'},\n                              'sfWithin': {'x-jsonld-id': 'http://www.opengis.net/ont/geosparql#sfWithin',\n                                           'x-jsonld-type': '@id'},\n                              'title': 'http://purl.org/dc/terms/title',\n                              'tractor': {'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#tractor',\n                                          'x-jsonld-type': '@id'},\n                              'validFrom': {'x-jsonld-id': 'http://portele.de/ont/inspire/baseInspire#validFrom',\n                                            'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                              'validTo': {'x-jsonld-id': 'http://portele.de/ont/inspire/baseInspire#validTo',\n                                          'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                              'versionInfo': 'http://www.w3.org/2002/07/owl#versionInfo'},\n     'x-jsonld-prefixes': {'foodie': 'http://foodie-cloud.com/model/foodie#',\n                           'saref4agri': 'https://saref.etsi.org/saref4agri/'}}\n\nOn instance:\n    {'@id': 'urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a',\n     'featureType': 'foodie:Plot',\n     'geometry': {'coordinates': [[[100, 0],\n                                   [101, 0],\n                                   [101, 1],\n                                   [100, 1],\n                                   [100, 0]]],\n                  'type': 'Polygon'},\n     'properties': {'area': 2012120,\n                    'category': 'arable',\n                    'crop': {'@id': 'urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4',\n                             '@type': 'Crop',\n                             'cropSpecies': {'@id': 'urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4',\n                                             '@type': 'CropType',\n                                             'agroVocConcept': 'http://aims.fao.org/aos/agrovoc/c_7951',\n                                             'alternateName': 'Triticum '\n                                                              'aestivum',\n                                             'description': 'Spring wheat',\n                                             'name': 'Wheat'},\n                             'cropStatus': 'seeded',\n                             'lastPlantedAt': '2016-08-23T10:18:16Z'},\n                    'description': 'Spring wheat parcel'},\n     'type': 'Feature'}"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1
+  }
+}

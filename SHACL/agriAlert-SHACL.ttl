@@ -33,7 +33,7 @@
 
 <https://astrea.linkeddata.es/shapes#087fbed8781859126a644978af69eb02>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:type .
 
@@ -94,8 +94,8 @@
 
 <https://astrea.linkeddata.es/shapes#51143ff066a7d0d59bc809b448db3f32>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:alertDate .
 
@@ -127,7 +127,7 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriAlert.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#7ba72b4487d0800caff6564aeaac2fe4>
         a                 sh:PropertyShape ;
@@ -162,7 +162,7 @@
 
 <https://astrea.linkeddata.es/shapes#3c4069d1209a65109a18f94b31644ae1>
         a            sh:PropertyShape ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:alertGeometry .
 
@@ -217,8 +217,8 @@
 
 <https://astrea.linkeddata.es/shapes#0f76c8d028abcb73eda615acb7f76c30>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:code .
 
@@ -234,7 +234,7 @@
 
 <https://astrea.linkeddata.es/shapes#72b5ce36f0debf76da4c0832ffed7785>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:description .
 
