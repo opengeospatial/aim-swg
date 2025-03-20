@@ -125,8 +125,8 @@
     "Concentration" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/qu/dim#Concentration"
     },
-    "dataSet" : {
-      "@id" : "http://purl.org/linked-data/cube#dataSet"
+    "DataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#DataSet"
     },
     "Period" : {
       "@id" : "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Period"
@@ -488,6 +488,10 @@
     },
     "measure" : {
       "@id" : "http://purl.org/linked-data/cube#measure",
+      "@type" : "@id"
+    },
+    "attribute" : {
+      "@id" : "http://purl.org/linked-data/cube#attribute",
       "@type" : "@id"
     },
     "manufacturer" : {
@@ -1367,8 +1371,8 @@
     "EconomicActivityNACEValue" : {
       "@id" : "http://inspire.ec.europa.eu/schemas/act-core/3.0#EconomicActivityNACEValue"
     },
-    "DataSet" : {
-      "@id" : "http://purl.org/linked-data/cube#DataSet",
+    "dataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#dataSet",
       "@type" : "@id"
     },
     "addressLocality" : {
