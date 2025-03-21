@@ -586,6 +586,14 @@ qb:attribute a rdf:Property, owl:ObjectProperty;
     rdfs:range qb:AttributeProperty;
     rdfs:isDefinedBy <http://purl.org/linked-data/cube> .    
 	
+###  http://purl.org/linked-data/cube#structure	
+qb:structure a rdf:Property, owl:ObjectProperty;
+    rdfs:label "structure"@en;
+    rdfs:comment "indicates the structure to which this data set conforms"@en;
+    rdfs:domain qb:DataSet;
+    rdfs:range qb:DataStructureDefinition;
+    rdfs:isDefinedBy <http://purl.org/linked-data/cube> .
+
 ###  http://purl.org/linked-data/cube#sliceStructure
 qb:sliceStructure 
 		a rdf:Property, owl:ObjectProperty;
