@@ -1,0 +1,70 @@
+# A short, descriptive name of this building block collection
+name: Agriculture Information Model
+
+# Short abstract for this collection (optional)
+abstract: |
+  The Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions.
+  AIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated 
+  semantics/meaning for information exchange.  This repository defines implementation bindings for native RDF as JSON-LD, OGC Features (GeoJSON and FG-JSON variants) and NGSI-LD.
+
+# Description for this collection (optional)
+description: |
+  
+  This repository contains the modules comprising all the layers of the Agriculture Information Model (AIM). 
+
+  The Agriculture Information Model (AIM) is a common vocabulary providing the basis for semantic interoperability across smart farming solutions. 
+  AIM defines the data elements, including concepts, properties and relationships relevant to agri applications, as well as their associated 
+  semantics/meaning for information exchange.  Built upon a thorough analysis of the related state of the art and practice, and driven by the elicited 
+  stakeholder requirements in H2020 DEMETER project, AIM aims to establish the basis of a common agricultural data space and enable the interoperability 
+  of different systems, potentially from different vendors. This will in turn enable the analysis of data produced by those systems in an integrated 
+  manner to make economically and environmentally sound decisions.
+
+  AIM has been designed following a layered and modular approach, and is realised as a suite of ontologies implemented in line with best practices, 
+  reusing existing standards and well-scoped dominant models as much as possible and establishing alignments between them to enable their interoperability 
+  and the integration of existing data. AIM is scalable and can be easily extended in order to address additional needs and incorporate new concepts,
+  maintaining its consistency and compliance. In particular, AIM comprises the following layers:
+  
+  * the meta-model layer defining the building blocks of AIM and enabling the back-and-forth conversion between datasets that are based on the property graph model and linked data datasets
+  * the cross-domain layer defining relevant concepts and properties that are common across multiple domains, and which enable the interoperability with existing standard models and vocabularies
+  * the domain layer defining agri-specific concepts and properties covering different aspects of interest of agri applications, and which enables the integration of relevant vocabularies in the sector.
+  * The pilot-specific layer defining additional concepts and properties that are of specific use for particular applications. 
+  
+  Additionally, AIM defines a metadata model that can be used to describe datasets, services or applications in agri-related projects/applications.
+  
+  The cross-domain module has been created by reusing and alignment existing standard ontologies/vocabularies, including: OGC/W3C sosa/ssn, OGC Geosparql,
+  W3C Time ontology, W3C Data Cube ontology, ISO 191xx standards, WGS84, QUDT, W3C PROV-O, as well as well-known vocabularies like FOAF, Schema.org, and Dublin Core.
+
+  The domain modules have been created by reusing well-known ontologies and models related to the agri-food sector, namely the ETSI standard [Saref4Agri](https://saref.etsi.org/saref4agri/v1.1.2/) and the underlying Smart Applications REFerence [SAREF ontology](https://saref.etsi.org/core/v3.1.1/),
+  [INPIRE/FOODIE ontology](http://agroportal.lirmm.fr/ontologies/FOODIE) and
+  [SmartDataModel (aka.FIWARE) agrifood related models](https://smartdatamodels.org/).
+  
+  A key value provided by AIM is that it harmonises and aligns relevant cross-domain standards with domain-specific models 
+  bridging various views on the agriculture data and providing a formal representation enabling unambiguous translations between them.
+  
+  AIM is published as both human and implementation-ready machine-actionable resources, including the formal specifications as ontology modules (OWL ontologies), 
+  JSON-LD contexts enabling services to exchange AIM-compliant data based on the already successful JSON format, and SHACL shapes enabling the validation 
+  of data against AIM semantics. AIM specification includes guidelines on how to find and identify relevant terms, how to create AIM-based JSON-LD content, 
+  as well as instructions to validate the generated content.
+  
+  AIM was originally developed as part of H2020 DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other 
+  domains (reusing the cross-domain layer).
+
+# Customize the following prefix (will be prepended to the path of the building blocks):
+identifier-prefix: ogc.model.agriculture.
+
+# List of imports ("default" is an alias for the main OGC Building Blocks Register)
+imports:
+  - default
+  - https://ogcincubator.github.io/cross-domain-model/build/register.json
+  - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+
+
+# SPARQL configuration (optional)
+#   Authentication can be set through the sparql_username and sparql_password GitHub Workflow inputs
+#   (see .github/workflow/process-bblocks.yml)
+#
+# sparql:
+#   push: https://example.com/gsp           # SPARQL Graph Store Protocol endpoint for uploading data
+#   graph: https://my.bblocks.example.com/  # SPARQL Graph where data will be uploaded
+#                                           #  if left empty, the base URL for the publication will be used
+#   query: https://example.com/sparql       # SPARQL query endpoint where data will be available

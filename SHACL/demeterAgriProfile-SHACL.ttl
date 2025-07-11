@@ -767,7 +767,7 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriProduct.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#e99d601b76a7db1b1132902175fa4f7e>
         a                 sh:NodeShape ;
@@ -916,7 +916,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriCrop.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462>
         a            sh:PropertyShape ;
@@ -1288,7 +1288,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/cross-domain.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#8079aaa6db7c8ed22063613d9bc4c289>
         a                 sh:PropertyShape ;
@@ -1879,7 +1879,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriIntervention.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#cd9445c64e106b75337259da0347cea3>
         a                 sh:NodeShape ;
@@ -2028,7 +2028,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriSystem.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#4bacfd9a756cf25bde1c319b1621e85e>
         a                 sh:PropertyShape ;
@@ -2129,7 +2129,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriAlert.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#472735f2fcdb8c5e8c4f2f6c5b768492>
         a                 sh:NodeShape ;
@@ -2423,7 +2423,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriProperty.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#e7d09ea75472fdab925bd7954ab0a2f4>
         a                 sh:NodeShape ;
@@ -2697,7 +2697,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriPest.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#e92dc0050e023e468e3715d138b27130>
         a                 sh:NodeShape ;
@@ -2820,7 +2820,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriCommon.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#66b37d07fb9f2d732571774dcaeef354>
         a               sh:NodeShape ;
@@ -3078,7 +3078,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriFeature.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#485acf240e619fb30b039e7dfbb9050e>
         a                 sh:NodeShape ;
@@ -5151,7 +5151,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/farmAnimal.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#ea758cf93a4a6fcb568c859d464061d1>
         a                 sh:PropertyShape ;

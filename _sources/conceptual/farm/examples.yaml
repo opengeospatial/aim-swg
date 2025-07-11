@@ -1,0 +1,10 @@
+- title: Simple Farm Instance
+  content: |
+    Example from AIM  
+
+  snippets:
+    - language: ttl
+      ref: ../../../examples/simple-farm-instance-AIM_v3.ttl
+
+
+

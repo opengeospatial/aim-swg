@@ -1,0 +1,26 @@
+path	@id
+/id	
+/dateCreated	
+/dateModified	
+/source	
+/name	
+/alternateName	
+/description	
+/dataProvider	
+/owner	
+/seeAlso	
+/relatedSource	
+/relatedSource/application	
+/relatedSource/applicationEntityId	
+/type	@type
+/agroVocConcept	https://smartdatamodels.org/dataModel.Agrifood/agroVocConcept
+/hasAgriSoil	https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil
+/hasAgriFertiliser	https://smartdatamodels.org/dataModel.Agrifood/hasAgriFertiliser
+/hasAgriPest	https://smartdatamodels.org/dataModel.Agrifood/hasAgriPest
+/harvestingInterval	https://smartdatamodels.org/dataModel.Agrifood/harvestingInterval
+/harvestingInterval/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
+/harvestingInterval/description	http://purl.org/dc/terms/description
+/plantingFrom	https://smartdatamodels.org/dataModel.Agrifood/plantingFrom
+/plantingFrom/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
+/plantingFrom/description	http://purl.org/dc/terms/description
+/wateringFrequency	
