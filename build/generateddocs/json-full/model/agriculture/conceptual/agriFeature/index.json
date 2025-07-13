@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.model.agriculture.conceptual.agriFeature",
+  "name": "Agri Feature Conceptual",
+  "abstract": "References the set of spatial features defined or adopted from other standards by the Agriculture Information Model",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2024-07-16",
+  "dependsOn": [
+    "ogc.model.agriculture.conceptual.farm"
+  ],
+  "sources": [],
+  "scope": "dev",
+  "tags": [
+    "AIM",
+    "conceptual"
+  ],
+  "shaclRules": {
+    "ogc.model.agriculture.conceptual.farm": [
+      "https://ogcincubator.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+    ]
+  },
+  "ontology": "https://w3id.org/demeter/agri/agriFeature",
+  "remoteCacheDir": "https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/conceptual/agriFeature/remote_cache/",
+  "sourceFiles": "https://ogcincubator.github.io/aim-swg/_sources/conceptual/agriFeature/",
+  "validationPassed": true,
+  "description": "## Agriculture Information Model Closure\n\nDefines dependencies for the complete Agriculture Information Model based on reusable modular components.\n\n\n\n\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/ogcincubator/aim-swg",
+  "gitPath": "_sources/conceptual/agriFeature"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Farm - GeoJSON",
+  "abstract": "GeoJSON binding for Farm class",
+  "status": "under-development",
+  "dateTimeAddition": "2023-09-18T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-incubator",
+  "version": "0.1",
+  "dateOfLastChange": "2023-09-18",
+  "dependsOn": [
+    "ogc.model.agriculture.conceptual.farm"
+  ],
+  "ldContext": "../../../jsonld/agriFeature-context.jsonld",
+  "sources": [
+  ],
+  "scope": "dev",
+  "tags": [
+    "Closure"
+  ]
+}

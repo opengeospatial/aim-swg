@@ -1,0 +1,20 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'Foodie Farm Plot'
+$defs:
+  MyFeature:
+    allOf:
+      - $ref: bblocks://ogc.geo.json-fg.feature-lenient
+      - type: object
+        properties:
+          properties:
+            properties:
+              "crop":
+                $ref: bblocks://ogc.model.agriculture.external.smart-agrifood.crop
+              "description":
+                type: string
+              "area":
+                type: number
+            required:
+              - area
+anyOf:
+  - $ref: "#/$defs/MyFeature"

@@ -1,0 +1,10 @@
+- title: Simple Farm Instance GeoSPARQL schema
+  content: |
+    Example from AIM  using a GeoSPARQL JSON-LD schema. 
+
+  snippets:
+    - language: jsonld
+      ref: ../../../examples/simple-farm-instance-AIM_v3.jsonld
+
+
+

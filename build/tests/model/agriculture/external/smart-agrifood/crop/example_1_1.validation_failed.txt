@@ -1,0 +1,24 @@
+Validation report for ogc.model.agriculture.external.smart-agrifood.crop - SMART AgriCrop
+Generated 2024-07-16T07:36:25.693856+00:00
+=== Files ===
+Using example_1_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: {'type': 'DateTime', 'value': '2017-01-01T01:20:00Z'} is not of type 'string'
+
+Failed validating 'type' in schema['allOf'][0]['properties']['dateCreated']:
+    {'description': 'Property. Entity creation timestamp. This will '
+                    'usually be allocated by the storage platform',
+     'format': 'date-time',
+     'type': 'string'}
+
+On instance['dateCreated']:
+    {'type': 'DateTime', 'value': '2017-01-01T01:20:00Z'}
+=== End JSON Schema ===
+

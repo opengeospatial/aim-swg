@@ -91,8 +91,8 @@
 
 <https://astrea.linkeddata.es/shapes#242c53465f77ee16942577018a5d99b3>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:livestockType .
 
@@ -238,7 +238,7 @@
         <https://w3id.org/def/astrea#source>
                 "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/farmAnimal.ttl" ;
         <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:int .
+                "200"^^xsd:integer .
 
 <https://astrea.linkeddata.es/shapes#648de9d6c441730aa0cd0828108e1f39>
         a            sh:PropertyShape ;
@@ -293,8 +293,8 @@
 
 <https://astrea.linkeddata.es/shapes#95c322184613a1662d48949c2a46829e>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:minCount  "1"^^xsd:int ;
+        sh:maxCount  "1"^^xsd:integer ;
+        sh:minCount  "1"^^xsd:integer ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:livestockNumber .
 
