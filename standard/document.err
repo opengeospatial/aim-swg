@@ -1,99 +1,70 @@
 ./document.err errors
 
 
-== AsciiDoc Input
-
-(Section: Bibliography): no anchor on reference, markup may be malformed: see
-https://www.metanorma.com/author/topics/document-format/bibliography/ ,
-https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
-	#<Asciidoctor::List@481160 {context: :ulist, style: nil, items: 1}>
-
-
-== Crossreferences
-
-(XML Line 000148): ISO19101-1 does not have a corresponding anchor ID in the bibliography!
-	<origin bibitemid="ISO19101-1" type="inline" citeas=""/>
-
-
-== Anchors
-
-(XML Line 000138): Crossreference target OGC06-121r9 is undefined
-	<xref target="OGC06-121r9"/>
-(XML Line 000196): normalised identifier in <requirement id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" model="ogc" obligation="requirement" type="class"/> from http://www.opengis.net/spec/ABCD/m.n/req/req-class-a
-	<requirement id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" model="ogc" obligation="requirement" type="class"><description><p id="_8191d4a6-b384-418f-b3dc-700b7956822b">Requirements Class</p><ul id="_174a9cac-f534-495b-b7e1-24952dd4246c"><li><p id="_1cfb7a2b-9e8e-4668-8541-20efd2d4d26f"><link target="http://www.example.org/req/blah"/></p>
-	</li>
-	<li><p id="_e563a282-97da-43aa-99fd-46be7fc1e34d">urn:iso:ts:iso:19139:clause:6</p>
-	</li>
-	</ul></description>
-(XML Line 000215): normalised identifier in <requirement id="_req_req-class-a_req-name-1" model="ogc" obligation="requirement" type="general"/> from /req/req-class-a/req-name-1
-	<requirement id="_req_req-class-a_req-name-1" model="ogc" obligation="requirement" type="general"> <description><p id="_df2bd0bf-6b19-4be1-817d-9d3e39794b91">Requirement ‘shall’ statement</p></description>
-	</requirement>
-(XML Line 000307): Crossreference target ats_core_api-definition-success is undefined
-	<xref target="ats_core_api-definition-success">/conf/core/api-definition-success</xref>
-(XML Line 000327): Crossreference target rfc2818 is undefined
-	<xref target="rfc2818">HTTP over TLS</xref>
-
-
 == Style
 
 (): Prefatory material must be followed by (clause) Scope
 (): Scope must be followed by Conformance
 (): Normative References must be followed by Terms and Definitions
-(): Document must contain at least one clause
 
 
 == Metanorma XML Style Warning
 
-(XML Line 000082): Table should have title
-	<table id="_e0aa709b-a629-e53e-b723-78f0423ce692" unnumbered="true"><tbody><tr><td valign="middle" align="left"><strong>Name</strong></td>
-	<td valign="middle" align="left"><strong>Affiliation</strong></td>
-	</tr><tr><td valign="middle" align="left">name of the person</td>
+(XML Line 000078): Table should have title
+	<table id="_665c76cd-5e66-d5bd-04f9-bddf26d84b28" unnumbered="true"><thead><tr><th valign="middle" align="left"><strong>Name</strong></th>
+	<th valign="middle" align="left"><strong>Affiliation</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">name of the person</td>
 	<td valign="middle" align="left">Organisation X</td>
-	</tr></tbody>
-(XML Line 000158): Hanging paragraph in clause
+(XML Line 000168): Hanging paragraph in clause
 	<clause id="_conventions" obligation="normative">
 	<title>Conventions</title>
-	<p id="_274b64c8-4e9c-6843-31e4-4676daa587c2">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+	<p id="_565ce513-44af-f1d5-7865-5dcede45c8c0">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
 	
 	<clause id="_identifiers" obligation="normative">
-(XML Line 000172): Hanging paragraph in clause
+(XML Line 000182): Hanging paragraph in clause
 	<clause id="_clauses_not_containing_normative_material" obligation="informative">
 	<title>Clauses not containing normative material</title>
-	<p id="_8aafb172-9c8e-981a-4b45-fd106e1c6935">Paragraph</p>
+	<p id="_e346d47b-e37b-bad0-b7a8-85b3051c2c9a">Paragraph</p>
 	
 	<clause id="_clauses_not_containing_normative_material_sub_clause_1" obligation="informative">
-(XML Line 000186): Hanging paragraph in clause
+(XML Line 000196): Hanging paragraph in clause
 	<clause id="_clause_containing_normative_material" obligation="normative">
 	<title>Clause containing normative material</title>
-	<p id="_b3d1b178-be93-bb11-38b4-3490d41fae13">Paragraph</p>
+	<p id="_8aafb172-9c8e-981a-4b45-fd106e1c6935">Paragraph</p>
 	
 	<clause id="_requirement_class_a_or_requirement_a_example" obligation="normative">
-(XML Line 000190): Hanging paragraph in clause
+(XML Line 000200): Hanging paragraph in clause
 	<clause id="_requirement_class_a_or_requirement_a_example" obligation="normative">
 	<title>Requirement Class A or Requirement A Example</title>
-	<p id="_d283eaca-ce12-7e8e-9d0f-d2498dbe0c22">Paragraph – intro text for the requirement class.</p>
+	<p id="_10db5851-6146-4b62-a9a5-1c18ac8da5bb">Paragraph – intro text for the requirement class.</p>
 	
-	<p id="_5806646c-d336-44c0-aa40-673c4b49de23">Use the following table for Requirements Classes.</p>
-(XML Line 000220): Table should have title
-	<table id="_19a4d8d9-0d58-4350-22a0-45c7073d3f31" width="90%"><thead><tr><th valign="middle" align="left">Names</th>
+	<p id="_b11e2615-ef86-94de-8814-6150b81aac03">Use the following table for Requirements Classes.</p>
+(XML Line 000206): Table should have title
+	<table id="rc_core" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong></td>
+	</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/AIM/1.0/req/core"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Token</td>
+	</tr><tr><td valign="middle" align="left">Dependency</td>
+(XML Line 000221): Table should have title
+	<table id="_bee4d7f9-491e-dae8-45d6-491501faab83" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 1</strong></td>
+	<td valign="middle" align="left"><p id="_a5edcc63-2e85-d505-6acc-07b532fa1f86">/req/core/req-name-1<br/></p>
+	
+	<p id="_651c7d45-0b73-4c95-d4da-eed750cda0c2">data payload shall use the cross-domain model for the relevant entities <tt>/</tt>.</p>
+	</td>
+(XML Line 000231): Table should have title
+	<table id="_34fafc51-bd6f-5adc-c001-8ad11f57d13b" width="90%"><thead><tr><th valign="middle" align="left">Names</th>
 	<th valign="middle" align="left">Definition</th>
 	<th valign="middle" align="left">Data types and values</th>
 	<th valign="middle" align="left">Multiplicity and use</th>
 	</tr></thead>
-(XML Line 000271): Hanging paragraph in clause
+(XML Line 000259): Hanging paragraph in clause
 	<annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
 	<title>Conformance Class Abstract Test Suite (Normative)</title>
 	<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
 	</note>
 	
-(XML Line 000276): Hanging paragraph in clause
-	<clause id="_conformance_class_a" obligation="informative">
-	<title>Conformance Class A</title>
-	<example id="ats_example1"><dl id="_15f5af59-2acb-8c62-5214-bd022c8135d7" metadata="true"><dt>label</dt>
-	<dd><p id="_2911e33b-d582-a069-a4d1-a0018ea97641"><link target="http://www.opengis.net/spec/name-of-standard/1.0/conf/example1"/></p>
-	</dd>
-(XML Line 000342): Table should have title
+(XML Line 000277): Table should have title
 	<table id="_5afe311c-d3e8-fb9a-9455-6031fbbc3118" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
 	<th valign="middle" align="left">Release</th>
 	<th valign="middle" align="left">Editor</th>
@@ -101,65 +72,7 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 	<th valign="middle" align="left">Description</th>
 
 
-== Requirements
-
-(XML Line 000196): Requirement class http___www.opengis.net_spec_ABCD_m.n_req_req-class-a has no corresponding Conformance class
-	<requirement id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" model="ogc" obligation="requirement" type="class"><description><p id="_7fdd3b84-3770-47e4-cb36-48e428ebcca5">Requirements Class</p><ul id="_89b29cca-a514-2993-09d8-68c7281be633"><li><p id="_631d2c09-c2d8-90d0-7a02-3118a272ebd2"><link target="http://www.example.org/req/blah"/></p>
-	</li>
-	<li><p id="_44f09c14-44cf-e03b-3255-6803a65149bf">urn:iso:ts:iso:19139:clause:6</p>
-	</li>
-	</ul></description>
-(XML Line 000215): Requirement _req_req-class-a_req-name-1 has no corresponding Conformance test
-	<requirement id="_req_req-class-a_req-name-1" model="ogc" obligation="requirement" type="general"> <description><p id="_4ecf85bd-eeae-9240-8a2f-9c38bf918b56">Requirement ‘shall’ statement</p></description>
-	</requirement>
-(XML Line 000247): Requirement req_core_process-execute-input-inline-object has no corresponding Conformance test
-	<requirement id="req_core_process-execute-input-inline-object" model="ogc"> <classification><tag>label</tag><value>/req/req-class-a/req-name-2</value></classification>
-	
-	<description><ol id="_742e884d-8fdf-f5ae-1195-077428da3e9a" type="arabic"><li><p id="_9d8b6089-eac4-38db-0d60-453507a28ee5">The process input value is specified in-line in an execute request.</p>
-	</li>
-	<li><p id="_9ffb990b-2631-f505-99fc-07de489704f7">The process input is defined as an object according to its schema.</p>
-(XML Line 000292): Conformance test ats_core_api-definition-op has no corresponding Requirement
-	<requirement id="ats_core_api-definition-op" model="ogc" type="abstracttest"> <subject>/req/req-class-a/req-name-1</subject><classification><tag>label</tag><value>/conf/core/api-definition-op</value></classification><component class="test-purpose"><p id="_4612db14-e24a-4fae-6b0c-73e70b05065f">Validate that the API Definition document can be retrieved from the expected location.</p>
-	</component>
-	
-	<description><example id="_0f32e002-e2f7-a1b1-409d-0d3b7d6b8419"><component exclude="false" class="step"><p id="_8b2652ff-d2d0-eedf-9d64-28d95b171ed9">Construct a path for the API Definition document that ends with <tt>/api</tt>.</p>
-	</component>
-(XML Line 000292): Conformance test ats_core_api-definition-op has no corresponding Conformance class
-	<requirement id="ats_core_api-definition-op" model="ogc" type="abstracttest"> <subject>/req/req-class-a/req-name-1</subject><classification><tag>label</tag><value>/conf/core/api-definition-op</value></classification><component class="test-purpose"><p id="_4612db14-e24a-4fae-6b0c-73e70b05065f">Validate that the API Definition document can be retrieved from the expected location.</p>
-	</component>
-	
-	<description><example id="_0f32e002-e2f7-a1b1-409d-0d3b7d6b8419"><component exclude="false" class="step"><p id="_8b2652ff-d2d0-eedf-9d64-28d95b171ed9">Construct a path for the API Definition document that ends with <tt>/api</tt>.</p>
-	</component>
-(XML Line 000314): Conformance test ats_core_http has no corresponding Requirement
-	<requirement id="ats_core_http" model="ogc" type="abstracttest"> <subject>/req/req-class-a/req-name-2</subject><classification><tag>label</tag><value>/conf/core/http</value></classification><component class="test-purpose"><p id="_67324222-93ed-ba52-057c-70a4c3e83e8f">Validate that the resource paths advertised through the API conform with HTTP 1.1 and, where appropriate, TLS.</p>
-	</component>
-	
-	<description><example id="_72797553-6b9f-fd31-5931-f6be13f1031e"><component exclude="false" class="step"><p id="_a5b8c406-1483-124d-7b04-62a18c47fd87">All compliance tests SHALL be configured to use the HTTP 1.1 protocol exclusively.</p>
-	</component>
-(XML Line 000314): Conformance test ats_core_http has no corresponding Conformance class
-	<requirement id="ats_core_http" model="ogc" type="abstracttest"> <subject>/req/req-class-a/req-name-2</subject><classification><tag>label</tag><value>/conf/core/http</value></classification><component class="test-purpose"><p id="_67324222-93ed-ba52-057c-70a4c3e83e8f">Validate that the resource paths advertised through the API conform with HTTP 1.1 and, where appropriate, TLS.</p>
-	</component>
-	
-	<description><example id="_72797553-6b9f-fd31-5931-f6be13f1031e"><component exclude="false" class="step"><p id="_a5b8c406-1483-124d-7b04-62a18c47fd87">All compliance tests SHALL be configured to use the HTTP 1.1 protocol exclusively.</p>
-	</component>
-
-
-== Document Attributes
-
-(): Draft is not a recognised status
-
-
 == Metanorma XML Syntax
 
-(XML Line 000121:91): element "clause" not allowed here; expected the element end-tag or element "submitters"
-(XML Line 000141:50): element "foreword" not allowed here; expected the element end-tag or element "clause", "definitions", "floating-title" or "terms"
-(XML Line 000157:32): element "submitters" not allowed here; expected the element end-tag or element "clause", "definitions", "floating-title" or "terms"
-(XML Line 000218:123): IDREF "ISO19101-1" without matching ID
-(XML Line 000343:91): attribute "metadata" not allowed here; expected attribute "columns", "keep-lines-together", "keep-with-next", "key", "multilingual-rendering" or "tag"
-(XML Line 000360:106): element "component" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
-(XML Line 000362:41): element "component" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
-(XML Line 000364:41): element "component" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
-(XML Line 000365:23): element "example" incomplete; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
-(XML Line 000374:106): element "component" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
-(XML Line 000376:41): element "component" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
-(XML Line 000377:23): element "example" incomplete; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 000130:91): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000154:32): element "submitters" not allowed here; expected the element end-tag or element "clause", "definitions", "floating-title" or "terms"

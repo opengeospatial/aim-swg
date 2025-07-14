@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.4.1" schema-version="v1.2.4">
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC (add title text)</title>
+<uri type="xml">./document.xml</uri><uri type="pdf">./document.pdf</uri><uri type="doc">./document.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</docidentifier><docidentifier type="ogc-internal">YY-999</docidentifier><docnumber>YY-999</docnumber><date type="published"><on>2029-03-30</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<name>Organization One</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Organization Two</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Editor One</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Editor Two</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><edition>1.0</edition><version><draft>1.0</draft></version><language>en</language><script>Latn</script><abstract><p>AIM is a multi-tier and modular domain model aligning, profiling, and/or extending well known agriculture related and generic ontologies, including existing ontologies published by the OGC. Recognizing that this is an innovative approach to publish such a domain model as a modular ontology the SWG will address both identification of best practices for this specialization approach and the development of a series of complementary models.</p>
+
+<p>AIM provides a common language for agriculture applications to harmonize and improve data and metadata exchange by defining the data elements, including concepts, properties, and relationships relevant to agriculture applications, as well as their associated semantics/meaning for information exchange.</p>
+
+<p>AIM is published as both human and implementation-ready machine-actionable resources. Machine-actionable resources include the canonical ontology representation of the AIM in the Web Ontology Language (OWL) as well as other related artifacts to support implementation.</p>
+
+<p>The SWG will develop implementations of the AIM model compatible with OGC APIs, including:</p>
+
+<ul><li><p>JSON schemas supported by OGC APIS;</p>
+</li>
+<li><p>JSON-LD contexts allowing identification and validation of AIM-compliant data; and</p>
+</li>
+<li><p>SHACL shapes enabling the validation of data against AIM semantics.</p>
+</li>
+</ul>
+
+<p>In addition, other forms may be derived or supplied to support reusability of the AIM model, according to requirements identified by the SWG:</p>
+
+<ul><li><p>UML representation of AIM conceptual model;</p>
+</li>
+<li><p>UML representation of one or more logical models for AIM implementation; and</p>
+</li>
+</ul>
+
+<p>Formal profiles for implementation of AIM using GeoJSON, FG-JSON, CoverageJSON, and other relevant generic schemas</p>
+
+<p>In line with OGC policies and FAIR principles, the AIM will be published using persistent and resolvable URI identifiers, consistent with OGC Naming Authority processes for publishing semantic resources.</p>
+</abstract><status><stage>Draft</stage></status><copyright><from>2025</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_copyright_notice" obligation="normative">
+<title>Copyright notice</title>
+<p id="_57ad8640-3b0c-b487-62ff-22dc5568f09a" align="center">Copyright © 2025 Open Geospatial Consortium<br/>
+To obtain additional rights of use, visit
+<link target="https://www.ogc.org/legal"/></p>
+</clause>
+
+<clause id="_note" obligation="normative">
+<title>Note</title>
+<p id="_11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_license_agreement" obligation="normative">
+<title>License Agreement</title>
+<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_notice_for_drafts" obligation="normative">
+<title>Notice for Drafts</title>
+<p id="_09caafd2-d047-3050-9095-b3f182faf86f">This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p id="_d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+<clause id="boilerplate-standard-feedback" obligation="normative">
+<p id="_bb5602d2-6eb1-e557-e221-499759fe237f">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://ogc.standardstracker.org/"/></p>
+</clause>
+</feedback-statement>
+</boilerplate><preface><abstract id="_abstract"><title>Abstract</title><p id="_8731538d-de1b-f840-95d1-ac91f1787b17">AIM is a multi-tier and modular domain model aligning, profiling, and/or extending well known agriculture related and generic ontologies, including existing ontologies published by the OGC. Recognizing that this is an innovative approach to publish such a domain model as a modular ontology the SWG will address both identification of best practices for this specialization approach and the development of a series of complementary models.</p>
+
+<p id="_04246f74-624e-97ca-5382-c286c725c286">AIM provides a common language for agriculture applications to harmonize and improve data and metadata exchange by defining the data elements, including concepts, properties, and relationships relevant to agriculture applications, as well as their associated semantics/meaning for information exchange.</p>
+
+<p id="_052797c2-89c3-1924-5db5-23aaba3ea68b">AIM is published as both human and implementation-ready machine-actionable resources. Machine-actionable resources include the canonical ontology representation of the AIM in the Web Ontology Language (OWL) as well as other related artifacts to support implementation.</p>
+
+<p id="_e462b45c-7d69-2862-87cf-4efc64f71aa4">The SWG will develop implementations of the AIM model compatible with OGC APIs, including:</p>
+
+<ul id="_39f17649-b9e9-ab48-ee76-5ff596e0bca0"><li><p id="_fe079b95-daef-ee7e-2dd0-fdd0110f6ddf">JSON schemas supported by OGC APIS;</p>
+</li>
+<li><p id="_7c91a46a-a0a1-6d8a-de3e-4bd54270a90f">JSON-LD contexts allowing identification and validation of AIM-compliant data; and</p>
+</li>
+<li><p id="_889bef14-fccc-5480-b9ac-832d332c14e0">SHACL shapes enabling the validation of data against AIM semantics.</p>
+</li>
+</ul>
+
+<p id="_f4263a49-c5cc-5c54-f48d-1faf98d3e6f9">In addition, other forms may be derived or supplied to support reusability of the AIM model, according to requirements identified by the SWG:</p>
+
+<ul id="_1cc8a127-dc64-1b0d-d72d-2103b18d5eca"><li><p id="_5ca608d1-f7af-8705-876f-7dbd78be95ff">UML representation of AIM conceptual model;</p>
+</li>
+<li><p id="_831de6af-8324-caf7-c2d1-d5d603e890ab">UML representation of one or more logical models for AIM implementation; and</p>
+</li>
+</ul>
+
+<p id="_437da6f1-cc66-e6f1-e618-391eeff604ef">Formal profiles for implementation of AIM using GeoJSON, FG-JSON, CoverageJSON, and other relevant generic schemas</p>
+
+<p id="_2f243508-05f6-ddb1-64b5-92d630f18f22">In line with OGC policies and FAIR principles, the AIM will be published using persistent and resolvable URI identifiers, consistent with OGC Naming Authority processes for publishing semantic resources.</p>
+</abstract><foreword id="_2fc7f941-8cac-e65f-3e51-3b9f18652ea3" obligation="informative">
+<title>Preface</title>
+<note id="_b54ab49b-0988-938f-ab2d-38e2ffda33ce"><p id="_103398dd-a446-704f-572a-9ee37f3e0510">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
+</note>
+
+<p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</foreword><clause id="_security_considerations" type="security" obligation="informative">
+<title>Security considerations</title>
+<p id="_4bfc9ff4-0427-16f3-2dce-96ac965b7eae">No security considerations have been made for this Standard.</p>
+</clause><submitters id="_submitters">
+<title>Submitters</title>
+<p id="_60b1643b-76a7-f154-a489-757cf275f9ed">All questions regarding this submission should be directed to the editor or the submitters:</p>
+
+<table id="_e0aa709b-a629-e53e-b723-78f0423ce692" unnumbered="true"><tbody><tr><td valign="middle" align="left"><strong>Name</strong></td>
+<td valign="middle" align="left"><strong>Affiliation</strong></td>
+</tr><tr><td valign="middle" align="left">name of the person</td>
+<td valign="middle" align="left">Organisation X</td>
+</tr></tbody>
+</table>
+</submitters></preface><sections>
+
+<clause id="_keywords" obligation="normative">
+<title>Keywords</title>
+<p id="_be40e6d0-be30-b410-6434-005ea9f8cc22">agriculture, data model</p>
+</clause>
+
+<foreword id="_preface" obligation="informative">
+<title>Preface</title>
+<note id="_2315b320-6226-0f49-6917-99e7226bf690"><p id="_85b6da3d-e11d-2ec3-75a2-190c0a1618ba">The Agriculture Information Model was initially developed in the Demeter project and used as the common reference ontology for the multi-actor System of Systems.</p>
+
+<p id="_877b3f62-7c26-0552-1354-513ae1c752f5">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_c3a34b43-efa7-069f-5dc4-dd1e63965d6a">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</note>
+</foreword>
+
+
+<clause id="_submitting_organizations" obligation="normative">
+<title>Submitting organizations</title>
+</clause>
+
+
+<submitters id="_contributors">
+<title>Submitters</title>
+<p id="_b4881f4b-367c-1d91-15b5-3281bad14999">Additional contributors to this Standard include the following:</p>
+
+<p id="_344ff083-3604-603d-feb6-70b6fb51723e">Individual name(s), Organization</p>
+</submitters>
+<clause id="_scope" type="scope" obligation="normative">
+<title>Scope</title>
+<note id="_7d55d3f2-782f-9332-cecc-60718589a686"><p id="_fc131a8c-ff6b-ba26-d2c3-ca43955f5f91">Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.</p>
+</note>
+</clause>
+
+<clause id="_conformance" type="conformance" obligation="normative">
+<title>Conformance</title>
+<p id="_5f8d1d04-d26b-9f72-7d22-8d53b17340c6">This standard defines XXXX.</p>
+
+<p id="_eea4a2da-7278-12c0-0e18-23fddac41bf8">Requirements for N standardization target types are considered:</p>
+
+<ul id="_8652f89a-2d19-ab3f-6391-fc2049fa36df"><li><p id="_010847ea-7c33-6589-6ed1-0c9505c14ce3">AAAA</p>
+</li>
+<li><p id="_f01a256d-3aaf-e0f7-2250-530dc6ae2706">BBBB</p>
+</li>
+</ul>
+
+<p id="_5f95f181-96e1-1624-120c-b2d119dfb57c">Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
+
+<p id="_7ae5fc52-d57f-0d51-e5ca-478044d86fed">In order to conform to this OGC® interface standard, a software implementation shall choose to implement:</p>
+
+<ul id="_17ea1041-e50e-945b-83ec-b993080277cc"><li><p id="_32384576-b5a3-2678-f750-cc4f3164e901">Any one of the conformance levels specified in Annex A (normative).</p>
+</li>
+<li><p id="_3f460de7-739a-0e1d-0388-1c70f3a6a84b">Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).</p>
+</li>
+</ul>
+
+<p id="_c5fca312-9e72-a00d-776d-c2dcfd65ac33">All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
+</clause>
+
+
+
+<terms id="_terms_and_definitions" obligation="normative">
+<title>Terms and definitions</title><p id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p id="_e0235fe8-8273-26b4-faeb-a580ad58929f">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+<p id="_1448dc16-8929-d666-6525-0249826c75e3">For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<p id="_a5c2011b-080b-de57-753c-94b804e5f324">This document uses the terms defined in Sub-clause 5.3 of <eref type="inline" bibitemid="OGC06-121r9" citeas="OGC06-121r9"/>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p>
+
+<p id="_ccf3e63b-6acc-0cd0-687c-fd7f951288d6">For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<term id="term-example-term"><preferred><expression>
+<name>example term</name>
+</expression>
+</preferred>
+<definition><verbal-definition><p id="_06db0da1-214c-7f57-bd34-fd4f77edb6ed">term used for exemplary purposes</p></verbal-definition></definition>
+
+
+
+
+
+
+ <termnote id="_dba7a326-d460-4fd2-c200-c18e257c490b"><p id="_bfac9a8e-f9a1-75c6-e31d-dca8dc62be58">An example note.</p>
+</termnote><termexample id="_6e5e388f-3384-3fe0-1387-5c648e5561e6"><p id="_2d45db5a-97c4-2358-7890-3aa696c4b809">Here’s an example of an example term.</p>
+</termexample><termsource status="identical" type="authoritative"><origin bibitemid="ISO19101-1" type="inline" citeas="ISO19101-1"/></termsource></term>
+</terms>
+
+<clause id="_conventions" obligation="normative">
+<title>Conventions</title>
+<p id="_274b64c8-4e9c-6843-31e4-4676daa587c2">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+
+<clause id="_identifiers" obligation="normative">
+<title>Identifiers</title>
+<p id="_cf2b0076-add2-667b-d9e8-9b824875ce33">The normative provisions in this standard are denoted by the URI</p>
+
+<p id="_aee7c4d5-e913-158d-8784-c262fade6444"><tt><link target="http://www.opengis.net/spec/{standard}/{m.n}"/></tt></p>
+
+<p id="_1562d98f-9e45-e2c0-ea06-967a757829ac">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+</clause>
+</clause>
+
+<clause id="_clauses_not_containing_normative_material" obligation="informative">
+<title>Clauses not containing normative material</title>
+<p id="_8aafb172-9c8e-981a-4b45-fd106e1c6935">Paragraph</p>
+
+<clause id="_clauses_not_containing_normative_material_sub_clause_1" obligation="informative">
+<title>Clauses not containing normative material sub-clause 1</title>
+<p id="_9d15e3ed-dfa0-d78e-4e48-7ef19aa8f129">Paragraph</p>
+</clause>
+
+<clause id="_clauses_not_containing_normative_material_sub_clause_2" obligation="informative">
+<title>Clauses not containing normative material sub-clause 2</title>
+</clause>
+</clause>
+
+<clause id="_clause_containing_normative_material" obligation="normative">
+<title>Clause containing normative material</title>
+<p id="_b3d1b178-be93-bb11-38b4-3490d41fae13">Paragraph</p>
+
+<clause id="_requirement_class_a_or_requirement_a_example" obligation="normative">
+<title>Requirement Class A or Requirement A Example</title>
+<p id="_d283eaca-ce12-7e8e-9d0f-d2498dbe0c22">Paragraph – intro text for the requirement class.</p>
+
+<p id="_5806646c-d336-44c0-aa40-673c4b49de23">Use the following table for Requirements Classes.</p>
+
+<table id="_003a4ab1-343e-057e-668a-e7fb4949bc50" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong> </td>
+</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/AIM/1.0/req/req-class-core"/> </td>
+</tr><tr><td valign="middle" align="left">Target type</td>
+<td valign="middle" align="left">Token</td>
+</tr><tr><td valign="middle" align="left">Dependency</td>
+<td valign="middle" align="left"><link target="http://www.example.org/req/blah"/></td>
+</tr><tr><td valign="middle" align="left">Dependency</td>
+<td valign="middle" align="left">urn:iso:ts:iso:19139:clause:6</td>
+</tr><tr><td valign="middle" align="left"><strong>Requirement 1</strong> </td>
+<td valign="middle" align="left"><link target="http://www.opengis.net/spec/AIM/1.0/req/req-class-core/classes"/><br/>
+All the data entities shall implement module  </td>
+</tr><tr><td valign="middle" align="left"><strong>Requirement 2</strong> </td>
+<td valign="middle" align="left"><link target="http://www.opengis.net/spec/AIM/1.0/req/req-class-core/req-name-2"/><br/>
+requirement description </td>
+</tr><tr><td valign="middle" align="left"><strong>Recommendation 1</strong> </td>
+<td valign="middle" align="left"><link target="http://www.opengis.net/spec/AIM/1.0/rec/req-class-core/rec-name-1"/><br/>
+requirement description</td>
+</tr><tr><td valign="middle" align="left"><strong>Permission 1</strong> </td>
+<td valign="middle" align="left"><link target="http://www.opengis.net/spec/AIM/1.0/rec/req-class-core/rec-name-1"/><br/>
+AIM implementation can implement the whole model defined as</td>
+</tr></tbody>
+</table>
+
+<requirement id="http___www.opengis.net_spec_AIM_1.0_req_req-class-core" model="ogc" obligation="requirement" type="class"><description><p id="_d878e704-3eaf-5eb1-db35-e34ba78a1104">Requirements Class Core</p><ul id="_89b29cca-a514-2993-09d8-68c7281be633"><li><p id="_631d2c09-c2d8-90d0-7a02-3118a272ebd2"><link target="http://www.example.org/req/blah"/></p>
+</li>
+<li><p id="_44f09c14-44cf-e03b-3255-6803a65149bf">urn:iso:ts:iso:19139:clause:6</p>
+</li>
+</ul></description>
+
+<requirement id="_e26a02ee-dbe7-e28c-a24d-ec50afafd66a" model="ogc" type="general"> <description><p id="_b9371e39-0893-4233-070c-3e35195816d4"># Requirement 1</p><p id="_750980dd-83f7-f26a-9ab5-9cd6f7c91058">All the data entities shall implement module from subclasses where relevant according to the schema on the following diagram:
+image::../AIM_general_diagram.png.webp[AIM_general_diagram,300,align=”center”]
+Agriculture objects shall implement classes from the Domain Specific group</p></description>
+</requirement>
+
+<requirement id="_de60a139-2099-96b4-dc3e-a1d901a30cb9" model="ogc" type="general"> <description><p id="_e900480f-334f-2dc1-3002-b93951cfe03e"># Requirement 2
+Data source shall provide references to the definition of the entities compliant with AIM model</p></description>
+</requirement>
+
+<recommendation id="_728d8ed7-9219-f7e0-ecdf-656567ffe4ef" model="ogc" type="general"> <description><p id="_56fa1b97-855a-12f7-8815-aa9f8c7e7640"># Recommendation 1
+data</p></description>
+</recommendation>
+</requirement>
+
+<clause id="_requirement_1" obligation="normative">
+<title>Requirement 1</title>
+<p id="_641b2dec-5992-8463-14c6-4e03b8e512fd">Paragraph — intro text for the requirement.</p>
+
+<p id="_0366160d-b730-5ce9-d3ff-a59d0d639b95">Use the following table for Requirements, number sequentially.</p>
+
+<requirement id="_req_req-class-a_req-name-1" model="ogc" obligation="requirement" type="general"> <description><p id="_4ecf85bd-eeae-9240-8a2f-9c38bf918b56">Requirement ‘shall’ statement</p></description>
+</requirement>
+
+<p id="_a948747e-1fe7-ccc0-2e68-543c3becb892">Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</p>
+
+<table id="_19a4d8d9-0d58-4350-22a0-45c7073d3f31" width="90%"><thead><tr><th valign="middle" align="left">Names</th>
+<th valign="middle" align="left">Definition</th>
+<th valign="middle" align="left">Data types and values</th>
+<th valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">name 1</td>
+<td valign="middle" align="left">definition of name 1</td>
+<td valign="middle" align="left">float</td>
+<td valign="middle" align="left">One or more (mandatory)</td>
+</tr><tr><td valign="middle" align="left">name 2</td>
+<td valign="middle" align="left">definition of name 2</td>
+<td valign="middle" align="left">character string type, not empty</td>
+<td valign="middle" align="left">Zero or one (optional)</td>
+</tr><tr><td valign="middle" align="left">name 3</td>
+<td valign="middle" align="left">definition of name 3</td>
+<td valign="middle" align="left">GML:: Point PropertyType</td>
+<td valign="middle" align="left">One (mandatory)</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_requirement_2" obligation="normative">
+<title>Requirement 2</title>
+<p id="_0b20f70e-0f11-d4f4-e745-9477abe24cfb">Paragraph — intro text for the requirement.</p>
+
+<p id="_95277d66-fee5-2bc8-3599-79c41a489853">Use the following table for Requirements, number sequentially.</p>
+
+<requirement id="req_core_process-execute-input-inline-object" model="ogc"> <classification><tag>label</tag><value>/req/req-class-a/req-name-2</value></classification>
+
+<description><ol id="_742e884d-8fdf-f5ae-1195-077428da3e9a" type="arabic"><li><p id="_9d8b6089-eac4-38db-0d60-453507a28ee5">The process input value is specified in-line in an execute request.</p>
+</li>
+<li><p id="_9ffb990b-2631-f505-99fc-07de489704f7">The process input is defined as an object according to its schema.</p>
+</li>
+</ol></description>
+
+<component exclude="false" class="part"><p id="_f8f03bd5-da48-ffa1-55da-16964e10ce35">The server SHALL support process input values encoded as qualified values.</p>
+</component>
+<component exclude="false" class="part"><p id="_0a01edd0-434f-aa1d-d01a-93a6e4fd2fd4">The value of the <tt>value</tt> key SHALL be an <em>object</em> instance.</p>
+</component></requirement>
+</clause>
+</clause>
+</clause>
+
+<clause id="_media_types_for_any_data_encodings" obligation="normative">
+<title>Media Types for any data encoding(s)</title>
+<p id="_81028219-faf3-dee0-23f1-319f48b7c370">A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <link target="http://www.iana.org/assignments/media-types/index.html"/> then this section may be used to define a new MIME type for registration with IANA.</p>
+</clause>
+
+
+
+
+
+
+
+
+</sections><annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
+<title>Conformance Class Abstract Test Suite (Normative)</title>
+<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
+</note>
+
+<clause id="_conformance_class_a" obligation="informative">
+<title>Conformance Class A</title>
+<example id="ats_example1"><dl id="_15f5af59-2acb-8c62-5214-bd022c8135d7" metadata="true"><dt>label</dt>
+<dd><p id="_2911e33b-d582-a069-a4d1-a0018ea97641"><link target="http://www.opengis.net/spec/name-of-standard/1.0/conf/example1"/></p>
+</dd>
+<dt>subject</dt>
+<dd><p id="_f7086c49-3cee-5475-32ca-aad3c9fad854">Requirements Class “example1”</p>
+</dd>
+<dt>classification</dt>
+<dd><p id="_c632f525-fe27-c165-6be0-0e2d4135510f">Target Type:Web API</p>
+</dd>
+</dl>
+</example>
+
+<clause id="_example_1" obligation="informative">
+<title>Example 1</title>
+<requirement id="ats_core_api-definition-op" model="ogc" type="abstracttest"> <subject>/req/req-class-a/req-name-1</subject><classification><tag>label</tag><value>/conf/core/api-definition-op</value></classification><component class="test-purpose"><p id="_4612db14-e24a-4fae-6b0c-73e70b05065f">Validate that the API Definition document can be retrieved from the expected location.</p>
+</component>
+
+<description><example id="_0f32e002-e2f7-a1b1-409d-0d3b7d6b8419"><component exclude="false" class="step"><p id="_8b2652ff-d2d0-eedf-9d64-28d95b171ed9">Construct a path for the API Definition document that ends with <tt>/api</tt>.</p>
+</component>
+<component exclude="false" class="step"><p id="_1b1f124a-3b11-242d-c31d-5051408bbff0">Issue a HTTP GET request on that path</p>
+</component>
+<component exclude="false" class="step"><p id="_3fbd99f5-71f8-489a-ff6f-f64676160b33">Validate the contents of the returned document using test <xref target="ats_core_api-definition-success">/conf/core/api-definition-success</xref>.</p>
+</component></example></description>
+</requirement>
+</clause>
+
+<clause id="_example_2" obligation="informative">
+<title>Example 2</title>
+<requirement id="ats_core_http" model="ogc" type="abstracttest"> <subject>/req/req-class-a/req-name-2</subject><classification><tag>label</tag><value>/conf/core/http</value></classification><component class="test-purpose"><p id="_67324222-93ed-ba52-057c-70a4c3e83e8f">Validate that the resource paths advertised through the API conform with HTTP 1.1 and, where appropriate, TLS.</p>
+</component>
+
+<description><example id="_72797553-6b9f-fd31-5931-f6be13f1031e"><component exclude="false" class="step"><p id="_a5b8c406-1483-124d-7b04-62a18c47fd87">All compliance tests SHALL be configured to use the HTTP 1.1 protocol exclusively.</p>
+</component>
+<component exclude="false" class="step"><p id="_b8d71921-7f36-d7e5-2b07-b12d1449951e">For APIs which support HTTPS, all compliance tests SHALL be configured to use <xref target="rfc2818">HTTP over TLS</xref> (RFC 2818) with their HTTP 1.1 protocol.</p>
+</component></example></description>
+</requirement>
+</clause>
+</clause>
+</annex><annex id="_title" obligation="informative">
+<title>Title</title>
+<note id="_9c04cf83-97ee-5129-1540-d560e28d0909"><p id="_782ab42d-4816-bdd6-9432-7b67e87b5b37">Place other Annex material in sequential annexes beginning with “B” and leave final two annexes for the Revision History and Bibliography</p>
+</note>
+</annex><annex id="_revision_history" obligation="informative">
+<title>Revision History</title>
+<table id="_5afe311c-d3e8-fb9a-9455-6031fbbc3118" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+<th valign="middle" align="left">Release</th>
+<th valign="middle" align="left">Editor</th>
+<th valign="middle" align="left">Primary clauses modified</th>
+<th valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">2016-04-28</td>
+<td valign="middle" align="left">0.1</td>
+<td valign="middle" align="left">G. Editor</td>
+<td valign="middle" align="left">all</td>
+<td valign="middle" align="left">initial version</td>
+</tr></tbody>
+</table>
+</annex><bibliography><references id="_references" normative="true" obligation="informative">
+<title>Normative references</title><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+
+
+ <bibitem id="ISO19101-1" type="standard" schema-version="v1.2.3">  <fetched>2023-09-14</fetched>  
+<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
+  
+<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 1: Fundamentals</title>
+  <uri type="src">https://www.iso.org/standard/59164.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>  <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93:ed-1</docidentifier>  <docnumber>19101</docnumber>  <date type="published">    <on>2014-11</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place. Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</abstract>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2014</from>    <owner>      <organization>        
+<name>ISO</name>
+      </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19101:2002</formattedref>      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>    </bibitem>
+  </relation>  <place>Geneva</place></bibitem>
+</references><references id="Bibliography" normative="false" obligation="informative">
+<title>Bibliography</title><bibitem id="DCAT">
+  <formattedref format="application/x-isodoc+xml">W3C: Data Catalog Vocabulary, W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/></formattedref>
+  <docidentifier>DCAT</docidentifier>
+  
+</bibitem><bibitem id="DWBP">
+  <formattedref format="application/x-isodoc+xml">W3C: Data on the Web Best Practices, W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/></formattedref>
+  <docidentifier>DWBP</docidentifier>
+  
+</bibitem><bibitem id="SDWBP">
+  <formattedref format="application/x-isodoc+xml">W3C/OGC: Spatial Data on the Web Best Practices, W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/></formattedref>
+  <docidentifier>SDWBP</docidentifier>
+  
+</bibitem><bibitem id="link-relations">
+  <formattedref format="application/x-isodoc+xml">IANA: Link Relation Types, <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/></formattedref>
+  <docidentifier>link-relations</docidentifier>
+  
+</bibitem><bibitem id="OGC06-121r9">
+  <formattedref format="application/x-isodoc+xml">OGC Web Services Common Standard, <link target="https://portal.ogc.org/files/38867"/></formattedref>
+  <docidentifier>OGC06-121r9</docidentifier>
+  <docnumber>06-121r9</docnumber>
+</bibitem><bibitem id="ISO19101-1">
+  <formattedref format="application/x-isodoc+xml">Geographic information — Reference model Part 1: Fundamentals, <link target="https://www.iso.org/standard/59164.html"/></formattedref>
+  <docidentifier>ISO19101-1</docidentifier>
+  <docnumber>19101-1</docnumber>
+</bibitem>
+
+
+
+
+
+
+</references></bibliography>
+</ogc-standard>

@@ -8,7 +8,7 @@ Paragraph – intro text for the requirement class.
 
 Use the following table for Requirements Classes.
 
-include::../requirements/requirements_class.adoc[]
+include::../requirements/requirements_class_core.adoc[]
 
 ==== Requirement 1
 
@@ -29,10 +29,3 @@ Dictionary tables for requirements can be added as necessary. Modify the followi
 |===
 
 
-==== Requirement 2
-
-Paragraph - intro text for the requirement.
-
-Use the following table for Requirements, number sequentially.
-
-include::../requirements/requirement002.adoc[]

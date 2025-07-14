@@ -20,7 +20,7 @@ Issue a HTTP GET request on that path
 
 [.component,class=step]
 --
-Validate the contents of the returned document using test <<ats_core_api-definition-success,/conf/core/api-definition-success>>.
+Validate the contents of the returned document using test PLACEHOLDER_FOR_TEST_REF.
 --
 =====
 ====

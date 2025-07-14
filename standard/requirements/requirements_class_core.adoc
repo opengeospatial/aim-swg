@@ -1,57 +1,8 @@
-
+[[rc_core]]
 [cols="1,4",width="90%"]
 |===
-2+|*Requirements Class* {set:cellbgcolor:#CACCCE}
-2+|http://www.opengis.net/spec/AIM/1.0/req/req-class-core {set:cellbgcolor:#FFFFFF}
+2+|*Requirements Class* 
+2+|http://www.opengis.net/spec/AIM/1.0/req/core
 |Target type |Token
-|Dependency |http://www.example.org/req/blah
-|Dependency |urn:iso:ts:iso:19139:clause:6
-|*Requirement 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/AIM/1.0/req/req-class-core/classes +
-All the data entities shall implement module  {set:cellbgcolor:#FFFFFF}
-|*Requirement 2* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/AIM/1.0/req/req-class-core/req-name-2 +
-requirement description {set:cellbgcolor:#FFFFFF}
-
-|*Recommendation 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/AIM/1.0/rec/req-class-core/rec-name-1 +
-requirement description
-{set:cellbgcolor:#FFFFFF}
-|*Permission 1* {set:cellbgcolor:#CACCCE} |http://www.opengis.net/spec/AIM/1.0/rec/req-class-core/rec-name-1 +
-AIM implementation can implement the whole model defined as
-{set:cellbgcolor:#FFFFFF}
+|Dependency |<<rfc2818,RFC 2818 (HTTP over TLS)>>
 |===
-
-
-
-[requirement,type="class",id="http://www.opengis.net/spec/AIM/1.0/req/req-class-core",obligation="requirement"]
-====
-
-Requirements Class Core
-
-[dependency]
---
-* http://www.example.org/req/blah
-* urn:iso:ts:iso:19139:clause:6
---
-
-[requirement,type="general",label="/req/req-class-core/classes"]
-======
-# Requirement 1
-
-All the data entities shall implement module from subclasses where relevant according to the schema on the following diagram:
-image::../AIM_general_diagram.png.webp[AIM_general_diagram,300,align="center"]
-Agriculture objects shall implement classes from the Domain Specific group
-
-======
-
-[requirement,type="general",label="/req/req-class-core/req-name-2"]
-======
-# Requirement 2
-Data source shall provide references to the definition of the entities compliant with AIM model
-======
-
-[recommendation,type="general",label="/rec/rec-class-core/req-name-2"]
-======
-# Recommendation 1
-data
-======
-
-====

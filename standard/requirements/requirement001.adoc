@@ -1,6 +1,6 @@
-[requirement,type="general",id="/req/req-class-a/req-name-1",label="/req/req-class-a/req-name-1",obligation="requirement"]
-====
+[width="90%",cols="2,6a"]
+|===
+|*Requirement {counter:req-id}* |/req/core/req-name-1 +
 
-Requirement 'shall' statement
-
-====
+data payload shall use the cross-domain model for the relevant entities `/`.
+|===
