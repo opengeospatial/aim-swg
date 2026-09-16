@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.external.smart-agrifood.crop - SMART AgriCrop
-Generated 2026-09-16T21:51:38.539037+00:00
+Generated 2026-09-16T22:21:06.494112+00:00
 === Files ===
 Using https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/examples/example-normalized.json from examples
 JSON-LD context is present - uplifting

@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.model.agriculture.external.smart-agrifood.crop - SMART AgriCrop",
       "bblockName": "SMART AgriCrop",
       "bblockId": "ogc.model.agriculture.external.smart-agrifood.crop",
-      "generated": "2026-09-16T21:51:38.556307+00:00",
+      "generated": "2026-09-16T22:21:06.511230+00:00",
       "result": false,
       "items": [
         {
@@ -140,7 +140,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.plot - Plot",
       "bblockName": "Plot",
       "bblockId": "ogc.model.agriculture.conceptual.plot",
-      "generated": "2026-09-16T21:51:38.987607+00:00",
+      "generated": "2026-09-16T22:21:07.204742+00:00",
       "result": false,
       "items": [
         {
@@ -184,40 +184,35 @@
                 {
                   "op": "shacl-report",
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ] .\n\n",
+                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ] .\n\n",
                   "isError": true,
                   "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (2):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  "
                 },
                 {
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
                   "focusNodes": {
-                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
@@ -225,18 +220,23 @@
                         "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
                       ]
                     },
-                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
+                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
                       "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n"
+                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
                 }
               ]
             }
@@ -254,7 +254,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.farm - Farm",
       "bblockName": "Farm",
       "bblockId": "ogc.model.agriculture.conceptual.farm",
-      "generated": "2026-09-16T21:51:39.582097+00:00",
+      "generated": "2026-09-16T22:21:07.854090+00:00",
       "result": false,
       "items": [
         {
@@ -298,61 +298,61 @@
                 {
                   "op": "shacl-report",
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ] .\n\n",
+                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ] .\n\n",
                   "isError": true,
-                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (4):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  "
+                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (4):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  "
                 },
                 {
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
                   "focusNodes": {
-                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
+                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
                       "nodes": []
                     },
+                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    },
+                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                      "nodes": []
+                    },
                     "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
                       "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n"
+                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
                 }
               ]
             }
@@ -370,7 +370,7 @@
       "title": "Validation report for ogc.model.agriculture.features.plot - Plot - GeoJSON",
       "bblockName": "Plot - GeoJSON",
       "bblockId": "ogc.model.agriculture.features.plot",
-      "generated": "2026-09-16T21:51:42.438103+00:00",
+      "generated": "2026-09-16T22:21:10.447440+00:00",
       "result": false,
       "items": [
         {
@@ -438,6 +438,63 @@
                 },
                 {
                   "op": "shacl-report",
+                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
+                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ] .\n\n",
+                  "isError": true,
+                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (3):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\n  "
+                },
+                {
+                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
+                  "focusNodes": {
+                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    },
+                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
+                },
+                {
+                  "op": "shacl-report",
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -446,83 +503,26 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
                     "geojson:FeatureShape": {
                       "nodes": [
                         "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
                       ]
                     },
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "geojson:GeometryShape": {
                       "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ] .\n\n",
-                  "isError": true,
-                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (3):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\n  "
-                },
-                {
-                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "focusNodes": {
-                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
-                      "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
                 }
               ]
             }
@@ -540,7 +540,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.agriFeature - Agri Feature Conceptual",
       "bblockName": "Agri Feature Conceptual",
       "bblockId": "ogc.model.agriculture.conceptual.agriFeature",
-      "generated": "2026-09-16T21:51:42.483925+00:00",
+      "generated": "2026-09-16T22:21:10.493751+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -554,7 +554,7 @@
       "title": "Validation report for ogc.model.agriculture.geosparql-ld.farm - Farm (SAREF) - GeoSPARQL",
       "bblockName": "Farm (SAREF) - GeoSPARQL",
       "bblockId": "ogc.model.agriculture.geosparql-ld.farm",
-      "generated": "2026-09-16T21:51:43.228872+00:00",
+      "generated": "2026-09-16T22:21:11.221136+00:00",
       "result": false,
       "items": [
         {
@@ -598,50 +598,23 @@
                 {
                   "op": "shacl-report",
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ] .\n\n",
+                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ] .\n\n",
                   "isError": true,
-                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (4):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  "
+                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (4):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  "
                 },
                 {
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
                   "focusNodes": {
-                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
+                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
@@ -649,12 +622,39 @@
                         "<urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
                       ]
                     },
+                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    },
+                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                      "nodes": []
+                    },
                     "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
                       "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n"
+                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
                 }
               ]
             }
@@ -672,7 +672,7 @@
       "title": "Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON",
       "bblockName": "Farm - GeoJSON",
       "bblockId": "ogc.model.agriculture.features.farm",
-      "generated": "2026-09-16T21:51:45.818276+00:00",
+      "generated": "2026-09-16T22:21:14.198636+00:00",
       "result": false,
       "items": [
         {
@@ -738,37 +738,6 @@
                 },
                 {
                   "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "<file:///github/workspace/f1>"
-                      ]
-                    },
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -777,37 +746,16 @@
                 {
                   "shaclFile": "SHACL/agriFeature-SHACL.ttl",
                   "focusNodes": {
-                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
                       "nodes": []
                     },
-                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
+                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
                       "nodes": []
                     },
                     "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
@@ -815,12 +763,64 @@
                         "<file:///github/workspace/f1>"
                       ]
                     },
+                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                      "nodes": []
+                    },
                     "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n"
+                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "<file:///github/workspace/f1>"
+                      ]
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
                 }
               ]
             }
@@ -889,6 +889,67 @@
                 },
                 {
                   "op": "shacl-report",
+                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
+                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ] .\n\n",
+                  "isError": true,
+                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (6):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\n  "
+                },
+                {
+                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
+                  "focusNodes": {
+                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
+                      "nodes": [
+                        "<file:///github/workspace/f1>"
+                      ]
+                    },
+                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    },
+                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
+                },
+                {
+                  "op": "shacl-report",
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -897,20 +958,20 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
+                    "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
                       "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
                         "<file:///github/workspace/f1>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
                       ]
                     },
-                    "geojson:LinkShape": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "geojson:GeometryShape": {
@@ -918,68 +979,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ] .\n\n",
-                  "isError": true,
-                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (6):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\n  "
-                },
-                {
-                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "focusNodes": {
-                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
-                      "nodes": [
-                        "<file:///github/workspace/f1>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
                 }
               ]
             }
@@ -1050,6 +1050,67 @@
                 },
                 {
                   "op": "shacl-report",
+                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
+                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ] .\n\n",
+                  "isError": true,
+                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (6):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\n  "
+                },
+                {
+                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
+                  "focusNodes": {
+                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
+                      "nodes": [
+                        "<file:///github/workspace/f1>"
+                      ]
+                    },
+                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    },
+                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
+                      "nodes": []
+                    },
+                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
+                      "nodes": [
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
+                },
+                {
+                  "op": "shacl-report",
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -1058,20 +1119,20 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
+                    "geojson:LinkShape": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
                       "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
                         "<file:///github/workspace/f1>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
                       ]
                     },
-                    "geojson:LinkShape": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "geojson:GeometryShape": {
@@ -1079,68 +1140,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "graph": "@prefix common: <http://portele.de/ont/inspire/baseInspire#> .\n@prefix foodie: <http://foodie-cloud.com/model/foodie#> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\" ;\n            sh:resultPath foodie:code ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\" ;\n            sh:resultPath geo:hasGeometry ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> ;\n            sh:resultMessage \"Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\" ;\n            sh:resultPath common:validFrom ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d> ] .\n\n",
-                  "isError": true,
-                  "message": "Validation result for SHACL/agriFeature-SHACL.ttl:\n  Validation Report\n  Conforms: False\n  Results (6):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: foodie:code\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->foodie:code\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: common:validFrom\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->common:validFrom\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>->geo:hasGeometry\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: <https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a>\n  \tFocus Node: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n  \tResult Path: geo:hasGeometry\n  \tMessage: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry\n  "
-                },
-                {
-                  "shaclFile": "SHACL/agriFeature-SHACL.ttl",
-                  "focusNodes": {
-                    "<https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>": {
-                      "nodes": [
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>": {
-                      "nodes": []
-                    },
-                    "<https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>": {
-                      "nodes": [
-                        "<file:///github/workspace/f1>"
-                      ]
-                    },
-                    "<https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for SHACL/agriFeature-SHACL.ttl:\n - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*\n - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>\n - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
                 }
               ]
             }
@@ -1158,7 +1158,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.all - Agriculture Information Model - RDF",
       "bblockName": "Agriculture Information Model - RDF",
       "bblockId": "ogc.model.agriculture.conceptual.all",
-      "generated": "2026-09-16T21:51:47.030929+00:00",
+      "generated": "2026-09-16T22:21:15.472375+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -1172,7 +1172,7 @@
       "title": "Validation report for ogc.model.agriculture.features.all - OGC Features - Agriculture ",
       "bblockName": "OGC Features - Agriculture ",
       "bblockId": "ogc.model.agriculture.features.all",
-      "generated": "2026-09-16T21:51:47.146475+00:00",
+      "generated": "2026-09-16T22:21:15.543547+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

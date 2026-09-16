@@ -11,9 +11,9 @@
   "version": "0.1",
   "dateOfLastChange": "2026-09-16",
   "dependsOn": [
-    "ogc.geo.json-fg.feature-lenient",
+    "ogc.model.agriculture.conceptual.plot",
     "ogc.model.agriculture.external.smart-agrifood.crop",
-    "ogc.model.agriculture.conceptual.plot"
+    "ogc.geo.json-fg.feature-lenient"
   ],
   "ldContext": "https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/context.jsonld",
   "sources": [],
@@ -22,11 +22,11 @@
     "Closure"
   ],
   "shaclShapes": {
-    "ogc.geo.features.feature": [
-      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-    ],
     "ogc.model.agriculture.conceptual.plot": [
       "https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ]
   },
   "schema": {

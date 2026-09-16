@@ -234,10 +234,10 @@ Example from https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/exa
     ns1:agroVocConcept [ a <file:///github/workspace/Text> ;
             ngsi-ld:hasValue "http://aims.fao.org/aos/agrovoc/c_7951" ] ;
     ns1:harvestingInterval [ a <file:///github/workspace/StructuredValue> ;
-            ngsi-ld:hasValue [ dcterms:description "Best Season" ;
-                    ns1:dateRange "-03-21/-04-01" ],
-                [ dcterms:description "Season OK" ;
-                    ns1:dateRange "-04-02/-04-15" ] ] ;
+            ngsi-ld:hasValue [ dcterms:description "Season OK" ;
+                    ns1:dateRange "-04-02/-04-15" ],
+                [ dcterms:description "Best Season" ;
+                    ns1:dateRange "-03-21/-04-01" ] ] ;
     ns1:hasAgriFertiliser [ a <file:///github/workspace/StructuredValue> ;
             ngsi-ld:hasValue "urn:ngsi-ld:AgriFertiliser:1b0d6cf7-320c-4a2b-b2f1-4575ea850c73",
                 "urn:ngsi-ld:AgriFertiliser:380973c8-4d3b-4723-a899-0c0c5cc63e7e" ] ;
@@ -248,10 +248,10 @@ Example from https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/exa
             ngsi-ld:hasValue "urn:ngsi-ld:AgriSoil:00411b56-bd1b-4551-96e0-a6e7fde9c840",
                 "urn:ngsi-ld:AgriSoil:e8a8389a-edf5-4345-8d2c-b98ac1ce8e2a" ] ;
     ns1:plantingFrom [ a <file:///github/workspace/StructuredValue> ;
-            ngsi-ld:hasValue [ dcterms:description "Season OK" ;
-                    ns1:dateRange "-10-11/-10-18" ],
-                [ dcterms:description "Best Season" ;
-                    ns1:dateRange "-09-28/-10-12" ] ] ;
+            ngsi-ld:hasValue [ dcterms:description "Best Season" ;
+                    ns1:dateRange "-09-28/-10-12" ],
+                [ dcterms:description "Season OK" ;
+                    ns1:dateRange "-10-11/-10-18" ] ] ;
     ns1:relatedSource [ a <file:///github/workspace/StructuredValue> ;
             ngsi-ld:hasValue [ ns1:application "urn:ngsi-ld:AgriApp:72d9fb43-53f8-4ec8-a33c-fa931360259a" ;
                     ns1:applicationEntityId "app:weat" ] ] ;

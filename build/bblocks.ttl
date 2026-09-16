@@ -23,10 +23,10 @@
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/all/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/all/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.all> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.all> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/all/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     skos:inScheme <https://opengeospatial.github.io/aim-swg/> ;
@@ -35,18 +35,8 @@
     dcat:keyword "Closure" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.qudt> ;
-            prof:hasArtifact <http://qudt.org/2.1/schema/shacl/qudt> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.sosa> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/sosa/rules.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
@@ -55,8 +45,18 @@
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.sosa> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/sosa/rules.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.qudt> ;
+            prof:hasArtifact <http://qudt.org/2.1/schema/shacl/qudt> ;
             prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.model.agriculture.conceptual.agriFeature>,
         <bblocks://ogc.model.cross-domain.datacube>,
@@ -75,12 +75,12 @@
     rdfs:label "OGC Features - Agriculture " ;
     dct:abstract "All modules of the OGC Features compatible JSON schema implementation of the Agriculture Information Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.features.all> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/all/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/all/index.md> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/all/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.features.all> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     skos:inScheme <https://opengeospatial.github.io/aim-swg/> ;
@@ -89,6 +89,11 @@
     dcat:keyword "Closure" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
             prof:hasRole role:validation ],
@@ -96,11 +101,6 @@
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
             prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.model.agriculture.features.farm>,
         <bblocks://ogc.model.agriculture.features.plot> ;
@@ -117,10 +117,10 @@
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.geosparql-ld.farm> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/geosparql-ld/farm/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/geosparql-ld/farm/index.json> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/geosparql-ld/farm/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/geosparql-ld/farm/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     skos:inScheme <https://opengeospatial.github.io/aim-swg/> ;
@@ -148,18 +148,18 @@
 
 <https://opengeospatial.github.io/aim-swg/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Neb2e7baf722c4e58a383ee849ef12d25 ;
+    prov:wasAttributedTo _:N925ec28f525e4cfeacbcc60da2642f70 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-09-16T21:51:47.366044"^^xsd:dateTime ;
-            prov:startedAtTime "2026-09-16T21:51:47.177545"^^xsd:dateTime ;
+            prov:endedAtTime "2026-09-16T22:21:15.690096"^^xsd:dateTime ;
+            prov:startedAtTime "2026-09-16T22:21:15.575399"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
                 [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:d26f72cf8029da524d83f76484c2e35a7994457b" ;
+                    dct:hasVersion "git:7e0cc56fcdaeea3b011001e89902e49580bc8ebe" ;
                     rdfs:seeAlso <https://opengeospatial.github.io/aim-swg/build/register.json> ] ;
-            prov:wasAssociatedWith _:Neb2e7baf722c4e58a383ee849ef12d25 ] .
+            prov:wasAssociatedWith _:N925ec28f525e4cfeacbcc60da2642f70 ] .
 
 <bblocks://ogc.model.agriculture.conceptual.agriFeature> a skos:Concept,
         dcat:Dataset,
@@ -168,12 +168,12 @@
     rdfs:label "Agri Feature Conceptual" ;
     dct:abstract "References the set of spatial features defined or adopted from other standards by the Agriculture Information Model"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/agriFeature/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.agriFeature> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/agriFeature/index.md> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/agriFeature/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/agriFeature/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     skos:inScheme <https://opengeospatial.github.io/aim-swg/> ;
@@ -186,15 +186,15 @@
             rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://w3id.org/demeter/agri/agriFeature> ;
+            prof:hasRole role:specification ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://w3id.org/demeter/agri/agriFeature> ;
-            prof:hasRole role:specification ] ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.model.agriculture.conceptual.farm> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -207,37 +207,22 @@
     rdfs:label "Farm - GeoJSON" ;
     dct:abstract "GeoJSON binding for Farm class"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/farm/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/farm/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.features.farm> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/farm/index.md> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/farm/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     skos:inScheme <https://opengeospatial.github.io/aim-swg/> ;
     skos:prefLabel "Farm - GeoJSON" ;
     skos:topConceptOf <https://opengeospatial.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
-            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/farm/schema.yaml> ;
@@ -245,7 +230,22 @@
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/farm/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.model.agriculture.conceptual.farm>,
         <bblocks://ogc.model.agriculture.features.plot> ;
@@ -273,14 +273,14 @@
     skos:prefLabel "SMART AgriCrop" ;
     skos:topConceptOf <https://opengeospatial.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.json> ;
@@ -297,10 +297,10 @@
     rdfs:label "Plot - GeoJSON" ;
     dct:abstract "GeoJSON binding for Plot class"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/plot/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.features.plot> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/features/plot/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/features/plot/index.json> ] ;
     dct:hasVersion "0.1" ;
@@ -309,28 +309,28 @@
     skos:prefLabel "Plot - GeoJSON" ;
     skos:topConceptOf <https://opengeospatial.github.io/aim-swg/> ;
     dcat:keyword "Closure" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.geo.json-fg.feature-lenient>,
         <bblocks://ogc.model.agriculture.conceptual.plot>,
         <bblocks://ogc.model.agriculture.external.smart-agrifood.crop> ;
@@ -346,12 +346,12 @@
     rdfs:label "Farm" ;
     dct:abstract "Conceptual model for Farm (independent of JSON or other schema encoding)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.farm> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/farm/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/farm/index.md> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/farm/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.farm> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     skos:inScheme <https://opengeospatial.github.io/aim-swg/> ;
@@ -362,20 +362,20 @@
         "ontology" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
+            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/jsonld/agriFeature-context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
             prof:hasArtifact <https://w3id.org/demeter/agri/agriFeature> ;
             prof:hasRole role:specification ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://opengeospatial.github.io/aim-swg/jsonld/agriFeature-context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.farm> ;
+            rdfs:seeAlso <bblocks://ogc.model.agriculture.conceptual.plot> ;
             prof:hasArtifact <https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl> ;
             prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.model.agriculture.conceptual.plot> ;
@@ -391,12 +391,12 @@
     rdfs:label "Plot" ;
     dct:abstract "Conceptual model for Plot/Parcel (independent of JSON or other schema encoding)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/plot/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/plot/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/bblock/ogc.model.agriculture.conceptual.plot> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/json-full/model/agriculture/conceptual/plot/index.json> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/aim-swg/build/generateddocs/markdown/model/agriculture/conceptual/plot/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-09-16"^^xsd:date ;
     skos:inScheme <https://opengeospatial.github.io/aim-swg/> ;
@@ -467,7 +467,7 @@ as well as instructions to validate the generated content.
 AIM was originally developed as part of H2020 DEMETER project, and is being reused and extended in many ohter projects related to agriculture, but also in other 
 domains (reusing the cross-domain layer).
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-09-16T21:51:31.531321"^^xsd:dateTime ;
+    dct:modified "2026-09-16T22:21:02.025115"^^xsd:dateTime ;
     owl:imports <https://ogcincubator.github.io/cross-domain-model/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json>,
         <https://opengeospatial.github.io/ogcapi-sosa/build/register.json> ;
@@ -481,22 +481,22 @@ domains (reusing the cross-domain layer).
         <bblocks://ogc.model.agriculture.features.plot>,
         <bblocks://ogc.model.agriculture.geosparql-ld.farm> ;
     skos:prefLabel "Building Blocks - Agriculture Information Model" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://opengeospatial.github.io/aim-swg/build/bblocks.jsonld> ],
-        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
             ns2:hasTarget <https://opengeospatial.github.io/aim-swg/build/bblocks.ttl> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://opengeospatial.github.io/aim-swg/build/register.json> ] ;
+            ns2:hasTarget <https://opengeospatial.github.io/aim-swg/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://opengeospatial.github.io/aim-swg/build/bblocks.jsonld> ] ;
     foaf:homepage <https://opengeospatial.github.io/aim-swg/> ;
     bblocks:hasValidationReport <https://opengeospatial.github.io/aim-swg/build/tests/report.html> .
 
-_:Neb2e7baf722c4e58a383ee849ef12d25 a prov:Agent,
+_:N925ec28f525e4cfeacbcc60da2642f70 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.34" ;

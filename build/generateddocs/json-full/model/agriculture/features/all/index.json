@@ -20,14 +20,14 @@
     "Closure"
   ],
   "shaclShapes": {
-    "ogc.geo.features.feature": [
-      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-    ],
     "ogc.model.agriculture.conceptual.farm": [
       "https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
     ],
     "ogc.model.agriculture.conceptual.plot": [
       "https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
+    ],
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ]
   },
   "sourceFiles": "https://opengeospatial.github.io/aim-swg/_sources/features/all/",
