@@ -17,7 +17,7 @@ $defs:
             containsPlot:
               type: array
               items:
-                $ref: https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml
+                $ref: https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml
               x-jsonld-id: http://foodie-cloud.com/model/foodie#containsPlot
               x-jsonld-type: '@id'
 anyOf:

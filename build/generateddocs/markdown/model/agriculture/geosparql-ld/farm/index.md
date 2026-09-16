@@ -97,29 +97,29 @@ Example from AIM  using a GeoSPARQL JSON-LD schema.
 #### ttl
 ```ttl
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://foodie-cloud.com/model/foodie#> .
-@prefix ns2: <https://smartdatamodels.org/> .
-@prefix ns3: <https://smartdatamodels.org/dataModel.Agrifood/> .
+@prefix ns1: <https://smartdatamodels.org/dataModel.Agrifood/> .
+@prefix ns2: <http://foodie-cloud.com/model/foodie#> .
+@prefix ns3: <https://smartdatamodels.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a> a <https://saref.etsi.org/saref4agri/Farm> ;
-    ns1:containsPlot <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,
+    ns2:containsPlot <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,
         <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> ;
-    ns1:description "A farm producing wheat"^^xsd:string ;
+    ns2:description "A farm producing wheat"^^xsd:string ;
     geo:hasGeometry <urn:ngsi-ld:AgriFarm:geo:72d9fb43-53f8-4ec8-a33c-fa931360259x> ;
-    ns2:name "Wheat farm" .
+    ns3:name "Wheat farm" .
 
-<urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4> a ns1:CropType ;
-    ns1:description "Spring wheat"^^xsd:string ;
-    ns2:alternateName "Triticum aestivum" ;
-    ns3:agroVocConcept <http://aims.fao.org/aos/agrovoc/c_7951> ;
-    ns2:name "Wheat" .
+<urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4> a ns2:CropType ;
+    ns2:description "Spring wheat"^^xsd:string ;
+    ns3:alternateName "Triticum aestivum" ;
+    ns1:agroVocConcept <http://aims.fao.org/aos/agrovoc/c_7951> ;
+    ns3:name "Wheat" .
 
-<urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5> a ns1:CropType ;
-    ns1:description "Spring barley"^^xsd:string ;
-    ns2:alternateName "Ordeum" ;
-    ns3:agroVocConcept <http://aims.fao.org/aos/agrovoc/c_7952> ;
-    ns2:name "Barley" .
+<urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5> a ns2:CropType ;
+    ns2:description "Spring barley"^^xsd:string ;
+    ns3:alternateName "Ordeum" ;
+    ns1:agroVocConcept <http://aims.fao.org/aos/agrovoc/c_7952> ;
+    ns3:name "Barley" .
 
 <urn:ngsi-ld:AgriFarm:geo:72d9fb43-53f8-4ec8-a33c-fa931360259x> a <http://www.opengis.net/ont/sf#Point> ;
     geo:asWKT "POINT(11.3 44.12)"^^geo:wktLiteral .
@@ -128,28 +128,28 @@ Example from AIM  using a GeoSPARQL JSON-LD schema.
     geo:asWKT "POLYGON (100 0, 101 0, 101 1, 100 1, 100 1)"^^geo:wktLiteral .
 
 <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4> a <https://saref.etsi.org/saref4agri/Crop> ;
-    ns1:cropSpecies <urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4> ;
-    ns3:cropStatus "seeded" ;
-    ns3:lastPlantedAt "2016-08-23T10:18:16+00:00"^^xsd:dateTime .
+    ns2:cropSpecies <urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4> ;
+    ns1:cropStatus "seeded" ;
+    ns1:lastPlantedAt "2016-08-23T10:18:16+00:00"^^xsd:dateTime .
 
 <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5> a <https://saref.etsi.org/saref4agri/Crop> ;
-    ns1:cropSpecies <urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5> ;
-    ns3:cropStatus "seeded" ;
-    ns3:lastPlantedAt "2016-08-23T10:18:16+00:00"^^xsd:dateTime .
+    ns2:cropSpecies <urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5> ;
+    ns1:cropStatus "seeded" ;
+    ns1:lastPlantedAt "2016-08-23T10:18:16+00:00"^^xsd:dateTime .
 
-<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> a ns1:Plot ;
-    ns1:crop <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4> ;
-    ns1:description "Spring wheat parcel"^^xsd:string ;
+<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a> a ns2:Plot ;
+    ns2:crop <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4> ;
+    ns2:description "Spring wheat parcel"^^xsd:string ;
     geo:hasGeometry <urn:ngsi-ld:plot:geo:72d9fb43-53f8-4ec8-a33c-fa931360259y> ;
-    ns3:area 2012120 ;
-    ns3:category "arable" .
+    ns1:area 2012120 ;
+    ns1:category "arable" .
 
-<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> a ns1:Plot ;
-    ns1:crop <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5> ;
-    ns1:description "Spring barley parcel"^^xsd:string ;
+<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b> a ns2:Plot ;
+    ns2:crop <urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5> ;
+    ns2:description "Spring barley parcel"^^xsd:string ;
     geo:hasGeometry <urn:ngsi-ld:AgriParcel:geo:72d9fb43-53f8-4ec8-a33c-fa931360259z> ;
-    ns3:area 200 ;
-    ns3:category "arable" .
+    ns1:area 200 ;
+    ns1:category "arable" .
 
 <urn:ngsi-ld:plot:geo:72d9fb43-53f8-4ec8-a33c-fa931360259y> a <http://www.opengis.net/ont/sf#Polygon> ;
     geo:asWKT "POLYGON (100 0, 101 0, 101 1, 100 1, 100 0)"^^geo:wktLiteral .
@@ -162,6 +162,6 @@ Example from AIM  using a GeoSPARQL JSON-LD schema.
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/aim-swg](https://github.com/ogcincubator/aim-swg)
+* URL: [https://github.com/opengeospatial/aim-swg](https://github.com/opengeospatial/aim-swg)
 * Path: `_sources/geosparql-ld/farm`
 

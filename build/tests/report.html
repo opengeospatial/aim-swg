@@ -46,14 +46,27 @@
                     border-width: var(--bs-accordion-border-width);
                 }
             }
+            .anchor {
+                color: black;
+                opacity: 0;
+                text-decoration: none;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+            .anchor-container:hover .anchor {
+                opacity: 60%;
+            }
+            .anchor-container:hover .anchor:hover {
+                opacity: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-07-16T07:36:30.322088+00:00</small>
+            <small class="datetime">Generated at 2026-09-16T21:51:47.173842+00:00</small>
                 <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 4 / 9 (44.44%)
+                    Number of passing building blocks: 3 / 9 (33.33%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -61,13 +74,14 @@
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.external.smart-agrifood.crop" id="bblock-ogc.model.agriculture.external.smart-agrifood.crop">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.external\.smart-agrifood\.crop">
                                     <div class="flex-fill">
                                         SMART AgriCrop
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.external.smart-agrifood.crop</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.external.smart-agrifood.crop">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -81,9 +95,9 @@
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.external.smart-agrifood.crop-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-1"
                                                             aria-expanded="false" aria-controls="uid-1"
@@ -93,6 +107,7 @@
                                                     </button>
                                                     <a href="https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/examples/example-normalized.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.external.smart-agrifood.crop-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -100,11 +115,18 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/examples/example-normalized.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: {&#x27;type&#x27;: &#x27;DateTime&#x27;, &#x27;value&#x27;: &#x27;2017-01-01T01:20:00Z&#x27;} is not of type &#x27;string&#x27;
 
 Failed validating &#x27;type&#x27; in schema[&#x27;allOf&#x27;][0][&#x27;properties&#x27;][&#x27;dateCreated&#x27;]:
@@ -119,9 +141,9 @@ On instance[&#x27;dateCreated&#x27;]:
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.external.smart-agrifood.crop-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-2"
                                                             aria-expanded="false" aria-controls="uid-2"
@@ -131,6 +153,7 @@ On instance[&#x27;dateCreated&#x27;]:
                                                     </button>
                                                     <a href="model/agriculture/external/smart-agrifood/crop/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.external.smart-agrifood.crop-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -138,16 +161,23 @@ On instance[&#x27;dateCreated&#x27;]:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_2_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/crop.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;id&#x27; is a required property
 
 Failed validating &#x27;required&#x27; in schema:
     {&#x27;$id&#x27;: &#x27;https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/schema.json&#x27;,
-     &#x27;$schema&#x27;: &#x27;http://json-schema.org/schema#&#x27;,
+     &#x27;$schema&#x27;: &#x27;https://json-schema.org/draft/2020-12/schema&#x27;,
      &#x27;$schemaVersion&#x27;: &#x27;0.0.7&#x27;,
      &#x27;allOf&#x27;: [{&#x27;$ref&#x27;: &#x27;https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons&#x27;},
                {&#x27;$ref&#x27;: &#x27;https://smart-data-models.github.io/dataModel.Agrifood/agrifood-schema.json#/definitions/AgriFood-Commons&#x27;},
@@ -421,7 +451,8 @@ Failed validating &#x27;required&#x27; in schema:
                                                               &#x27;monthly&#x27;,
                                                               &#x27;onDemand&#x27;,
                                                               &#x27;other&#x27;],
-                                                     &#x27;type&#x27;: &#x27;string&#x27;}}}],
+                                                     &#x27;type&#x27;: &#x27;string&#x27;,
+                                                     &#x27;x-jsonld-id&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/wateringFrequency&#x27;}}}],
      &#x27;description&#x27;: &#x27;This entity contains a harmonised description of a &#x27;
                     &#x27;generic crop. This entity is primarily associated &#x27;
                     &#x27;with the agricultural vertical and related IoT &#x27;
@@ -433,11 +464,13 @@ Failed validating &#x27;required&#x27; in schema:
      &#x27;x-jsonld-extra-terms&#x27;: {&#x27;AgriApp&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriApp&#x27;,
                               &#x27;AgriCrop&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriCrop&#x27;,
                               &#x27;AgriFarm&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriFarm&#x27;,
+                              &#x27;AgriFertilize&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriFertilize&#x27;,
                               &#x27;AgriGreenhouse&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriGreenhouse&#x27;,
                               &#x27;AgriParcel&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriParcel&#x27;,
                               &#x27;AgriParcelOperation&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriParcelOperation&#x27;,
                               &#x27;AgriParcelRecord&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriParcelRecord&#x27;,
                               &#x27;AgriPest&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriPest&#x27;,
+                              &#x27;AgriPhytosanitary&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriPhytosanitary&#x27;,
                               &#x27;AgriProductType&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriProductType&#x27;,
                               &#x27;AgriSoil&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/AgriSoil&#x27;,
                               &#x27;Animal&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/Animal&#x27;,
@@ -449,6 +482,7 @@ Failed validating &#x27;required&#x27; in schema:
                               &#x27;MeatProduct&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/MeatProduct&#x27;,
                               &#x27;Pen&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/Pen&#x27;,
                               &#x27;VeterinarianTreatment&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/VeterinarianTreatment&#x27;,
+                              &#x27;aacm&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/aacm&#x27;,
                               &#x27;additionalInfo&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/additionalInfo&#x27;,
                               &#x27;address&#x27;: &#x27;https://smartdatamodels.org/address&#x27;,
                               &#x27;addressCountry&#x27;: &#x27;https://smartdatamodels.org/addressCountry&#x27;,
@@ -469,23 +503,30 @@ Failed validating &#x27;required&#x27; in schema:
                               &#x27;availableLanguage&#x27;: &#x27;https://smartdatamodels.org/availableLanguage&#x27;,
                               &#x27;avgGrowth&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/avgGrowth&#x27;,
                               &#x27;avgWeight&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/avgWeight&#x27;,
+                              &#x27;batch&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/batch&#x27;,
                               &#x27;bbox&#x27;: {&#x27;x-jsonld-container&#x27;: &#x27;@list&#x27;,
-                                       &#x27;x-jsonld-id&#x27;: &#x27;geojson:bbox&#x27;},
+                                       &#x27;x-jsonld-id&#x27;: &#x27;https://purl.org/geojson/vocab#bbox&#x27;},
                               &#x27;belongsTo&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/belongsTo&#x27;,
+                              &#x27;bill&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/bill&#x27;,
                               &#x27;birthdate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/birthdate&#x27;,
                               &#x27;breed&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/breed&#x27;,
                               &#x27;buildingId&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/buildingId&#x27;,
                               &#x27;calvedBy&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/calvedBy&#x27;,
                               &#x27;carcass&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/carcass&#x27;,
                               &#x27;category&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/category&#x27;,
+                              &#x27;cdate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/cdate&#x27;,
+                              &#x27;check&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/check&#x27;,
+                              &#x27;ci&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/ci&#x27;,
                               &#x27;co2&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/co2&#x27;,
+                              &#x27;code&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/code&#x27;,
+                              &#x27;comp&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/comp&#x27;,
                               &#x27;companyId&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/companyId&#x27;,
                               &#x27;compartmentId&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/compartmentId&#x27;,
                               &#x27;contactOption&#x27;: &#x27;https://smartdatamodels.org/contactOption&#x27;,
                               &#x27;contactPoint&#x27;: &#x27;https://smartdatamodels.org/contactPoint&#x27;,
                               &#x27;contactType&#x27;: &#x27;https://smartdatamodels.org/contactType&#x27;,
                               &#x27;coordinates&#x27;: {&#x27;x-jsonld-container&#x27;: &#x27;@list&#x27;,
-                                              &#x27;x-jsonld-id&#x27;: &#x27;geojson:coordinates&#x27;},
+                                              &#x27;x-jsonld-id&#x27;: &#x27;https://purl.org/geojson/vocab#coordinates&#x27;},
                               &#x27;cropStatus&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/cropStatus&#x27;,
                               &#x27;dailyLight&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/dailyLight&#x27;,
                               &#x27;dataProvider&#x27;: &#x27;https://smartdatamodels.org/dataProvider&#x27;,
@@ -495,14 +536,22 @@ Failed validating &#x27;required&#x27; in schema:
                               &#x27;deadAnimalsSinceDateOfArrival&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/deadAnimalsSinceDateOfArrival&#x27;,
                               &#x27;deliveryNote&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/deliveryNote&#x27;,
                               &#x27;depth&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/depth&#x27;,
+                              &#x27;detail&#x27;: &#x27;https://uri.etsi.org/ngsi-ld/detail&#x27;,
                               &#x27;diagnosticTest&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/diagnosticTest&#x27;,
                               &#x27;disease&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/disease&#x27;,
+                              &#x27;distributed&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/distributed&#x27;,
                               &#x27;district&#x27;: &#x27;https://smartdatamodels.org/district&#x27;,
+                              &#x27;dose&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/dose&#x27;,
                               &#x27;drainFlow&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/drainFlow&#x27;,
+                              &#x27;dt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/dt&#x27;,
+                              &#x27;edate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/edate&#x27;,
+                              &#x27;efficacy&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/efficacy&#x27;,
                               &#x27;email&#x27;: &#x27;https://smartdatamodels.org/email&#x27;,
                               &#x27;empty&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/empty&#x27;,
+                              &#x27;enddate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/enddate&#x27;,
                               &#x27;endedAt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/endedAt&#x27;,
                               &#x27;endpoint&#x27;: &#x27;https://uri.etsi.org/ngsi-ld/endpoint&#x27;,
+                              &#x27;entrylimit&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/entrylimit&#x27;,
                               &#x27;farm&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/farm&#x27;,
                               &#x27;farmId&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/farmId&#x27;,
                               &#x27;faxNumber&#x27;: &#x27;https://smartdatamodels.org/faxNumber&#x27;,
@@ -523,25 +572,54 @@ Failed validating &#x27;required&#x27; in schema:
                               &#x27;hasWaterQualityObserved&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/hasWaterQualityObserved&#x27;,
                               &#x27;hasWeatherObserved&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/hasWeatherObserved&#x27;,
                               &#x27;healthCondition&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/healthCondition&#x27;,
+                              &#x27;hecm&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/hecm&#x27;,
                               &#x27;humidity&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/humidity&#x27;,
                               &#x27;id&#x27;: &#x27;@id&#x27;,
+                              &#x27;idate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/idate&#x27;,
+                              &#x27;idcp&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/idcp&#x27;,
+                              &#x27;idmachine&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/idmachine&#x27;,
+                              &#x27;idpdf&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/idpdf&#x27;,
+                              &#x27;idtf&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/idtf&#x27;,
+                              &#x27;idtpismv&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/idtpismv&#x27;,
+                              &#x27;infection&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/infection&#x27;,
+                              &#x27;inidate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/inidate&#x27;,
                               &#x27;initialWeight&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/initialWeight&#x27;,
                               &#x27;irrigationRecord&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/irrigationRecord&#x27;,
                               &#x27;irrigationSystemType&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/irrigationSystemType&#x27;,
                               &#x27;landLocation&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/landLocation&#x27;,
                               &#x27;lastPlantedAt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/lastPlantedAt&#x27;,
                               &#x27;lastUpdate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/lastUpdate&#x27;,
+                              &#x27;ldate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/ldate&#x27;,
                               &#x27;leafRelativeHumidity&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/leafRelativeHumidity&#x27;,
                               &#x27;leafTemperature&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/leafTemperature&#x27;,
                               &#x27;leafWetness&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/leafWetness&#x27;,
                               &#x27;legalId&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/legalId&#x27;,
                               &#x27;locatedAt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/locatedAt&#x27;,
                               &#x27;location&#x27;: &#x27;https://uri.etsi.org/ngsi-ld/location&#x27;,
+                              &#x27;loginname&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/loginname&#x27;,
                               &#x27;luminosity&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/luminosity&#x27;,
+                              &#x27;machine&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/machine&#x27;,
+                              &#x27;macm&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/macm&#x27;,
+                              &#x27;maf&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/maf&#x27;,
+                              &#x27;manure&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/manure&#x27;,
+                              &#x27;matdet&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/matdet&#x27;,
+                              &#x27;material&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/material&#x27;,
                               &#x27;maxValue&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/maxValue&#x27;,
+                              &#x27;mdt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/mdt&#x27;,
+                              &#x27;measur&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/measur&#x27;,
+                              &#x27;measure&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/measure&#x27;,
+                              &#x27;metadata&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/metadata&#x27;,
+                              &#x27;micm&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/micm&#x27;,
                               &#x27;minValue&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/minValue&#x27;,
+                              &#x27;mix&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/mix&#x27;,
+                              &#x27;mmcm&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/mmcm&#x27;,
                               &#x27;movement&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/movement&#x27;,
+                              &#x27;msoup&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/msoup&#x27;,
+                              &#x27;mst&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/mst&#x27;,
+                              &#x27;mud&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/mud&#x27;,
                               &#x27;name&#x27;: &#x27;https://smartdatamodels.org/name&#x27;,
+                              &#x27;names&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/names&#x27;,
+                              &#x27;notes&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/notes&#x27;,
                               &#x27;numAnimals&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/numAnimals&#x27;,
                               &#x27;operationType&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/operationType&#x27;,
                               &#x27;ownedBy&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/ownedBy&#x27;,
@@ -552,39 +630,66 @@ Failed validating &#x27;required&#x27; in schema:
                               &#x27;pen&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/pen&#x27;,
                               &#x27;phaseOutPeriod&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/phaseOutPeriod&#x27;,
                               &#x27;phenologicalCondition&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/phenologicalCondition&#x27;,
+                              &#x27;plan&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/plan&#x27;,
                               &#x27;plannedEndAt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/plannedEndAt&#x27;,
                               &#x27;plannedStartAt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/plannedStartAt&#x27;,
                               &#x27;postOfficeBoxNumber&#x27;: &#x27;https://smartdatamodels.org/postOfficeBoxNumber&#x27;,
                               &#x27;postalCode&#x27;: &#x27;https://smartdatamodels.org/postalCode&#x27;,
+                              &#x27;pp&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/pp&#x27;,
+                              &#x27;preventive&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/preventive&#x27;,
+                              &#x27;prior&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/prior&#x27;,
+                              &#x27;prod&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/prod&#x27;,
+                              &#x27;product&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/product&#x27;,
                               &#x27;productSupported&#x27;: &#x27;https://smartdatamodels.org/productSupported&#x27;,
                               &#x27;quantity&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/quantity&#x27;,
+                              &#x27;r10&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/r10&#x27;,
+                              &#x27;rdate&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/rdate&#x27;,
+                              &#x27;recipe&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/recipe&#x27;,
                               &#x27;relatedSource&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/relatedSource&#x27;,
                               &#x27;relativeHumidity&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/relativeHumidity&#x27;,
                               &#x27;reportedAt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/reportedAt&#x27;,
                               &#x27;reproductiveCondition&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/reproductiveCondition&#x27;,
                               &#x27;result&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/result&#x27;,
                               &#x27;root&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/root&#x27;,
+                              &#x27;seclimit&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/seclimit&#x27;,
                               &#x27;seeAlso&#x27;: &#x27;https://smartdatamodels.org/seeAlso&#x27;,
                               &#x27;sex&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/sex&#x27;,
                               &#x27;siredBy&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/siredBy&#x27;,
-                              &#x27;soilMoistureEC&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/soilMoistureEC&#x27;,
+                              &#x27;soilMoistureEc&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/soilMoistureEc&#x27;,
                               &#x27;soilMoistureVwc&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/soilMoistureVwc&#x27;,
                               &#x27;soilSalinity&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/soilSalinity&#x27;,
                               &#x27;soilTemperature&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/soilTemperature&#x27;,
                               &#x27;soilTextureType&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/soilTextureType&#x27;,
                               &#x27;solarRadiation&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/solarRadiation&#x27;,
+                              &#x27;soup&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/soup&#x27;,
                               &#x27;source&#x27;: &#x27;https://smartdatamodels.org/source&#x27;,
                               &#x27;species&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/species&#x27;,
+                              &#x27;speed&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/speed&#x27;,
+                              &#x27;st&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/st&#x27;,
                               &#x27;startedAt&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/startedAt&#x27;,
                               &#x27;status&#x27;: &#x27;https://uri.etsi.org/ngsi-ld/status&#x27;,
                               &#x27;streetAddress&#x27;: &#x27;https://smartdatamodels.org/streetAddress&#x27;,
                               &#x27;streetNr&#x27;: &#x27;https://smartdatamodels.org/streetNr&#x27;,
+                              &#x27;subcode&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/subcode&#x27;,
+                              &#x27;subs&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/subs&#x27;,
+                              &#x27;subtype&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/subtype&#x27;,
                               &#x27;supplier&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/supplier&#x27;,
+                              &#x27;surface&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/surface&#x27;,
+                              &#x27;surname&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/surname&#x27;,
+                              &#x27;symbol&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/symbol&#x27;,
+                              &#x27;taf&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/taf&#x27;,
+                              &#x27;target&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/target&#x27;,
                               &#x27;telephone&#x27;: &#x27;https://smartdatamodels.org/telephone&#x27;,
                               &#x27;temperature&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/temperature&#x27;,
+                              &#x27;tj&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/tj&#x27;,
+                              &#x27;tmi&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/tmi&#x27;,
+                              &#x27;typerisk&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/typerisk&#x27;,
+                              &#x27;typsoil&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/typsoil&#x27;,
                               &#x27;unitText&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/unitText&#x27;,
                               &#x27;url&#x27;: &#x27;https://smartdatamodels.org/url&#x27;,
+                              &#x27;user&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/user&#x27;,
                               &#x27;value&#x27;: &#x27;https://uri.etsi.org/ngsi-ld/hasValue&#x27;,
+                              &#x27;vat&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/vat&#x27;,
                               &#x27;version&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/version&#x27;,
                               &#x27;veterinarian&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/veterinarian&#x27;,
                               &#x27;veterinarianTreatment&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/veterinarianTreatment&#x27;,
@@ -616,29 +721,30 @@ On instance:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.conceptual.plot" id="bblock-ogc.model.agriculture.conceptual.plot">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.conceptual\.plot">
                                     <div class="flex-fill">
                                         Plot
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.conceptual.plot</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.conceptual.plot">¶</a>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.model.agriculture.conceptual.plot">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.model.agriculture.conceptual.plot">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 1 / 1
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.conceptual.plot-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-3"
                                                             aria-expanded="false" aria-controls="uid-3"
@@ -648,15 +754,57 @@ On instance:
                                                     </button>
                                                     <a href="model/agriculture/conceptual/plot/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.conceptual.plot-1">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/plot.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
+  Validation Report
+  Conforms: False
+  Results (2):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
+  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+  	Result Path: foodie:code
+  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
+  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+  	Result Path: common:validFrom
+  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -664,36 +812,15 @@ On instance:
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.features.all" id="bblock-ogc.model.agriculture.features.all">
-                            <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.features\.all">
-                                    <div class="flex-fill">
-                                        OGC Features - Agriculture 
-                                        <small class="ms-2 bblock-id">ogc.model.agriculture.features.all</small>
-                                    </div>
-
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (no tests)
-                                    </span>
-                                </button>
-                            </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.model.agriculture.features.all">
-                                <div class="accordion-body">
-                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.conceptual.farm" id="bblock-ogc.model.agriculture.conceptual.farm">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.conceptual\.farm">
                                     <div class="flex-fill">
                                         Farm
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.conceptual.farm</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.conceptual.farm">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -707,9 +834,9 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.conceptual.farm-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-4"
                                                             aria-expanded="false" aria-controls="uid-4"
@@ -719,6 +846,7 @@ On instance:
                                                     </button>
                                                     <a href="model/agriculture/conceptual/farm/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.conceptual.farm-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -726,9 +854,16 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using ../../../examples/simple-farm-instance-AIM_v3.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
   Validation Report
   Conforms: False
@@ -758,20 +893,21 @@ On instance:
   	Result Path: common:validFrom
   	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;common:validFrom
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -781,13 +917,14 @@ On instance:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.features.plot" id="bblock-ogc.model.agriculture.features.plot">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.features\.plot">
                                     <div class="flex-fill">
                                         Plot - GeoJSON
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.features.plot</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.features.plot">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -801,9 +938,9 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.features.plot-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-5"
                                                             aria-expanded="false" aria-controls="uid-5"
@@ -813,6 +950,7 @@ On instance:
                                                     </button>
                                                     <a href="model/agriculture/features/plot/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.features.plot-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -820,18 +958,25 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/plot.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: {&#x27;@id&#x27;: &#x27;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&#x27;, &#x27;type&#x27;: &#x27;Feature&#x27;, &#x27;featureType&#x27;: &#x27;foodie:Plot&#x27;, &#x27;geometry&#x27;: {&#x27;type&#x27;: &#x27;Polygon&#x27;, &#x27;coordinates&#x27;: [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]}, &#x27;properties&#x27;: {&#x27;area&#x27;: 2012120, &#x27;description&#x27;: &#x27;Spring wheat parcel&#x27;, &#x27;category&#x27;: &#x27;arable&#x27;, &#x27;crop&#x27;: {&#x27;@id&#x27;: &#x27;urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4&#x27;, &#x27;@type&#x27;: &#x27;Crop&#x27;, &#x27;cropSpecies&#x27;: {&#x27;@id&#x27;: &#x27;urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4&#x27;, &#x27;@type&#x27;: &#x27;CropType&#x27;, &#x27;name&#x27;: &#x27;Wheat&#x27;, &#x27;alternateName&#x27;: &#x27;Triticum aestivum&#x27;, &#x27;agroVocConcept&#x27;: &#x27;http://aims.fao.org/aos/agrovoc/c_7951&#x27;, &#x27;description&#x27;: &#x27;Spring wheat&#x27;}, &#x27;cropStatus&#x27;: &#x27;seeded&#x27;, &#x27;lastPlantedAt&#x27;: &#x27;2016-08-23T10:18:16Z&#x27;}}} is not valid under any of the given schemas
 
 Failed validating &#x27;anyOf&#x27; in schema:
     {&#x27;$defs&#x27;: {&#x27;MyFeature&#x27;: {&#x27;allOf&#x27;: [{&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml&#x27;},
                                        {&#x27;properties&#x27;: {&#x27;properties&#x27;: {&#x27;properties&#x27;: {&#x27;area&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;,
                                                                                               &#x27;x-jsonld-id&#x27;: &#x27;https://smartdatamodels.org/dataModel.Agrifood/area&#x27;},
-                                                                                     &#x27;crop&#x27;: {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml&#x27;,
+                                                                                     &#x27;crop&#x27;: {&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml&#x27;,
                                                                                               &#x27;x-jsonld-id&#x27;: &#x27;http://foodie-cloud.com/model/foodie#crop&#x27;,
                                                                                               &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
                                                                                      &#x27;description&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
@@ -966,6 +1111,63 @@ On instance:
                              &#x27;lastPlantedAt&#x27;: &#x27;2016-08-23T10:18:16Z&#x27;},
                     &#x27;description&#x27;: &#x27;Spring wheat parcel&#x27;},
      &#x27;type&#x27;: &#x27;Feature&#x27;}</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
+  Validation Report
+  Conforms: False
+  Results (3):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
+  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+  	Result Path: foodie:code
+  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
+  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+  	Result Path: common:validFrom
+  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a&gt;
+  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+  	Result Path: geo:hasGeometry
+  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;geo:hasGeometry
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -974,13 +1176,14 @@ On instance:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.conceptual.agriFeature" id="bblock-ogc.model.agriculture.conceptual.agriFeature">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.conceptual\.agriFeature">
                                     <div class="flex-fill">
                                         Agri Feature Conceptual
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.conceptual.agriFeature</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.conceptual.agriFeature">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -996,13 +1199,14 @@ On instance:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.geosparql-ld.farm" id="bblock-ogc.model.agriculture.geosparql-ld.farm">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.geosparql-ld\.farm">
                                     <div class="flex-fill">
                                         Farm (SAREF) - GeoSPARQL
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.geosparql-ld.farm</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.geosparql-ld.farm">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -1016,9 +1220,9 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.geosparql-ld.farm-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-6"
                                                             aria-expanded="false" aria-controls="uid-6"
@@ -1028,6 +1232,7 @@ On instance:
                                                     </button>
                                                     <a href="model/agriculture/geosparql-ld/farm/example_1_1.jsonld" target="_blank">example_1_1.jsonld</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.geosparql-ld.farm-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -1035,9 +1240,16 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.jsonld from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using ../../../examples/simple-farm-instance-AIM_v3.jsonld from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
   Validation Report
   Conforms: False
@@ -1067,20 +1279,21 @@ On instance:
   	Result Path: common:validFrom
   	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;common:validFrom
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1090,13 +1303,14 @@ On instance:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.features.farm" id="bblock-ogc.model.agriculture.features.farm">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.features\.farm">
                                     <div class="flex-fill">
                                         Farm - GeoJSON
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.features.farm</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.features.farm">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -1110,9 +1324,9 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 1 / 3
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.features.farm-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-7"
                                                             aria-expanded="false" aria-controls="uid-7"
@@ -1122,6 +1336,7 @@ On instance:
                                                     </button>
                                                     <a href="model/agriculture/features/farm/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.features.farm-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -1129,39 +1344,64 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-7">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/farm_simple.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for SHACL/agriFeature-SHACL.ttl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.features.farm-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-8"
                                                             aria-expanded="false" aria-controls="uid-8"
@@ -1171,6 +1411,7 @@ On instance:
                                                     </button>
                                                     <a href="model/agriculture/features/farm/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.features.farm-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -1178,13 +1419,37 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-8">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_2_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/farm_w_plot.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;file:///github/workspace/f1&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
   Validation Report
   Conforms: False
@@ -1226,28 +1491,29 @@ On instance:
   	Result Path: geo:hasGeometry
   	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;geo:hasGeometry
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.features.farm-3">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-9"
                                                             aria-expanded="false" aria-controls="uid-9"
@@ -1257,6 +1523,7 @@ On instance:
                                                     </button>
                                                     <a href="model/agriculture/features/farm/example_3_1.json" target="_blank">example_3_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.model.agriculture.features.farm-3">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -1264,16 +1531,23 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-9">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_3_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/farm_w_crop.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_3_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: {&#x27;id&#x27;: &#x27;f1&#x27;, &#x27;type&#x27;: &#x27;Feature&#x27;, &#x27;featureType&#x27;: &#x27;saref4agri:Farm&#x27;, &#x27;geometry&#x27;: {&#x27;type&#x27;: &#x27;Point&#x27;, &#x27;coordinates&#x27;: [11.3, 44.12]}, &#x27;properties&#x27;: {&#x27;name&#x27;: &#x27;Wheat farm&#x27;, &#x27;description&#x27;: &#x27;A farm producing wheat&#x27;, &#x27;containsPlot&#x27;: [{&#x27;@id&#x27;: &#x27;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&#x27;, &#x27;type&#x27;: &#x27;Feature&#x27;, &#x27;featureType&#x27;: &#x27;Plot&#x27;, &#x27;geometry&#x27;: {&#x27;type&#x27;: &#x27;Polygon&#x27;, &#x27;coordinates&#x27;: [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]}, &#x27;properties&#x27;: {&#x27;area&#x27;: 2012120, &#x27;description&#x27;: &#x27;Spring wheat parcel&#x27;, &#x27;category&#x27;: &#x27;arable&#x27;, &#x27;crop&#x27;: {&#x27;@id&#x27;: &#x27;urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b4&#x27;, &#x27;@type&#x27;: &#x27;Crop&#x27;, &#x27;cropSpecies&#x27;: {&#x27;@id&#x27;: &#x27;urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b4&#x27;, &#x27;@type&#x27;: &#x27;CropType&#x27;, &#x27;name&#x27;: &#x27;Wheat&#x27;, &#x27;alternateName&#x27;: &#x27;Triticum aestivum&#x27;, &#x27;agroVocConcept&#x27;: &#x27;http://aims.fao.org/aos/agrovoc/c_7951&#x27;, &#x27;description&#x27;: &#x27;Spring wheat&#x27;}, &#x27;cropStatus&#x27;: &#x27;seeded&#x27;, &#x27;lastPlantedAt&#x27;: &#x27;2016-08-23T10:18:16Z&#x27;}}}, {&#x27;@id&#x27;: &#x27;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&#x27;, &#x27;type&#x27;: &#x27;Feature&#x27;, &#x27;featureType&#x27;: &#x27;Plot&#x27;, &#x27;geometry&#x27;: {&#x27;type&#x27;: &#x27;Polygon&#x27;, &#x27;coordinates&#x27;: [[[100, 0], [101, 0], [101, 1], [100, 1], [100, 0]]]}, &#x27;properties&#x27;: {&#x27;area&#x27;: 200, &#x27;description&#x27;: &#x27;Spring barley parcel&#x27;, &#x27;category&#x27;: &#x27;arable&#x27;, &#x27;crop&#x27;: {&#x27;@id&#x27;: &#x27;urn:ngsi-ld:crop:df72dc57-1eb9-42a3-88a9-8647ecc954b5&#x27;, &#x27;@type&#x27;: &#x27;Crop&#x27;, &#x27;cropSpecies&#x27;: {&#x27;@id&#x27;: &#x27;urn:demeter:croptype:df72dc57-1eb9-42a3-88a9-8647ecc954b5&#x27;, &#x27;@type&#x27;: &#x27;CropType&#x27;, &#x27;name&#x27;: &#x27;Barley&#x27;, &#x27;alternateName&#x27;: &#x27;Ordeum&#x27;, &#x27;agroVocConcept&#x27;: &#x27;http://aims.fao.org/aos/agrovoc/c_7952&#x27;, &#x27;description&#x27;: &#x27;Spring barley&#x27;}, &#x27;cropStatus&#x27;: &#x27;seeded&#x27;, &#x27;lastPlantedAt&#x27;: &#x27;2016-08-23T10:18:16Z&#x27;}}}]}} is not valid under any of the given schemas
 
 Failed validating &#x27;anyOf&#x27; in schema:
     {&#x27;$defs&#x27;: {&#x27;MyFeature&#x27;: {&#x27;allOf&#x27;: [{&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml&#x27;},
-                                       {&#x27;properties&#x27;: {&#x27;properties&#x27;: {&#x27;properties&#x27;: {&#x27;containsPlot&#x27;: {&#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml&#x27;},
+                                       {&#x27;properties&#x27;: {&#x27;properties&#x27;: {&#x27;properties&#x27;: {&#x27;containsPlot&#x27;: {&#x27;items&#x27;: {&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml&#x27;},
                                                                                                       &#x27;type&#x27;: &#x27;array&#x27;,
                                                                                                       &#x27;x-jsonld-id&#x27;: &#x27;http://foodie-cloud.com/model/foodie#containsPlot&#x27;,
                                                                                                       &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
@@ -1455,6 +1729,23 @@ On instance:
                     &#x27;name&#x27;: &#x27;Wheat farm&#x27;},
      &#x27;type&#x27;: &#x27;Feature&#x27;}</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;file:///github/workspace/f1&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
   Validation Report
   Conforms: False
@@ -1496,20 +1787,21 @@ On instance:
   	Result Path: geo:hasGeometry
   	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;geo:hasGeometry
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
  - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
+ - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
+ - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1519,13 +1811,14 @@ On instance:
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.conceptual.all" id="bblock-ogc.model.agriculture.conceptual.all">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.conceptual\.all">
                                     <div class="flex-fill">
                                         Agriculture Information Model - RDF
                                         <small class="ms-2 bblock-id">ogc.model.agriculture.conceptual.all</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.conceptual.all">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -1535,6 +1828,29 @@ On instance:
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse " id="bblock-collapse-ogc.model.agriculture.conceptual.all">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.model.agriculture.features.all" id="bblock-ogc.model.agriculture.features.all">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.model\.agriculture\.features\.all">
+                                    <div class="flex-fill">
+                                        OGC Features - Agriculture 
+                                        <small class="ms-2 bblock-id">ogc.model.agriculture.features.all</small>
+                                        <a class="anchor" href="#bblock-ogc.model.agriculture.features.all">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.model.agriculture.features.all">
                                 <div class="accordion-body">
                                         <div class="alert alert-info mb-0">No tests were found for this building block.</div>
                                 </div>
@@ -1554,13 +1870,20 @@ On instance:
                         accordionEntries.forEach(e => e.classList.remove('show'));
                     }
                 });
-                if (location.hash.startsWith('#bblock-')) {
+                if (/^#(bblock|item)-/.test(location.hash)) {
                     const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
                     if (highlight) {
                         highlight.querySelector('.accordion-collapse').classList.add('show');
                         highlight.classList.add('highlighted');
                     }
                 }
+                document.addEventListener('click', ev => {
+                    if (!ev.target.classList.contains('anchor') || !ev.target.href) {
+                      return;
+                    }
+                    ev.stopPropagation();
+                    navigator?.clipboard?.writeText(ev.target.href);
+                });
             });
         </script>
     </body>

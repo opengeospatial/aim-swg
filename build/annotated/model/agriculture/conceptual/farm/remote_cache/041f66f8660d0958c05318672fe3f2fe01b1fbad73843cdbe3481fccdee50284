@@ -468,7 +468,9 @@ fiware-agrifood:AgriGreenhouse	a owl:Class ;
 #    Alignments
 #################################################################
 
-saref4agri:Farm owl:equivalentClass af-inspire:Holding .
+#saref4agri:Farm owl:equivalentClass af-inspire:Holding .
+af-inspire:Holding owl:equivalentClass saref4agri:FarmHolding .
+saref4agri:Farm owl:equivalentClass af-inspire:Site .
 saref4agri:Farm owl:equivalentClass fiware-agrifood:AgriFarm .
 saref4agri:Parcel owl:equivalentClass foodie:Plot .
 saref4agri:Parcel owl:equivalentClass fiware-agrifood:AgriParcel .

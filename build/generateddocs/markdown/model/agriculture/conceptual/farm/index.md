@@ -99,13 +99,13 @@ None
 ```
 
 You can find the full JSON-LD context here:
-[agriFeature-context.jsonld](https://ogcincubator.github.io/aim-swg/jsonld/agriFeature-context.jsonld)
+[agriFeature-context.jsonld](https://opengeospatial.github.io/aim-swg/jsonld/agriFeature-context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/aim-swg](https://github.com/ogcincubator/aim-swg)
+* URL: [https://github.com/opengeospatial/aim-swg](https://github.com/opengeospatial/aim-swg)
 * Path: `_sources/conceptual/farm`
 

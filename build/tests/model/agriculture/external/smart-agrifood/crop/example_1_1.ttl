@@ -9,10 +9,10 @@
     ns1:agroVocConcept [ a <file:///github/workspace/Text> ;
             ngsi-ld:hasValue "http://aims.fao.org/aos/agrovoc/c_7951" ] ;
     ns1:harvestingInterval [ a <file:///github/workspace/StructuredValue> ;
-            ngsi-ld:hasValue [ dcterms:description "Season OK" ;
-                    ns1:dateRange "-04-02/-04-15" ],
-                [ dcterms:description "Best Season" ;
-                    ns1:dateRange "-03-21/-04-01" ] ] ;
+            ngsi-ld:hasValue [ dcterms:description "Best Season" ;
+                    ns1:dateRange "-03-21/-04-01" ],
+                [ dcterms:description "Season OK" ;
+                    ns1:dateRange "-04-02/-04-15" ] ] ;
     ns1:hasAgriFertiliser [ a <file:///github/workspace/StructuredValue> ;
             ngsi-ld:hasValue "urn:ngsi-ld:AgriFertiliser:1b0d6cf7-320c-4a2b-b2f1-4575ea850c73",
                 "urn:ngsi-ld:AgriFertiliser:380973c8-4d3b-4723-a899-0c0c5cc63e7e" ] ;
@@ -30,6 +30,8 @@
     ns1:relatedSource [ a <file:///github/workspace/StructuredValue> ;
             ngsi-ld:hasValue [ ns1:application "urn:ngsi-ld:AgriApp:72d9fb43-53f8-4ec8-a33c-fa931360259a" ;
                     ns1:applicationEntityId "app:weat" ] ] ;
+    ns1:wateringFrequency [ a <file:///github/workspace/Text> ;
+            ngsi-ld:hasValue "daily" ] ;
     ns2:dateCreated [ a <file:///github/workspace/DateTime> ;
             ngsi-ld:hasValue "2017-01-01T01:20:00Z" ] ;
     ns2:dateModified [ a <file:///github/workspace/DateTime> ;

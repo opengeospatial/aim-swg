@@ -1,7 +1,7 @@
 Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON
-Generated 2024-07-16T07:36:28.068729+00:00
+Generated 2026-09-16T21:51:45.818151+00:00
 === Files ===
-Using example_3_1.json from examples
+Using examples/farm_w_crop.json from examples
 JSON-LD context is present - uplifting
 Output JSON-LD example_3_1.jsonld created
 Output Turtle example_3_1.ttl created
@@ -14,7 +14,7 @@ ValidationError: {'id': 'f1', 'type': 'Feature', 'featureType': 'saref4agri:Farm
 
 Failed validating 'anyOf' in schema:
     {'$defs': {'MyFeature': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml'},
-                                       {'properties': {'properties': {'properties': {'containsPlot': {'items': {'$ref': 'https://ogcincubator.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml'},
+                                       {'properties': {'properties': {'properties': {'containsPlot': {'items': {'$ref': 'https://opengeospatial.github.io/aim-swg/build/annotated/model/agriculture/features/plot/schema.yaml'},
                                                                                                       'type': 'array',
                                                                                                       'x-jsonld-id': 'http://foodie-cloud.com/model/foodie#containsPlot',
                                                                                                       'x-jsonld-type': '@id'},
@@ -198,6 +198,18 @@ On instance:
 === End JSON Schema ===
 
 === SHACL ===
+Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, <class 'rdflib.parser.Parser'>) - SHACL validation will run against an incomplete closure graph
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+
 
 ** Validation error **
 Validation result for SHACL/agriFeature-SHACL.ttl:
@@ -242,19 +254,19 @@ Validation result for SHACL/agriFeature-SHACL.ttl:
   	Message: Less than 1 values on <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>->geo:hasGeometry
   
 Focus nodes for SHACL/agriFeature-SHACL.ttl:
+ - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
+ - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*
  - Shape <https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc>: *none*
  - Shape <https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41>: *none*
- - Shape <https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893>: *none*
- - Shape <https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc>: *none*
- - Shape <https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
- - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*
- - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>
- - Shape <https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9>: *none*
- - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
- - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*
  - Shape <https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699>: *none*
  - Shape <https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02>: *none*
- - Shape <https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8>: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
+ - Shape <https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a>: *none*
+ - Shape <https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b>: <file:///github/workspace/f1>
+ - Shape <https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115>: *none*
 
 === End SHACL ===
 
