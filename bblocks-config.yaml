@@ -55,8 +55,8 @@ identifier-prefix: ogc.model.agriculture.
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
-  - https://ogcincubator.github.io/cross-domain-model/build/register.json
-  - https://opengeospatial.github.io/ogcapi-sosa/build/register.json
+  - '@ogc/cross-domain-model'
+  - '@ogc/ogcapi-sosa'
 
 
 # SPARQL configuration (optional)
