@@ -1,26 +1,26 @@
-path	@id
-/id	
-/dateCreated	
-/dateModified	
-/source	
-/name	
-/alternateName	
-/description	
-/dataProvider	
-/owner	
-/seeAlso	
-/relatedSource	
-/relatedSource/application	
-/relatedSource/applicationEntityId	
-/type	@type
-/agroVocConcept	https://smartdatamodels.org/dataModel.Agrifood/agroVocConcept
-/hasAgriSoil	https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil
-/hasAgriFertiliser	https://smartdatamodels.org/dataModel.Agrifood/hasAgriFertiliser
-/hasAgriPest	https://smartdatamodels.org/dataModel.Agrifood/hasAgriPest
-/harvestingInterval	https://smartdatamodels.org/dataModel.Agrifood/harvestingInterval
-/harvestingInterval/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
-/harvestingInterval/description	http://purl.org/dc/terms/description
-/plantingFrom	https://smartdatamodels.org/dataModel.Agrifood/plantingFrom
-/plantingFrom/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange
-/plantingFrom/description	http://purl.org/dc/terms/description
-/wateringFrequency	
+path	@id	schema
+/id		https://smart-data-models.github.io/data-models/common-schema.json
+/dateCreated		https://smart-data-models.github.io/data-models/common-schema.json
+/dateModified		https://smart-data-models.github.io/data-models/common-schema.json
+/source		https://smart-data-models.github.io/data-models/common-schema.json
+/name		https://smart-data-models.github.io/data-models/common-schema.json
+/alternateName		https://smart-data-models.github.io/data-models/common-schema.json
+/description		https://smart-data-models.github.io/data-models/common-schema.json
+/dataProvider		https://smart-data-models.github.io/data-models/common-schema.json
+/owner		https://smart-data-models.github.io/data-models/common-schema.json
+/seeAlso		https://smart-data-models.github.io/data-models/common-schema.json
+/relatedSource		https://smart-data-models.github.io/dataModel.Agrifood/agrifood-schema.json
+/relatedSource/application		https://smart-data-models.github.io/dataModel.Agrifood/agrifood-schema.json
+/relatedSource/applicationEntityId		https://smart-data-models.github.io/dataModel.Agrifood/agrifood-schema.json
+/type	@type	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/agroVocConcept	https://smartdatamodels.org/dataModel.Agrifood/agroVocConcept	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/hasAgriSoil	https://smartdatamodels.org/dataModel.Agrifood/hasAgriSoil	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/hasAgriFertiliser	https://smartdatamodels.org/dataModel.Agrifood/hasAgriFertiliser	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/hasAgriPest	https://smartdatamodels.org/dataModel.Agrifood/hasAgriPest	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/harvestingInterval	https://smartdatamodels.org/dataModel.Agrifood/harvestingInterval	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/harvestingInterval/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/harvestingInterval/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/plantingFrom	https://smartdatamodels.org/dataModel.Agrifood/plantingFrom	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/plantingFrom/dateRange	https://smartdatamodels.org/dataModel.Agrifood/dateRange	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/plantingFrom/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml
+/wateringFrequency	https://smartdatamodels.org/dataModel.Agrifood/wateringFrequency	/github/workspace/build/annotated/model/agriculture/external/smart-agrifood/crop/schema.yaml

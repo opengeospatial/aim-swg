@@ -62,6 +62,6 @@ Example from AIM
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/aim-swg](https://github.com/ogcincubator/aim-swg)
+* URL: [https://github.com/opengeospatial/aim-swg](https://github.com/opengeospatial/aim-swg)
 * Path: `_sources/conceptual/plot`
 

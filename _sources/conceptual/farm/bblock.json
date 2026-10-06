@@ -8,7 +8,9 @@
   "version": "0.1",
   "dateOfLastChange": "2023-09-18",
   "dependsOn": [
-    "ogc.model.agriculture.conceptual.plot",
+    "ogc.model.agriculture.conceptual.plot"
+  ],
+  "seeAlso": [
     "https://w3id.org/def/foodie"
   ],
   "ldContext": "../../../jsonld/agriFeature-context.jsonld",
