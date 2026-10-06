@@ -224,6 +224,65 @@ saref:isPropertyOf a owl:ObjectProperty ;
     rdfs:domain saref:Property ;
     rdfs:range [ a owl:Class ; owl:unionOf ( saref:FeatureKind saref:FeatureOfInterest ) ] ;
     rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/hasResult
+saref:hasResult a owl:ObjectProperty ;
+    rdfs:label "has result"@en ;
+    rdfs:comment "Links a procedure execution (e.g., an observation) to its result (e.g., a property value)."@en ;
+    rdfs:domain saref:ProcedureExecution ;
+    skos:historyNote "V3.2.1: Introduced saref:hasResult as part of general will to make SAREF and SOSA/SSN converge."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/hasPhenomenonTime
+saref:hasPhenomenonTime a owl:ObjectProperty ;
+    rdfs:label "has phenomenon time"@en ;
+    rdfs:comment "Links a procedure execution to the time that the result applies. It may be an interval or an instant, or some other compound temporal entity expressed using OWL Time."@en ;
+    rdfs:range time:TemporalEntity ;
+    skos:historyNote "V3.2.1: Introduced saref:hasPhenomenonTime as part of general will to make SAREF and SOSA/SSN converge."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/hasProfile
+saref:hasProfile a owl:ObjectProperty ;
+    owl:inverseOf saref:isProfileOf ;
+    rdfs:label "has profile"@en ;
+    rdfs:comment "Links a device to its profile. Its inverse is saref:isProfileOf. The device should be linked to a certain commodity using OP saref:consumes, saref:produces, or saref:stores, and optionally to some property or state using OP saref:targets or its sub-properties."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( saref:DeviceKind saref:Device ) ] ;
+    rdfs:range saref:Profile ;
+    skos:historyNote "V3.2.1: Relaxed domain of saref:hasProfile to saref:FeatureKind or saref:Device"@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/isProfileOf
+saref:isProfileOf a owl:ObjectProperty ;
+    owl:inverseOf saref:hasProfile ;
+    rdfs:label "is profile of"@en ;
+    rdfs:comment "Links a profile to the device it describes. The device should be linked to a certain commodity using OP saref:consumes, saref:produces, or saref:stores, and optionally to some property or state using OP saref:targets or its sub-properties."@en ;
+    rdfs:domain saref:Profile ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( saref:DeviceKind saref:Device ) ] ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/hasApplicableTime
+saref:hasApplicableTime a owl:ObjectProperty ;
+    rdfs:label "has applicable time"@en ;
+    rdfs:comment "Links an entity (e.g., a profile) to an instant or interval or other compound temporal entity expressed using OWL Time, which bounds temporally the applicable context of that entity."@en ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( time:TemporalEntity time:TemporalPosition ) ] ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .    
+
+###  https://saref.etsi.org/core/whenPropertyValue
+saref:whenPropertyValue a owl:ObjectProperty ;
+    rdfs:label "when property value"@en ;
+    rdfs:comment "Links a profile to a property value that contributes to restricting its applicable context."@en ;
+    rdfs:domain saref:Profile ;
+    rdfs:range saref:PropertyValue ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .      
+
+###  https://saref.etsi.org/core/profileHasPrice
+# there is mismatch in saref - definition is profileHasPrice but hasPrice is used in s4energy
+saref:profileHasPrice a owl:ObjectProperty ;
+    rdfs:label "has price"@en ;
+    rdfs:comment "Links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device"@en ;
+    rdfs:domain saref:Profile ;
+    rdfs:range saref:PropertyValue ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .               
                                       
 ### http://foodie-cloud.com/model/foodie#quantitativeProperty
 foodie:quantitativeProperty	a	owl:ObjectProperty ;
@@ -288,9 +347,30 @@ fiware-agrifood:hasDevice	a      owl:ObjectProperty ;
 
 ###  https://saref.etsi.org/core/hasValue
 saref:hasValue a owl:DatatypeProperty ;
-                                  rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                  rdfs:comment "A relationship defining the value of a certain property, e.g., energy or power" ;
-                                  rdfs:label "has value"@en .
+    rdfs:comment "Value of a property value expressed as an RDF literal. Note that, even if decimal values are expected, values could use other datatypes."@en ;
+    rdfs:label "has value"@en ;
+    skos:historyNote "V3.2.1: Clarified definition of saref:hasValue."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .                                  
+
+###  https://saref.etsi.org/core/hasResultTime
+saref:hasResultTime a owl:DatatypeProperty ;
+    rdfs:label "has result time"@en ;
+    rdfs:comment "Links a procedure execution to the instant of time when the activity was completed, expressed as an xsd:dateTime literal."@en ;
+    rdfs:domain saref:ProcedureExecution ;
+    rdfs:range xsd:dateTime ;
+    skos:historyNote "V3.2.1: Introduced saref:hasResultTime as part of general will to make SAREF and SOSA/SSN converge."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/hasTimestamp
+saref:hasTimestamp a owl:DatatypeProperty ;
+    rdfs:label "has timestamp"@en ;
+    rdfs:comment "Links a procedure execution or a profile to an instant."@en ;
+    skos:note "When the execution time and the phenomenon time are the same time instants, then DP saref:hasTimestamp can be used to simply link a procedure execution to the time of these instants, expressed as an xsd:dateTime literal."@en ;
+    skos:note "Applied on a profile, it describes the applicable instant of that profile"@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( saref:ProcedureExecution saref:Profile ) ] ;
+    rdfs:range xsd:dateTime ;
+    skos:historyNote "V3.2.1: Tried to clarify definition of saref:hasTimestamp. Still unclear."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
 ### http://foodie-cloud.com/model/foodie#propertyName
 foodie:propertyName  a  owl:DatatypeProperty ;
@@ -592,6 +672,40 @@ saref:FeatureOfInterest a owl:Class ;
                                            rdfs:label "Feature of interest"@en ;
                                            rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
+###  https://saref.etsi.org/core/Profile
+saref:Profile a owl:Class ;
+    rdfs:label "Profile"@en ;
+    rdfs:comment "A saref:Profile describes the money earned (negative values) or paied (positive values) for the use (production or consumption) of a commodity by a device in a certain context."@en ;
+    skos:note "OP saref:hasProfile links a device to its profile. The device should be linked to a certain commodity using OP saref:consumes, saref:produces, or saref:stores, and optionally to some property or state using OP saref:targets or its sub-properties."@en ;
+    skos:note "The applicable context of a profile can be bound temporally using DP saref:hasTimestamp or its subproperties defined by SAREF extensions, or OP saref:hasApplicableTime which links to instant or interval or other compound temporal entity expressed using OWL Time."@en ;
+    skos:note "The applicable context can be restricted to when the property of a feature of interest has some value (OPs saref:whenPropertyValue)"@en ;
+    skos:note "The applicable context can be restricted to when a feature of interest has a certain state (OPs saref:whenState)."@en ;
+    skos:note "OP saref:hasPrice links a profile to the money earned (negative values) or paid (positive values) for the use (production or consumption) of the commodity by the device."@en ;
+    skos:historyNote "V3.2.1: Class saref:Profile has been re-specified, to take into account findings from SAREF4ENER V1.2.1."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/DeviceKind
+saref:DeviceKind a owl:Class ;
+    rdfs:subClassOf saref:FeatureKind ;
+    rdfs:label "Device kinds"@en ;
+    rdfs:comment "Device kinds allow to describe kinds of devices, with common properties and common states having the same value, targeting the same properties and states, common functions, and common services. Devices kinds may be used to describe models of devices in online catalogues."@en ;
+    skos:historyNote "V4.1.1: Introduced class saref:DeviceKind"@en ;    
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/PropertyValue
+saref:PropertyValue a owl:Class ;
+    rdfs:label "Property Value"@en ;
+    rdfs:comment "Describes the value for a property. The property value is optionally linked to its value expressed as an RDF literal (DP saref:hasValue), optionally to the unit of measurement (OP saref:isMeasuredIn), and optionally to the properties or properties of interest it is a value of (OP saref:isValueOfProperty)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty saref:hasValue ;
+            owl:maxCardinality 1 ] ,
+        [ a owl:Restriction ;
+            owl:onProperty saref:isMeasuredIn ;
+            owl:maxCardinality 1 ] ;
+    skos:historyNote "V3.2.1: Introduced saref:PropertyValue to simplify the association of a measure to a property, without always needing it to be a measurement made by a device."@en ;
+    skos:historyNote "V4.1.1: saref:hasValue is now optional on saref:PropertyValue."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .    
+
 ###  https://saref.etsi.org/core/Humidity
 # deprecated
 #saref:Humidity a owl:Class ;
@@ -750,7 +864,11 @@ saref:Property owl:equivalentClass foodie:PropertyTypeValue .
 saref:Property owl:equivalentClass qu:QuantityKind .
 #saref:Temperature owl:equivalentClass dim:Temperature .
 
-saref:hasTimestamp owl:equivalentProperty sosa:resultTime .
+saref:hasResultTime owl:equivalentProperty sosa:resultTime .
+#saref:hasTimestamp owl:equivalentProperty sosa:resultTime .
+saref:hasPhenomenonTime owl:equivalentProperty sosa:phenomenonTime .
+saref:hasResult owl:equivalentProperty sosa:hasResult .
+
 saref:hasValue owl:equivalentProperty sosa:hasSimpleResult .
 saref:isMeasuredIn owl:equivalentProperty qudt:unit .
 saref:UnitOfMeasure owl:equivalentClass qudt:Unit .
