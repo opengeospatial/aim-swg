@@ -11,8 +11,8 @@
   "version": "0.1",
   "dateOfLastChange": "2026-10-06",
   "dependsOn": [
-    "ogc.model.agriculture.features.farm",
-    "ogc.model.agriculture.features.plot"
+    "ogc.model.agriculture.features.plot",
+    "ogc.model.agriculture.features.farm"
   ],
   "sources": [],
   "scope": "dev",
