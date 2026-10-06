@@ -2507,7 +2507,7 @@
         sh:description    "An entity defining the Doses for operation/intervention" ;
         sh:name           "DoseUnit" ;
         sh:nodeKind       sh:IRI ;
-        sh:property       <https://astrea.linkeddata.es/shapes#8a585e71e4651e6b1507422a020ccda2> , <https://astrea.linkeddata.es/shapes#32100c0091e3d7fe8fe08f3ed1079e27> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#32100c0091e3d7fe8fe08f3ed1079e27> , <https://astrea.linkeddata.es/shapes#8a585e71e4651e6b1507422a020ccda2> ;
         sh:targetClass    foodie:DoseUnit .
 
 <https://astrea.linkeddata.es/shapes#7bf5a93636f246b0b32724c78dace32f>
@@ -2990,17 +2990,6 @@
         sh:name           "Deployment"@en ;
         sh:nodeKind       sh:IRI ;
         sh:targetClass    ssn:Deployment .
-
-_:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b> ;
-        rdf:first  [ sh:class  time:Instant ;
-                     sh:path   time:hasTime
-                   ] ;
-        rdf:rest   [ rdf:first  <https://astrea.linkeddata.es/shapes#f1ed01ff4ad7e0110c28d4231cd9616c> ;
-                     rdf:first  [ sh:class  time:Interval ;
-                                  sh:path   time:hasTime
-                                ] ;
-                     rdf:rest   ()
-                   ] .
 
 <https://astrea.linkeddata.es/shapes#090a3f349757c6a335a6955dca2db4d1>
         a                 sh:PropertyShape ;
@@ -3726,7 +3715,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         sh:name           "Observation"@en ;
         sh:nodeKind       sh:IRI ;
         sh:property       <https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324> , <https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee> ;
-        sh:targetClass    saref:Observation .
+        sh:targetClass    saref:Observation , sosa:Observation .
 
 <https://astrea.linkeddata.es/shapes#37e742ea104967f9da32f501ccad63b7>
         a            sh:PropertyShape ;
@@ -5379,15 +5368,6 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      geo:hasGeometry .
 
-<https://astrea.linkeddata.es/shapes#bf46b3dc6effb5e9a04bb8c1a9ed1cd6>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriParcelOperation/schema.json> ;
-        rdfs:label        "irrigationRecord"@en , "Relationship with the irrigation record of the execution" ;
-        sh:description    "Relationship with the irrigation record of the execution" ;
-        sh:name           "irrigationRecord"@en ;
-        sh:nodeKind       sh:Literal ;
-        sh:path           fiware-agrifood:irrigationRecord .
-
 <https://astrea.linkeddata.es/shapes#ea758cf93a4a6fcb568c859d464061d1>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <http://www.opengis.net/ont/geosparql> , <http://www.opengis.net/spec/geosparql/1.0> ;
@@ -5398,16 +5378,25 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         sh:nodeKind       sh:Literal ;
         sh:path           geo:asWKT .
 
-<https://astrea.linkeddata.es/shapes#0cd4758f32bf620f37d9159629982d50>
-        a            sh:PropertyShape ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref4agri:hasBirthDate .
-
 <https://astrea.linkeddata.es/shapes#462450f3abc9cf4b91404bbb742bed03>
         a            sh:PropertyShape ;
         sh:maxCount  "1"^^xsd:int ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      prov:generatedAtTime .
+
+<https://astrea.linkeddata.es/shapes#0cd4758f32bf620f37d9159629982d50>
+        a            sh:PropertyShape ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref4agri:hasBirthDate .
+
+<https://astrea.linkeddata.es/shapes#bf46b3dc6effb5e9a04bb8c1a9ed1cd6>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriParcelOperation/schema.json> ;
+        rdfs:label        "irrigationRecord"@en , "Relationship with the irrigation record of the execution" ;
+        sh:description    "Relationship with the irrigation record of the execution" ;
+        sh:name           "irrigationRecord"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           fiware-agrifood:irrigationRecord .
 
 <https://astrea.linkeddata.es/shapes#fd268784d770a61cc9487f7932e3e9ec>
         a                 sh:PropertyShape ;
@@ -5685,6 +5674,17 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      saref4agri:hasDeathDate .
 
+_:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b> ;
+        rdf:first  [ sh:class  time:Instant ;
+                     sh:path   time:hasTime
+                   ] ;
+        rdf:rest   [ rdf:first  <https://astrea.linkeddata.es/shapes#f1ed01ff4ad7e0110c28d4231cd9616c> ;
+                     rdf:first  [ sh:class  time:Interval ;
+                                  sh:path   time:hasTime
+                                ] ;
+                     rdf:rest   ()
+                   ] .
+
 <https://astrea.linkeddata.es/shapes#3a96954232692327de72313d73b73112>
         a                 sh:NodeShape ;
         rdfs:isDefinedBy  <http://purl.org/linked-data/cube> ;
@@ -5766,7 +5766,7 @@ _:b0    rdf:first  <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171
         sh:description    "An area of land, which might be used for grazing animals or planting crops. The parcel is defined as an undividable logical area of land which contains homogeneous items."@en ;
         sh:name           "Parcel" ;
         sh:nodeKind       sh:IRI ;
-        sh:property       <https://astrea.linkeddata.es/shapes#f53da6dddfab2225aa45d16df0e01e33> , <https://astrea.linkeddata.es/shapes#dc1487d61265ade87dad9cc4a3ae2fc2> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#dc1487d61265ade87dad9cc4a3ae2fc2> , <https://astrea.linkeddata.es/shapes#f53da6dddfab2225aa45d16df0e01e33> ;
         sh:targetClass    foodie:Plot , fiware-agrifood:AgriParcel , saref4agri:Parcel .
 
 <https://astrea.linkeddata.es/shapes#0be6929b1105a4e616840d0ad08fede9>

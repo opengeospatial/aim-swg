@@ -232,7 +232,7 @@
         sh:name           "Observation"@en ;
         sh:nodeKind       sh:IRI ;
         sh:property       <https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324> , <https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee> ;
-        sh:targetClass    saref:Observation .
+        sh:targetClass    saref:Observation , sosa:Observation .
 
 <https://astrea.linkeddata.es/shapes#e32f5c6affc3f1a530406d8609cd9c37>
         a                 sh:NodeShape ;
@@ -361,12 +361,6 @@
         sh:nodeKind       sh:Literal ;
         sh:path           saref:hasValue .
 
-<https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462>
-        a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:int ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      foodie:nonQuantitativeProperty .
-
 <https://astrea.linkeddata.es/shapes#c46aff58e3de65136a5a2aca7c45156d>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/schema.json> ;
@@ -383,6 +377,12 @@
         sh:name         "is controlled by"@en ;
         sh:nodeKind     sh:BlankNodeOrIRI ;
         sh:path         saref:isControlledBy .
+
+<https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      foodie:nonQuantitativeProperty .
 
 <https://astrea.linkeddata.es/report/236481030>
         a       <https://w3id.org/def/astrea#ReportEntry> ;
