@@ -593,18 +593,20 @@ saref:FeatureOfInterest a owl:Class ;
                                            rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
 ###  https://saref.etsi.org/core/Humidity
-saref:Humidity a owl:Class ;
-                                  rdfs:subClassOf saref:Property ;
-                                  rdfs:comment "A saref:Property related to some measurements that are characterized by a certain value that is measured in a humidity unit" ;
-                                  rdfs:label "Humidity"@en ;
-                                  rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+# deprecated
+#saref:Humidity a owl:Class ;
+#                                  rdfs:subClassOf saref:Property ;
+#                                  rdfs:comment "A saref:Property related to some measurements that are characterized by a certain value that is measured in a humidity unit" ;
+#                                  rdfs:label "Humidity"@en ;
+#                                  rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
 ###  https://saref.etsi.org/core/Temperature
-saref:Temperature a owl:Class ;
-                                     rdfs:subClassOf saref:Property ;
-                                     rdfs:comment "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)" ;
-                                     rdfs:label "Temperature"@en ;
-                                     rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+# deprecated
+#saref:Temperature a owl:Class ;
+#                                     rdfs:subClassOf saref:Property ;
+#                                     rdfs:comment "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)" ;
+#                                     rdfs:label "Temperature"@en ;
+#                                     rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
 ###  https://saref.etsi.org/saref4agri/Soil
 saref4agri:Soil a owl:Class ;
@@ -746,7 +748,7 @@ sosa:isObservedBy rdfs:subPropertyOf saref:isObservedBy .
 #saref:Property owl:equivalentClass foodie:PropertyType .
 saref:Property owl:equivalentClass foodie:PropertyTypeValue .
 saref:Property owl:equivalentClass qu:QuantityKind .
-saref:Temperature owl:equivalentClass dim:Temperature .
+#saref:Temperature owl:equivalentClass dim:Temperature .
 
 saref:hasTimestamp owl:equivalentProperty sosa:resultTime .
 saref:hasValue owl:equivalentProperty sosa:hasSimpleResult .
@@ -833,14 +835,14 @@ saref4agri:SoilTemperature owl:sameAs cf:soil_temperature .
 
 ###  https://saref.etsi.org/saref4agri/AirTemperature
 saref4agri:AirTemperature a owl:NamedIndividual ,
-                         saref:Temperature ;
+                         saref:Property ;
                 rdfs:comment "The degree or intensity of heat present in the air." ;
                 rdfs:label "Air temperature"@en ;
                 rdfs:isDefinedBy <https://saref.etsi.org/saref4agri/> .
 
 ###  https://saref.etsi.org/saref4agri/AmbientHumidity
 saref4agri:AmbientHumidity a owl:NamedIndividual ,
-                          saref:Humidity ;
+                          saref:Property ;
                  rdfs:comment "The amount of water vapour in the air." ;
                  rdfs:label "Ambient huidity"@en ;
                  rdfs:isDefinedBy <https://saref.etsi.org/saref4agri/> .
@@ -875,10 +877,22 @@ saref4agri:SoilMoisture a owl:NamedIndividual ,
 
 ###  https://saref.etsi.org/saref4agri/SoilTemperature
 saref4agri:SoilTemperature a owl:NamedIndividual ,
-                          saref:Temperature ;
+                          saref:Property ;
                  rdfs:comment "The degree or intensity of heat present in the soil." ;
                  rdfs:label "Soil temperature"@en ;
                  rdfs:isDefinedBy <https://saref.etsi.org/saref4agri/> .
+
+###  https://saref.etsi.org/saref4agri/Intake
+saref4agri:Intake a owl:NamedIndividual , saref:Property ;
+  rdfs:comment "The amount of food or other substance taken into the body of an animal or into the soil."@en ;
+  rdfs:label "Intake"@en ;
+  rdfs:isDefinedBy <https://saref.etsi.org/saref4agri/> .
+
+###  https://saref.etsi.org/saref4agri/Yield
+saref4agri:Yield a owl:NamedIndividual , saref:Property ;
+  rdfs:comment "The produced amount of food for animals or of agricultural products."@en ;
+  rdfs:label "Yield"@en ;
+  rdfs:isDefinedBy <https://saref.etsi.org/saref4agri/> .                
 
 <http://foodie-cloud.com/model/foodie/code/PropertyTypeValue/organicMatter>
         a               skos:Concept ;
