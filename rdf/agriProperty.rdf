@@ -33,14 +33,8 @@
     xmlns:ssn="http://www.w3.org/ns/ssn/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:fiware-agrifood="https://smartdatamodels.org/dataModel.Agrifood/" > 
-  <rdf:Description rdf:about="https://saref.etsi.org/core/controlsProperty">
-    <rdfs:label xml:lang="en">controls property</rdfs:label>
-    <rdfs:comment>A relationship specifying the Property that can be controlled by a certain Device</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="A0">
-    <foaf:name>Ioanna Roussaki</foaf:name>
+    <foaf:name>George Routis</foaf:name>
     <schema:affiliation rdf:nodeID="A1"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_albedo">
@@ -58,25 +52,25 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/core/Property">
-    <rdfs:comment>Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A2"/>
-    <owl:disjointWith rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
-    <rdfs:subClassOf rdf:nodeID="A3"/>
-    <rdfs:comment xml:lang="en">An aspect of an entity that can be observable by a sensor.</rdfs:comment>
-    <owl:equivalentClass rdf:resource="http://foodie-cloud.com/model/foodie#PropertyTypeValue"/>
-    <rdfs:label>Property</rdfs:label>
-    <rdfs:label xml:lang="en">Property</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:equivalentClass rdf:resource="http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind"/>
-    <rdfs:subClassOf rdf:nodeID="A4"/>
-    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <owl:equivalentClass rdf:resource="http://foodie-cloud.com/model/foodie#PropertyTypeValue"/>
+    <rdfs:label xml:lang="en">Property</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <skos:note xml:lang="en">Concepts from existing code lists, vocabularies, and taxonomies, may be used as instances of saref:Property.</skos:note>
+    <rdfs:comment xml:lang="en">Identifiable qualities of features of interest that can be target of devices, such as observed or controlled. A property can apply to different features of interest.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-feature#SurfaceLayer">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-feature"/>
     <rdfs:comment>A cf-feature:SurfaceLayer is something that is a ssn:FeatureOfInterest</rdfs:comment>
     <rdfs:label>Surface Layer</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:unionOf rdf:nodeID="A5"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#thickness_of_rainfall_amount">
@@ -108,12 +102,6 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasValue"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Agrifood/soilMoistureVwc">
     <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/hasValue"/>
     <rdfs:isDefinedBy rdf:resource="https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriParcelRecord/schema.json"/>
@@ -121,12 +109,10 @@
     <rdfs:label xml:lang="en">soilMoistureVwc</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/measurementMadeBy">
-    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/madeBySensor"/>
-    <rdfs:label xml:lang="en">measurement made by</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdfs:comment xml:lang="en">Relation between a measurement and the device that made it.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#propertyName"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#snowfall_flux">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -152,10 +138,16 @@
   <rdf:Description rdf:about="https://saref.etsi.org/core/hasTimestamp">
     <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/resultTime"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
+    <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/madeBy"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/core/hasProperty">
-    <rdfs:label xml:lang="en">has property</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdfs:comment xml:lang="en">Relation between a feature of interest and its properties.</rdfs:comment>
+    <rdfs:range rdf:resource="https://saref.etsi.org/core/Property"/>
+    <rdfs:domain rdf:nodeID="A7"/>
+    <skos:historyNote xml:lang="en">V3.2.1: applicability of saref:hasProperty is relaxed to also saref:FeatureKind</skos:historyNote>
+    <rdfs:comment xml:lang="en">Links a feature kind or a feature of interest to one of its properties.</rdfs:comment>
+    <rdfs:label xml:lang="en">has property</rdfs:label>
     <owl:inverseOf rdf:resource="https://saref.etsi.org/core/isPropertyOf"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -174,13 +166,13 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#MassPerTimePerArea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/makesMeasurement">
-    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
-    <rdfs:label xml:lang="en">makes measurement</rdfs:label>
-    <rdfs:comment>A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/measurementMadeBy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/observes">
+    <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/observes"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <foaf:name>Raul Palma</foaf:name>
+    <rdfs:seeAlso rdf:resource="http://orcid.org/0000-0003-4289-4922"/>
+    <schema:affiliation rdf:nodeID="A9"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-feature#soil">
     <ssn:hasProperty rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property#volume_fraction_of_condensed_water_in_soil"/>
@@ -255,6 +247,15 @@
     <rdfs:label xml:lang="en">pressureTendency</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <foaf:name>DEMETER project</foaf:name>
+    <foaf:homepage rdf:resource="https://h2020-demeter.eu/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureKind"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#vegetation_carbon_content">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>"Content" indicates a quantity per unit area. "Vegetation" means any plants e.g. trees, shrubs, grass</rdfs:comment>
@@ -262,17 +263,18 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#SurfaceDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <foaf:name>PSNC</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeObservation">
+    <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/madeExecution"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Agrifood/hasDevice">
     <rdfs:isDefinedBy rdf:resource="https://github.com/GSMADeveloper/NGSI-LD-Entities/blob/master/definitions/Agri-Parcel.md"/>
     <rdfs:isDefinedBy rdf:resource="https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriParcelRecord/schema.json"/>
     <rdfs:comment>Reference to the IoT devices associated with this [entity] i.e. sensors, controls.</rdfs:comment>
     <rdfs:label xml:lang="en">hasDevice</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#quantitativeProperty"/>
-    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_thickness_of_large_scale_snowfall_amount">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -288,13 +290,6 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Dimensionless"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/relatesToProperty">
-    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-    <rdfs:label xml:lang="en">relates to property</rdfs:label>
-    <rdfs:comment>A relationship between a measurement and the property it relates to</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Weather/relativeHumidity">
     <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/hasValue"/>
     <rdfs:isDefinedBy rdf:resource="https://github.com/smart-data-models/dataModel.Weather/blob/master/weather-schema.json"/>
@@ -302,18 +297,15 @@
     <rdfs:label xml:lang="en">relativeHumidity</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/isMeasuredByDevice">
-    <rdfs:label xml:lang="en">is measured by device</rdfs:label>
-    <rdfs:comment>A relationship specifying the devices that can measure a certain property</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Agrifood/soilMoistureEc">
     <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/hasValue"/>
     <rdfs:isDefinedBy rdf:resource="https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriParcelRecord/schema.json"/>
     <rdfs:comment>Measured as Electrical Conductivity, EC nominally in units of Siemens per meter. Units:'siemens / m'</rdfs:comment>
     <rdfs:label xml:lang="en">soilMoistureEC</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <foaf:name>ICCS</foaf:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://foodie-cloud.com/model/foodie/code/PropertyTypeValue/electricConductivity">
     <rdfs:isDefinedBy rdf:resource="http://foodie-cloud.com/model/foodie"/>
@@ -323,10 +315,6 @@
     <skos:inScheme rdf:resource="http://foodie-cloud.com/model/foodie/code/PropertyTypeValue"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <foaf:name>Rob Atkinson</foaf:name>
-    <schema:affiliation rdf:nodeID="A9"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#water_evaporation_flux_from_soil">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -341,11 +329,6 @@
     <rdfs:comment>The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor</rdfs:comment>
     <rdfs:label xml:lang="en">dewPoint</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredByDevice"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Weather/refPointOfInterest">
     <rdfs:isDefinedBy rdf:resource="https://github.com/smart-data-models/dataModel.Weather/blob/master/weather-schema.json"/>
@@ -367,13 +350,6 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Density"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/isFeatureOfInterestOf">
-    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
-    <rdfs:label xml:lang="en">is feature of interest of</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdfs:comment xml:lang="en">Relation betwwen a feature of interest and the measurments that are about it.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#volume_fraction_of_condensed_water_in_soil_at_critical_point">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>"Condensed water" means liquid and ice. "Volume fraction" is used in the construction volume_fraction_of_X_in_Y, where X is a material constituent of Y.  When soil moisture equals or exceeds the critical point evapotranspiration takes place at the potential rate and is controlled by the ambient meteorological conditions (temperature, wind, relative humidity).  Evapotranspiration is the sum of evaporation and plant transpiration.  Potential evapotranspiration is the rate at which evapotranspiration would occur under ambient conditions from a uniformly vegetated area when the water supply is not limiting</rdfs:comment>
@@ -390,7 +366,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Weather/refDevice">
-    <owl:equivalentProperty rdf:resource="https://saref.etsi.org/core/measurementMadeBy"/>
     <rdfs:isDefinedBy rdf:resource="https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/schema.json"/>
     <rdfs:comment>A reference to the device(s) which captured this observation.</rdfs:comment>
     <rdfs:label xml:lang="en">refDevice</rdfs:label>
@@ -434,6 +409,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_temperature">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>Soil temperature is the bulk temperature of the soil, not the surface (skin) temperature</rdfs:comment>
@@ -441,35 +421,29 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Temperature"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A10">
-    <owl:onClass rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredIn"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A1">
+    <foaf:name>ICCS</foaf:name>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A11">
-    <foaf:name>George Routis</foaf:name>
-    <schema:affiliation rdf:nodeID="A12"/>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
+    <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/madeBy"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/core/FeatureOfInterest">
     <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
     <rdfs:label xml:lang="en">Feature of interest</rdfs:label>
-    <rdfs:comment>A feature of interest represents any real world entity from which a property is measured</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A13"/>
-    <rdfs:subClassOf rdf:nodeID="A14"/>
+    <rdfs:comment xml:lang="en">A feature of interest represents any real world entity from which a property or a state may be targeted, such as observed and controlled. An instance of saref:FeatureOfInterest represents one specific real world entity.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://foodie-cloud.com/model/foodie#PropertyType">
-    <rdfs:subClassOf rdf:nodeID="A15"/>
     <skos:prefLabel xml:lang="en">PropertyType</skos:prefLabel>
-    <rdfs:subClassOf rdf:nodeID="A16"/>
     <rdfs:comment>An entity class for the Measured Properties</rdfs:comment>
     <rdfs:label>PropertyType</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A7"/>
-    <rdfs:subClassOf rdf:nodeID="A17"/>
+    <rdfs:subClassOf rdf:nodeID="A13"/>
     <rdfs:isDefinedBy rdf:resource="http://foodie-cloud.com/model/foodie"/>
-    <rdfs:subClassOf rdf:nodeID="A18"/>
+    <rdfs:subClassOf rdf:nodeID="A14"/>
+    <rdfs:subClassOf rdf:nodeID="A15"/>
+    <rdfs:subClassOf rdf:nodeID="A6"/>
+    <rdfs:subClassOf rdf:nodeID="A16"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/core/Temperature">
@@ -480,10 +454,13 @@
     <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A15">
-    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#nonQuantitativeProperty"/>
-    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/FeatureKind">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:subClassOf rdf:nodeID="A17"/>
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <rdfs:comment xml:lang="en">Feature kinds allow to describe kinds of features of interest, with common properties having the same value, and common states being the same. An instance of saref:FeatureKind represents an archetype of real world entities, for example to populate product catalogs.</rdfs:comment>
+    <rdfs:label xml:lang="en">Feature kinds</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#snow_soot_content">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -535,10 +512,13 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Dimensionless"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A19">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToProperty"/>
+  <rdf:Description rdf:nodeID="A16">
+    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#nonQuantitativeProperty"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <foaf:name>OGC</foaf:name>
   </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Weather/windSpeed">
     <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/hasValue"/>
@@ -580,17 +560,17 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureKind"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_moisture_content">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>"moisture" means water in all phases contained in soil. "Content" indicates a quantity per unit area. The "soil content" of a quantity refers to the vertical integral from the surface down to the bottom of the soil model. For the content between specified levels in the soil, standard names including content_of_soil_layer are used</rdfs:comment>
     <rdfs:label>soil moisture content</rdfs:label>
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#SurfaceDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A20">
-    <foaf:name>Raul Palma</foaf:name>
-    <rdfs:seeAlso rdf:resource="http://orcid.org/0000-0003-4289-4922"/>
-    <schema:affiliation rdf:nodeID="A21"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#volume_fraction_of_condensed_water_in_soil_at_field_capacity">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -625,10 +605,22 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#SurfaceDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A17">
-    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#propertyType"/>
-    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/Observation">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:subClassOf rdf:nodeID="A19"/>
+    <rdfs:subClassOf rdf:nodeID="A20"/>
+    <rdfs:comment xml:lang="en">A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a property should have a property value as a result.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/ProcedureExecution"/>
+    <rdfs:label xml:lang="en">Observation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/observes">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <skos:historyNote xml:lang="en">V3.2.1: Introduced property saref:observes, as sub-property of saref:targets. and generalization of measures.</skos:historyNote>
+    <rdfs:comment xml:lang="en">Links a device, function, command, or procedure execution, to the feature, property, or state, it observes.</rdfs:comment>
+    <rdfs:label xml:lang="en">observes</rdfs:label>
+    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/isObservedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#thickness_of_snowfall_amount">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -653,6 +645,13 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Dimensionless"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/ProcedureExecution">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <skos:historyNote xml:lang="en">V3.2.1: Introduced saref:ProcedureExecution.</skos:historyNote>
+    <rdfs:comment xml:lang="en">Represents the act of carrying out a procedure.</rdfs:comment>
+    <rdfs:label xml:lang="en">Procedure Execution</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_thermal_conductivity">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>Thermal conductivity is the constant k in the formula q = -k grad T where q is the heat transfer per unit time per unit area of a surface normal to the direction of transfer and grad T is the temperature gradient. Thermal conductivity is a property of the material</rdfs:comment>
@@ -674,9 +673,6 @@
     <rdfs:label xml:lang="en">precipitation</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A12">
-    <foaf:name>ICCS</foaf:name>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#moisture_content_of_soil_layer">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>"moisture" means water in all phases contained in soil. "Content" indicates a quantity per unit area. "Layer" means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. Quantities defined for a soil layer must have a vertical coordinate variable with boundaries indicating the extent of the layer(s)</rdfs:comment>
@@ -696,6 +692,16 @@
     <rdfs:comment>Text description of the weather. Prev: The observed weather type. It is represented by a comma separated list of weather statuses, for instance overcast, lightRain.</rdfs:comment>
     <rdfs:label xml:lang="en">weatherType</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/madeBy">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <skos:historyNote xml:lang="en">V3.2.1: Introduce saref:madeBy (resp. saref:madeExecution) as generalization of saref:measurementMadeBy (resp. saref:makesMeasurement).</skos:historyNote>
+    <rdfs:range rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/core/ProcedureExecution"/>
+    <rdfs:comment xml:lang="en">Links a procedure execution to the entity (e.g., device) that made it.</rdfs:comment>
+    <rdfs:label xml:lang="en">made by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/madeExecution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://dbpedia.org/resource/DBM">
     <rdfs:label xml:lang="en">decibel-milliwatts</rdfs:label>
@@ -725,14 +731,6 @@
     <rdfs:label xml:lang="en">snowHeight</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/hasFeatureOfInterest">
-    <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
-    <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdfs:comment xml:lang="en">Relation between a measurement and the feature of interest being measured.</rdfs:comment>
-    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/isFeatureOfInterestOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://foodie-cloud.com/model/foodie#PropertyTypeValue">
     <rdfs:isDefinedBy rdf:resource="http://foodie-cloud.com/model/foodie"/>
     <rdfs:comment>An entity class for the values of the measured properties</rdfs:comment>
@@ -755,6 +753,9 @@
     <rdfs:label>WeatherForecast</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isFeatureOfInterestOf">
+    <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/madeExecution"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_hydraulic_conductivity_at_saturation">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>Hydraulic conductivity is the constant k in Darcy's Law q=-k grad h for fluid flow q (volume transport per unit area i.e. velocity) through a porous medium, where h is the hydraulic head (pressure expressed as an equivalent depth of water)</rdfs:comment>
@@ -776,16 +777,12 @@
     <rdf:type rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A22">
-    <owl:onClass rdf:resource="https://saref.etsi.org/core/Property"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A14">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/isObservedBy">
+    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:comment xml:lang="en">Links a feature, property, or state, to the device, function, command, or procedure execution, that observes it.</rdfs:comment>
+    <rdfs:label xml:lang="en">is observed by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/observes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#thickness_of_convective_snowfall_amount">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -794,9 +791,9 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Distance"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToMeasurement"/>
+  <rdf:Description rdf:nodeID="A14">
+    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#propertyType"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://foodie-cloud.com/model/foodie#propertyType">
@@ -808,11 +805,15 @@
     <rdfs:range rdf:resource="http://foodie-cloud.com/model/foodie#PropertyTypeValue"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:unionOf rdf:nodeID="A21"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/core/isMeasuredIn">
     <owl:equivalentProperty rdf:resource="http://qudt.org/schema/qudt/unit"/>
+    <skos:historyNote xml:lang="en">V3.2.1: Relaxed domain of saref:isMeasuredIn so it can apply to saref:PropertyValue as well as saref:Measurement. The new range will be enforced in the next major revision of SAREF.</skos:historyNote>
     <rdfs:label xml:lang="en">is measured in</rdfs:label>
-    <rdfs:comment>A relationship identifying the unit of measure used for a certain entity.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+    <rdfs:comment xml:lang="en">A relationship identifying the unit of measure used for a certain entity.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/saref4agri/PlantGrowthStage">
@@ -828,6 +829,11 @@
     <rdfs:label>soil thermal capacity</rdfs:label>
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#SpecificEntropy"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+    <owl:onProperty rdf:resource="https://saref.etsi.org/core/observes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_respiration_carbon_flux">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -879,10 +885,11 @@
     <rdfs:label xml:lang="en">solarRadiation</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/measuresProperty">
-    <rdfs:label xml:lang="en">measures property</rdfs:label>
-    <rdfs:comment>A relationship specifying the Property that can be measured by a certain Device</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/isControlledBy">
+    <skos:historyNote xml:lang="en">V3.2.1: Introduced property saref:isControlledBy.</skos:historyNote>
+    <rdfs:comment xml:lang="en">Links a feature, property, or state, to the device, function, command, or procedure execution, that controls it.</rdfs:comment>
+    <rdfs:label xml:lang="en">is controlled by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/controls"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#precipitation_amount">
@@ -891,6 +898,11 @@
     <rdfs:label>precipitation amount</rdfs:label>
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#SurfaceDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    <owl:onProperty rdf:resource="https://saref.etsi.org/core/madeBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/saref4agri/Precipitation">
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
@@ -925,9 +937,6 @@
     <rdfs:label xml:lang="en">streamGauge</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <foaf:name>OGC</foaf:name>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_large_scale_snowfall_rate">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>"lwe" means liquid water equivalent</rdfs:comment>
@@ -950,6 +959,10 @@
     <rdfs:comment>The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called "watt". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</rdfs:comment>
     <rdfs:comment xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called "watt". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A22"/>
+    <rdf:first rdf:resource="https://saref.etsi.org/core/FeatureKind"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_thickness_of_soil_moisture_content">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -984,20 +997,9 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Temperature"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A16">
-    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#propertyName"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="A23">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredIn"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A24">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasFeatureOfInterest"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <foaf:name>Ioanna Roussaki</foaf:name>
+    <schema:affiliation rdf:nodeID="A12"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Agrifood/relativeHumidity">
     <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/hasValue"/>
@@ -1012,12 +1014,6 @@
     <rdfs:label>large scale snowfall amount</rdfs:label>
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#SurfaceDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/relatesToMeasurement">
-    <rdfs:label xml:lang="en">relates to measurement</rdfs:label>
-    <rdfs:comment>A relationship between a property and the measurements it relates to</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_porosity">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -1040,6 +1036,9 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Distance"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/observedProperty">
+    <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/observes"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_convective_snowfall_rate">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>"lwe" means liquid water equivalent</rdfs:comment>
@@ -1060,22 +1059,9 @@
     <ssn:hasProperty rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_thickness_of_frozen_water_content_of_soil_layer"/>
     <ssn:hasProperty rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property#moisture_content_of_soil_layer_at_field_capacity"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/Measurement">
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdfs:subClassOf rdf:nodeID="A25"/>
-    <owl:disjointWith rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
-    <owl:disjointWith rdf:resource="https://saref.etsi.org/core/Property"/>
-    <rdfs:subClassOf rdf:nodeID="A26"/>
-    <rdfs:subClassOf rdf:nodeID="A19"/>
-    <rdfs:subClassOf rdf:nodeID="A10"/>
-    <rdfs:comment xml:lang="en">Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-    <rdfs:subClassOf rdf:nodeID="A23"/>
-    <rdfs:subClassOf rdf:nodeID="A22"/>
-    <rdfs:label xml:lang="en">Measurement</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A6"/>
-    <rdfs:subClassOf rdf:nodeID="A24"/>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#soil_frozen_water_content">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -1084,10 +1070,18 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#SurfaceDensity"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#quantitativeProperty"/>
+    <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:maxCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/core/isPropertyOf">
-    <rdfs:label xml:lang="en">is property of</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdfs:comment xml:lang="en">Relation between a property and a feature of interest in which such property appears.</rdfs:comment>
+    <rdfs:range rdf:nodeID="A4"/>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/core/Property"/>
+    <rdfs:comment xml:lang="en">Links a property to the feature kind or feature of interest it is a property of.</rdfs:comment>
+    <rdfs:label xml:lang="en">is property of</rdfs:label>
+    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/hasProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Weather/illuminance">
@@ -1104,12 +1098,6 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Dimensionless"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://saref.etsi.org/core/isControlledByDevice">
-    <rdfs:label xml:lang="en">is controlled by device</rdfs:label>
-    <rdfs:comment>A relationship specifying the devices that can control a certain property</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-feature#Layer">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-feature"/>
     <rdfs:comment>A cf-feature:Layer is something that is a ssn:FeatureOfInterest</rdfs:comment>
@@ -1123,11 +1111,6 @@
     <rdfs:comment>Upper layer of the earth in which plants grow.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A18">
-    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#analysisDate"/>
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://foodie-cloud.com/model/foodie#nonQuantitativeProperty">
     <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/hasValue"/>
@@ -1154,12 +1137,20 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://saref.etsi.org/core/Property"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:onProperty rdf:resource="http://foodie-cloud.com/model/foodie#analysisDate"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_snowfall_rate">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>"lwe" means liquid water equivalent</rdfs:comment>
     <rdfs:label>lwe snowfall rate</rdfs:label>
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#VelocityOrSpeed"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isObservedBy">
+    <rdfs:subPropertyOf rdf:resource="https://saref.etsi.org/core/isObservedBy"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#lwe_thickness_of_convective_snowfall_amount">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -1168,25 +1159,12 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Distance"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/isControlledByDevice"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A26">
-    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasValue"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#mass_concentration_of_condensed_water_in_soil">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
     <rdfs:comment>Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y.  Condensed water means liquid and ice</rdfs:comment>
     <rdfs:label>mass concentration of condensed water in soil</rdfs:label>
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Density"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A21">
-    <foaf:name>PSNC</foaf:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://foodie-cloud.com/model/foodie/code/PropertyTypeValue/organicMatter">
     <rdfs:isDefinedBy rdf:resource="http://foodie-cloud.com/model/foodie"/>
@@ -1210,6 +1188,13 @@
     <rdfs:comment>A relationship defining the value of a certain property, e.g., energy or power</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/controls">
+    <skos:historyNote xml:lang="en">V3.2.1: Introduced property saref:controls, as sub-property of saref:targets. and generalization of saref:controlsProperty.</skos:historyNote>
+    <rdfs:comment xml:lang="en">Links a device, function, command, or procedure execution, to the feature, property, or state, it controls.</rdfs:comment>
+    <rdfs:label xml:lang="en">controls</rdfs:label>
+    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/isControlledBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/saref4agri/AirTemperature">
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/saref4agri/"/>
@@ -1252,20 +1237,21 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/demeter/agri/agriProperty">
-    <foaf:maker rdf:nodeID="A27"/>
     <owl:imports rdf:resource="https://w3id.org/demeter/agri/agriCommon"/>
-    <dct:contributor rdf:nodeID="A8"/>
+    <owl:versionInfo>3.5</owl:versionInfo>
     <owl:versionIRI rdf:resource="https://w3id.org/demeter/agri/agriProperty/3.0"/>
-    <dct:contributor rdf:nodeID="A11"/>
     <dct:rights xml:lang="en">This vocabulary is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0</dct:rights>
-    <dct:contributor rdf:nodeID="A0"/>
-    <dct:creator rdf:nodeID="A20"/>
-    <owl:versionInfo>3.0</owl:versionInfo>
+    <dct:contributor rdf:nodeID="A23"/>
+    <dct:creator rdf:nodeID="A8"/>
     <rdfs:comment xml:lang="en">The DEMETER Agriculture Information Model (AIM) is the common vocabulary in DEMETER project providing the basis for semantic interoperability across smart farming solutions</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <skos:historyNote xml:lang="en">V3.5: re-aligns with v4.1.1 of SAREF core model</skos:historyNote>
+    <foaf:maker rdf:nodeID="A10"/>
     <dct:title xml:lang="en">DEMETER AgriProperty</dct:title>
     <dct:description xml:lang="en">The DEMETER AgriProperty is one of the agri profiles of DEMETER AIM. This profile was created by reusing and aligning well-known ontologies and vocabularies</dct:description>
+    <dct:contributor rdf:nodeID="A0"/>
     <rdfs:label>DEMETER AgriProperty</rdfs:label>
+    <dct:contributor rdf:nodeID="A25"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://smartdatamodels.org/dataModel.Weather/WeatherObserved">
     <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
@@ -1281,10 +1267,9 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#EnergyFlux"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A25">
-    <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasTimestamp"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first rdf:resource="https://saref.etsi.org/core/FeatureKind"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#volume_fraction_of_condensed_water_in_soil_pores">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -1293,13 +1278,18 @@
     <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/qu/dim#Dimensionless"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A13">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/isFeatureOfInterestOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:about="https://saref.etsi.org/core/madeExecution">
+    <rdfs:range rdf:resource="https://saref.etsi.org/core/ProcedureExecution"/>
+    <rdfs:domain rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+    <rdfs:comment xml:lang="en">Links an entity (e.g., device) to the procedure execution it made.</rdfs:comment>
+    <rdfs:label xml:lang="en">made execution</rdfs:label>
+    <owl:inverseOf rdf:resource="https://saref.etsi.org/core/madeBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <foaf:name>ICCS</foaf:name>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-property#atmosphere_mass_content_of_carbon_dioxide">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-property"/>
@@ -1329,6 +1319,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <foaf:name>Rob Atkinson</foaf:name>
+    <schema:affiliation rdf:nodeID="A18"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://saref.etsi.org/core/Humidity">
     <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
     <rdfs:label xml:lang="en">Humidity</rdfs:label>
@@ -1336,20 +1330,15 @@
     <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/cf/cf-feature#Medium">
     <rdfs:isDefinedBy rdf:resource="http://purl.oclc.org/NET/ssnx/cf/cf-feature"/>
     <rdfs:comment>A cf-feature:Medium is something that is a ssn:FeatureOfInterest</rdfs:comment>
     <rdfs:label>Medium</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
-    <owl:onProperty rdf:resource="https://saref.etsi.org/core/isPropertyOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A27">
-    <foaf:name>DEMETER project</foaf:name>
-    <foaf:homepage rdf:resource="https://h2020-demeter.eu/"/>
   </rdf:Description>
 </rdf:RDF>

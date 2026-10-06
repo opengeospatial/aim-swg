@@ -60,7 +60,8 @@
                             dct:title "DEMETER AgriProperty"@en ;
                             rdfs:label "DEMETER AgriProperty" ;
                             rdfs:comment "The DEMETER Agriculture Information Model (AIM) is the common vocabulary in DEMETER project providing the basis for semantic interoperability across smart farming solutions"@en ;
-                            owl:versionInfo "3.0" ;
+                            owl:versionInfo "3.5" ;
+                            skos:historyNote "V3.5: re-aligns with v4.1.1 of SAREF core model"@en ;
                             foaf:maker [ foaf:homepage <https://h2020-demeter.eu/> ;
                                          foaf:name "DEMETER project"
                                        ] .
@@ -80,86 +81,150 @@
 #################################################################
 
 ###  https://saref.etsi.org/core/isControlledByDevice
-saref:isControlledByDevice a owl:ObjectProperty ;
-                                              rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                              rdfs:comment "A relationship specifying the devices that can control a certain property" ;
-                                              rdfs:label "is controlled by device"@en .
+# deprecated
+#saref:isControlledByDevice a owl:ObjectProperty ;
+#                                              rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                              rdfs:comment "A relationship specifying the devices that can control a certain property" ;
+#                                              rdfs:label "is controlled by device"@en .
 
 ###  https://saref.etsi.org/core/isMeasuredByDevice
-saref:isMeasuredByDevice a owl:ObjectProperty ;
-                                            rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                            rdfs:comment "A relationship specifying the devices that can measure a certain property" ;
-                                            rdfs:label "is measured by device"@en .
+# deprecated
+#saref:isMeasuredByDevice a owl:ObjectProperty ;
+#                                            rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                            rdfs:comment "A relationship specifying the devices that can measure a certain property" ;
+#                                            rdfs:label "is measured by device"@en .
 
 ###  https://saref.etsi.org/core/relatesToMeasurement
-saref:relatesToMeasurement a owl:ObjectProperty ;
-                                              rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                              rdfs:comment "A relationship between a property and the measurements it relates to" ;
-                                              rdfs:label "relates to measurement"@en .
+# deprecated
+#saref:relatesToMeasurement a owl:ObjectProperty ;
+#                                              rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                              rdfs:comment "A relationship between a property and the measurements it relates to" ;
+#                                              rdfs:label "relates to measurement"@en .
+
+###  https://saref.etsi.org/core/relatesToProperty
+# deprecated
+#saref:relatesToProperty a owl:ObjectProperty ;
+#                                           rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                           rdfs:comment "A relationship between a measurement and the property it relates to" ;
+#                                           rdfs:label "relates to property"@en .
+
+###  https://saref.etsi.org/core/makesMeasurement
+# deprecated
+#saref:makesMeasurement a owl:ObjectProperty ;
+#                                          owl:inverseOf saref:measurementMadeBy ;
+#                                          rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                          rdfs:comment "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates." ;
+#                                          rdfs:label "makes measurement"@en .
+
+###  https://saref.etsi.org/core/measurementMadeBy
+# deprecated
+#saref:measurementMadeBy a owl:ObjectProperty ;
+#                                           rdfs:comment "Relation between a measurement and the device that made it."@en ;
+#                                           rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                           rdfs:label "measurement made by"@en .
+###  https://saref.etsi.org/core/controlsProperty
+# deprecated
+#saref:controlsProperty a owl:ObjectProperty ;
+#                                          rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                          rdfs:comment "A relationship specifying the Property that can be controlled by a certain Device";
+#                                          rdfs:label "controls property"@en .
+#
+
+
+###  https://saref.etsi.org/core/measuresProperty
+# deprecated 
+#saref:measuresProperty a owl:ObjectProperty ;
+#                                          rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                          rdfs:comment "A relationship specifying the Property that can be measured by a certain Device" ;
+#                                          rdfs:label "measures property"@en .
+
+###  https://saref.etsi.org/core/hasFeatureOfInterest
+# deprecated
+#saref:hasFeatureOfInterest a owl:ObjectProperty ;
+#                                              owl:inverseOf saref:isFeatureOfInterestOf ;
+#                                              rdfs:comment "Relation between a measurement and the feature of interest being measured."@en ;
+#                                              rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                              rdfs:label "has feature of interest"@en .
+
+###  https://saref.etsi.org/core/isFeatureOfInterestOf
+# deprecated
+#saref:isFeatureOfInterestOf a owl:ObjectProperty ;
+#                                               rdfs:comment "Relation betwwen a feature of interest and the measurments that are about it."@en ;
+#                                               rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                               rdfs:label "is feature of interest of"@en .
 
 ###  https://saref.etsi.org/core/isMeasuredIn
 saref:isMeasuredIn a owl:ObjectProperty ;
-                                      rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                      rdfs:comment "A relationship identifying the unit of measure used for a certain entity." ;
-                                      rdfs:label "is measured in"@en .
+    rdfs:comment "A relationship identifying the unit of measure used for a certain entity."@en ;        
+    rdfs:label "is measured in"@en ;
+    skos:historyNote "V3.2.1: Relaxed domain of saref:isMeasuredIn so it can apply to saref:PropertyValue as well as saref:Measurement. The new range will be enforced in the next major revision of SAREF."@en .
 
-###  https://saref.etsi.org/core/relatesToProperty
-saref:relatesToProperty a owl:ObjectProperty ;
-                                           rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                           rdfs:comment "A relationship between a measurement and the property it relates to" ;
-                                           rdfs:label "relates to property"@en .
+###  https://saref.etsi.org/core/madeBy
+saref:madeBy a owl:ObjectProperty  ;
+    owl:inverseOf saref:madeExecution ;
+    rdfs:label "made by"@en ;
+    rdfs:comment "Links a procedure execution to the entity (e.g., device) that made it."@en ;
+    rdfs:domain saref:ProcedureExecution ;
+    rdfs:range saref:FeatureOfInterest ;
+    skos:historyNote "V3.2.1: Introduce saref:madeBy (resp. saref:madeExecution) as generalization of saref:measurementMadeBy (resp. saref:makesMeasurement)."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
-###  https://saref.etsi.org/core/makesMeasurement
-saref:makesMeasurement a owl:ObjectProperty ;
-                                          owl:inverseOf saref:measurementMadeBy ;
-                                          rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                          rdfs:comment "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates." ;
-                                          rdfs:label "makes measurement"@en .
+###  https://saref.etsi.org/core/madeExecution
+saref:madeExecution a owl:ObjectProperty  ;
+    owl:inverseOf saref:madeBy ;
+    rdfs:label "made execution"@en ;
+    rdfs:comment "Links an entity (e.g., device) to the procedure execution it made."@en ;
+    rdfs:domain saref:FeatureOfInterest ;
+    rdfs:range saref:ProcedureExecution .
 
-###  https://saref.etsi.org/core/measurementMadeBy
-saref:measurementMadeBy a owl:ObjectProperty ;
-                                           rdfs:comment "Relation between a measurement and the device that made it."@en ;
-                                           rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                           rdfs:label "measurement made by"@en .
+###  https://saref.etsi.org/core/controls
+saref:controls a owl:ObjectProperty ;    
+    owl:inverseOf saref:isControlledBy ;
+    rdfs:label "controls"@en ;
+    rdfs:comment "Links a device, function, command, or procedure execution, to the feature, property, or state, it controls."@en ;
+    skos:historyNote "V3.2.1: Introduced property saref:controls, as sub-property of saref:targets. and generalization of saref:controlsProperty."@en .
+    
+###  https://saref.etsi.org/core/isControlledBy
+saref:isControlledBy a owl:ObjectProperty ;    
+    owl:inverseOf saref:controls ;
+    rdfs:label "is controlled by"@en ;
+    rdfs:comment "Links a feature, property, or state, to the device, function, command, or procedure execution, that controls it."@en ;
+    skos:historyNote "V3.2.1: Introduced property saref:isControlledBy."@en .
 
-###  https://saref.etsi.org/core/controlsProperty
-saref:controlsProperty a owl:ObjectProperty ;
-                                          rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                          rdfs:comment "A relationship specifying the Property that can be controlled by a certain Device";
-                                          rdfs:label "controls property"@en .
+###  https://saref.etsi.org/core/observes
+saref:observes a owl:ObjectProperty ;    
+    owl:inverseOf saref:isObservedBy ;
+    rdfs:label "observes"@en ;
+    rdfs:comment "Links a device, function, command, or procedure execution, to the feature, property, or state, it observes."@en ;
+    skos:historyNote "V3.2.1: Introduced property saref:observes, as sub-property of saref:targets. and generalization of measures."@en ;    
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
-###  https://saref.etsi.org/core/measuresProperty
-saref:measuresProperty a owl:ObjectProperty ;
-                                          rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                          rdfs:comment "A relationship specifying the Property that can be measured by a certain Device" ;
-                                          rdfs:label "measures property"@en .
-
-###  https://saref.etsi.org/core/hasFeatureOfInterest
-saref:hasFeatureOfInterest a owl:ObjectProperty ;
-                                              owl:inverseOf saref:isFeatureOfInterestOf ;
-                                              rdfs:comment "Relation between a measurement and the feature of interest being measured."@en ;
-                                              rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                              rdfs:label "has feature of interest"@en .
-
-###  https://saref.etsi.org/core/isFeatureOfInterestOf
-saref:isFeatureOfInterestOf a owl:ObjectProperty ;
-                                               rdfs:comment "Relation betwwen a feature of interest and the measurments that are about it."@en ;
-                                               rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                               rdfs:label "is feature of interest of"@en .
+###  https://saref.etsi.org/core/isObservedBy
+saref:isObservedBy a owl:ObjectProperty ;    
+    owl:inverseOf saref:observes ;
+    rdfs:label "is observed by"@en ;
+    rdfs:comment "Links a feature, property, or state, to the device, function, command, or procedure execution, that observes it."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
 ###  https://saref.etsi.org/core/hasProperty
 saref:hasProperty a owl:ObjectProperty ;
-                                     owl:inverseOf saref:isPropertyOf ;
-                                     rdfs:comment "Relation between a feature of interest and its properties."@en ;
-                                     rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                     rdfs:label "has property"@en .
+    owl:inverseOf saref:isPropertyOf ;
+    rdfs:label "has property"@en ;
+    rdfs:comment "Links a feature kind or a feature of interest to one of its properties."@en ;
+    skos:historyNote "V3.2.1: applicability of saref:hasProperty is relaxed to also saref:FeatureKind"@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( saref:FeatureKind saref:FeatureOfInterest ) ] ;
+    rdfs:range saref:Property ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
 ###  https://saref.etsi.org/core/isPropertyOf
 saref:isPropertyOf a owl:ObjectProperty ;
-                                      rdfs:comment "Relation between a property and a feature of interest in which such property appears."@en ;
-                                      rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                      rdfs:label "is property of"@en .
-
+    owl:inverseOf saref:hasProperty ;
+    rdfs:label "is property of"@en ;
+    rdfs:comment "Links a property to the feature kind or feature of interest it is a property of."@en ;
+    rdfs:domain saref:Property ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( saref:FeatureKind saref:FeatureOfInterest ) ] ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+                                      
 ### http://foodie-cloud.com/model/foodie#quantitativeProperty
 foodie:quantitativeProperty	a	owl:ObjectProperty ;
         rdfs:range      iso19103:Measure ;
@@ -392,71 +457,117 @@ fiware-weather:snowHeight	a      owl:DatatypeProperty ;
 
 ###  https://saref.etsi.org/core/Property
 saref:Property a owl:Class ;
-                                  rdfs:subClassOf [ a owl:Restriction ;
-                                                    owl:onProperty saref:isControlledByDevice ;
-                                                    owl:allValuesFrom saref:Device
-                                                  ] ,
-                                                  [ a owl:Restriction ;
-                                                    owl:onProperty saref:isMeasuredByDevice ;
-                                                    owl:allValuesFrom saref:Device
-                                                  ] ,
-                                                  [ a owl:Restriction ;
-                                                    owl:onProperty saref:isPropertyOf ;
-                                                    owl:allValuesFrom saref:FeatureOfInterest
-                                                  ] ,
-                                                  [ a owl:Restriction ;
-                                                    owl:onProperty saref:relatesToMeasurement ;
-                                                    owl:allValuesFrom saref:Measurement
-                                                  ] ;
-                                  owl:disjointWith saref:UnitOfMeasure ;
-                                  rdfs:comment "An aspect of an entity that can be observable by a sensor."@en ,
-                                               "Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended." ;
+#                                  rdfs:subClassOf 
+#                                                [ a owl:Restriction ;
+#                                                owl:onProperty saref:isControlledByDevice ;
+#                                                owl:allValuesFrom saref:Device
+#                                                ] ,
+#                                                [ a owl:Restriction ;
+#                                                owl:onProperty saref:isMeasuredByDevice ;
+#                                                owl:allValuesFrom saref:Device
+#                                                ] ,                                                
+#                                                [ a owl:Restriction ;
+#                                                owl:onProperty saref:relatesToMeasurement ;
+#                                                owl:allValuesFrom saref:Measurement
+#                                                ] ;
+#                                                [ a owl:Restriction ;
+#                                                owl:onProperty saref:isPropertyOf ;
+#                                                owl:allValuesFrom saref:FeatureOfInterest
+#                                                ] ;
+                                  rdfs:subClassOf 
+                                                [   a owl:Restriction ;
+                                                owl:onProperty skos:broader ;
+                                                owl:allValuesFrom saref:Property ] ,
+                                                [   a owl:Restriction ;
+                                                owl:onProperty skos:narrower ;
+                                                owl:allValuesFrom saref:Property ] ;
+#                                  owl:disjointWith saref:UnitOfMeasure ;
+#                                  rdfs:comment "An aspect of an entity that can be observable by a sensor."@en ,
+#                                               "Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended." ;
+                                  rdfs:comment "Identifiable qualities of features of interest that can be target of devices, such as observed or controlled. A property can apply to different features of interest."@en ;
+                                  skos:note "Concepts from existing code lists, vocabularies, and taxonomies, may be used as instances of saref:Property."@en ;
                                   rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                  rdfs:label "Property"@en ,
-                                             "Property" .
+                                  rdfs:label "Property"@en .
 
 ###  https://saref.etsi.org/core/Measurement
-saref:Measurement a owl:Class ;
-                                     rdfs:subClassOf [ a owl:Restriction ;
-                                                       owl:onProperty saref:hasFeatureOfInterest ;
-                                                       owl:allValuesFrom saref:FeatureOfInterest
-                                                     ] ,
-                                                     [ a owl:Restriction ;
-                                                       owl:onProperty saref:isMeasuredIn ;
-                                                       owl:allValuesFrom saref:UnitOfMeasure
-                                                     ] ,
-                                                     [ a owl:Restriction ;
-                                                       owl:onProperty saref:relatesToProperty ;
-                                                       owl:allValuesFrom saref:Property
-                                                     ] ,
-                                                     [ a owl:Restriction ;
-                                                       owl:onProperty saref:isMeasuredIn ;
-                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                       owl:onClass saref:UnitOfMeasure
-                                                     ] ,
-                                                     [ a owl:Restriction ;
-                                                       owl:onProperty saref:relatesToProperty ;
-                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                       owl:onClass saref:Property
-                                                     ] ,
-                                                     [ a owl:Restriction ;
-                                                       owl:onProperty saref:hasTimestamp ;
-                                                       owl:allValuesFrom xsd:dateTime
-                                                     ] ,
-                                                     [ a owl:Restriction ;
-                                                       owl:onProperty saref:hasValue ;
-                                                       owl:cardinality "1"^^xsd:nonNegativeInteger
-                                                     ] ,
-                                                     [ a owl:Restriction ;
-                                                       owl:onProperty saref:hasValue ;
-                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                       owl:onDataRange xsd:float
-                                                     ] ;
-                                     owl:disjointWith saref:Property ,
-                                                      saref:UnitOfMeasure ;
-                                     rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
-                                     rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
-                                     rdfs:label "Measurement"@en .
+# deprecated
+#saref:Measurement a owl:Class ;
+#                                     rdfs:subClassOf [ a owl:Restriction ;
+#                                                       owl:onProperty saref:hasFeatureOfInterest ;
+#                                                       owl:allValuesFrom saref:FeatureOfInterest
+#                                                     ] ,
+#                                                     [ a owl:Restriction ;
+#                                                       owl:onProperty saref:isMeasuredIn ;
+#                                                       owl:allValuesFrom saref:UnitOfMeasure
+#                                                     ] ,
+#                                                     [ a owl:Restriction ;
+#                                                       owl:onProperty saref:relatesToProperty ;
+#                                                       owl:allValuesFrom saref:Property
+#                                                     ] ,
+#                                                     [ a owl:Restriction ;
+#                                                       owl:onProperty saref:isMeasuredIn ;
+#                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+#                                                       owl:onClass saref:UnitOfMeasure
+#                                                     ] ,
+#                                                     [ a owl:Restriction ;
+#                                                       owl:onProperty saref:relatesToProperty ;
+#                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+#                                                       owl:onClass saref:Property
+#                                                     ] ,
+#                                                     [ a owl:Restriction ;
+#                                                       owl:onProperty saref:hasTimestamp ;
+#                                                       owl:allValuesFrom xsd:dateTime
+#                                                     ] ,
+#                                                     [ a owl:Restriction ;
+#                                                       owl:onProperty saref:hasValue ;
+#                                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+#                                                     ] ,
+#                                                     [ a owl:Restriction ;
+#                                                       owl:onProperty saref:hasValue ;
+#                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+#                                                       owl:onDataRange xsd:float
+#                                                     ] ;
+#                                     owl:disjointWith saref:Property ,
+#                                                      saref:UnitOfMeasure ;
+#                                     rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
+#                                     rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+#                                     rdfs:label "Measurement"@en .
+
+###  https://saref.etsi.org/core/ProcedureExecution
+saref:ProcedureExecution a owl:Class ;
+    rdfs:label "Procedure Execution"@en ;
+    rdfs:comment "Represents the act of carrying out a procedure."@en ;
+    skos:historyNote "V3.2.1: Introduced saref:ProcedureExecution."@en ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/Observation
+saref:Observation a owl:Class ;    
+    rdfs:label "Observation"@en ;
+    rdfs:subClassOf saref:ProcedureExecution ;
+    rdfs:comment "A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a property should have a property value as a result."@en ;
+    rdfs:subClassOf 
+        [   a owl:Restriction ;
+            owl:onProperty saref:madeBy ;
+            owl:allValuesFrom saref:Sensor
+        ] ,
+        [   a owl:Restriction ;
+            owl:onProperty saref:observes ;
+            owl:minCardinality 1
+        ] ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
+
+###  https://saref.etsi.org/core/FeatureKind
+saref:FeatureKind a owl:Class ;
+    rdfs:label "Feature kinds"@en ;
+    rdfs:comment "Feature kinds allow to describe kinds of features of interest, with common properties having the same value, and common states being the same. An instance of saref:FeatureKind represents an archetype of real world entities, for example to populate product catalogs."@en ;
+    rdfs:subClassOf 
+        [   a owl:Restriction ;
+            owl:onProperty skos:broader ;
+            owl:allValuesFrom saref:FeatureKind ] ,
+        [   a owl:Restriction ;
+            owl:onProperty skos:narrower ;
+            owl:allValuesFrom saref:FeatureKind ] ;
+    rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
 ###  https://saref.etsi.org/core/UnitOfMeasure
 saref:UnitOfMeasure a owl:Class ;
@@ -468,15 +579,16 @@ saref:UnitOfMeasure a owl:Class ;
 
 ###  https://saref.etsi.org/core/FeatureOfInterest
 saref:FeatureOfInterest a owl:Class ;
-                                           rdfs:subClassOf [ a owl:Restriction ;
-                                                             owl:onProperty saref:hasProperty ;
-                                                             owl:allValuesFrom saref:Property
-                                                           ] ,
-                                                           [ a owl:Restriction ;
-                                                             owl:onProperty saref:isFeatureOfInterestOf ;
-                                                             owl:allValuesFrom saref:Measurement
-                                                           ] ;
-                                           rdfs:comment "A feature of interest represents any real world entity from which a property is measured" ;
+#                                           rdfs:subClassOf [ a owl:Restriction ;
+#                                                             owl:onProperty saref:hasProperty ;
+#                                                             owl:allValuesFrom saref:Property
+#                                                           ] ,
+#                                                           [ a owl:Restriction ;
+#                                                             owl:onProperty saref:isFeatureOfInterestOf ;
+#                                                             owl:allValuesFrom saref:Measurement
+#                                                           ] ;
+#                                           rdfs:comment "A feature of interest represents any real world entity from which a property is measured" ;
+                                           rdfs:comment "A feature of interest represents any real world entity from which a property or a state may be targeted, such as observed and controlled. An instance of saref:FeatureOfInterest represents one specific real world entity."@en ;
                                            rdfs:label "Feature of interest"@en ;
                                            rdfs:isDefinedBy <https://saref.etsi.org/core/> .
 
@@ -607,19 +719,33 @@ cf-feature:Wind a owl:Class ;
 ssn:hasProperty owl:equivalentProperty saref:hasProperty .
 ssn:isPropertyOf owl:equivalentProperty saref:isPropertyOf .
 #ssn:Property owl:equivalentClass saref:Property .
-sosa:ObservableProperty owl:equivalentClass saref:Property . #(sosa:ObservableProperty subclassOf ssn:Property)
-saref:hasFeatureOfInterest owl:equivalentProperty sosa:hasFeatureOfInterest .
-saref:isFeatureOfInterestOf owl:equivalentProperty sosa:isFeatureOfInterestOf .
+
 saref:FeatureOfInterest owl:equivalentClass sosa:FeatureOfInterest .
-saref:measurementMadeBy owl:equivalentProperty sosa:madeBySensor .
-saref:makesMeasurement owl:equivalentProperty sosa:madeObservation .
+sosa:ObservableProperty owl:equivalentClass saref:Property . #(sosa:ObservableProperty subclassOf ssn:Property)
+
+sosa:madeBySensor rdfs:subPropertyOf saref:madeBy  .
+sosa:hasFeatureOfInterest rdfs:subPropertyOf saref:madeBy  .
+#saref:hasFeatureOfInterest owl:equivalentProperty sosa:hasFeatureOfInterest .
+#saref:measurementMadeBy owl:equivalentProperty sosa:madeBySensor .
+
+sosa:isFeatureOfInterestOf rdfs:subPropertyOf saref:madeExecution   .
+sosa:madeObservation rdfs:subPropertyOf saref:madeExecution .
+#saref:isFeatureOfInterestOf owl:equivalentProperty sosa:isFeatureOfInterestOf .
+#saref:makesMeasurement owl:equivalentProperty sosa:madeObservation .
+
+sosa:observedProperty rdfs:subPropertyOf saref:observes .
+sosa:observes rdfs:subPropertyOf saref:observes .
+#saref:relatesToProperty owl:equivalentProperty sosa:observedProperty .
+
+sosa:isObservedBy rdfs:subPropertyOf saref:isObservedBy .
+
 #saref:Property owl:equivalentClass foodie:PropertyType .
 saref:Property owl:equivalentClass foodie:PropertyTypeValue .
 saref:Property owl:equivalentClass qu:QuantityKind .
 saref:Temperature owl:equivalentClass dim:Temperature .
 #saref:Measurement owl:equivalentClass iso19103:Measure .
-saref:Measurement owl:equivalentClass sosa:Observation .
-saref:relatesToProperty owl:equivalentProperty sosa:observedProperty .
+#saref:Measurement owl:equivalentClass sosa:Observation .
+
 saref:hasTimestamp owl:equivalentProperty sosa:resultTime .
 saref:hasValue owl:equivalentProperty sosa:hasSimpleResult .
 saref:isMeasuredIn owl:equivalentProperty qudt:unit .
@@ -655,7 +781,7 @@ fiware-weather:solarRadiation rdfs:subPropertyOf saref:hasValue .
 fiware-weather:illuminance rdfs:subPropertyOf saref:hasValue .
 fiware-weather:streamGauge rdfs:subPropertyOf saref:hasValue .
 fiware-weather:snowHeight rdfs:subPropertyOf saref:hasValue .
-fiware-weather:refDevice owl:equivalentProperty saref:measurementMadeBy .
+#fiware-weather:refDevice owl:equivalentProperty saref:measurementMadeBy .
 fiware-weather:WeatherForecast rdfs:subClassOf saref:FeatureOfInterest .
 <http://foodie-cloud.com/model/foodie/code/PropertyTypeValue/organicMatter> a saref:Property .
 <http://foodie-cloud.com/model/foodie/code/PropertyTypeValue/electricConductivity> a saref:Property .
