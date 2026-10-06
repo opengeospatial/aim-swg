@@ -716,6 +716,10 @@ cf-feature:Wind a owl:Class ;
 #    Alignments
 #################################################################
 
+#saref:Measurement owl:equivalentClass iso19103:Measure .
+#saref:Measurement owl:equivalentClass sosa:Observation .
+saref:Observation owl:equivalentClass sosa:Observation .
+
 ssn:hasProperty owl:equivalentProperty saref:hasProperty .
 ssn:isPropertyOf owl:equivalentProperty saref:isPropertyOf .
 #ssn:Property owl:equivalentClass saref:Property .
@@ -743,8 +747,6 @@ sosa:isObservedBy rdfs:subPropertyOf saref:isObservedBy .
 saref:Property owl:equivalentClass foodie:PropertyTypeValue .
 saref:Property owl:equivalentClass qu:QuantityKind .
 saref:Temperature owl:equivalentClass dim:Temperature .
-#saref:Measurement owl:equivalentClass iso19103:Measure .
-#saref:Measurement owl:equivalentClass sosa:Observation .
 
 saref:hasTimestamp owl:equivalentProperty sosa:resultTime .
 saref:hasValue owl:equivalentProperty sosa:hasSimpleResult .
