@@ -64,7 +64,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-10-06T12:37:50.581098+00:00</small>
+            <small class="datetime">Generated at 2026-10-06T12:55:02.165260+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 3 / 9 (33.33%)
                 </p>
@@ -742,6 +742,20 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-shacl">Error running SHACL validation for SHACL/agriFeature-SHACL.ttl: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.conceptual.plot-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
@@ -761,6 +775,7 @@ On instance:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
@@ -771,40 +786,6 @@ On instance:
                                                                 
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
-  Validation Report
-  Conforms: False
-  Results (2):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -834,6 +815,20 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-shacl">Error running SHACL validation for SHACL/agriFeature-SHACL.ttl: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.conceptual.farm-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
@@ -853,6 +848,7 @@ On instance:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
@@ -863,52 +859,6 @@ On instance:
                                                                 
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
-  Validation Report
-  Conforms: False
-  Results (4):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;common:validFrom
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -938,6 +888,19 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-shacl">Error retrieving https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl: HTTP Error 503: Service Unavailable</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.features.plot-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
@@ -957,6 +920,7 @@ On instance:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
@@ -1111,63 +1075,6 @@ On instance:
                              &#x27;lastPlantedAt&#x27;: &#x27;2016-08-23T10:18:16Z&#x27;},
                     &#x27;description&#x27;: &#x27;Spring wheat parcel&#x27;},
      &#x27;type&#x27;: &#x27;Feature&#x27;}</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
-  Validation Report
-  Conforms: False
-  Results (3):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: geo:hasGeometry
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;geo:hasGeometry
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
-</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1220,6 +1127,20 @@ On instance:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-shacl">Error running SHACL validation for SHACL/agriFeature-SHACL.ttl: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.geosparql-ld.farm-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
@@ -1239,6 +1160,7 @@ On instance:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
@@ -1249,52 +1171,6 @@ On instance:
                                                                 
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
-  Validation Report
-  Conforms: False
-  Results (4):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;common:validFrom
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;urn:ngsi-ld:farm:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1315,15 +1191,29 @@ On instance:
 
                                     <span class="badge text-bg-danger me-2">
                                             Tests Failed
-                                            (33.33% passed)
+                                            (0% passed)
                                     </span>
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.model.agriculture.features.farm">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-danger">
-                                            Test passed: 1 / 3
+                                            Test passed: 0 / 3
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-shacl">Error running SHACL validation for SHACL/agriFeature-SHACL.ttl: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item " id="item-ogc.model.agriculture.features.farm-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
@@ -1338,11 +1228,12 @@ On instance:
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <a class="anchor" href="#item-ogc.model.agriculture.features.farm-1">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-7">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
@@ -1362,38 +1253,17 @@ On instance:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for SHACL/agriFeature-SHACL.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1418,6 +1288,7 @@ On instance:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-8">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
@@ -1437,75 +1308,17 @@ On instance:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
-  Validation Report
-  Conforms: False
-  Results (6):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;common:validFrom
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: geo:hasGeometry
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;geo:hasGeometry
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: geo:hasGeometry
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;geo:hasGeometry
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1530,6 +1343,7 @@ On instance:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-9">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
                                                                     
@@ -1733,75 +1547,17 @@ On instance:
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, &lt;class &#x27;rdflib.parser.Parser&#x27;&gt;) - SHACL validation will run against an incomplete closure graph</div>
                                                                     
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for SHACL/agriFeature-SHACL.ttl:
-  Validation Report
-  Conforms: False
-  Results (6):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#3feb00f80e5466881b35881ee8cd88c4&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: foodie:code
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;foodie:code
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;common:validFrom
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#a742b2c3b67f7817094c3e8d8100531d&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: common:validFrom
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;common:validFrom
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
-  	Result Path: geo:hasGeometry
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;-&gt;geo:hasGeometry
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: &lt;https://astrea.linkeddata.es/shapes#7d1250b1e972e6db18e8c8490eb8728a&gt;
-  	Focus Node: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
-  	Result Path: geo:hasGeometry
-  	Message: Less than 1 values on &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;-&gt;geo:hasGeometry
-  </div>
-                                                                    
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for SHACL/agriFeature-SHACL.ttl:
- - Shape &lt;https://astrea.linkeddata.es/shapes#df40098fb648431a7a497556e4b0842b&gt;: &lt;file:///github/workspace/f1&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#a9b5c9680e3c84143b57f79f25578668&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#42179914bb5f0eb140c2471501e085ab&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#4be8017c1cb5809a9d04c75ec970eb41&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#84dabe1f51bdcdab8668ef404bc51bf9&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#b01d6eed32b58e8c5381e68a18181893&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#50fb204bdd3a0e1876233e9e71c263f8&gt;: &lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
- - Shape &lt;https://astrea.linkeddata.es/shapes#31072cd5db7818eea0e89b05c1417f8a&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#905bb712e3a89f14c1c5f5d647b4b115&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#ef4ee09775a4ed717799816812fb2efc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#05d33e1cf8ead5ebf41d409a1af0e7dc&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#badf4fc0fd7768d761fcd3c6e8652b02&gt;: *none*
- - Shape &lt;https://astrea.linkeddata.es/shapes#34772c2940cb10460f0219f508e35699&gt;: *none*
-</div>
-                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;
+ - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a&gt;,&lt;urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b&gt;
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
 </div>
                                                     </div>
                                                 </div>
