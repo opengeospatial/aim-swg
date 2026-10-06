@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.conceptual.farm - Farm
-Generated 2026-10-06T12:59:05.049420+00:00
+Generated 2026-10-06T13:00:36.912826+00:00
 === Files ===
 Using ../../../examples/simple-farm-instance-AIM_v3.ttl from examples
 Output Turtle example_1_1.ttl created

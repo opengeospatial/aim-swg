@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.model.agriculture.external.smart-agrifood.crop - SMART AgriCrop",
       "bblockName": "SMART AgriCrop",
       "bblockId": "ogc.model.agriculture.external.smart-agrifood.crop",
-      "generated": "2026-10-06T12:59:03.877747+00:00",
+      "generated": "2026-10-06T13:00:35.412358+00:00",
       "result": false,
       "items": [
         {
@@ -140,7 +140,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.plot - Plot",
       "bblockName": "Plot",
       "bblockId": "ogc.model.agriculture.conceptual.plot",
-      "generated": "2026-10-06T12:59:04.475095+00:00",
+      "generated": "2026-10-06T13:00:36.312159+00:00",
       "result": false,
       "items": [
         {
@@ -205,7 +205,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.farm - Farm",
       "bblockName": "Farm",
       "bblockId": "ogc.model.agriculture.conceptual.farm",
-      "generated": "2026-10-06T12:59:05.049519+00:00",
+      "generated": "2026-10-06T13:00:36.912898+00:00",
       "result": false,
       "items": [
         {
@@ -270,7 +270,7 @@
       "title": "Validation report for ogc.model.agriculture.features.plot - Plot - GeoJSON",
       "bblockName": "Plot - GeoJSON",
       "bblockId": "ogc.model.agriculture.features.plot",
-      "generated": "2026-10-06T12:59:07.727195+00:00",
+      "generated": "2026-10-06T13:00:39.991843+00:00",
       "result": false,
       "items": [
         {
@@ -346,13 +346,10 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    },
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
                     "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
@@ -362,10 +359,13 @@
                       "nodes": [
                         "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
                       ]
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n - Shape geojson:LinkShape: *none*\n"
                 }
               ]
             }
@@ -391,7 +391,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.agriFeature - Agri Feature Conceptual",
       "bblockName": "Agri Feature Conceptual",
       "bblockId": "ogc.model.agriculture.conceptual.agriFeature",
-      "generated": "2026-10-06T12:59:07.753279+00:00",
+      "generated": "2026-10-06T13:00:40.018873+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -405,7 +405,7 @@
       "title": "Validation report for ogc.model.agriculture.geosparql-ld.farm - Farm (SAREF) - GeoSPARQL",
       "bblockName": "Farm (SAREF) - GeoSPARQL",
       "bblockId": "ogc.model.agriculture.geosparql-ld.farm",
-      "generated": "2026-10-06T12:59:08.381843+00:00",
+      "generated": "2026-10-06T13:00:40.952770+00:00",
       "result": false,
       "items": [
         {
@@ -470,7 +470,7 @@
       "title": "Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON",
       "bblockName": "Farm - GeoJSON",
       "bblockId": "ogc.model.agriculture.features.farm",
-      "generated": "2026-10-06T12:59:10.958171+00:00",
+      "generated": "2026-10-06T13:00:43.362667+00:00",
       "result": false,
       "items": [
         {
@@ -544,26 +544,26 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "geojson:GeometryShape": {
                       "nodes": []
                     },
-                    "geojson:LinkShape": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
                       "nodes": [
                         "<file:///github/workspace/f1>"
                       ]
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
                 }
               ]
             }
@@ -640,28 +640,28 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "geojson:GeometryShape": {
                       "nodes": []
                     },
-                    "geojson:LinkShape": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
                       "nodes": [
                         "<file:///github/workspace/f1>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
                       ]
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
                 }
               ]
             }
@@ -740,28 +740,28 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "geojson:GeometryShape": {
                       "nodes": []
                     },
-                    "geojson:LinkShape": {
+                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "geojson:FeatureShape": {
                       "nodes": [
                         "<file:///github/workspace/f1>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>",
-                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>"
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>",
+                        "<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>"
                       ]
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
                 }
               ]
             }
@@ -787,7 +787,7 @@
       "title": "Validation report for ogc.model.agriculture.conceptual.all - Agriculture Information Model - RDF",
       "bblockName": "Agriculture Information Model - RDF",
       "bblockId": "ogc.model.agriculture.conceptual.all",
-      "generated": "2026-10-06T12:59:11.989887+00:00",
+      "generated": "2026-10-06T13:00:44.791180+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -801,7 +801,7 @@
       "title": "Validation report for ogc.model.agriculture.features.all - OGC Features - Agriculture ",
       "bblockName": "OGC Features - Agriculture ",
       "bblockId": "ogc.model.agriculture.features.all",
-      "generated": "2026-10-06T12:59:12.103123+00:00",
+      "generated": "2026-10-06T13:00:44.879012+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
