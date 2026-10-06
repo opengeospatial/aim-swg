@@ -234,10 +234,10 @@ Example from https://smart-data-models.github.io/dataModel.Agrifood/AgriCrop/exa
     ns1:agroVocConcept [ a <file:///github/workspace/Text> ;
             ngsi-ld:hasValue "http://aims.fao.org/aos/agrovoc/c_7951" ] ;
     ns1:harvestingInterval [ a <file:///github/workspace/StructuredValue> ;
-            ngsi-ld:hasValue [ dcterms:description "Season OK" ;
-                    ns1:dateRange "-04-02/-04-15" ],
-                [ dcterms:description "Best Season" ;
-                    ns1:dateRange "-03-21/-04-01" ] ] ;
+            ngsi-ld:hasValue [ dcterms:description "Best Season" ;
+                    ns1:dateRange "-03-21/-04-01" ],
+                [ dcterms:description "Season OK" ;
+                    ns1:dateRange "-04-02/-04-15" ] ] ;
     ns1:hasAgriFertiliser [ a <file:///github/workspace/StructuredValue> ;
             ngsi-ld:hasValue "urn:ngsi-ld:AgriFertiliser:1b0d6cf7-320c-4a2b-b2f1-4575ea850c73",
                 "urn:ngsi-ld:AgriFertiliser:380973c8-4d3b-4723-a899-0c0c5cc63e7e" ] ;
