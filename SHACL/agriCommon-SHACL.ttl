@@ -1,6 +1,6 @@
-@prefix fiware-agrifood: <https://smartdatamodels.org/dataModel.Agrifood/> .
-@prefix schema: <https://schema.org/> .
 @prefix :      <https://w3id.org/demeter/> .
+@prefix schema: <https://schema.org/> .
+@prefix fiware-agrifood: <https://smartdatamodels.org/dataModel.Agrifood/> .
 @prefix qudt:  <http://qudt.org/schema/qudt/> .
 @prefix iso19150-2: <http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -9,19 +9,20 @@
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ecrop: <https://w3id.org/demeter/agri/ecrop/> .
-@prefix fiware: <https://smartdatamodels.org/> .
 @prefix act-inspire: <http://inspire.ec.europa.eu/schemas/act-core/3.0#> .
+@prefix fiware: <https://smartdatamodels.org/> .
 @prefix ssn:   <http://www.w3.org/ns/ssn/> .
 @prefix geo:   <http://www.opengis.net/ont/geosparql#> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix iso19109: <http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#> .
-@prefix common: <http://portele.de/ont/inspire/baseInspire#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
+@prefix common: <http://portele.de/ont/inspire/baseInspire#> .
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix demeterAgriCommon: <https://w3id.org/demeter/agri/agriCommon#> .
 @prefix iso19103: <http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#> .
 @prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix sosa:  <http://www.w3.org/ns/sosa/> .
@@ -75,6 +76,15 @@
         sh:nodeKind       sh:Literal ;
         sh:path           demeterAgriCommon:imageHeight .
 
+<https://astrea.linkeddata.es/shapes#2b96b28aa3eabd660da6d24ae5b7c4f6>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/locn> ;
+        rdfs:label        "admin unit level 2"@en , "The region of the address, usually a county, state or other such area that typically encompasses several localities. The domain of  locn:adminUnitL2 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
+        sh:description    "The region of the address, usually a county, state or other such area that typically encompasses several localities. The domain of  locn:adminUnitL2 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
+        sh:name           "admin unit level 2"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           locn:adminUnitL2 .
+
 <https://astrea.linkeddata.es/shapes#37de2065ed2f84f6b6abc75343470d48>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  common: ;
@@ -95,6 +105,16 @@
         sh:nodeKind       sh:Literal ;
         sh:path           schema:streetAddress .
 
+<https://astrea.linkeddata.es/shapes#20562318a3a0957169b89d17cce6fd27>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  foaf: ;
+        rdfs:label        "familyName" , "The family name of some person." ;
+        sh:datatype       rdfs:Literal ;
+        sh:description    "The family name of some person." ;
+        sh:name           "familyName" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           foaf:familyName .
+
 <https://astrea.linkeddata.es/shapes#16e1eba32aba80dc9b24b33278880d40>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriApp/schemaDTDL.json> ;
@@ -104,6 +124,16 @@
         sh:nodeKind       sh:Literal ;
         sh:path           fiware:name .
 
+<https://astrea.linkeddata.es/shapes#0abfd64fff38c1b98887cf1cdd02634d>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/locn> ;
+        rdfs:label        "Address"@en ;
+        sh:description    "An \"address representation\" as conceptually defined by the INSPIRE Address Representation data type. The locn:addressId property may be used to link this locn:Address to other representations."@en ;
+        sh:name           "Address"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#480e4085469c09bd30acb7035fbacd8a> , <https://astrea.linkeddata.es/shapes#73a188ba58ced11635ada0f8d1bb8d88> , <https://astrea.linkeddata.es/shapes#a40fedd7d666027d18e93ebed0bab9a8> ;
+        sh:targetClass    locn:Address .
+
 <https://astrea.linkeddata.es/shapes#d57ac231c6edf5e6287dfd9a2a1e2f87>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  schema:addressLocality ;
@@ -112,6 +142,33 @@
         sh:name           "addressLocality" ;
         sh:nodeKind       sh:Literal ;
         sh:path           schema:addressLocality .
+
+<https://astrea.linkeddata.es/shapes#7527c6e1d44a974a265e962254e8149a>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/locn> ;
+        rdfs:label        "admin unit level 1"@en , "The uppermost administrative unit for the address, almost always a country. The domain of locn:adminUnitL1 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
+        sh:description    "The uppermost administrative unit for the address, almost always a country. The domain of locn:adminUnitL1 is locn:Address and the range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en ;
+        sh:name           "admin unit level 1"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           locn:adminUnitL1 .
+
+<https://astrea.linkeddata.es/shapes#c4b7b9ca0fac765633d92d0d15e9eb62>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  schema:telephone ;
+        rdfs:label        "telephone" , "The telephone number" ;
+        sh:description    "The telephone number" ;
+        sh:name           "telephone" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           schema:telephone .
+
+<https://astrea.linkeddata.es/shapes#93ad40fcbaeb869b558cba3f32135f59>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/locn> ;
+        rdfs:label        "locator name"@en , "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. \n    "@en ;
+        sh:description    "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. \n    "@en ;
+        sh:name           "locator name"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           locn:locatorName .
 
 <https://astrea.linkeddata.es/shapes#daaeafad49393cb97ce256975b60353b>
         a                 sh:PropertyShape ;
@@ -144,6 +201,15 @@
         sh:nodeKind       sh:IRI ;
         sh:property       <https://astrea.linkeddata.es/shapes#daaeafad49393cb97ce256975b60353b> ;
         sh:targetClass    demeterAgriCommon:Image .
+
+<https://astrea.linkeddata.es/report/01313797156>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://raw.githubusercontent.com/opengeospatial/aim-swg/main/agriCommon.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
 
 <https://astrea.linkeddata.es/shapes#d3b700890f76c4d369c0d5e9b25309fc>
         a                 sh:PropertyShape ;
@@ -278,14 +344,10 @@
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           demeterAgriCommon:eppoConcept .
 
-<https://astrea.linkeddata.es/report/2056155360>
-        a       <https://w3id.org/def/astrea#ReportEntry> ;
-        <https://w3id.org/def/astrea#message>
-                "Shapes generated with no errors" ;
-        <https://w3id.org/def/astrea#source>
-                "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriCommon.ttl" ;
-        <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:integer .
+<https://astrea.linkeddata.es/shapes#b146f25348b90d3405d93c2555dfc85e>
+        a               sh:NodeShape ;
+        sh:property     <https://astrea.linkeddata.es/shapes#fabc187d844000bd2477a93073025e1e> , <https://astrea.linkeddata.es/shapes#29c3a5d12df8ba4f3bb0b250a29218a8> , <https://astrea.linkeddata.es/shapes#20562318a3a0957169b89d17cce6fd27> ;
+        sh:targetClass  foaf:Person .
 
 <https://astrea.linkeddata.es/shapes#8fb07813737f3e343ffd8a181f775384>
         a            sh:PropertyShape ;
@@ -320,14 +382,14 @@
         sh:path           fiware:dateCreated ;
         sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
-<https://astrea.linkeddata.es/shapes#963f5e478f658be88fc19f31bd066302>
+<https://astrea.linkeddata.es/shapes#30b0da1442e3a148ba9ffd4f7619397f>
         a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriApp/schema.json> ;
-        rdfs:label        "version"@en , "The version of the App" ;
-        sh:description    "The version of the App" ;
-        sh:name           "version"@en ;
+        rdfs:isDefinedBy  schema:vatID ;
+        rdfs:label        "vatID" , "The Value-added Tax ID of the organization or person" ;
+        sh:description    "The Value-added Tax ID of the organization or person" ;
+        sh:name           "vatID" ;
         sh:nodeKind       sh:Literal ;
-        sh:path           fiware-agrifood:version .
+        sh:path           schema:vatID .
 
 <https://astrea.linkeddata.es/shapes#f173c9f3844598ed1512bb2cb0a8e229>
         a                 sh:PropertyShape ;
@@ -337,6 +399,15 @@
         sh:name           "imageWidth" ;
         sh:nodeKind       sh:Literal ;
         sh:path           demeterAgriCommon:imageWidth .
+
+<https://astrea.linkeddata.es/shapes#963f5e478f658be88fc19f31bd066302>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriApp/schema.json> ;
+        rdfs:label        "version"@en , "The version of the App" ;
+        sh:description    "The version of the App" ;
+        sh:name           "version"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           fiware-agrifood:version .
 
 <https://astrea.linkeddata.es/shapes#38b1444ee49943e358b5cff2bc6893ea>
         a                 sh:PropertyShape ;
@@ -378,6 +449,26 @@
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           fiware-agrifood:agroVocConcept .
 
+<https://astrea.linkeddata.es/shapes#480e4085469c09bd30acb7035fbacd8a>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/locn> ;
+        rdfs:label        "address ID"@en , "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. The domain of locn:addressId is locn:Address."@en ;
+        sh:datatype       rdfs:Literal ;
+        sh:description    "The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. The domain of locn:addressId is locn:Address."@en ;
+        sh:name           "address ID"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           locn:addressId .
+
+<https://astrea.linkeddata.es/shapes#29c3a5d12df8ba4f3bb0b250a29218a8>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  foaf: ;
+        rdfs:label        "firstName" , "The first name of a person." ;
+        sh:datatype       rdfs:Literal ;
+        sh:description    "The first name of a person." ;
+        sh:name           "firstName" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           foaf:firstName .
+
 <https://astrea.linkeddata.es/shapes#85c44987c5a267f42ccb0356a1dc5eec>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  saref: ;
@@ -393,9 +484,29 @@
 <http://astrea.linkeddata.es/report>
         a       <https://w3id.org/def/astrea#ShapeReport> ;
         <https://w3id.org/def/astrea#contains>
-                <https://astrea.linkeddata.es/shapes#08a973fae8d2d906a00d2a820f5891ee> , <https://astrea.linkeddata.es/shapes#37de2065ed2f84f6b6abc75343470d48> , <https://astrea.linkeddata.es/shapes#b4c9bdbddc2f07b88847907df55c48a2> , <https://astrea.linkeddata.es/shapes#502898d72a77a36190b2820684311a5b> , <https://astrea.linkeddata.es/shapes#c0f52048fcfb86afbfabfd244461a9ef> , <https://astrea.linkeddata.es/shapes#8fb07813737f3e343ffd8a181f775384> , <https://astrea.linkeddata.es/shapes#6e1aab5a3ec418fca5759e22cd0dbd75> , <https://astrea.linkeddata.es/shapes#92ceb1c2593f6ec3bdb3019e44a64dfc> , <https://astrea.linkeddata.es/shapes#485acf240e619fb30b039e7dfbb9050e> , <https://astrea.linkeddata.es/shapes#b3f81eca38904455db8f71dbf8317387> , <https://astrea.linkeddata.es/shapes#f173c9f3844598ed1512bb2cb0a8e229> , <https://astrea.linkeddata.es/shapes#19a64febb767186b92bfc41fb37a92fe> , <https://astrea.linkeddata.es/shapes#f70305a5d556b37758e820ed26038a5b> , <https://astrea.linkeddata.es/shapes#582edc1226c73bcc053b16d6fdd54097> , <https://astrea.linkeddata.es/shapes#8739bb99ababeabb54c1ef1bc479340f> , <https://astrea.linkeddata.es/shapes#023bc605a551c013ad64f68140032fc1> , <https://astrea.linkeddata.es/shapes#d3b700890f76c4d369c0d5e9b25309fc> , <https://astrea.linkeddata.es/shapes#c12e28ac1faae59228a3c3f76b7603ca> , <https://astrea.linkeddata.es/shapes#1a3d7a1ed18965087c91359834d60df4> , <https://astrea.linkeddata.es/shapes#9eaf8e87d4d0b0a8f8aafe03125da8ee> , <https://astrea.linkeddata.es/shapes#e9cf8a62ed14268498c0eb6145ee4082> , <https://astrea.linkeddata.es/shapes#0be6929b1105a4e616840d0ad08fede9> , <https://astrea.linkeddata.es/shapes#e4703135706ce081d34e2314946a3163> , <https://astrea.linkeddata.es/shapes#85c44987c5a267f42ccb0356a1dc5eec> , <https://astrea.linkeddata.es/shapes#fa221ce52859ceec8f84e607ba0095ac> , <https://astrea.linkeddata.es/shapes#d57ac231c6edf5e6287dfd9a2a1e2f87> , <https://astrea.linkeddata.es/shapes#b46c19f2ec5c9909c8f449ef0876c3d3> , <https://astrea.linkeddata.es/shapes#48634e5542ecb3d5688c02ece3e54f64> , <https://astrea.linkeddata.es/shapes#38b1444ee49943e358b5cff2bc6893ea> , <https://astrea.linkeddata.es/shapes#a67bc63ef9d2e2c81c529fcf31a56c93> , <https://astrea.linkeddata.es/shapes#daaeafad49393cb97ce256975b60353b> , <https://astrea.linkeddata.es/shapes#2cc9d63bf0c862ad86e5c0b68cf41b76> , <https://astrea.linkeddata.es/shapes#497a2f9ed31a7d70fdbf4108e3bd274c> , <https://astrea.linkeddata.es/shapes#abc12d595b9826f4990ac8a53011e07f> , <https://astrea.linkeddata.es/shapes#52c7885a1466ae1ded8d1f5aa97da9c1> , <https://astrea.linkeddata.es/shapes#176d6868c726544c5477ac0fb503b142> , <https://astrea.linkeddata.es/shapes#cfc20da821fd68ec0a54e6cc5e492f52> , <https://astrea.linkeddata.es/shapes#16e1eba32aba80dc9b24b33278880d40> , <https://astrea.linkeddata.es/shapes#23fa75ac6f28b67e1259236adfa58834> , <https://astrea.linkeddata.es/shapes#f5740757a7dd9d604129ce0cf34e00da> , <https://astrea.linkeddata.es/shapes#8f615ca049a0082e82f061397eb0a7d4> , <https://astrea.linkeddata.es/shapes#630490a440b80ee2fe86597f0bc47bb1> , <https://astrea.linkeddata.es/shapes#963f5e478f658be88fc19f31bd066302> , <https://astrea.linkeddata.es/shapes#a7105e3625d3f435fffd3818a68e13a0> ;
+                <https://astrea.linkeddata.es/shapes#20562318a3a0957169b89d17cce6fd27> , <https://astrea.linkeddata.es/shapes#08a973fae8d2d906a00d2a820f5891ee> , <https://astrea.linkeddata.es/shapes#37de2065ed2f84f6b6abc75343470d48> , <https://astrea.linkeddata.es/shapes#2b96b28aa3eabd660da6d24ae5b7c4f6> , <https://astrea.linkeddata.es/shapes#b4c9bdbddc2f07b88847907df55c48a2> , <https://astrea.linkeddata.es/shapes#502898d72a77a36190b2820684311a5b> , <https://astrea.linkeddata.es/shapes#c0f52048fcfb86afbfabfd244461a9ef> , <https://astrea.linkeddata.es/shapes#8fb07813737f3e343ffd8a181f775384> , <https://astrea.linkeddata.es/shapes#6e1aab5a3ec418fca5759e22cd0dbd75> , <https://astrea.linkeddata.es/shapes#30b0da1442e3a148ba9ffd4f7619397f> , <https://astrea.linkeddata.es/shapes#480e4085469c09bd30acb7035fbacd8a> , <https://astrea.linkeddata.es/shapes#92ceb1c2593f6ec3bdb3019e44a64dfc> , <https://astrea.linkeddata.es/shapes#485acf240e619fb30b039e7dfbb9050e> , <https://astrea.linkeddata.es/shapes#b3f81eca38904455db8f71dbf8317387> , <https://astrea.linkeddata.es/shapes#32324d58a8fcad41a10a104a5b1630a8> , <https://astrea.linkeddata.es/shapes#f173c9f3844598ed1512bb2cb0a8e229> , <https://astrea.linkeddata.es/shapes#29c3a5d12df8ba4f3bb0b250a29218a8> , <https://astrea.linkeddata.es/shapes#19a64febb767186b92bfc41fb37a92fe> , <https://astrea.linkeddata.es/shapes#023bc605a551c013ad64f68140032fc1> , <https://astrea.linkeddata.es/shapes#8739bb99ababeabb54c1ef1bc479340f> , <https://astrea.linkeddata.es/shapes#582edc1226c73bcc053b16d6fdd54097> , <https://astrea.linkeddata.es/shapes#c4b7b9ca0fac765633d92d0d15e9eb62> , <https://astrea.linkeddata.es/shapes#f70305a5d556b37758e820ed26038a5b> , <https://astrea.linkeddata.es/shapes#d3b700890f76c4d369c0d5e9b25309fc> , <https://astrea.linkeddata.es/shapes#c12e28ac1faae59228a3c3f76b7603ca> , <https://astrea.linkeddata.es/shapes#1a3d7a1ed18965087c91359834d60df4> , <https://astrea.linkeddata.es/shapes#fabc187d844000bd2477a93073025e1e> , <https://astrea.linkeddata.es/shapes#9eaf8e87d4d0b0a8f8aafe03125da8ee> , <https://astrea.linkeddata.es/shapes#7527c6e1d44a974a265e962254e8149a> , <https://astrea.linkeddata.es/shapes#6ef7cd7673b0f4cde3fd88c84e850357> , <https://astrea.linkeddata.es/shapes#e9cf8a62ed14268498c0eb6145ee4082> , <https://astrea.linkeddata.es/shapes#0be6929b1105a4e616840d0ad08fede9> , <https://astrea.linkeddata.es/shapes#e4703135706ce081d34e2314946a3163> , <https://astrea.linkeddata.es/shapes#85c44987c5a267f42ccb0356a1dc5eec> , <https://astrea.linkeddata.es/shapes#d57ac231c6edf5e6287dfd9a2a1e2f87> , <https://astrea.linkeddata.es/shapes#fa221ce52859ceec8f84e607ba0095ac> , <https://astrea.linkeddata.es/shapes#93ad40fcbaeb869b558cba3f32135f59> , <https://astrea.linkeddata.es/shapes#73a188ba58ced11635ada0f8d1bb8d88> , <https://astrea.linkeddata.es/shapes#0917d87a075769009f4b419f4176e0b3> , <https://astrea.linkeddata.es/shapes#b46c19f2ec5c9909c8f449ef0876c3d3> , <https://astrea.linkeddata.es/shapes#48634e5542ecb3d5688c02ece3e54f64> , <https://astrea.linkeddata.es/shapes#38b1444ee49943e358b5cff2bc6893ea> , <https://astrea.linkeddata.es/shapes#a67bc63ef9d2e2c81c529fcf31a56c93> , <https://astrea.linkeddata.es/shapes#daaeafad49393cb97ce256975b60353b> , <https://astrea.linkeddata.es/shapes#2cc9d63bf0c862ad86e5c0b68cf41b76> , <https://astrea.linkeddata.es/shapes#497a2f9ed31a7d70fdbf4108e3bd274c> , <https://astrea.linkeddata.es/shapes#abc12d595b9826f4990ac8a53011e07f> , <https://astrea.linkeddata.es/shapes#52c7885a1466ae1ded8d1f5aa97da9c1> , <https://astrea.linkeddata.es/shapes#176d6868c726544c5477ac0fb503b142> , <https://astrea.linkeddata.es/shapes#b146f25348b90d3405d93c2555dfc85e> , <https://astrea.linkeddata.es/shapes#cfc20da821fd68ec0a54e6cc5e492f52> , <https://astrea.linkeddata.es/shapes#16e1eba32aba80dc9b24b33278880d40> , <https://astrea.linkeddata.es/shapes#23fa75ac6f28b67e1259236adfa58834> , <https://astrea.linkeddata.es/shapes#f5740757a7dd9d604129ce0cf34e00da> , <https://astrea.linkeddata.es/shapes#0abfd64fff38c1b98887cf1cdd02634d> , <https://astrea.linkeddata.es/shapes#8f615ca049a0082e82f061397eb0a7d4> , <https://astrea.linkeddata.es/shapes#630490a440b80ee2fe86597f0bc47bb1> , <https://astrea.linkeddata.es/shapes#963f5e478f658be88fc19f31bd066302> , <https://astrea.linkeddata.es/shapes#a40fedd7d666027d18e93ebed0bab9a8> , <https://astrea.linkeddata.es/shapes#a7105e3625d3f435fffd3818a68e13a0> ;
         <https://w3id.org/def/astrea#generatedShapesFrom>
-                <https://astrea.linkeddata.es/report/2056155360> .
+                <https://astrea.linkeddata.es/report/01313797156> .
+
+<https://astrea.linkeddata.es/shapes#32324d58a8fcad41a10a104a5b1630a8>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://qudt.org/2.1/schema/qudt> ;
+        rdfs:label        "width" ;
+        sh:datatype       xsd:string ;
+        sh:name           "width" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           qudt:width ;
+        sh:pattern        ".*" .
+
+<https://astrea.linkeddata.es/shapes#a40fedd7d666027d18e93ebed0bab9a8>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/locn> ;
+        rdfs:label        "address area"@en , "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. The domain of locn:addressArea is locn:Address."@en ;
+        sh:datatype       rdfs:Literal ;
+        sh:description    "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. The domain of locn:addressArea is locn:Address."@en ;
+        sh:name           "address area"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           locn:addressArea .
 
 <https://astrea.linkeddata.es/shapes#8739bb99ababeabb54c1ef1bc479340f>
         a                 sh:PropertyShape ;
@@ -425,6 +536,16 @@
         sh:property       <https://astrea.linkeddata.es/shapes#8fb07813737f3e343ffd8a181f775384> , <https://astrea.linkeddata.es/shapes#6e1aab5a3ec418fca5759e22cd0dbd75> ;
         sh:targetClass    saref4agri:Farmer .
 
+<https://astrea.linkeddata.es/shapes#fabc187d844000bd2477a93073025e1e>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  foaf: ;
+        rdfs:label        "lastName" , "The last name of a person." ;
+        sh:datatype       rdfs:Literal ;
+        sh:description    "The last name of a person." ;
+        sh:name           "lastName" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           foaf:lastName .
+
 <https://astrea.linkeddata.es/shapes#cfc20da821fd68ec0a54e6cc5e492f52>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <http://foodie-cloud.com/model/foodie> ;
@@ -447,6 +568,15 @@
         sh:path           foodie:notes ;
         sh:pattern        ".*" .
 
+<https://astrea.linkeddata.es/shapes#6ef7cd7673b0f4cde3fd88c84e850357>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  foaf: ;
+        rdfs:label        "Given name" , "The given name of some person." ;
+        sh:description    "The given name of some person." ;
+        sh:name           "Given name" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           foaf:givenName .
+
 <https://astrea.linkeddata.es/shapes#582edc1226c73bcc053b16d6fdd54097>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Agrifood/blob/master/AgriApp/schemaDTDL.json> ;
@@ -466,3 +596,23 @@
         sh:nodeKind       sh:Literal ;
         sh:path           demeterAgriCommon:userName ;
         sh:pattern        ".*" .
+
+<https://astrea.linkeddata.es/shapes#0917d87a075769009f4b419f4176e0b3>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://qudt.org/2.1/schema/qudt> ;
+        rdfs:label        "height" ;
+        sh:datatype       xsd:string ;
+        sh:name           "height" ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           qudt:height ;
+        sh:pattern        ".*" .
+
+<https://astrea.linkeddata.es/shapes#73a188ba58ced11635ada0f8d1bb8d88>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <http://www.w3.org/ns/locn> ;
+        rdfs:label        "full address"@en , "The complete address written as a string, with or without formatting. The domain of locn:fullAddress is locn:Address."@en ;
+        sh:datatype       rdfs:Literal ;
+        sh:description    "The complete address written as a string, with or without formatting. The domain of locn:fullAddress is locn:Address."@en ;
+        sh:name           "full address"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           locn:fullAddress .

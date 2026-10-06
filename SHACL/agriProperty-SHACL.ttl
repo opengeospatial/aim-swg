@@ -1,22 +1,22 @@
-@prefix fiware-agrifood: <https://smartdatamodels.org/dataModel.Agrifood/> .
-@prefix schema: <https://schema.org/> .
 @prefix :      <https://w3id.org/cybele/> .
+@prefix schema: <https://schema.org/> .
+@prefix fiware-agrifood: <https://smartdatamodels.org/dataModel.Agrifood/> .
 @prefix qudt:  <http://qudt.org/schema/qudt/> .
 @prefix iso19150-2: <http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix saref: <https://saref.etsi.org/core/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix dim:   <http://purl.oclc.org/NET/ssnx/qu/dim#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dim:   <http://purl.oclc.org/NET/ssnx/qu/dim#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix fiware: <https://smartdatamodels.org/> .
 @prefix act-inspire: <http://inspire.ec.europa.eu/schemas/act-core/3.0#> .
+@prefix fiware: <https://smartdatamodels.org/> .
 @prefix ssn:   <http://www.w3.org/ns/ssn/> .
 @prefix geo:   <http://www.opengis.net/ont/geosparql#> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix iso19109: <http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#> .
-@prefix common: <http://portele.de/ont/inspire/baseInspire#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
+@prefix common: <http://portele.de/ont/inspire/baseInspire#> .
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix iso19103: <http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#> .
@@ -25,38 +25,31 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix sosa:  <http://www.w3.org/ns/sosa/> .
 @prefix stat:  <http://data.europa.eu/m8g/> .
-@prefix cf:    <http://purl.oclc.org/NET/ssnx/cf/cf-property#> .
 @prefix quantity: <http://purl.oclc.org/NET/ssnx/qu/quantity#> .
-@prefix qu:    <http://purl.oclc.org/NET/ssnx/qu/qu#> .
+@prefix cf:    <http://purl.oclc.org/NET/ssnx/cf/cf-property#> .
 @prefix foodie: <http://foodie-cloud.com/model/foodie#> .
+@prefix qu:    <http://purl.oclc.org/NET/ssnx/qu/qu#> .
 @prefix afn:   <http://jena.apache.org/ARQ/function#> .
-@prefix fiware-weather: <https://smartdatamodels.org/dataModel.Weather/> .
 @prefix af-inspire: <http://inspire.ec.europa.eu/schemas/af/3.0#> .
+@prefix fiware-weather: <https://smartdatamodels.org/dataModel.Weather/> .
 @prefix cf-feature: <http://purl.oclc.org/NET/ssnx/cf/cf-feature#> .
 @prefix saref4agri: <https://saref.etsi.org/saref4agri/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<https://astrea.linkeddata.es/shapes#93d5d031d6c6f7c1089617de335c47b1>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "is feature of interest of"@en , "Relation betwwen a feature of interest and the measurments that are about it."@en ;
-        sh:description    "Relation betwwen a feature of interest and the measurments that are about it."@en ;
-        sh:equals         sosa:isFeatureOfInterestOf ;
-        sh:name           "is feature of interest of"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:isFeatureOfInterestOf .
-
-<https://astrea.linkeddata.es/shapes#8d4fbfd409797c09551254ea5b2b0e44>
-        a            sh:PropertyShape ;
-        sh:class     saref:Device ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:isMeasuredByDevice .
-
 <https://astrea.linkeddata.es/shapes#82da3f9677527f027e33a454c4a094d8>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
+        sh:maxCount  "1"^^xsd:int ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:quantitativeProperty .
+
+<https://astrea.linkeddata.es/shapes#2939175ece03f2a097adb8b0fcc694fe>
+        a               sh:PropertyShape ;
+        rdfs:label      "made execution"@en , "Links an entity (e.g., device) to the procedure execution it made."@en ;
+        sh:class        saref:ProcedureExecution ;
+        sh:description  "Links an entity (e.g., device) to the procedure execution it made."@en ;
+        sh:name         "made execution"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:madeExecution .
 
 <https://astrea.linkeddata.es/shapes#ae0c2bade83a87fc30fa8096bfc9c025>
         a                 sh:NodeShape ;
@@ -78,8 +71,8 @@
 
 <https://astrea.linkeddata.es/shapes#543e2a89e69d8c46a81f97430c4a8bcb>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
-        sh:minCount  "1"^^xsd:integer ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:propertyName .
 
@@ -103,7 +96,7 @@
 
 <https://astrea.linkeddata.es/shapes#0424178b00b48cf1e0659c49e2c59076>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
+        sh:maxCount  "1"^^xsd:int ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:propertyType .
 
@@ -116,11 +109,11 @@
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           fiware-agrifood:hasDevice .
 
-<https://astrea.linkeddata.es/shapes#c79ba9adbc0726696ad68f2c8d7776b4>
+<https://astrea.linkeddata.es/shapes#d4e2a6e51178fc3cdeed2c00d08f6b35>
         a            sh:PropertyShape ;
         sh:class     saref:Property ;
         sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:hasProperty .
+        sh:path      skos:narrower .
 
 <https://astrea.linkeddata.es/shapes#ef45d390ab99dc9342cf565cffb32386>
         a                 sh:PropertyShape ;
@@ -133,20 +126,19 @@
 
 <https://astrea.linkeddata.es/shapes#7622216c02606402eedf4c3ab4d0ead0>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
-        sh:minCount  "1"^^xsd:integer ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:analysisDate .
 
 <https://astrea.linkeddata.es/shapes#d8fcc404ec3569ab405576151e2c63f9>
         a                 sh:NodeShape ;
         rdfs:isDefinedBy  saref: ;
-        rdfs:label        "Property" , "Property"@en ;
-        sh:description    "An aspect of an entity that can be observable by a sensor."@en , "Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended." ;
-        sh:name           "Property" , "Property"@en ;
+        rdfs:label        "Property"@en ;
+        sh:description    "Identifiable qualities of features of interest that can be target of devices, such as observed or controlled. A property can apply to different features of interest."@en ;
+        sh:name           "Property"@en ;
         sh:nodeKind       sh:IRI ;
-        sh:not            <https://astrea.linkeddata.es/shapes#79af7877b189248715b4523da7e84683> ;
-        sh:property       <https://astrea.linkeddata.es/shapes#d617da509c1b919440ad209d5bdff0d1> , <https://astrea.linkeddata.es/shapes#7dada9c47022ad0d97b3bc2c081f8b6a> , <https://astrea.linkeddata.es/shapes#8d4fbfd409797c09551254ea5b2b0e44> , <https://astrea.linkeddata.es/shapes#7c838a712f81ed6c0946946b1efae958> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#d4e2a6e51178fc3cdeed2c00d08f6b35> , <https://astrea.linkeddata.es/shapes#f48e6eb56794b646394b6da77e0d52c4> ;
         sh:targetClass    foodie:PropertyTypeValue , qu:QuantityKind , saref:Property .
 
 <https://astrea.linkeddata.es/shapes#1e9a20181aa022803928d9704919d5cb>
@@ -170,39 +162,29 @@
 <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  saref: ;
-        rdfs:label        "has property"@en , "Relation between a feature of interest and its properties."@en ;
-        sh:description    "Relation between a feature of interest and its properties."@en ;
+        rdfs:label        "has property"@en , "Links a feature kind or a feature of interest to one of its properties."@en ;
+        sh:class          saref:Property ;
+        sh:description    "Links a feature kind or a feature of interest to one of its properties."@en ;
         sh:name           "has property"@en ;
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           saref:hasProperty .
 
-<https://astrea.linkeddata.es/shapes#4dbe021536fe2df95a1b2bf20860f8b0>
-        a                       sh:PropertyShape ;
-        sh:class                saref:UnitOfMeasure ;
-        sh:nodeKind             sh:IRIOrLiteral ;
-        sh:path                 saref:isMeasuredIn ;
-        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
-        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
-        sh:qualifiedValueShape  [ sh:class  saref:UnitOfMeasure ] .
+<https://astrea.linkeddata.es/shapes#1ba36ef7476efaa067d9a6985b7dbd59>
+        a               sh:PropertyShape ;
+        rdfs:label      "controls"@en , "Links a device, function, command, or procedure execution, to the feature, property, or state, it controls."@en ;
+        sh:description  "Links a device, function, command, or procedure execution, to the feature, property, or state, it controls."@en ;
+        sh:name         "controls"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:controls .
 
 <https://astrea.linkeddata.es/shapes#db085280eb44e73456450bcaf4d931b0>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "is measured in"@en , "A relationship identifying the unit of measure used for a certain entity." ;
-        sh:description    "A relationship identifying the unit of measure used for a certain entity." ;
-        sh:equals         qudt:unit ;
-        sh:name           "is measured in"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:isMeasuredIn .
-
-<https://astrea.linkeddata.es/shapes#f3fe44f0d7f2e4f4d61ab43ea716590f>
-        a                       sh:PropertyShape ;
-        sh:class                saref:Property ;
-        sh:nodeKind             sh:IRIOrLiteral ;
-        sh:path                 saref:relatesToProperty ;
-        sh:qualifiedMaxCount    "1"^^xsd:nonNegativeInteger ;
-        sh:qualifiedMinCount    "1"^^xsd:nonNegativeInteger ;
-        sh:qualifiedValueShape  [ sh:class  saref:Property ] .
+        a               sh:PropertyShape ;
+        rdfs:label      "is measured in"@en , "A relationship identifying the unit of measure used for a certain entity."@en ;
+        sh:description  "A relationship identifying the unit of measure used for a certain entity."@en ;
+        sh:equals       qudt:unit ;
+        sh:name         "is measured in"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isMeasuredIn .
 
 <https://astrea.linkeddata.es/shapes#fd7b38c65af1324e4390d5f6df333e5c>
         a                 sh:PropertyShape ;
@@ -224,6 +206,15 @@
         sh:path           foodie:analysisDate ;
         sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
+<https://astrea.linkeddata.es/shapes#89602718fff77ec404fcb8fcccb9815d>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  saref: ;
+        rdfs:label        "observes"@en , "Links a device, function, command, or procedure execution, to the feature, property, or state, it observes."@en ;
+        sh:description    "Links a device, function, command, or procedure execution, to the feature, property, or state, it observes."@en ;
+        sh:name           "observes"@en ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           saref:observes .
+
 <https://astrea.linkeddata.es/shapes#d375a363eb35ddcfe7eedf026f8dcb0b>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/weather-schema.json> ;
@@ -232,6 +223,16 @@
         sh:name           "windDirection"@en ;
         sh:nodeKind       sh:Literal ;
         sh:path           fiware-weather:windDirection .
+
+<https://astrea.linkeddata.es/shapes#01880a796c2df7337b5c1375c51b5b7d>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  saref: ;
+        rdfs:label        "Observation"@en ;
+        sh:description    "A saref:Observation is the act of carrying out a procedure to estimate or calculate a value of a property of a feature of interest, or a state of a feature of interest. It links to a sensor to describe what made the observation, and to the observed feature, property, property of interest, state, or state of interest. Typically, its result is a property value or a state. An observation of a state (OP saref:observes) should have a state as a result (OP saref:hasResult). Respectively, an observation of a property should have a property value as a result."@en ;
+        sh:name           "Observation"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324> , <https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee> ;
+        sh:targetClass    saref:Observation .
 
 <https://astrea.linkeddata.es/shapes#e32f5c6affc3f1a530406d8609cd9c37>
         a                 sh:NodeShape ;
@@ -243,9 +244,11 @@
         sh:property       <https://astrea.linkeddata.es/shapes#82da3f9677527f027e33a454c4a094d8> , <https://astrea.linkeddata.es/shapes#7622216c02606402eedf4c3ab4d0ead0> , <https://astrea.linkeddata.es/shapes#543e2a89e69d8c46a81f97430c4a8bcb> , <https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462> , <https://astrea.linkeddata.es/shapes#0424178b00b48cf1e0659c49e2c59076> ;
         sh:targetClass    foodie:PropertyType .
 
-<https://astrea.linkeddata.es/shapes#5c4d33be837d075d74476b40b9096f4e>
-        a         sh:PropertyShape ;
-        sh:class  saref:Property .
+<https://astrea.linkeddata.es/shapes#38d6484e148433078745559bfd28d51a>
+        a            sh:PropertyShape ;
+        sh:class     saref:FeatureKind ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:narrower .
 
 <https://astrea.linkeddata.es/shapes#46aaaec0bd6ff6e19e55a4801decd885>
         a                 sh:NodeShape ;
@@ -259,20 +262,17 @@
 <https://astrea.linkeddata.es/shapes#8661dcd9ee54db004f23ae5cc74f9889>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  saref: ;
-        rdfs:label        "is property of"@en , "Relation between a property and a feature of interest in which such property appears."@en ;
-        sh:description    "Relation between a property and a feature of interest in which such property appears."@en ;
+        rdfs:label        "is property of"@en , "Links a property to the feature kind or feature of interest it is a property of."@en ;
+        sh:description    "Links a property to the feature kind or feature of interest it is a property of."@en ;
         sh:name           "is property of"@en ;
         sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:isPropertyOf .
-
-<https://astrea.linkeddata.es/shapes#2a7f559467b87c286ff1a0d603f59f77>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "is controlled by device"@en , "A relationship specifying the devices that can control a certain property" ;
-        sh:description    "A relationship specifying the devices that can control a certain property" ;
-        sh:name           "is controlled by device"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:isControlledByDevice .
+        sh:or             ( [ sh:class  saref:FeatureKind ;
+                              sh:path   saref:isPropertyOf
+                            ]
+                            [ sh:class  saref:FeatureOfInterest ;
+                              sh:path   saref:isPropertyOf
+                            ]
+                          ) .
 
 <https://astrea.linkeddata.es/shapes#63dcf358eefa83edeb48a1dfc18aefda>
         a                 sh:PropertyShape ;
@@ -296,10 +296,10 @@
         a                 sh:NodeShape ;
         rdfs:isDefinedBy  saref: ;
         rdfs:label        "Feature of interest"@en ;
-        sh:description    "A feature of interest represents any real world entity from which a property is measured" ;
+        sh:description    "A feature of interest represents any real world entity from which a property or a state may be targeted, such as observed and controlled. An instance of saref:FeatureOfInterest represents one specific real world entity."@en ;
         sh:name           "Feature of interest"@en ;
         sh:nodeKind       sh:IRI ;
-        sh:property       <https://astrea.linkeddata.es/shapes#59aeb7adfac9f1b5b03cad9e5fc47050> , <https://astrea.linkeddata.es/shapes#c79ba9adbc0726696ad68f2c8d7776b4> ;
+        sh:property       <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7> , <https://astrea.linkeddata.es/shapes#2939175ece03f2a097adb8b0fcc694fe> ;
         sh:targetClass    saref:FeatureOfInterest , sosa:FeatureOfInterest .
 
 <https://astrea.linkeddata.es/shapes#d5106b5a978d899fb1d6d2c91a36ddfa>
@@ -342,27 +342,6 @@
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           fiware-agrifood:hasAgriParcel .
 
-<https://astrea.linkeddata.es/shapes#b3dcc68d679b2d007e49dccc5fd1e1d8>
-        a            sh:PropertyShape ;
-        sh:class     saref:FeatureOfInterest ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:hasFeatureOfInterest .
-
-<https://astrea.linkeddata.es/shapes#4c441e387479eb1dc5d5927ebccb0c1f>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "relates to measurement"@en , "A relationship between a property and the measurements it relates to" ;
-        sh:description    "A relationship between a property and the measurements it relates to" ;
-        sh:name           "relates to measurement"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:relatesToMeasurement .
-
-<https://astrea.linkeddata.es/shapes#d617da509c1b919440ad209d5bdff0d1>
-        a            sh:PropertyShape ;
-        sh:class     saref:Device ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:isControlledByDevice .
-
 <https://astrea.linkeddata.es/shapes#d4dec10518172bc9804f32664c911872>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/weather-schema.json> ;
@@ -382,6 +361,12 @@
         sh:nodeKind       sh:Literal ;
         sh:path           saref:hasValue .
 
+<https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462>
+        a            sh:PropertyShape ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      foodie:nonQuantitativeProperty .
+
 <https://astrea.linkeddata.es/shapes#c46aff58e3de65136a5a2aca7c45156d>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/schema.json> ;
@@ -391,20 +376,22 @@
         sh:nodeKind       sh:Literal ;
         sh:path           fiware-weather:airTemperatureForecast .
 
-<https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462>
-        a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      foodie:nonQuantitativeProperty .
+<https://astrea.linkeddata.es/shapes#47fbd5cb335c242c2a0308d864b03c42>
+        a               sh:PropertyShape ;
+        rdfs:label      "is controlled by"@en , "Links a feature, property, or state, to the device, function, command, or procedure execution, that controls it."@en ;
+        sh:description  "Links a feature, property, or state, to the device, function, command, or procedure execution, that controls it."@en ;
+        sh:name         "is controlled by"@en ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         saref:isControlledBy .
 
-<https://astrea.linkeddata.es/shapes#5288c98ba84b52929075c92bec872444>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/schema.json> ;
-        rdfs:label        "dewPoint"@en , "The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor" ;
-        sh:description    "The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor" ;
-        sh:name           "dewPoint"@en ;
-        sh:nodeKind       sh:Literal ;
-        sh:path           fiware-weather:dewPoint .
+<https://astrea.linkeddata.es/report/236481030>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://raw.githubusercontent.com/opengeospatial/aim-swg/main/agriProperty.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
 
 <https://astrea.linkeddata.es/shapes#ee5ec727f91c6d55b7e56c8d0a3ddd81>
         a                 sh:PropertyShape ;
@@ -416,11 +403,14 @@
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           foodie:productionProperty .
 
-<https://astrea.linkeddata.es/shapes#7dada9c47022ad0d97b3bc2c081f8b6a>
-        a            sh:PropertyShape ;
-        sh:class     saref:Measurement ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:relatesToMeasurement .
+<https://astrea.linkeddata.es/shapes#5288c98ba84b52929075c92bec872444>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/schema.json> ;
+        rdfs:label        "dewPoint"@en , "The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor" ;
+        sh:description    "The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor" ;
+        sh:name           "dewPoint"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           fiware-weather:dewPoint .
 
 <https://astrea.linkeddata.es/shapes#577857b06622ab1523b5e75d28f19b43>
         a                 sh:NodeShape ;
@@ -430,17 +420,6 @@
         sh:name           "Surface" ;
         sh:nodeKind       sh:IRI ;
         sh:targetClass    cf-feature:Surface .
-
-<https://astrea.linkeddata.es/shapes#774315b36c57e6bc1060607c17c88edf>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  <https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved> ;
-        rdfs:label        "date observed"@en , "Date of the observed entity defined by the user" ;
-        sh:datatype       xsd:dateTime ;
-        sh:description    "Date of the observed entity defined by the user" ;
-        sh:name           "date observed"@en ;
-        sh:nodeKind       sh:Literal ;
-        sh:path           fiware:dateObserved ;
-        sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
 <https://astrea.linkeddata.es/shapes#31d4c6b219ccbcd5304d5db1613728ae>
         a                 sh:PropertyShape ;
@@ -469,13 +448,6 @@
         sh:nodeKind       sh:Literal ;
         sh:path           fiware-agrifood:solarRadiation .
 
-<https://astrea.linkeddata.es/shapes#64fa52c0b7adcbf451b13e34488a69e2>
-        a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
-        sh:minCount  "1"^^xsd:nonNegativeInteger ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:hasValue .
-
 <https://astrea.linkeddata.es/shapes#fef8eed41a9119575b5ef31c98009e94>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <http://foodie-cloud.com/model/foodie> ;
@@ -486,6 +458,15 @@
         sh:name           "quantitativeProperty" ;
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           foodie:quantitativeProperty .
+
+<https://astrea.linkeddata.es/shapes#2e176f370fbcb9f8e355fc1d59648bac>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  saref: ;
+        rdfs:label        "is observed by"@en , "Links a feature, property, or state, to the device, function, command, or procedure execution, that observes it."@en ;
+        sh:description    "Links a feature, property, or state, to the device, function, command, or procedure execution, that observes it."@en ;
+        sh:name           "is observed by"@en ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           saref:isObservedBy .
 
 <https://astrea.linkeddata.es/shapes#906feee4620550d069e149687dca56e5>
         a                 sh:PropertyShape ;
@@ -503,7 +484,17 @@
         sh:description    "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)" ;
         sh:name           "Temperature"@en ;
         sh:nodeKind       sh:IRI ;
-        sh:targetClass    saref:Temperature , dim:Temperature .
+        sh:targetClass    dim:Temperature , saref:Temperature .
+
+<https://astrea.linkeddata.es/shapes#c04a746a71d9f143476d1a349cdaf11c>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  saref: ;
+        rdfs:label        "made by"@en , "Links a procedure execution to the entity (e.g., device) that made it."@en ;
+        sh:class          saref:FeatureOfInterest ;
+        sh:description    "Links a procedure execution to the entity (e.g., device) that made it."@en ;
+        sh:name           "made by"@en ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           saref:madeBy .
 
 <https://astrea.linkeddata.es/shapes#863ccb080bb78c785313fc1994eb6579>
         a                 sh:NodeShape ;
@@ -523,15 +514,6 @@
         sh:nodeKind       sh:IRI ;
         sh:targetClass    cf-feature:Precipitation .
 
-<https://astrea.linkeddata.es/shapes#6d6adebc3adfc48442d9fb6df3ec2254>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "controls property"@en , "A relationship specifying the Property that can be controlled by a certain Device" ;
-        sh:description    "A relationship specifying the Property that can be controlled by a certain Device" ;
-        sh:name           "controls property"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:controlsProperty .
-
 <https://astrea.linkeddata.es/shapes#ffef3ed3bbf7c30fa6a55352f343e781>
         a                 sh:PropertyShape ;
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/schema.json> ;
@@ -541,9 +523,15 @@
         sh:nodeKind       sh:Literal ;
         sh:path           fiware-weather:snowHeight .
 
-<https://astrea.linkeddata.es/shapes#79af7877b189248715b4523da7e84683>
-        a         sh:PropertyShape ;
-        sh:class  saref:UnitOfMeasure .
+<https://astrea.linkeddata.es/shapes#0a5804dbf271e1e0746c63e997fd9601>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  saref: ;
+        rdfs:label        "Feature kinds"@en ;
+        sh:description    "Feature kinds allow to describe kinds of features of interest, with common properties having the same value, and common states being the same. An instance of saref:FeatureKind represents an archetype of real world entities, for example to populate product catalogs."@en ;
+        sh:name           "Feature kinds"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#38d6484e148433078745559bfd28d51a> , <https://astrea.linkeddata.es/shapes#7e1fd57104d602bd2070e959c3d2e9ea> , <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7> ;
+        sh:targetClass    saref:FeatureKind .
 
 <https://astrea.linkeddata.es/shapes#472735f2fcdb8c5e8c4f2f6c5b768492>
         a                 sh:NodeShape ;
@@ -563,33 +551,17 @@
         sh:nodeKind       sh:Literal ;
         sh:path           fiware-weather:streamGauge .
 
-<https://astrea.linkeddata.es/shapes#00dd6c55f68ca7d72892137aaaa8cb6f>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "makes measurement"@en , "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates." ;
-        sh:description    "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates." ;
-        sh:equals         sosa:madeObservation ;
-        sh:name           "makes measurement"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:makesMeasurement .
+<https://astrea.linkeddata.es/shapes#f48e6eb56794b646394b6da77e0d52c4>
+        a            sh:PropertyShape ;
+        sh:class     saref:Property ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
 
-<https://astrea.linkeddata.es/shapes#dca02d38e5e320264a1a30d672409036>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "is measured by device"@en , "A relationship specifying the devices that can measure a certain property" ;
-        sh:description    "A relationship specifying the devices that can measure a certain property" ;
-        sh:name           "is measured by device"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:isMeasuredByDevice .
-
-<https://astrea.linkeddata.es/report/355507722>
-        a       <https://w3id.org/def/astrea#ReportEntry> ;
-        <https://w3id.org/def/astrea#message>
-                "Shapes generated with no errors" ;
-        <https://w3id.org/def/astrea#source>
-                "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/agriProperty.ttl" ;
-        <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:integer .
+<https://astrea.linkeddata.es/shapes#7e1fd57104d602bd2070e959c3d2e9ea>
+        a            sh:PropertyShape ;
+        sh:class     saref:FeatureKind ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      skos:broader .
 
 <https://astrea.linkeddata.es/shapes#8a984502d199f67a6d7f61cd4db71ebe>
         a                 sh:PropertyShape ;
@@ -605,29 +577,16 @@
         rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/WeatherObserved/schema.json> ;
         rdfs:label        "refDevice"@en , "A reference to the device(s) which captured this observation." ;
         sh:description    "A reference to the device(s) which captured this observation." ;
-        sh:equals         saref:measurementMadeBy ;
         sh:name           "refDevice"@en ;
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           fiware-weather:refDevice .
 
-<https://astrea.linkeddata.es/shapes#59aeb7adfac9f1b5b03cad9e5fc47050>
-        a            sh:PropertyShape ;
-        sh:class     saref:Measurement ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:isFeatureOfInterestOf .
-
 <http://astrea.linkeddata.es/report>
         a       <https://w3id.org/def/astrea#ShapeReport> ;
         <https://w3id.org/def/astrea#contains>
-                <https://astrea.linkeddata.es/shapes#d4dec10518172bc9804f32664c911872> , <https://astrea.linkeddata.es/shapes#49ef4dd355736641a4164906371acb0a> , <https://astrea.linkeddata.es/shapes#8a984502d199f67a6d7f61cd4db71ebe> , <https://astrea.linkeddata.es/shapes#fb41a462e8338424ef4eaa17b4d8f2db> , <https://astrea.linkeddata.es/shapes#b4d05e80cce326bc29d6bb6e60f49bb4> , <https://astrea.linkeddata.es/shapes#4c441e387479eb1dc5d5927ebccb0c1f> , <https://astrea.linkeddata.es/shapes#7622216c02606402eedf4c3ab4d0ead0> , <https://astrea.linkeddata.es/shapes#fd810372de06150f2b7a95a1dffd0447> , <https://astrea.linkeddata.es/shapes#f3fe44f0d7f2e4f4d61ab43ea716590f> , <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7> , <https://astrea.linkeddata.es/shapes#774315b36c57e6bc1060607c17c88edf> , <https://astrea.linkeddata.es/shapes#d375a363eb35ddcfe7eedf026f8dcb0b> , <https://astrea.linkeddata.es/shapes#59aeb7adfac9f1b5b03cad9e5fc47050> , <https://astrea.linkeddata.es/shapes#79af7877b189248715b4523da7e84683> , <https://astrea.linkeddata.es/shapes#8d4fbfd409797c09551254ea5b2b0e44> , <https://astrea.linkeddata.es/shapes#2a7f559467b87c286ff1a0d603f59f77> , <https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462> , <https://astrea.linkeddata.es/shapes#7a602d8a7f007beee35d13f27a0146e4> , <https://astrea.linkeddata.es/shapes#dca02d38e5e320264a1a30d672409036> , <https://astrea.linkeddata.es/shapes#fd7b38c65af1324e4390d5f6df333e5c> , <https://astrea.linkeddata.es/shapes#ffef3ed3bbf7c30fa6a55352f343e781> , <https://astrea.linkeddata.es/shapes#0424178b00b48cf1e0659c49e2c59076> , <https://astrea.linkeddata.es/shapes#63dcf358eefa83edeb48a1dfc18aefda> , <https://astrea.linkeddata.es/shapes#d8fcc404ec3569ab405576151e2c63f9> , <https://astrea.linkeddata.es/shapes#46aaaec0bd6ff6e19e55a4801decd885> , <https://astrea.linkeddata.es/shapes#1e9a20181aa022803928d9704919d5cb> , <https://astrea.linkeddata.es/shapes#577857b06622ab1523b5e75d28f19b43> , <https://astrea.linkeddata.es/shapes#00dd6c55f68ca7d72892137aaaa8cb6f> , <https://astrea.linkeddata.es/shapes#863ccb080bb78c785313fc1994eb6579> , <https://astrea.linkeddata.es/shapes#c46aff58e3de65136a5a2aca7c45156d> , <https://astrea.linkeddata.es/shapes#7dada9c47022ad0d97b3bc2c081f8b6a> , <https://astrea.linkeddata.es/shapes#06663f64a0154a8dce8122f3dbbc8d89> , <https://astrea.linkeddata.es/shapes#db085280eb44e73456450bcaf4d931b0> , <https://astrea.linkeddata.es/shapes#ef45d390ab99dc9342cf565cffb32386> , <https://astrea.linkeddata.es/shapes#c5dad64e3922ce9c52abac5d2da6391e> , <https://astrea.linkeddata.es/shapes#999b5618108abe603e6661cdbe7506e4> , <https://astrea.linkeddata.es/shapes#e32f5c6affc3f1a530406d8609cd9c37> , <https://astrea.linkeddata.es/shapes#128cb216e10187c58feb97062ac9564d> , <https://astrea.linkeddata.es/shapes#d617da509c1b919440ad209d5bdff0d1> , <https://astrea.linkeddata.es/shapes#5710a68227cb923ddcac929036c76cf3> , <https://astrea.linkeddata.es/shapes#84bfe2919ab8459522a8e50fe6e193d1> , <https://astrea.linkeddata.es/shapes#1542e8e8bcfbfc73c93f9ea3bc52506b> , <https://astrea.linkeddata.es/shapes#906feee4620550d069e149687dca56e5> , <https://astrea.linkeddata.es/shapes#82da3f9677527f027e33a454c4a094d8> , <https://astrea.linkeddata.es/shapes#12b22e6adbd3dfc9e4f61b373302c739> , <https://astrea.linkeddata.es/shapes#fef8eed41a9119575b5ef31c98009e94> , <https://astrea.linkeddata.es/shapes#5288c98ba84b52929075c92bec872444> , <https://astrea.linkeddata.es/shapes#7fd858883e55601117acf9441b2384d5> , <https://astrea.linkeddata.es/shapes#e4831dbb0bf83e060dd243221283d064> , <https://astrea.linkeddata.es/shapes#7c838a712f81ed6c0946946b1efae958> , <https://astrea.linkeddata.es/shapes#c0ad8a083203dc9b50e039f44e41d17e> , <https://astrea.linkeddata.es/shapes#466029394f8f44718cce25b40440d323> , <https://astrea.linkeddata.es/shapes#6bd6794ac13832dd952a100c04f165e5> , <https://astrea.linkeddata.es/shapes#472735f2fcdb8c5e8c4f2f6c5b768492> , <https://astrea.linkeddata.es/shapes#31d4c6b219ccbcd5304d5db1613728ae> , <https://astrea.linkeddata.es/shapes#93d5d031d6c6f7c1089617de335c47b1> , <https://astrea.linkeddata.es/shapes#14ffc5caa004487c821bf9987d25341b> , <https://astrea.linkeddata.es/shapes#4dbe021536fe2df95a1b2bf20860f8b0> , <https://astrea.linkeddata.es/shapes#c79ba9adbc0726696ad68f2c8d7776b4> , <https://astrea.linkeddata.es/shapes#7e3adb8d51a59ba87ae0d547fa88984d> , <https://astrea.linkeddata.es/shapes#da3e0a9d4bb6784d8864e829b517073a> , <https://astrea.linkeddata.es/shapes#e92dc0050e023e468e3715d138b27130> , <https://astrea.linkeddata.es/shapes#6d6adebc3adfc48442d9fb6df3ec2254> , <https://astrea.linkeddata.es/shapes#ae0c2bade83a87fc30fa8096bfc9c025> , <https://astrea.linkeddata.es/shapes#23a56c810e12f59c60cd38d40c716958> , <https://astrea.linkeddata.es/shapes#543e2a89e69d8c46a81f97430c4a8bcb> , <https://astrea.linkeddata.es/shapes#8dcea278f8f5ef5a48f821324db74452> , <https://astrea.linkeddata.es/shapes#6adfabe23ae94623e9c6fad6d1c9c393> , <https://astrea.linkeddata.es/shapes#34c0f55f8f3f3c58d9cb361df2984c77> , <https://astrea.linkeddata.es/shapes#c088fd6854acbca9eecaf9b9dec3d43c> , <https://astrea.linkeddata.es/shapes#64fa52c0b7adcbf451b13e34488a69e2> , <https://astrea.linkeddata.es/shapes#8661dcd9ee54db004f23ae5cc74f9889> , <https://astrea.linkeddata.es/shapes#b3dcc68d679b2d007e49dccc5fd1e1d8> , <https://astrea.linkeddata.es/shapes#94ed6d1fb959a29cb64e8b1533a5daf4> , <https://astrea.linkeddata.es/shapes#ee5ec727f91c6d55b7e56c8d0a3ddd81> , <https://astrea.linkeddata.es/shapes#5c4d33be837d075d74476b40b9096f4e> , <https://astrea.linkeddata.es/shapes#0ad5c5b3a918c6bcc0d3db83e9a601dd> , <https://astrea.linkeddata.es/shapes#84b03bbedb195b34cdeb73e5ff52ebb2> , <https://astrea.linkeddata.es/shapes#d5106b5a978d899fb1d6d2c91a36ddfa> , <https://astrea.linkeddata.es/shapes#8a4625974fc3cbc57d1601d7005f1cd0> , <https://astrea.linkeddata.es/shapes#76cd9de3e05768970dcfc7d6f57fc00c> , <https://astrea.linkeddata.es/shapes#c6b18b5b7f305bf0b06521f183ee852a> ;
+                <https://astrea.linkeddata.es/shapes#d4dec10518172bc9804f32664c911872> , <https://astrea.linkeddata.es/shapes#49ef4dd355736641a4164906371acb0a> , <https://astrea.linkeddata.es/shapes#8a984502d199f67a6d7f61cd4db71ebe> , <https://astrea.linkeddata.es/shapes#2939175ece03f2a097adb8b0fcc694fe> , <https://astrea.linkeddata.es/shapes#fb41a462e8338424ef4eaa17b4d8f2db> , <https://astrea.linkeddata.es/shapes#f48e6eb56794b646394b6da77e0d52c4> , <https://astrea.linkeddata.es/shapes#2e176f370fbcb9f8e355fc1d59648bac> , <https://astrea.linkeddata.es/shapes#47fbd5cb335c242c2a0308d864b03c42> , <https://astrea.linkeddata.es/shapes#b4d05e80cce326bc29d6bb6e60f49bb4> , <https://astrea.linkeddata.es/shapes#7622216c02606402eedf4c3ab4d0ead0> , <https://astrea.linkeddata.es/shapes#fd810372de06150f2b7a95a1dffd0447> , <https://astrea.linkeddata.es/shapes#1fddf06fe6e9b90dfa54ea35fe9edfb7> , <https://astrea.linkeddata.es/shapes#d375a363eb35ddcfe7eedf026f8dcb0b> , <https://astrea.linkeddata.es/shapes#89602718fff77ec404fcb8fcccb9815d> , <https://astrea.linkeddata.es/shapes#45af5f745969881725f85e8f6325a462> , <https://astrea.linkeddata.es/shapes#7a602d8a7f007beee35d13f27a0146e4> , <https://astrea.linkeddata.es/shapes#fd7b38c65af1324e4390d5f6df333e5c> , <https://astrea.linkeddata.es/shapes#ffef3ed3bbf7c30fa6a55352f343e781> , <https://astrea.linkeddata.es/shapes#63dcf358eefa83edeb48a1dfc18aefda> , <https://astrea.linkeddata.es/shapes#0424178b00b48cf1e0659c49e2c59076> , <https://astrea.linkeddata.es/shapes#7e1fd57104d602bd2070e959c3d2e9ea> , <https://astrea.linkeddata.es/shapes#01880a796c2df7337b5c1375c51b5b7d> , <https://astrea.linkeddata.es/shapes#d8fcc404ec3569ab405576151e2c63f9> , <https://astrea.linkeddata.es/shapes#46aaaec0bd6ff6e19e55a4801decd885> , <https://astrea.linkeddata.es/shapes#1e9a20181aa022803928d9704919d5cb> , <https://astrea.linkeddata.es/shapes#577857b06622ab1523b5e75d28f19b43> , <https://astrea.linkeddata.es/shapes#863ccb080bb78c785313fc1994eb6579> , <https://astrea.linkeddata.es/shapes#c46aff58e3de65136a5a2aca7c45156d> , <https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee> , <https://astrea.linkeddata.es/shapes#06663f64a0154a8dce8122f3dbbc8d89> , <https://astrea.linkeddata.es/shapes#d4e2a6e51178fc3cdeed2c00d08f6b35> , <https://astrea.linkeddata.es/shapes#db085280eb44e73456450bcaf4d931b0> , <https://astrea.linkeddata.es/shapes#ec4d9be43d49ce4a5080dc148f295395> , <https://astrea.linkeddata.es/shapes#ef45d390ab99dc9342cf565cffb32386> , <https://astrea.linkeddata.es/shapes#e32f5c6affc3f1a530406d8609cd9c37> , <https://astrea.linkeddata.es/shapes#128cb216e10187c58feb97062ac9564d> , <https://astrea.linkeddata.es/shapes#5710a68227cb923ddcac929036c76cf3> , <https://astrea.linkeddata.es/shapes#84bfe2919ab8459522a8e50fe6e193d1> , <https://astrea.linkeddata.es/shapes#1542e8e8bcfbfc73c93f9ea3bc52506b> , <https://astrea.linkeddata.es/shapes#906feee4620550d069e149687dca56e5> , <https://astrea.linkeddata.es/shapes#82da3f9677527f027e33a454c4a094d8> , <https://astrea.linkeddata.es/shapes#0a5804dbf271e1e0746c63e997fd9601> , <https://astrea.linkeddata.es/shapes#12b22e6adbd3dfc9e4f61b373302c739> , <https://astrea.linkeddata.es/shapes#fef8eed41a9119575b5ef31c98009e94> , <https://astrea.linkeddata.es/shapes#5288c98ba84b52929075c92bec872444> , <https://astrea.linkeddata.es/shapes#c04a746a71d9f143476d1a349cdaf11c> , <https://astrea.linkeddata.es/shapes#c0ad8a083203dc9b50e039f44e41d17e> , <https://astrea.linkeddata.es/shapes#466029394f8f44718cce25b40440d323> , <https://astrea.linkeddata.es/shapes#1ba36ef7476efaa067d9a6985b7dbd59> , <https://astrea.linkeddata.es/shapes#6bd6794ac13832dd952a100c04f165e5> , <https://astrea.linkeddata.es/shapes#472735f2fcdb8c5e8c4f2f6c5b768492> , <https://astrea.linkeddata.es/shapes#31d4c6b219ccbcd5304d5db1613728ae> , <https://astrea.linkeddata.es/shapes#7e3adb8d51a59ba87ae0d547fa88984d> , <https://astrea.linkeddata.es/shapes#da3e0a9d4bb6784d8864e829b517073a> , <https://astrea.linkeddata.es/shapes#e92dc0050e023e468e3715d138b27130> , <https://astrea.linkeddata.es/shapes#38d6484e148433078745559bfd28d51a> , <https://astrea.linkeddata.es/shapes#d43c6654a6a793a6d69e258ba6fdd034> , <https://astrea.linkeddata.es/shapes#ae0c2bade83a87fc30fa8096bfc9c025> , <https://astrea.linkeddata.es/shapes#23a56c810e12f59c60cd38d40c716958> , <https://astrea.linkeddata.es/shapes#543e2a89e69d8c46a81f97430c4a8bcb> , <https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324> , <https://astrea.linkeddata.es/shapes#6adfabe23ae94623e9c6fad6d1c9c393> , <https://astrea.linkeddata.es/shapes#34c0f55f8f3f3c58d9cb361df2984c77> , <https://astrea.linkeddata.es/shapes#c088fd6854acbca9eecaf9b9dec3d43c> , <https://astrea.linkeddata.es/shapes#8661dcd9ee54db004f23ae5cc74f9889> , <https://astrea.linkeddata.es/shapes#94ed6d1fb959a29cb64e8b1533a5daf4> , <https://astrea.linkeddata.es/shapes#ee5ec727f91c6d55b7e56c8d0a3ddd81> , <https://astrea.linkeddata.es/shapes#0ad5c5b3a918c6bcc0d3db83e9a601dd> , <https://astrea.linkeddata.es/shapes#84b03bbedb195b34cdeb73e5ff52ebb2> , <https://astrea.linkeddata.es/shapes#d5106b5a978d899fb1d6d2c91a36ddfa> , <https://astrea.linkeddata.es/shapes#8a4625974fc3cbc57d1601d7005f1cd0> , <https://astrea.linkeddata.es/shapes#76cd9de3e05768970dcfc7d6f57fc00c> , <https://astrea.linkeddata.es/shapes#c6b18b5b7f305bf0b06521f183ee852a> ;
         <https://w3id.org/def/astrea#generatedShapesFrom>
-                <https://astrea.linkeddata.es/report/355507722> .
-
-<https://astrea.linkeddata.es/shapes#7c838a712f81ed6c0946946b1efae958>
-        a            sh:PropertyShape ;
-        sh:class     saref:FeatureOfInterest ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:isPropertyOf .
+                <https://astrea.linkeddata.es/report/236481030> .
 
 <https://astrea.linkeddata.es/shapes#7e3adb8d51a59ba87ae0d547fa88984d>
         a                 sh:PropertyShape ;
@@ -639,25 +598,6 @@
         sh:name           "propertyType" ;
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           foodie:propertyType .
-
-<https://astrea.linkeddata.es/shapes#e4831dbb0bf83e060dd243221283d064>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "measures property"@en , "A relationship specifying the Property that can be measured by a certain Device" ;
-        sh:description    "A relationship specifying the Property that can be measured by a certain Device" ;
-        sh:name           "measures property"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:measuresProperty .
-
-<https://astrea.linkeddata.es/shapes#c5dad64e3922ce9c52abac5d2da6391e>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "has feature of interest"@en , "Relation between a measurement and the feature of interest being measured."@en ;
-        sh:description    "Relation between a measurement and the feature of interest being measured."@en ;
-        sh:equals         sosa:hasFeatureOfInterest ;
-        sh:name           "has feature of interest"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:hasFeatureOfInterest .
 
 <https://astrea.linkeddata.es/shapes#7a602d8a7f007beee35d13f27a0146e4>
         a                 sh:PropertyShape ;
@@ -677,16 +617,14 @@
         sh:nodeKind       sh:IRI ;
         sh:targetClass    cf-feature:SurfaceLayer .
 
-<https://astrea.linkeddata.es/shapes#14ffc5caa004487c821bf9987d25341b>
-        a                 sh:NodeShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "Measurement"@en ;
-        sh:description    "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
-        sh:name           "Measurement"@en ;
-        sh:nodeKind       sh:IRI ;
-        sh:not            <https://astrea.linkeddata.es/shapes#5c4d33be837d075d74476b40b9096f4e> , <https://astrea.linkeddata.es/shapes#79af7877b189248715b4523da7e84683> ;
-        sh:property       <https://astrea.linkeddata.es/shapes#f3fe44f0d7f2e4f4d61ab43ea716590f> , <https://astrea.linkeddata.es/shapes#4dbe021536fe2df95a1b2bf20860f8b0> , <https://astrea.linkeddata.es/shapes#b3dcc68d679b2d007e49dccc5fd1e1d8> , <https://astrea.linkeddata.es/shapes#8dcea278f8f5ef5a48f821324db74452> , <https://astrea.linkeddata.es/shapes#64fa52c0b7adcbf451b13e34488a69e2> ;
-        sh:targetClass    sosa:Observation , saref:Measurement .
+<https://astrea.linkeddata.es/shapes#76cd9de3e05768970dcfc7d6f57fc00c>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/weather-schema.json> ;
+        rdfs:label        "refPointOfInterest"@en , "Point of interest related to the item" ;
+        sh:description    "Point of interest related to the item" ;
+        sh:name           "refPointOfInterest"@en ;
+        sh:nodeKind       sh:BlankNodeOrIRI ;
+        sh:path           fiware-weather:refPointOfInterest .
 
 <https://astrea.linkeddata.es/shapes#6adfabe23ae94623e9c6fad6d1c9c393>
         a                 sh:PropertyShape ;
@@ -706,24 +644,38 @@
         sh:nodeKind       sh:Literal ;
         sh:path           fiware-weather:windSpeed .
 
-<https://astrea.linkeddata.es/shapes#76cd9de3e05768970dcfc7d6f57fc00c>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  <https://github.com/smart-data-models/dataModel.Weather/blob/master/weather-schema.json> ;
-        rdfs:label        "refPointOfInterest"@en , "Point of interest related to the item" ;
-        sh:description    "Point of interest related to the item" ;
-        sh:name           "refPointOfInterest"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           fiware-weather:refPointOfInterest .
-
-<https://astrea.linkeddata.es/shapes#999b5618108abe603e6661cdbe7506e4>
-        a                 sh:PropertyShape ;
+<https://astrea.linkeddata.es/shapes#ec4d9be43d49ce4a5080dc148f295395>
+        a                 sh:NodeShape ;
         rdfs:isDefinedBy  saref: ;
-        rdfs:label        "measurement made by"@en , "Relation between a measurement and the device that made it."@en ;
-        sh:description    "Relation between a measurement and the device that made it."@en ;
-        sh:equals         sosa:madeBySensor ;
-        sh:name           "measurement made by"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:measurementMadeBy .
+        rdfs:label        "Procedure Execution"@en ;
+        sh:description    "Represents the act of carrying out a procedure."@en ;
+        sh:name           "Procedure Execution"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:property       <https://astrea.linkeddata.es/shapes#c04a746a71d9f143476d1a349cdaf11c> ;
+        sh:targetClass    saref:ProcedureExecution .
+
+<https://astrea.linkeddata.es/shapes#37153f0f8f67ca08307bf87fb1627aee>
+        a            sh:PropertyShape ;
+        sh:class     saref:Sensor ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:madeBy .
+
+<https://astrea.linkeddata.es/shapes#7636d31e71ce857caf3a6e5129fd0324>
+        a            sh:PropertyShape ;
+        sh:minCount  1 ;
+        sh:nodeKind  sh:IRIOrLiteral ;
+        sh:path      saref:observes .
+
+<https://astrea.linkeddata.es/shapes#d43c6654a6a793a6d69e258ba6fdd034>
+        a                 sh:PropertyShape ;
+        rdfs:isDefinedBy  <https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved> ;
+        rdfs:label        "date observed"@en , "Date of the observed entity defined by the user" ;
+        sh:datatype       xsd:dateTime ;
+        sh:description    "Date of the observed entity defined by the user" ;
+        sh:name           "date observed"@en ;
+        sh:nodeKind       sh:Literal ;
+        sh:path           fiware:dateObserved ;
+        sh:pattern        "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 
 <https://astrea.linkeddata.es/shapes#94ed6d1fb959a29cb64e8b1533a5daf4>
         a                 sh:NodeShape ;
@@ -733,16 +685,6 @@
         sh:name           "Unit of measure"@en ;
         sh:nodeKind       sh:IRI ;
         sh:targetClass    saref:UnitOfMeasure , qudt:Unit .
-
-<https://astrea.linkeddata.es/shapes#7fd858883e55601117acf9441b2384d5>
-        a                 sh:PropertyShape ;
-        rdfs:isDefinedBy  saref: ;
-        rdfs:label        "relates to property"@en , "A relationship between a measurement and the property it relates to" ;
-        sh:description    "A relationship between a measurement and the property it relates to" ;
-        sh:equals         sosa:observedProperty ;
-        sh:name           "relates to property"@en ;
-        sh:nodeKind       sh:BlankNodeOrIRI ;
-        sh:path           saref:relatesToProperty .
 
 <https://astrea.linkeddata.es/shapes#466029394f8f44718cce25b40440d323>
         a                 sh:NodeShape ;
@@ -762,9 +704,3 @@
         sh:name           "soilProperty" ;
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           foodie:soilProperty .
-
-<https://astrea.linkeddata.es/shapes#8dcea278f8f5ef5a48f821324db74452>
-        a            sh:PropertyShape ;
-        sh:datatype  xsd:dateTime ;
-        sh:nodeKind  sh:IRIOrLiteral ;
-        sh:path      saref:hasTimestamp .

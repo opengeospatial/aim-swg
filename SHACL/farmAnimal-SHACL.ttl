@@ -1,20 +1,20 @@
-@prefix fiware-agrifood: <https://smartdatamodels.org/dataModel.Agrifood/> .
-@prefix schema: <https://schema.org/> .
 @prefix :      <https://w3id.org/cybele/> .
+@prefix schema: <https://schema.org/> .
+@prefix fiware-agrifood: <https://smartdatamodels.org/dataModel.Agrifood/> .
 @prefix iso19150-2: <http://def.seegrid.csiro.au/isotc211/iso19150/-2/2012/basic#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix saref: <https://saref.etsi.org/core/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix fiware: <https://smartdatamodels.org/> .
 @prefix act-inspire: <http://inspire.ec.europa.eu/schemas/act-core/3.0#> .
+@prefix fiware: <https://smartdatamodels.org/> .
 @prefix ssn:   <http://www.w3.org/ns/ssn/> .
 @prefix geo:   <http://www.opengis.net/ont/geosparql#> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix iso19109: <http://def.seegrid.csiro.au/isotc211/iso19109/2005/feature#> .
-@prefix common: <http://portele.de/ont/inspire/baseInspire#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
+@prefix common: <http://portele.de/ont/inspire/baseInspire#> .
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
 @prefix iso19103: <http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#> .
@@ -91,8 +91,8 @@
 
 <https://astrea.linkeddata.es/shapes#242c53465f77ee16942577018a5d99b3>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
-        sh:minCount  "1"^^xsd:integer ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:livestockType .
 
@@ -114,6 +114,15 @@
         sh:name           "reproductiveCondition"@en ;
         sh:nodeKind       sh:Literal ;
         sh:path           fiware-agrifood:reproductiveCondition .
+
+<https://astrea.linkeddata.es/report/01557490810>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://raw.githubusercontent.com/opengeospatial/aim-swg/main/farmAnimal.ttl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
 
 <https://astrea.linkeddata.es/shapes#86ef91578085052efc05fc7027269752>
         a                 sh:PropertyShape ;
@@ -231,15 +240,6 @@
         sh:nodeKind       sh:BlankNodeOrIRI ;
         sh:path           fiware-agrifood:ownedBy .
 
-<https://astrea.linkeddata.es/report/1812461706>
-        a       <https://w3id.org/def/astrea#ReportEntry> ;
-        <https://w3id.org/def/astrea#message>
-                "Shapes generated with no errors" ;
-        <https://w3id.org/def/astrea#source>
-                "https://raw.githubusercontent.com/rapw3k/DEMETER/master/models/farmAnimal.ttl" ;
-        <https://w3id.org/def/astrea#statusCode>
-                "200"^^xsd:integer .
-
 <https://astrea.linkeddata.es/shapes#648de9d6c441730aa0cd0828108e1f39>
         a            sh:PropertyShape ;
         sh:nodeKind  sh:IRIOrLiteral ;
@@ -293,8 +293,8 @@
 
 <https://astrea.linkeddata.es/shapes#95c322184613a1662d48949c2a46829e>
         a            sh:PropertyShape ;
-        sh:maxCount  "1"^^xsd:integer ;
-        sh:minCount  "1"^^xsd:integer ;
+        sh:maxCount  "1"^^xsd:int ;
+        sh:minCount  "1"^^xsd:int ;
         sh:nodeKind  sh:IRIOrLiteral ;
         sh:path      foodie:livestockNumber .
 
@@ -321,7 +321,7 @@
         <https://w3id.org/def/astrea#contains>
                 <https://astrea.linkeddata.es/shapes#f5addb547b3f2fe1dfa9922db1f760b8> , <https://astrea.linkeddata.es/shapes#f8f4bcca1508a35fdd8296dc25525da6> , <https://astrea.linkeddata.es/shapes#7151936560e790620785f59721133f20> , <https://astrea.linkeddata.es/shapes#5f18d424e5682bbf0b7ace4842c4b242> , <https://astrea.linkeddata.es/shapes#242c53465f77ee16942577018a5d99b3> , <https://astrea.linkeddata.es/shapes#2c5794a1057d5a6d46284b77fe8edc9e> , <https://astrea.linkeddata.es/shapes#c70565122e33f312cd286113474a631a> , <https://astrea.linkeddata.es/shapes#0cd4758f32bf620f37d9159629982d50> , <https://astrea.linkeddata.es/shapes#86ef91578085052efc05fc7027269752> , <https://astrea.linkeddata.es/shapes#01c89cc501dcba3124b973ac2cd266a7> , <https://astrea.linkeddata.es/shapes#c1ff4b993b51adcca55cff61bc13ecac> , <https://astrea.linkeddata.es/shapes#3c909c37c62a8aea3a5b994bd45787ca> , <https://astrea.linkeddata.es/shapes#e3a1fb1a15b7adc513d589e0e91c2fac> , <https://astrea.linkeddata.es/shapes#b626c471ae6d24c52fd7d978eb9b1be8> , <https://astrea.linkeddata.es/shapes#30192be9269ad8019689e60b4e8422f8> , <https://astrea.linkeddata.es/shapes#1ea40a6c21f0c012f148b499e2aee168> , <https://astrea.linkeddata.es/shapes#f2d5d94bd6add66e30f071076425e2dd> , <https://astrea.linkeddata.es/shapes#24057567f966d881b6557082f2c76ca0> , <https://astrea.linkeddata.es/shapes#ac1d82bae30ebd27516dc1248741ac53> , <https://astrea.linkeddata.es/shapes#c8e1ecf3516e81aefac5b5d360330c6b> , <https://astrea.linkeddata.es/shapes#7abc768823e9483d4df06977afb449b2> , <https://astrea.linkeddata.es/shapes#aff23b97673892b9b4c4c10e469828e9> , <https://astrea.linkeddata.es/shapes#d88a1e1b88184bf967e07f42e730bb76> , <https://astrea.linkeddata.es/shapes#8bd1bf1b5116e678d2f627c5b54f7a23> , <https://astrea.linkeddata.es/shapes#d0e6ba474f39cef246b37ead110998fb> , <https://astrea.linkeddata.es/shapes#13cca34456c2ee381116cd142db6d5e5> , <https://astrea.linkeddata.es/shapes#941bbd9265d5b8525d470e0a846ea053> , <https://astrea.linkeddata.es/shapes#aef762dc28007f8b94d4889646e4a5a3> , <https://astrea.linkeddata.es/shapes#648de9d6c441730aa0cd0828108e1f39> , <https://astrea.linkeddata.es/shapes#0cf6ab0e6e7bb67e53ed76e11ee0bcbb> , <https://astrea.linkeddata.es/shapes#4d3c0d19e0b9de5caff3a1ecfaa25226> , <https://astrea.linkeddata.es/shapes#8079aaa6db7c8ed22063613d9bc4c289> , <https://astrea.linkeddata.es/shapes#409ce3a4aadd299c586beffe7a5f61d0> , <https://astrea.linkeddata.es/shapes#dbb24c0805c57ae75a3a498a123b4229> , <https://astrea.linkeddata.es/shapes#8afc3cc654cd467065d28673b8254674> , <https://astrea.linkeddata.es/shapes#c03c37fdabdcde989232e075974b9af6> , <https://astrea.linkeddata.es/shapes#85247dccddc798caa098a7d18a204df6> , <https://astrea.linkeddata.es/shapes#95c322184613a1662d48949c2a46829e> , <https://astrea.linkeddata.es/shapes#7cb02de225e7c6c4da322063085b69c8> , <https://astrea.linkeddata.es/shapes#d3ed73c3152541d0b7036bd79b7a1289> , <https://astrea.linkeddata.es/shapes#593914c6c80394105ded60f6c73481ff> , <https://astrea.linkeddata.es/shapes#cf809be9586ae5c4cfb787151dde76ed> , <https://astrea.linkeddata.es/shapes#31865b841b415be0db5c75d28b9fc9d1> ;
         <https://w3id.org/def/astrea#generatedShapesFrom>
-                <https://astrea.linkeddata.es/report/1812461706> .
+                <https://astrea.linkeddata.es/report/01557490810> .
 
 <https://astrea.linkeddata.es/shapes#d0e6ba474f39cef246b37ead110998fb>
         a                 sh:NodeShape ;
