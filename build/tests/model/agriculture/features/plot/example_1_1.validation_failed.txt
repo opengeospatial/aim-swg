@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.features.plot - Plot - GeoJSON
-Generated 2026-10-06T15:29:53.226145+00:00
+Generated 2026-10-06T15:44:22.685159+00:00
 === Files ===
 Using examples/plot.json from examples
 JSON-LD context is present - uplifting
@@ -155,10 +155,6 @@ On instance:
 
 === SHACL ===
 Error processing closure source https://w3id.org/demeter/agri/agriFeature: No plugin registered for (text/plain, <class 'rdflib.parser.Parser'>) - SHACL validation will run against an incomplete closure graph
-
-** Validation error **
-Error running SHACL validation for SHACL/agriFeature-SHACL.ttl: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
-For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
@@ -166,9 +162,13 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
  - Shape geojson:GeometryShape: *none*
 
+
+** Validation error **
+Error running SHACL validation for SHACL/agriFeature-SHACL.ttl: MaxCountConstraintComponent sh:maxCount must be a literal with datatype xsd:integer.
+For reference, see https://www.w3.org/TR/shacl/#MaxCountConstraintComponent
 === End SHACL ===
 

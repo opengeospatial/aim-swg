@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON
-Generated 2026-10-06T15:29:56.816439+00:00
+Generated 2026-10-06T15:44:25.691795+00:00
 === Files ===
 Using examples/farm_simple.json from examples
 JSON-LD context is present - uplifting
