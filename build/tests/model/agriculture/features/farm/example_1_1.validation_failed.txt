@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON
-Generated 2026-10-06T13:00:43.168429+00:00
+Generated 2026-10-06T14:06:12.454271+00:00
 === Files ===
 Using examples/farm_simple.json from examples
 JSON-LD context is present - uplifting
@@ -22,11 +22,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: <file:///github/workspace/f1>
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: <file:///github/workspace/f1>
- - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===
 
