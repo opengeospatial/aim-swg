@@ -51,11 +51,7 @@
     },
     "Unit" : {
       "@id" : "http://qudt.org/schema/qudt/Unit"
-    },
-    "isControlledByDevice" : {
-      "@id" : "https://saref.etsi.org/core/isControlledByDevice",
-      "@type" : "@id"
-    },
+    },    
     "alertSpecies" : {
       "@id" : "http://foodie-cloud.com/model/foodie#alertSpecies",
       "@type" : "@id"
@@ -111,10 +107,7 @@
     },
     "Slice" : {
       "@id" : "http://purl.org/linked-data/cube#Slice"
-    },
-    "Humidity" : {
-      "@id" : "https://saref.etsi.org/core/Humidity"
-    },
+    },    
     "alertGeometry" : {
       "@id" : "http://foodie-cloud.com/model/foodie#alertGeometry",
       "@type" : "@id"
@@ -332,11 +325,7 @@
     "motionSpeed" : {
       "@id" : "http://foodie-cloud.com/model/foodie#motionSpeed",
       "@type" : "@id"
-    },
-    "measuresProperty" : {
-      "@id" : "https://saref.etsi.org/core/measuresProperty",
-      "@type" : "@id"
-    },
+    },    
     "Class" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
     },
@@ -519,10 +508,7 @@
     "fedWith" : {
       "@id" : "https://smartdatamodels.org/dataModel.Agrifood/fedWith",
       "@type" : "@id"
-    },
-    "Measurement" : {
-      "@id" : "https://saref.etsi.org/core/Measurement"
-    },
+    },  
     "startedAt" : {
       "@id" : "https://smartdatamodels.org/dataModel.Agrifood/startedAt",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -643,11 +629,7 @@
     "hasHarvestDate" : {
       "@id" : "https://saref.etsi.org/saref4agri/hasHarvestDate",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "measurementMadeBy" : {
-      "@id" : "https://saref.etsi.org/core/measurementMadeBy",
-      "@type" : "@id"
-    },
+    },    
     "ActivityComplex" : {
       "@id" : "http://inspire.ec.europa.eu/schemas/act-core/3.0#ActivityComplex"
     },
@@ -981,11 +963,7 @@
     "dateObserved" : {
       "@id" : "https://smartdatamodels.org/dateObserved",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "relatesToMeasurement" : {
-      "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
-      "@type" : "@id"
-    },
+    },    
     "atmosphericPressure" : {
       "@id" : "https://smartdatamodels.org/dataModel.Weather/atmosphericPressure"
     },
@@ -994,11 +972,7 @@
     },
     "deprecated" : {
       "@id" : "http://www.w3.org/2002/07/owl#deprecated"
-    },
-    "isMeasuredByDevice" : {
-      "@id" : "https://saref.etsi.org/core/isMeasuredByDevice",
-      "@type" : "@id"
-    },
+    },    
     "applicationWidth" : {
       "@id" : "http://foodie-cloud.com/model/foodie#applicationWidth",
       "@type" : "@id"
@@ -1016,6 +990,9 @@
     },
     "Duration" : {
       "@id" : "http://www.w3.org/2006/time#Duration"
+    },
+    "TemporalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalPosition"
     },
     "TIN" : {
       "@id" : "http://www.opengis.net/ont/sf#TIN"
@@ -1066,11 +1043,7 @@
     "observes" : {
       "@id" : "http://www.w3.org/ns/sosa/observes",
       "@type" : "@id"
-    },
-    "makesMeasurement" : {
-      "@id" : "https://saref.etsi.org/core/makesMeasurement",
-      "@type" : "@id"
-    },
+    },    
     "hasDeployment" : {
       "@id" : "http://www.w3.org/ns/ssn/hasDeployment",
       "@type" : "@id"
@@ -1363,11 +1336,7 @@
     },
     "category" : {
       "@id" : "https://smartdatamodels.org/dataModel.Agrifood/category"
-    },
-    "relatesToProperty" : {
-      "@id" : "https://saref.etsi.org/core/relatesToProperty",
-      "@type" : "@id"
-    },
+    },    
     "period" : {
       "@id" : "http://foodie-cloud.com/model/foodie#period",
       "@type" : "@id"
@@ -1415,11 +1384,7 @@
     "dateIssued" : {
       "@id" : "https://smartdatamodels.org/dataModel.Weather/dateIssued",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "controlsProperty" : {
-      "@id" : "https://saref.etsi.org/core/controlsProperty",
-      "@type" : "@id"
-    },
+    },    
     "Polygon" : {
       "@id" : "http://www.opengis.net/ont/sf#Polygon"
     },
@@ -1679,10 +1644,7 @@
     },
     "cf.Surface" : {
       "@id" : "http://purl.oclc.org/NET/ssnx/cf/cf-feature#Surface"
-    },
-    "saref.Temperature" : {
-      "@id" : "https://saref.etsi.org/core/Temperature"
-    },
+    },    
     "FeatureOfInterest" : {
       "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
     },
@@ -1741,15 +1703,7 @@
     "saref.hasProperty" : {
       "@id" : "https://saref.etsi.org/core/hasProperty",
       "@type" : "@id"
-    },
-    "saref.hasFeatureOfInterest" : {
-      "@id" : "https://saref.etsi.org/core/hasFeatureOfInterest",
-      "@type" : "@id"
-    },
-    "saref.isFeatureOfInterestOf" : {
-      "@id" : "https://saref.etsi.org/core/isFeatureOfInterestOf",
-      "@type" : "@id"
-    },
+    },        
     "saref.isPropertyOf" : {
       "@id" : "https://saref.etsi.org/core/isPropertyOf",
       "@type" : "@id"
@@ -1873,6 +1827,76 @@
     },
     "adminUnitL2" : {
       "@id" : "http://www.w3.org/ns/locn#adminUnitL2"
+    },
+    "madeBy" : {
+      "@id" : "https://saref.etsi.org/core/madeBy",
+      "@type" : "@id"
+    },
+    "madeExecution" : {
+      "@id" : "https://saref.etsi.org/core/madeExecution",
+      "@type" : "@id"
+    },
+    "controls" : {
+      "@id" : "https://saref.etsi.org/core/controls",
+      "@type" : "@id"
+    },
+    "isControlledBy" : {
+      "@id" : "https://saref.etsi.org/core/isControlledBy",
+      "@type" : "@id"
+    },
+    "saref.observes" : {
+      "@id" : "https://saref.etsi.org/core/observes",
+      "@type" : "@id"
+    },
+    "isObservedBy" : {
+      "@id" : "https://saref.etsi.org/core/isObservedBy",
+      "@type" : "@id"
+    },
+    "saref.hasResult" : {
+      "@id" : "https://saref.etsi.org/core/hasResult",
+      "@type" : "@id"
+    },
+    "hasPhenomenonTime" : {
+      "@id" : "https://saref.etsi.org/core/hasPhenomenonTime",
+      "@type" : "@id"
+    },
+    "hasProfile" : {
+      "@id" : "https://saref.etsi.org/core/hasProfile",
+      "@type" : "@id"
+    },
+    "isProfileOf" : {
+      "@id" : "https://saref.etsi.org/core/isProfileOf",
+      "@type" : "@id"
+    },
+    "hasApplicableTime" : {
+      "@id" : "https://saref.etsi.org/core/hasApplicableTime",
+      "@type" : "@id"
+    },
+    "whenPropertyValue" : {
+      "@id" : "https://saref.etsi.org/core/whenPropertyValue",
+      "@type" : "@id"
+    },
+    "profileHasPrice" : {
+      "@id" : "https://saref.etsi.org/core/profileHasPrice",
+      "@type" : "@id"
+    },
+    "hasResultTime" : {
+      "@id" : "https://saref.etsi.org/core/hasResultTime"      
+    },
+    "saref.Observation" : {
+      "@id" : "https://saref.etsi.org/core/Observation"
+    },
+    "FeatureKind" : {
+      "@id" : "https://saref.etsi.org/core/FeatureKind"
+    },
+    "Profile" : {
+      "@id" : "https://saref.etsi.org/core/Profile"
+    },
+    "DeviceKind" : {
+      "@id" : "https://saref.etsi.org/core/DeviceKind"
+    },
+    "PropertyValue" : {
+      "@id" : "https://saref.etsi.org/core/PropertyValue"
     }
   }
 }
