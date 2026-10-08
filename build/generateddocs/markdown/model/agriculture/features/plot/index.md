@@ -751,6 +751,7 @@ Links to the schema:
     "siredBy": "https://smartdatamodels.org/dataModel.Agrifood/siredBy",
     "soilMoistureEc": "https://smartdatamodels.org/dataModel.Agrifood/soilMoistureEc",
     "soilMoistureVwc": "https://smartdatamodels.org/dataModel.Agrifood/soilMoistureVwc",
+    "soilPh": "https://smartdatamodels.org/dataModel.Agrifood/soilPh",
     "soilSalinity": "https://smartdatamodels.org/dataModel.Agrifood/soilSalinity",
     "soilTemperature": "https://smartdatamodels.org/dataModel.Agrifood/soilTemperature",
     "soilTextureType": "https://smartdatamodels.org/dataModel.Agrifood/soilTextureType",

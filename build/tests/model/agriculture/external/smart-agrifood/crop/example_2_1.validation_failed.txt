@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.external.smart-agrifood.crop - SMART AgriCrop
-Generated 2026-10-07T14:17:56.713859+00:00
+Generated 2026-10-08T14:08:12.080530+00:00
 === Files ===
 Using examples/crop.json from examples
 JSON-LD context is present - uplifting
@@ -494,6 +494,7 @@ Failed validating 'required' in schema:
                               'siredBy': 'https://smartdatamodels.org/dataModel.Agrifood/siredBy',
                               'soilMoistureEc': 'https://smartdatamodels.org/dataModel.Agrifood/soilMoistureEc',
                               'soilMoistureVwc': 'https://smartdatamodels.org/dataModel.Agrifood/soilMoistureVwc',
+                              'soilPh': 'https://smartdatamodels.org/dataModel.Agrifood/soilPh',
                               'soilSalinity': 'https://smartdatamodels.org/dataModel.Agrifood/soilSalinity',
                               'soilTemperature': 'https://smartdatamodels.org/dataModel.Agrifood/soilTemperature',
                               'soilTextureType': 'https://smartdatamodels.org/dataModel.Agrifood/soilTextureType',
