@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.conceptual.plot - Plot
-Generated 2026-10-08T14:08:12.799254+00:00
+Generated 2026-10-08T19:18:28.471235+00:00
 === Files ===
 Using examples/plot.ttl from examples
 Output Turtle example_1_1.ttl created

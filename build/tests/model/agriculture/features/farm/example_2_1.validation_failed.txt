@@ -1,5 +1,5 @@
 Validation report for ogc.model.agriculture.features.farm - Farm - GeoJSON
-Generated 2026-10-08T14:08:19.316159+00:00
+Generated 2026-10-08T19:18:35.343206+00:00
 === Files ===
 Using examples/farm_w_plot.json from examples
 JSON-LD context is present - uplifting
@@ -18,10 +18,10 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: <file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: <urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259a>,<file:///github/workspace/f1>,<urn:ngsi-ld:plot:72d9fb43-53f8-4ec8-a33c-fa931360259b>
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
 
 
