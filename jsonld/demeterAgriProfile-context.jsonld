@@ -1883,6 +1883,9 @@
     "hasResultTime" : {
       "@id" : "https://saref.etsi.org/core/hasResultTime"      
     },
+    "ProcedureExecution" : {
+      "@id" : "https://saref.etsi.org/core/ProcedureExecution"
+    },
     "saref.Observation" : {
       "@id" : "https://saref.etsi.org/core/Observation"
     },
