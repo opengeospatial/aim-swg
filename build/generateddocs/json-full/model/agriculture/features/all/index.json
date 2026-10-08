@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2026-10-07",
+  "dateOfLastChange": "2026-10-08",
   "dependsOn": [
     "ogc.model.agriculture.features.farm",
     "ogc.model.agriculture.features.plot"
@@ -23,10 +23,10 @@
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
     ],
-    "ogc.model.agriculture.conceptual.plot": [
+    "ogc.model.agriculture.conceptual.farm": [
       "https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
     ],
-    "ogc.model.agriculture.conceptual.farm": [
+    "ogc.model.agriculture.conceptual.plot": [
       "https://opengeospatial.github.io/aim-swg/SHACL/agriFeature-SHACL.ttl"
     ]
   },
