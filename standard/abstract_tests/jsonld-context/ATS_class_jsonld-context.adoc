@@ -1,0 +1,11 @@
+[[cc_jsonld-context]]
+.JSON-LD context
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/jsonld-context
+subject:: JSON-LD context document
+target:: http://www.opengis.net/spec/aim/1.0/req/jsonld-context
+inherit:: http://www.opengis.net/spec/aim/1.0/conf/core
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/jsonld-context/terms
+====

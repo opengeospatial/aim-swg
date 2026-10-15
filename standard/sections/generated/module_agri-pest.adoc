@@ -1,0 +1,22 @@
+[[table_agri-pest_summary]]
+.AgriPest module summary
+[cols="2,5",options="header"]
+|===
+|Item |Value
+|Ontology IRI |`https://w3id.org/demeter/agri/agriPest`
+|Version IRI |`https://w3id.org/demeter/agri/agriPest/3.0`
+|Source |`v3.0/agriPest.ttl`
+|Imports |`https://w3id.org/demeter/agri/agriCommon/3.0`
+|Classes |1
+|Object and datatype properties |0
+|Named individuals |0
+|Description |The DEMETER AgriPest is one of the agri profiles of DEMETER AIM. This profile was created by reusing and aligning well-known ontologies and vocabularies
+|===
+
+[[table_agri-pest_classes]]
+.AgriPest classes
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Superclasses
+|`fiware-agrifood:AgriPest` |AgriPest |This entity contains a harmonised description of an agricultural pest. This entity is primarily associated with the agricultural vertical and related IoT applications |
+|===

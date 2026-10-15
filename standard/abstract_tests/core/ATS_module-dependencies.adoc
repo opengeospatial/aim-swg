@@ -1,0 +1,26 @@
+[[ats_core_module-dependencies]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/core/module-dependencies
+target:: http://www.opengis.net/spec/aim/1.0/req/core/module-dependencies
+test-purpose:: Verify that the module dependency structure expressed by `owl:imports` is preserved.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+For each AIM module, collect the `owl:imports` statements of the canonical ontology.
+--
+
+[.component,class=step]
+--
+Check that the representation under test documents each of these dependencies.
+--
+
+[.component,class=step]
+--
+Check that each imported AIM module is identified as a normative dependency of the importing module.
+--
+=====
+====

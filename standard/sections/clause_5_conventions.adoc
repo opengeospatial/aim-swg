@@ -1,10 +1,78 @@
 == Conventions
 
-This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
-
 === Identifiers
-The normative provisions in this standard are denoted by the URI
 
-`http://www.opengis.net/spec/{standard}/{m.n}`
+The normative provisions in this Standard are denoted by the URI
+
+`http://www.opengis.net/spec/aim/1.0`
 
 All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.
+
+=== Abbreviated terms
+
+AIM:: Agriculture Information Model
+FOODIE:: Farm-Oriented Open Data in Europe
+IRI:: Internationalized Resource Identifier
+JSON-LD:: JavaScript Object Notation for Linked Data
+NGSI-LD:: Next Generation Service Interfaces -- Linked Data
+OWL:: Web Ontology Language
+RDF:: Resource Description Framework
+SAREF:: Smart Applications REFerence ontology
+SHACL:: Shapes Constraint Language
+SOSA:: Sensor, Observation, Sample, and Actuator ontology
+SSN:: Semantic Sensor Network ontology
+SWG:: Standards Working Group
+
+=== AIM ontology modules
+
+AIM version 3.0 consists of the ontology modules listed in <<table_modules>>. The ontology IRI identifies the module independent of version; the version IRI identifies version 3.0 of the module and is the IRI used in `owl:imports` statements.
+
+include::generated/modules.adoc[]
+
+=== Namespace prefixes
+
+AIM reuses terms from existing vocabularies rather than minting new terms where possible. The namespace prefixes in <<table_prefixes>> are used in this document. The choice of prefix is arbitrary and has no semantic significance.
+
+[[table_prefixes]]
+.Namespace prefixes
+[cols="2,5",options="header"]
+|===
+|Prefix |Namespace IRI
+|`act-inspire` |`http://inspire.ec.europa.eu/schemas/act-core/3.0#`
+|`af-inspire` |`http://inspire.ec.europa.eu/schemas/af/3.0#`
+|`cf-feature` |`http://purl.oclc.org/NET/ssnx/cf/cf-feature#`
+|`demeterAgriCommon` |`https://w3id.org/demeter/agri/agriCommon#`
+|`demeterAgriCrop` |`https://w3id.org/demeter/agri/agriCrop#`
+|`dim` |`http://purl.oclc.org/NET/ssnx/qu/dim#`
+|`ecrop` |`https://w3id.org/demeter/agri/ecrop/`
+|`fiware` |`https://smartdatamodels.org/`
+|`fiware-agrifood` |`https://smartdatamodels.org/dataModel.Agrifood/`
+|`fiware-weather` |`https://smartdatamodels.org/dataModel.Weather/`
+|`foaf` |`http://xmlns.com/foaf/0.1/`
+|`foodie` |`http://foodie-cloud.com/model/foodie#`
+|`geo` |`http://www.opengis.net/ont/geosparql#`
+|`iso19103` |`http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#`
+|`ngsi-ld` |`https://uri.etsi.org/ngsi-ld/`
+|`obo` |`http://purl.obolibrary.org/obo/`
+|`owl` |`http://www.w3.org/2002/07/owl#`
+|`prov` |`http://www.w3.org/ns/prov#`
+|`qb` |`http://purl.org/linked-data/cube#`
+|`qu` |`http://purl.oclc.org/NET/ssnx/qu/qu#`
+|`qudt` |`http://qudt.org/schema/qudt/`
+|`rdf` |`http://www.w3.org/1999/02/22-rdf-syntax-ns#`
+|`rdfs` |`http://www.w3.org/2000/01/rdf-schema#`
+|`saref` |`https://saref.etsi.org/core/`
+|`saref4agri` |`https://saref.etsi.org/saref4agri/`
+|`schema` |`https://schema.org/`
+|`sf` |`http://www.opengis.net/ont/sf#`
+|`skos` |`http://www.w3.org/2004/02/skos/core#`
+|`sosa` |`http://www.w3.org/ns/sosa/`
+|`ssn` |`http://www.w3.org/ns/ssn/`
+|`time` |`http://www.w3.org/2006/time#`
+|`wgs84_pos` |`http://www.w3.org/2003/01/geo/wgs84_pos#`
+|`xsd` |`http://www.w3.org/2001/XMLSchema#`
+|===
+
+=== Term dictionaries
+
+The term dictionaries in Clauses 8 to 11 are generated from the canonical Turtle files by `scripts/ontology_tables.py`. Each dictionary lists every class or property declared in the module with its `rdfs:label`, its definition (`skos:definition`, or `rdfs:comment` where no definition is given) and its superclasses or domain and range. Where a dictionary and the canonical Turtle file differ, the Turtle file takes precedence.

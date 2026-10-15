@@ -1,0 +1,26 @@
+[[ats_core_ontology-identification]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/core/ontology-identification
+target:: http://www.opengis.net/spec/aim/1.0/req/core/ontology-identification
+test-purpose:: Verify that each AIM ontology module is identified as an ontology resource with its ontology IRI and version IRI preserved.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+For each AIM version 3.0 module, retrieve the representation under test.
+--
+
+[.component,class=step]
+--
+Check that exactly one resource is typed `owl:Ontology` and that its IRI equals the ontology IRI listed in <<table_modules>>.
+--
+
+[.component,class=step]
+--
+Check that the `owl:versionIRI` of that resource equals the version IRI listed in <<table_modules>>.
+--
+=====
+====

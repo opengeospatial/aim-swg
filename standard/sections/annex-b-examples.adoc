@@ -1,0 +1,30 @@
+[appendix,obligation=informative]
+[[annex_examples]]
+== Examples
+
+=== Overview
+
+The `examples` directory of the AIM SWG repository contains instance data that uses AIM version 3.0, in Turtle and JSON-LD. <<table_examples>> lists them.
+
+[[table_examples]]
+.AIM version 3.0 examples
+[cols="3,5",options="header"]
+|===
+|File |Content
+|`simple-farm-instance-AIM_v3.{ttl,jsonld}` |A farm with two plots, crops and crop types.
+|`complex-farm-instance-AIM_v3.{ttl,jsonld}` |A farm with parcels, crops, interventions and observations.
+|`example-timeseries-healthPrediction-final_v3.{ttl,jsonld}` |Animal health predictions as a time series (RDF Data Cube).
+|`example-timeseries-milkQualityPrediction-final_v3.{ttl,jsonld}` |Milk quality predictions as a time series (RDF Data Cube).
+|`instance-bad-AIM_v3.jsonld`, `instance-bad2-AIM_v3.jsonld` |Invalid instances, for testing SHACL validation.
+|===
+
+=== Simple farm
+
+[[example_simple_farm]]
+.Simple farm instance (Turtle)
+[source,turtle]
+----
+include::../code/examples/simple-farm-instance-AIM_v3.ttl[]
+----
+
+NOTE: This example uses namespaces from earlier AIM versions (`https://w3id.org/def/saref4agri#`, `https://uri.fiware.org/ns/data-models#`) that differ from those used in the v3.0 modules (`https://saref.etsi.org/saref4agri/`, `https://smartdatamodels.org/`). Its parcel polygon is also not valid WKT. Both should be corrected before publication.

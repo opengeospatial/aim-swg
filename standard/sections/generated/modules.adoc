@@ -1,0 +1,18 @@
+[[table_modules]]
+.AIM version 3.0 ontology modules
+[cols="2,4,4,1,1",options="header"]
+|===
+|Module |Ontology IRI |Version IRI |Classes |Properties
+|Cross-Domain |`https://w3id.org/demeter/crossDomain` |`https://w3id.org/demeter/crossDomain/3.0` |92 |63
+|AgriCommon |`https://w3id.org/demeter/agri/agriCommon` |`https://w3id.org/demeter/agri/agriCommon/3.0` |5 |35
+|AgriFeature |`https://w3id.org/demeter/agri/agriFeature` |`https://w3id.org/demeter/agri/agriFeature/3.0` |13 |23
+|AgriCrop |`https://w3id.org/demeter/agri/agriCrop` |`https://w3id.org/demeter/agri/agriCrop/3.0` |5 |21
+|AgriIntervention |`https://w3id.org/demeter/agri/agriIntervention` |`https://w3id.org/demeter/agri/agriIntervention/3.0` |8 |39
+|AgriAlert |`https://w3id.org/demeter/agri/agriAlert` |`https://w3id.org/demeter/agri/agriAlert/3.0` |2 |15
+|AgriProduct |`https://w3id.org/demeter/agri/agriProduct` |`https://w3id.org/demeter/agri/agriProduct/3.0` |6 |28
+|AgriProperty |`https://w3id.org/demeter/agri/agriProperty` |`https://w3id.org/demeter/agri/agriProperty/3.0` |18 |46
+|AgriSystem |`https://w3id.org/demeter/agri/agriSystem` |`https://w3id.org/demeter/agri/agriSystem/3.0` |16 |0
+|AgriPest |`https://w3id.org/demeter/agri/agriPest` |`https://w3id.org/demeter/agri/agriPest/3.0` |1 |0
+|FarmAnimal |`https://w3id.org/demeter/agri/farmAnimal` |`https://w3id.org/demeter/agri/farmAnimal/3.0` |5 |26
+|AIM Agri Profile |`https://w3id.org/demeter/agri` |`https://w3id.org/demeter/agri/3.0` |0 |0
+|===

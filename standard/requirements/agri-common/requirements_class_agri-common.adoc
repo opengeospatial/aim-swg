@@ -1,0 +1,11 @@
+[[rc_agri-common]]
+.AgriCommon
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/agri-common
+subject:: Ontology module representation
+inherit:: http://www.opengis.net/spec/aim/1.0/req/cross-domain
+requirement:: http://www.opengis.net/spec/aim/1.0/req/agri-common/classes
+requirement:: http://www.opengis.net/spec/aim/1.0/req/agri-common/properties
+====

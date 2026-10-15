@@ -1,0 +1,16 @@
+[[req_core_module-dependencies]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/core/module-dependencies
+
+[.component,class=part]
+--
+An implementation specification claiming conformance to this standard SHALL document and preserve the module dependency structure expressed by `owl:imports` statements in the AIM version 3.0 ontology modules.
+--
+
+[.component,class=part]
+--
+Where a module imports another AIM module, the implementation specification SHALL identify that dependency as normative for the corresponding module representation.
+--
+====

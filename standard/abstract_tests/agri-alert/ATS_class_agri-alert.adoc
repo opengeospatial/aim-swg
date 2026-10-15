@@ -1,0 +1,12 @@
+[[cc_agri-alert]]
+.AgriAlert
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/agri-alert
+subject:: Ontology module representation
+target:: http://www.opengis.net/spec/aim/1.0/req/agri-alert
+inherit:: http://www.opengis.net/spec/aim/1.0/conf/agri-common
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/agri-alert/classes
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/agri-alert/properties
+====

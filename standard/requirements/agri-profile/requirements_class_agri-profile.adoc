@@ -1,0 +1,18 @@
+[[rc_agri-profile]]
+.AIM Agri Profile
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/agri-profile
+subject:: Ontology profile representation
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-feature
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-crop
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-intervention
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-alert
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-product
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-property
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-system
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-pest
+inherit:: http://www.opengis.net/spec/aim/1.0/req/farm-animal
+requirement:: http://www.opengis.net/spec/aim/1.0/req/agri-profile/imports
+====

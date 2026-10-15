@@ -1,17 +1,19 @@
 == Terms and definitions
 
-This document uses the terms defined in Sub-clause 5.3 of <<OGC06-121r9>>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "`shall`" (not "`must`") is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
+=== ontology module
 
-For the purposes of this document, the following additional terms and definitions apply.
+self-contained OWL ontology, identified by an ontology IRI and a version IRI, that defines or reuses a coherent set of classes and properties for one part of AIM
 
-=== example term
+=== ontology profile
 
-term used for exemplary purposes
+ontology that defines no terms of its own and aggregates other ontology modules by importing them
 
-[.source]
-<<ISO19101-1>>
+=== canonical representation
 
-NOTE: An example note.
+representation of an AIM ontology module that is authoritative for the module's content
 
-[example]
-Here's an example of an example term.
+NOTE: For AIM version 3.0 the canonical representation is the Turtle files in the `v3.0` directory of the AIM SWG repository.
+
+=== implementation specification
+
+specification, schema or software artefact that represents some or all of the AIM ontology modules for the purpose of data exchange

@@ -1,7 +1,14 @@
 == Scope
 
-This International Standard specifies the behaviour of a server that provides access to features in a dataset in a manner independent of the underlying data store. This standard specifies discovery and query operations.
+This Standard specifies the Agriculture Information Model (AIM), version 3.0, as a modular set of OWL 2 ontologies for representing agricultural data and its context.
 
-Discovery operations allow the server to be interrogated to determine its capabilities and retrieve information (metadata) about this distribution of the dataset. This includes the API definition of the server as well as metadata about the feature collections provided by the server.
+The Standard specifies:
 
-Query operations allow features to be retrieved from the underlying data store based upon simple selection criteria, defined by the client.
+* the identification, versioning and dependency structure of the AIM ontology modules;
+* the classes and properties of the Cross-Domain, AgriCommon and agricultural domain modules (AgriFeature, AgriCrop, AgriIntervention, AgriAlert, AgriProduct, AgriProperty, AgriSystem, AgriPest and FarmAnimal);
+* the AIM Agri Profile, which aggregates the domain modules; and
+* requirements for Turtle, RDF/XML and JSON-LD context encodings of the modules.
+
+Alignments to other models (e.g. NGSI-LD), extension modules, SHACL shapes, JSON schemas and OGC Building Blocks are described informatively and are not normative in this version.
+
+This Standard does not specify any API, service interface or storage mechanism.

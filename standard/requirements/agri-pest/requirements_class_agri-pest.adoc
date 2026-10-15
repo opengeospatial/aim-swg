@@ -1,0 +1,11 @@
+[[rc_agri-pest]]
+.AgriPest
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/agri-pest
+subject:: Ontology module representation
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-common
+requirement:: http://www.opengis.net/spec/aim/1.0/req/agri-pest/classes
+requirement:: http://www.opengis.net/spec/aim/1.0/req/agri-pest/properties
+====

@@ -1,0 +1,10 @@
+[[rc_rdfxml]]
+.RDF/XML encoding
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/rdfxml
+subject:: Encoded ontology document
+inherit:: http://www.opengis.net/spec/aim/1.0/req/core
+requirement:: http://www.opengis.net/spec/aim/1.0/req/rdfxml/encoding
+====

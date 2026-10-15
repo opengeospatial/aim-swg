@@ -1,0 +1,16 @@
+[[req_cross-domain_classes]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/cross-domain/classes
+
+[.component,class=part]
+--
+For each `owl:Class` defined in the Cross-domain module, an implementation specification claiming conformance to this standard SHALL contain a construct representing the same concept using the same identifier.
+--
+
+[.component,class=part]
+--
+The implementation specification SHALL preserve superclass relationships and class annotations defined for the module classes, where such relationships and annotations are provided in the ontology.
+--
+====

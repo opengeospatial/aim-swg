@@ -1,0 +1,31 @@
+[appendix,obligation=informative]
+[[annex_alignments]]
+== Alignments and extensions
+
+=== Alignments
+
+The `alignments` directory contains mappings between AIM and other models:
+
+* `aim-ngsi-ld.ttl` -- alignment between AIM and the ETSI NGSI-LD core meta-model. It is imported by the AIM Agri Profile;
+* `ngsi-ld_demeter.ttl` -- the DEMETER core meta-model aligned with NGSI-LD; and
+* `aim-adapt.ttl` -- alignment between AIM and the AgGateway ADAPT model.
+
+=== Extensions
+
+The `extensions` directory contains modules that extend AIM for specific use cases, developed in the DEMETER pilots. Each extension has a corresponding JSON-LD context in `extensions/jsonld`.
+
+[[table_extensions]]
+.AIM extension modules
+[cols="2,5",options="header"]
+|===
+|Extension |Content
+|`fieldOperation` |Field operations carried out by farm machinery.
+|`kpiIndicator` |Key performance indicators.
+|`livestockFeature` |Livestock features and conditions.
+|`nutrientMonitor` |Crop nutrient monitoring.
+|`poultryFeeding` |Poultry feeding.
+|`stressRecognition` |Crop stress recognition (morphological and physiological condition).
+|`transportCondition` |Vehicles, drivers and transport conditions.
+|===
+
+Extensions are not part of AIM version 3.0. A future version of this Standard may specify them as additional requirements classes.

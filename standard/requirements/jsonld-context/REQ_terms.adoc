@@ -1,0 +1,16 @@
+[[req_jsonld-context_terms]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/jsonld-context/terms
+
+[.component,class=part]
+--
+If an implementation specification provides a JSON-LD context derived from an AIM ontology module, each exported term in that context SHALL resolve to the ontology identifier of the corresponding AIM class or property.
+--
+
+[.component,class=part]
+--
+The JSON-LD context SHALL preserve the semantic interpretation of the corresponding ontology terms.
+--
+====

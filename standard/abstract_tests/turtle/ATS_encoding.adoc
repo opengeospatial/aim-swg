@@ -1,0 +1,26 @@
+[[ats_turtle_encoding]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/turtle/encoding
+target:: http://www.opengis.net/spec/aim/1.0/req/turtle/encoding
+test-purpose:: Verify that a Turtle encoding of an AIM module is valid and correctly advertised.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+Parse the encoding with an RDF 1.1 Turtle parser and check that no syntax errors are reported.
+--
+
+[.component,class=step]
+--
+Check that the parsed graph is isomorphic to the canonical module graph.
+--
+
+[.component,class=step]
+--
+When retrieved over HTTP, check that the `Content-Type` header is `text/turtle`.
+--
+=====
+====

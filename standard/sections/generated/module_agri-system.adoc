@@ -1,0 +1,37 @@
+[[table_agri-system_summary]]
+.AgriSystem module summary
+[cols="2,5",options="header"]
+|===
+|Item |Value
+|Ontology IRI |`https://w3id.org/demeter/agri/agriSystem`
+|Version IRI |`https://w3id.org/demeter/agri/agriSystem/3.0`
+|Source |`v3.0/agriSystem.ttl`
+|Imports |`https://w3id.org/demeter/agri/agriCommon/3.0`
+|Classes |16
+|Object and datatype properties |0
+|Named individuals |0
+|Description |The DEMETER AgriSystem is one of the agri profiles of DEMETER AIM. This profile was created by reusing and aligning well-known ontologies and vocabularies
+|===
+
+[[table_agri-system_classes]]
+.AgriSystem classes
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Superclasses
+|`foodie:MachineType` |Machine type |Identification of a machine applying the agricultural treatment |`sosa:Platform`
+|`foodie:TractorType` |Tractor type |identification of a tractive vehicle for the machine applying the agricultural treatment |`sosa:Platform`
+|`saref4agri:EatingActivitySensor` |Eating activity sensor |Eating activity sensor |`saref:Sensor`
+|`saref4agri:MilkingSensor` |Milking sensor |Milking sensor |`saref:Sensor`
+|`saref4agri:MovementActivitySensor` |Movement activity sensor |Movement activity sensor |`saref:Sensor`
+|`saref4agri:Pluviometer` |Pluviometer |A sensor that measures the rain fall. |`saref:Sensor`
+|`saref4agri:SoilTensiometer` |Soil tensiometer |A sensor that measures the soil moisture. |`saref:Sensor`
+|`saref4agri:Thermometer` |Thermometer |A device that measures the temperature (e.g. soil temperature). |`saref:Sensor`
+|`saref4agri:WateringGun` |Watering gun |An actuator to irrigate an space. |`saref:Actuator`
+|`saref4agri:WateringSystem` |Watering system |Watering system |`ssn:System`
+|`saref4agri:WateringValve` |Watering valve |Watering valve |`saref:Actuator`
+|`saref4agri:WeatherStation` |Weather station |A sensor or system that measure weather conditions. |`saref:Sensor`, `ssn:System`
+|`saref4agri:WeightSensor` |Weight sensor |Weight sensor |`saref:Sensor`
+|`saref:Actuator` |Actuator |A device responsible for moving or controlling a mechanism or system by performing an actuating functio |`saref:Device`
+|`saref:Device` |Device |A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function |`ssn:System`
+|`saref:Sensor` |Sensor |A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. Further, a device of category saref:Sensor that performs a saref:SensingFunction |`saref:Device`
+|===

@@ -1,0 +1,68 @@
+[[table_agri-common_summary]]
+.AgriCommon module summary
+[cols="2,5",options="header"]
+|===
+|Item |Value
+|Ontology IRI |`https://w3id.org/demeter/agri/agriCommon`
+|Version IRI |`https://w3id.org/demeter/agri/agriCommon/3.0`
+|Source |`v3.0/agriCommon.ttl`
+|Imports |`https://w3id.org/demeter/crossDomain`
+|Classes |5
+|Object and datatype properties |35
+|Named individuals |0
+|Description |AgriCommon is one of the agri profiles of the Agriculture Information Model (AIM). This profile was created by reusing and aligning well-known ontologies and vocabularies
+|===
+
+[[table_agri-common_classes]]
+.AgriCommon classes
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Superclasses
+|`demeterAgriCommon:Image` |Image |An image object |`schema:ImageObject`
+|`ecrop:AgriculturalCertificate` |AgriculturalCertificate |A legal proof of ownership, worthiness or qualification to operate an agricultural item |
+|`obo:TAXRANK_0000000` |taxonomic_rank | |
+|`saref4agri:Farmer` |Farmer |A class to decsribe a saref4agri farmer as subcass of a foaf:Person |`foaf:Person`
+|`saref4agri:FarmHolding` |Farm holding |A class to decsribe a saref4agri farm holding as subcass of an org:Organization |`schema:Organization`
+|===
+
+[[table_agri-common_properties]]
+.AgriCommon properties
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Domain / range
+|`common:validFrom` |valid from |begin of real-world phenomenon |`xsd:dateTime`
+|`common:validTo` |valid to |end of real-world phenomenon |`xsd:dateTime`
+|`demeterAgriCommon:eppoConcept` |eppoConcept |The link with the defined concept into the EPPO vocabulary |
+|`demeterAgriCommon:imageDataType` |imageDataType |The data type of the image, e.g., NDVI |`demeterAgriCommon:Image`
+|`demeterAgriCommon:imageFormat` |imageFormat |The format of the image, e.g., tiff, jpg |`demeterAgriCommon:Image`
+|`demeterAgriCommon:imageHeight` |imageHeight |The height of the image, e.g., 3 or 3 cm^^cdt:ucum |`demeterAgriCommon:Image`
+|`demeterAgriCommon:imageURL` |imageURL |Actual bytes of the image object, i.e., image file |`demeterAgriCommon:Image`, `xsd:anyURI`
+|`demeterAgriCommon:imageWidth` |imageWidth |The width of the image, e.g., 3 or 3 cm^^cdt:ucum |`demeterAgriCommon:Image`
+|`demeterAgriCommon:password` |Password |Password |`xsd:string`
+|`demeterAgriCommon:userName` |User Name |User Name |`xsd:string`
+|`ecrop:contractBuyer` |contractBuyer |The buyer party for an agricultural contract |
+|`ecrop:contractSeller` |contractSeller |The seller party for an agricultural contract |
+|`fiware-agrifood:agroVocConcept` |agroVocConcept |The link with the defined concept into the AgroVoc vocabulary |
+|`fiware-agrifood:category` |category |The category of the entity, e.g., parcel of land e.g.: **arable, grassland, vineyard, orchard, mixed crop, lowland, upland, set-aside, forestry, wetland.**, alert (traffic, naturalDisaster, weather, environment, health, security, agriculture). |
+|`fiware-agrifood:version` |version |The version of the App |
+|`fiware:address` |address |The mailing address |
+|`fiware:alternateName` |alternateName |An alternative name for this item |
+|`fiware:dataProvider` |dataProvider |A sequence of characters identifying the provider of the harmonised data entity |
+|`fiware:dateCreated` |dateCreated |Entity creation timestamp. This will usually be allocated by the storage platform |`xsd:dateTime`
+|`fiware:dateModified` |dateModified |Timestamp of the last modification of the entity. This will usually be allocated by the storage platform |`xsd:dateTime`
+|`fiware:name` |name |The name of this item |
+|`fiware:source` |source |A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object. |
+|`foodie:code` |code |Unique identification of an entity, e.g., ActiveIngredient |`xsd:string`
+|`foodie:description` |description |Any further information related to an entity that may help for a better understanding |`xsd:string`
+|`foodie:notes` |notes |Relation depicting additional information for a recource or entity |`xsd:string`
+|`foodie:price` |price |Relation depicting price of a any resource e.g. Product, Treatment etc |`xsd:string`
+|`foodie:type` |type |Relation specifying the type of an enity, e.g., Intervention |`xsd:string`
+|`saref4agri:hasName` |has name |A relation to express the name of an entity (e.g.,animal). |`xsd:string`
+|`saref4agri:managesFarm` |manages farm |manages farm |
+|`saref:hasDescription` |has description |A relationship providing a description of an entity (e.g., device) |`xsd:string`
+|`saref:hasTimestamp` |has timestamp |A relationship stating the timestamp of an entity (e.g. a measurement) |`xsd:dateTime`
+|`schema:addressCountry` |addressCountry |The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code |
+|`schema:addressLocality` |addressLocality |The locality in which the street address is, and which is in the region. For example, Mountain View |
+|`schema:addressRegion` |addressRegion |The region in which the locality is, and which is in the country. For example, California or another appropriate first-level Administrative division |
+|`schema:streetAddress` |streetAddress |he street address. For example, 1600 Amphitheatre Pkwy. |
+|===

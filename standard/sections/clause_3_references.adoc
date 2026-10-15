@@ -1,6 +1,16 @@
 [bibliography]
-== References
-The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+== Normative references
 
-* [[[ISO19101-1,ISO 19101-1:2014]]], Geographic information -- Reference model -- Part 1: Fundamentals, https://www.iso.org/standard/59164.html
+The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
 
+* [[[OWL2,nofetch(W3C OWL 2 Overview)]]], W3C: _OWL 2 Web Ontology Language Document Overview (Second Edition)_, W3C Recommendation 11 December 2012, https://www.w3.org/TR/owl2-overview/
+* [[[RDF11,nofetch(W3C RDF 1.1 Concepts)]]], W3C: _RDF 1.1 Concepts and Abstract Syntax_, W3C Recommendation 25 February 2014, https://www.w3.org/TR/rdf11-concepts/
+* [[[Turtle,nofetch(W3C RDF 1.1 Turtle)]]], W3C: _RDF 1.1 Turtle -- Terse RDF Triple Language_, W3C Recommendation 25 February 2014, https://www.w3.org/TR/turtle/
+* [[[RDFXML,nofetch(W3C RDF 1.1 XML Syntax)]]], W3C: _RDF 1.1 XML Syntax_, W3C Recommendation 25 February 2014, https://www.w3.org/TR/rdf-syntax-grammar/
+* [[[JSONLD11,nofetch(W3C JSON-LD 1.1)]]], W3C: _JSON-LD 1.1_, W3C Recommendation 16 July 2020, https://www.w3.org/TR/json-ld11/
+* [[[SOSA,nofetch(W3C/OGC SSN)]]], W3C/OGC: _Semantic Sensor Network Ontology_, W3C Recommendation 19 October 2017, https://www.w3.org/TR/vocab-ssn/
+* [[[GeoSPARQL,nofetch(OGC 22-047r1)]]], OGC: _OGC GeoSPARQL -- A Geographic Query Language for RDF Data_, version 1.1, https://docs.ogc.org/is/22-047r1/22-047r1.html
+* [[[OWLTime,nofetch(W3C/OGC OWL-Time)]]], W3C/OGC: _Time Ontology in OWL_, W3C Candidate Recommendation, https://www.w3.org/TR/owl-time/
+* [[[QB,nofetch(W3C RDF Data Cube)]]], W3C: _The RDF Data Cube Vocabulary_, W3C Recommendation 16 January 2014, https://www.w3.org/TR/vocab-data-cube/
+* [[[SKOS,nofetch(W3C SKOS)]]], W3C: _SKOS Simple Knowledge Organization System Reference_, W3C Recommendation 18 August 2009, https://www.w3.org/TR/skos-reference/
+* [[[SAREF4AGRI,nofetch(ETSI TS 103 410-6)]]], ETSI: _SmartM2M; Extension to SAREF; Part 6: Smart Agriculture and Food Chain Domain_, https://saref.etsi.org/saref4agri/

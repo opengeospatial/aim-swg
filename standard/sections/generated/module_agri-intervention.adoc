@@ -1,0 +1,75 @@
+[[table_agri-intervention_summary]]
+.AgriIntervention module summary
+[cols="2,5",options="header"]
+|===
+|Item |Value
+|Ontology IRI |`https://w3id.org/demeter/agri/agriIntervention`
+|Version IRI |`https://w3id.org/demeter/agri/agriIntervention/3.0`
+|Source |`v3.0/agriIntervention.ttl`
+|Imports |`https://w3id.org/demeter/agri/agriCommon/3.0`
+|Classes |8
+|Object and datatype properties |39
+|Named individuals |0
+|Description |The DEMETER AgriIntervention is one of the agri profiles of DEMETER AIM. This profile was created by reusing and aligning well-known ontologies and vocabularies
+|===
+
+[[table_agri-intervention_classes]]
+.AgriIntervention classes
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Superclasses
+|`fiware-agrifood:AgriParcelOperation` |AgriParcelOperation |This entity contains a harmonised description of a generic operations performed on a parcel of land. This entity is primarily associated with the agricultural vertical and related IoT applications. |
+|`foodie:CampaignType` |CampaignType |An entity defining the types of campaigns |
+|`foodie:DoseUnit` |DoseUnit |An entity defining the Doses for operation/intervention |
+|`foodie:FormOfTreatmentValue` |FormOfTreatmentValue |An entity defining the form of Intervention/Treatment as codelist, e.g., manual (i.e. conducted manually by a person), applicationMachine (i.e. automatic or semi-automatic application by a machine), aerial (i.e. aerial application from an airplane) |`skos:Concept`
+|`foodie:Intervention` |Intervention |An entity of operation or intervention. |`geo:Feature`
+|`foodie:Treatment` |Treatment |An entity defining the attributes of Treatments |`foodie:Intervention`, `geo:Feature`
+|`foodie:TreatmentPlan` |TreatmentPlan |An entity defining the Treatment plans |`geo:Feature`
+|`foodie:TreatmentPurposeValue` |TreatmentPurposeValue |An entity defining the purpose of an Intervention/Treatment as codelist, e.g., disease (i.e. a pathological condition that affects part or all of production in the Plot), fertilization (i.e. a need to apply a fertilizer to soil), pest (i.e. a plant or animal detrimental to a human), weed (i.e. to reduce plants considered undesirable in a particular situation) |`skos:Concept`
+|===
+
+[[table_agri-intervention_properties]]
+.AgriIntervention properties
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Domain / range
+|`fiware-agrifood:endedAt` |endedAt |Timestamp when the operation actually finished. |`xsd:dateTime`
+|`fiware-agrifood:hasAgriParcel` |operationHasAgriParcel |Reference to the AgriParcel to which this entity relates. |
+|`fiware-agrifood:hasOperator` |hasOperator |Reference to the operator conducting the operation |
+|`fiware-agrifood:irrigationRecord` |irrigationRecord |Relationship with the irrigation record of the execution |
+|`fiware-agrifood:operationType` |operationType |A choice from an enumerated list describing the operation performed on the parcel. One of: fertiliser, inspection, pesticide, water, other. |
+|`fiware-agrifood:plannedEndAt` |plannedEndAt |The planned end date/timestamp for the operation. Note that this is advisory and the actual time the operation finishes may be before or after the planned end. |`xsd:dateTime`
+|`fiware-agrifood:plannedStartAt` |plannedStartAt |The planned start date/timestamp for the operation. Note that this is advisory and the actual time the operation starts may be before or after the planned start. |`xsd:dateTime`
+|`fiware-agrifood:quantity` |quantity |The total quantity of water or product used/ applied. It is recommended this is measured in litres for liquids or kilogrammes for solids. |
+|`fiware-agrifood:reportedAt` |reportedAt |Timestamp when the event/ fault was reported. |`xsd:dateTime`
+|`fiware-agrifood:result` |result |A description of the results of the operation. One of: ok, aborted, failed. |
+|`fiware-agrifood:startedAt` |startedAt |Timestamp when the operation actually started to be performed. |`xsd:dateTime`
+|`fiware-agrifood:waterSource` |waterSource |Type of water sources. One of: borehole, rainfall, river, rainwater capture, water dam, commercial supply. |
+|`foodie:applicationWidth` |flowAdjustment |A Relation from Treatment to Measure entity, indicating a width in which a machine is capable to apply the Treatment, expressed together with its unit |`iso19103:Measure`
+|`foodie:areaDose` |areaDose |A Relation from Treatment to DoseUnit entity, indicating the minimum and maximum application rate of the Treatment together with their unit |`foodie:DoseUnit`
+|`foodie:campaign` |planProduct |A Relation from TreatmentPlan to CampaignType entity including the period to which the TreatmentPlan was designed |`foodie:CampaignType`
+|`foodie:creationDateTime` |creationDateTime |date and time of the observed operation/intervention. |`xsd:dateTime`
+|`foodie:evidenceParty` |evidenceParty |A Relation to a person or a body who inserted the Intervention into the database |`iso19115-citation:ResponsibleParty`
+|`foodie:flowAdjustment` |flowAdjustment |A Relation from Treatment to Measure entity, indicating whether a flow adjustment was needed for the application of the Treatment, be expressed together with its unit |`iso19103:Measure`
+|`foodie:formOfTreatment` |formOfTreatment |A Relation from Treatment to FormOfTreatmentValue codelist, e.g., manual (i.e. conducted manually by a person), applicationMachine (i.e. automatic or semi-automatic application by a machine), aerial (i.e. aerial application from an airplane); |`foodie:FormOfTreatmentValue`
+|`foodie:interventionGeometry` |interventionGeometry |A Relation to the geometry defining the spatial extent of the Intervention |`geo:Geometry`
+|`foodie:interventionPlot` |interventionPlot |A Relation from Intervention to Plot. A plot can have few intervetions. |`foodie:Plot`
+|`foodie:interventionZone` |interventionZone |A Relation from Intervention to ManagementZone. |`foodie:ManagementZone`
+|`foodie:maximumDose` |maximumDose |A Relation from DoseUnit to Measure entity, indicating the maximumDose |`iso19103:Measure`
+|`foodie:minimumDose` |minimumDose |A Relation from DoseUnit to Measure entity, indicating the minimuDose |`iso19103:Measure`
+|`foodie:motionSpeed` |motionSpeed |A Relation from Treatment to Measure entity, indicating recommended speed for the application of the treatment that should be expressed together with its unit |`iso19103:Measure`
+|`foodie:operator` |operator |A Relation to the person(s) who has conducted an Intervention |`iso19115-citation:ResponsibleParty`
+|`foodie:period` |period |A Relation from CampaignType to Period entity indicating the period to which the TreatmentPlan was designed. Typically a campaign may be an agronomical year or a season e.g. between 2015-03-01 and 2015-09-30 |`iso19108:Period`
+|`foodie:plan` |plan |A Relation from Treatment to TreatmentPlan entity. |`foodie:TreatmentPlan`
+|`foodie:planProduct` |planProduct |A Relation from TreatmentPlan to Product entity. |`foodie:Product`
+|`foodie:pressure` |pressure |A Relation from Treatment to Measure entity, indicating the recommended pressure for the application of the Treatment that should be expressed together with its unit |`iso19103:Measure`
+|`foodie:quantity` |quantity |A Relation from Treatment to Measure entity, indicating the value of a physical quantity of applied Treatment, together with its unit. |`iso19103:Measure`
+|`foodie:status` |status |Status of the intervention, e.g. approved, pending, completed as a free text |`xsd:string`
+|`foodie:supervisor` |supervisor |A Relation from Intervention to ResponsibleParty. ResponsibleParty contains the entity who carries out the intervention (a person or a body who has the power and authority to give instructions and guarantee the conducted Intervention) |`iso19115-citation:ResponsibleParty`
+|`foodie:treatmentDescription` |treatmentDescription |Description of the observed operation/intervention. |`xsd:string`
+|`foodie:treatmentPlanCode` |treatmentPlanCode |Identification code of the observed operation/intervention. |`xsd:string`
+|`foodie:treatmentPlanCreation` |treatmentPlanCreation |Date and time of the creation of the operation/intervention plan |`xsd:dateTime`
+|`foodie:treatmentProduct` |treatmentProduct |A Relation from Treatment to Product entity. |`foodie:Product`
+|`foodie:treatmentPurpose` |treatmentPurpose |A Relation from Treatment to TreatmentPurposeValue codelist, e.g., disease, fertilization, pest, weed |`foodie:TreatmentPurposeValue`
+|`ngsi-ld:status` |status |A choice from an enumerated list describing the status. One of: planned, ongoing, finished, scheduled, cancelled. |
+|===

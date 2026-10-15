@@ -1,0 +1,15 @@
+== AIM Agri Profile
+
+=== Overview
+
+The AIM Agri Profile (`https://w3id.org/demeter/agri`) is Tier 4 of AIM. It is the master profile of the model: it defines no classes or properties of its own and imports all agricultural domain modules together with the alignment between AIM and NGSI-LD (see <<annex_alignments>>).
+
+=== Requirements
+
+include::../requirements/agri-profile/requirements_class_agri-profile.adoc[]
+
+include::../requirements/agri-profile/REQ_imports.adoc[]
+
+=== Profile summary
+
+include::generated/module_agri-profile.adoc[]

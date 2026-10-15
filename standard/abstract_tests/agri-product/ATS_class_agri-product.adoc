@@ -1,0 +1,12 @@
+[[cc_agri-product]]
+.AgriProduct
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/agri-product
+subject:: Ontology module representation
+target:: http://www.opengis.net/spec/aim/1.0/req/agri-product
+inherit:: http://www.opengis.net/spec/aim/1.0/conf/agri-common
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/agri-product/classes
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/agri-product/properties
+====

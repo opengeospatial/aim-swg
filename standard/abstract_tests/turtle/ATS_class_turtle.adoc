@@ -1,0 +1,11 @@
+[[cc_turtle]]
+.Turtle encoding
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/turtle
+subject:: Encoded ontology document
+target:: http://www.opengis.net/spec/aim/1.0/req/turtle
+inherit:: http://www.opengis.net/spec/aim/1.0/conf/core
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/turtle/encoding
+====

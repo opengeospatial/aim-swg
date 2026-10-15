@@ -1,0 +1,11 @@
+[[cc_rdfxml]]
+.RDF/XML encoding
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/rdfxml
+subject:: Encoded ontology document
+target:: http://www.opengis.net/spec/aim/1.0/req/rdfxml
+inherit:: http://www.opengis.net/spec/aim/1.0/conf/core
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/rdfxml/encoding
+====

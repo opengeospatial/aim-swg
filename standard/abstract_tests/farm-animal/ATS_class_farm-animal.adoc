@@ -1,0 +1,12 @@
+[[cc_farm-animal]]
+.FarmAnimal
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/farm-animal
+subject:: Ontology module representation
+target:: http://www.opengis.net/spec/aim/1.0/req/farm-animal
+inherit:: http://www.opengis.net/spec/aim/1.0/conf/agri-common
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/farm-animal/classes
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/farm-animal/properties
+====

@@ -1,0 +1,16 @@
+[[req_agri-common_properties]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/agri-common/properties
+
+[.component,class=part]
+--
+For each `owl:ObjectProperty` and `owl:DatatypeProperty` defined in the AgriCommon module, an implementation specification claiming conformance to this standard SHALL contain a construct representing the same property using the same identifier.
+--
+
+[.component,class=part]
+--
+The implementation specification SHALL preserve property characteristics defined in the ontology, including domain, range, inverse-property, and subproperty relationships, where those characteristics are provided.
+--
+====

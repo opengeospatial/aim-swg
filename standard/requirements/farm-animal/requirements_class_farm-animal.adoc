@@ -1,0 +1,11 @@
+[[rc_farm-animal]]
+.FarmAnimal
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/farm-animal
+subject:: Ontology module representation
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-common
+requirement:: http://www.opengis.net/spec/aim/1.0/req/farm-animal/classes
+requirement:: http://www.opengis.net/spec/aim/1.0/req/farm-animal/properties
+====

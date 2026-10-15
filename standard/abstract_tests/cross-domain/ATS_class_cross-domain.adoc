@@ -1,0 +1,12 @@
+[[cc_cross-domain]]
+.Cross-Domain
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/cross-domain
+subject:: Ontology module representation
+target:: http://www.opengis.net/spec/aim/1.0/req/cross-domain
+inherit:: http://www.opengis.net/spec/aim/1.0/conf/core
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/cross-domain/classes
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/cross-domain/properties
+====

@@ -1,71 +1,44 @@
-.Preface
-
-*OGC Declaration*
-
-Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium Inc. shall not be held responsible for identifying any or all such patent rights.
-
-Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
-
-*ISO Declaration*
-
-ISO (the International Organization for Standardization) is a worldwide federation of national standards bodies (ISO member bodies). The work of preparing International Standards is normally carried out through ISO technical committees. Each member body interested in a subject for which a technical committee has been established has the right to be represented on that committee. International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work. ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.
-
-International Standards are drafted in accordance with the rules given in the ISO/IEC Directives, Part 2.
-
-The main task of technical committees is to prepare International Standards. Draft International Standards adopted by the technical committees are circulated to the member bodies for voting. Publication as an International Standard requires approval by at least 75 % of the member bodies casting a vote.
-
-Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights.
-
 [abstract]
 == Abstract
 
-AIM is a multi-tier and modular domain model aligning, profiling, and/or extending well known agriculture related and generic ontologies, including existing ontologies published by the OGC. Recognizing that this is an innovative approach to publish such a domain model as a modular ontology the SWG will address both identification of best practices for this specialization approach and the development of a series of complementary models.
+The Agriculture Information Model (AIM) is a multi-tier, modular domain model for agriculture. It aligns, profiles and extends well-known agriculture-related and generic ontologies, including ontologies published by OGC and W3C (SOSA/SSN, GeoSPARQL, OWL-Time), ETSI (SAREF, SAREF4AGRI), INSPIRE, FOODIE and the FIWARE Smart Data Models.
 
-AIM provides a common language for agriculture applications to harmonize and improve data and metadata exchange by defining the data elements, including concepts, properties, and relationships relevant to agriculture applications, as well as their associated semantics/meaning for information exchange.
+AIM provides a common language for agriculture applications. It defines the concepts, properties and relationships relevant to agriculture, and their semantics, to harmonize and improve data and metadata exchange.
 
-AIM is published as both human and implementation-ready machine-actionable resources. Machine-actionable resources include the canonical ontology representation of the AIM in the Web Ontology Language (OWL) as well as other related artifacts to support implementation.
+This Standard specifies AIM version 3.0 as a set of OWL ontology modules: a Cross-Domain module, an AgriCommon module, nine agricultural domain modules and an Agri Profile that aggregates them. The canonical representation is the Web Ontology Language (OWL 2) encoded in Turtle. The Standard also specifies requirements for derived encodings (RDF/XML and JSON-LD contexts). Informative annexes describe examples, alignments, extensions, SHACL shapes and OGC Building Blocks that support implementation.
 
-The SWG will develop implementations of the AIM model compatible with OGC APIs, including:
+In line with OGC policies and the FAIR principles, AIM resources are identified by persistent, resolvable URIs.
 
-* JSON schemas supported by OGC APIS;
-* JSON-LD contexts allowing identification and validation of AIM-compliant data; and
-* SHACL shapes enabling the validation of data against AIM semantics.
+[.preface]
+== Preface
 
-In addition, other forms may be derived or supplied to support reusability of the AIM model, according to requirements identified by the SWG:
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
 
-* UML representation of AIM conceptual model;
-* UML representation of one or more logical models for AIM implementation; and
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
 
-Formal profiles for implementation of AIM using GeoJSON, FG-JSON, CoverageJSON, and other relevant generic schemas
+AIM originates from the Horizon 2020 DEMETER project, where it was developed as the common vocabulary for semantic interoperability across smart farming platforms. It is now maintained by the OGC Agriculture Information Model Standards Working Group (AIM SWG).
 
-In line with OGC policies and FAIR principles, the AIM will be published using persistent and resolvable URI identifiers, consistent with OGC Naming Authority processes for publishing semantic resources.
-
-
-== Keywords
-
-agriculture, data model
-
-
+[.preface]
 == Security considerations
 
 No security considerations have been made for this Standard.
 
+[.preface]
+== Submitting Organizations
 
+The following organizations submitted this Document to the Open Geospatial Consortium (OGC):
 
+* TBD
+
+[.preface]
 == Submitters
 
 All questions regarding this submission should be directed to the editor or the submitters:
 
+[[table_submitters]]
+.Submitters
 |===
 |*Name* |*Affiliation*
 
-| name of the person | Organisation X
+|Piotr Zaborowski |TBD
 |===
-
-== Contributors
-
-//This clause is optional.
-
-Additional contributors to this Standard include the following:
-
-Individual name(s), Organization

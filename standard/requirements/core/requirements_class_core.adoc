@@ -1,0 +1,10 @@
+[[rc_core]]
+.Core
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/core
+subject:: Ontology module representation
+requirement:: http://www.opengis.net/spec/aim/1.0/req/core/ontology-identification
+requirement:: http://www.opengis.net/spec/aim/1.0/req/core/module-dependencies
+====

@@ -1,8 +1,10 @@
 [appendix]
 == Revision History
 
+[[table_history]]
+.Revision history
 [width="90%",options="header"]
 |===
-|Date |Release |Editor | Primary clauses modified |Description
-|2016-04-28 |0.1 |G. Editor |all |initial version
+|Date |Release |Editor |Primary clauses modified |Description
+|2026-10-15 |0.1 |P. Zaborowski |all |Initial structure based on AIM version 3.0 ontology modules
 |===

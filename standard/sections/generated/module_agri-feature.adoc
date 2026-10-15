@@ -1,0 +1,64 @@
+[[table_agri-feature_summary]]
+.AgriFeature module summary
+[cols="2,5",options="header"]
+|===
+|Item |Value
+|Ontology IRI |`https://w3id.org/demeter/agri/agriFeature`
+|Version IRI |`https://w3id.org/demeter/agri/agriFeature/3.0`
+|Source |`v3.0/agriFeature.ttl`
+|Imports |`https://w3id.org/demeter/agri/agriCommon/3.0`
+|Classes |13
+|Object and datatype properties |23
+|Named individuals |0
+|Description |The DEMETER AgriFeature is one of the agri profiles of DEMETER AIM. This profile was created by reusing and aligning well-known ontologies and vocabularies
+|===
+
+[[table_agri-feature_classes]]
+.AgriFeature classes
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Superclasses
+|`act-inspire:EconomicActivityNACEValue` |EconomicActivityNACEValue |The classification of the economic activity according to the NACE |`skos:Concept`
+|`af-inspire:Holding` |Holding |The whole area and all infrastructures included on it, covering the same or different sites, under the control of an operator to perform agricultural or aquaculture activities |`act-inspire:ActivityComplex`, `geo:Feature`
+|`af-inspire:Site` |Site |A agricultural or aquacultural facility. All land at a same or distinct geographic location under the management control of a holding covering activities, products and services. This includes all infrastructure, equipment and materials. |`geo:Feature`
+|`fiware-agrifood:AgriFarm` |Agri Farm |This entity contains a harmonised description of a generic farm made up of buildings and parcels. This entity is primarily associated with the agricultural vertical and related IoT applications. |
+|`fiware-agrifood:AgriGreenhouse` |Agri Greenhouse |This entity contains a harmonised description of the conditions recorded within a generic greenhouse, a type of AgriParcel. This entity is primarily associated with the agricultural vertical and related IoT applications. |`fiware-agrifood:AgriParcel`
+|`fiware-agrifood:AgriParcel` |Agri Parcel |This entity contains a harmonised description of a generic parcel of land. This entity is primarily associated with the agricultural vertical and related IoT applications. |
+|`foodie:ManagementZone` |ManagementZone |A spatial subset of a Plot that has specific properties like electric conductivity, organic matter, pH, soil texture, soil type or soil nutrients |`geo:Feature`
+|`foodie:OriginTypeValue` |OriginTypeValue |Origin of a Plot when taking into consideration only two options: manual (created by human user) and system generated |`skos:Concept`
+|`foodie:Plot` |Plot |A continuous area of agricultural land with one type of crop species, cultivated by one user in one farming mode, e.g., conventional, transitional, organic farming |`geo:Feature`
+|`saref4agri:Building` |Building |A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space). |`geo:Feature`
+|`saref4agri:BuildingSpace` |Building space |An entity used to define the physical spaces of the building. A building space contains devices or building objects. |`geo:Feature`
+|`saref4agri:Farm` |Farm |A plot of land used for the scope of farming which can contain buildings and parcels. |`geo:Feature`
+|`saref4agri:Parcel` |Parcel |An area of land, which might be used for grazing animals or planting crops. The parcel is defined as an undividable logical area of land which contains homogeneous items. |`geo:Feature`
+|===
+
+[[table_agri-feature_properties]]
+.AgriFeature properties
+[cols="3,3,5,3",options="header"]
+|===
+|Term |Label |Definition |Domain / range
+|`af-inspire:activity` |activity |A relation to the classification of the economic activity of the site |`act-inspire:EconomicActivityNACEValue`
+|`af-inspire:contains` |contains |A relation from Holding to Site |`af-inspire:Site`
+|`fiware-agrifood:area` |area |The area of the parcel nominally in square meters. |
+|`fiware-agrifood:cropStatus` |cropStatus |A choice from an enumerated list describing the crop planting status One of: seeded, justBorn, growing, maturing, readyForHarvesting. |
+|`fiware-agrifood:hasAgriCrop` |hasAgriCrop |Reference to the crop associated with this parcel |
+|`fiware-agrifood:hasAgriParcel` |hasAgriParcel |List of agri parcels belonging to the farm |
+|`fiware-agrifood:hasAgriParcelChildren` |hasAgriParcelChildren |Related sub AgriParcel records to which this entity relates |
+|`fiware-agrifood:hasAgriParcelParent` |hasAgriParcelParent |Reference to the parent AgriParcel |
+|`fiware-agrifood:hasAgriSoil` |hasAgriSoil |Reference to the soil associated with this parcel of land |
+|`fiware-agrifood:landLocation` |landLocation |Geometry defining the boundaries of the farm land |
+|`fiware-agrifood:lastPlantedAt` |lastPlantedAt |Indicates the date when the crop was last planted. |`xsd:dateTime`
+|`foodie:containsPlot` |containsPlot |A relation from Site to Plot |`foodie:Plot`
+|`foodie:containsZone` |containsZone |A relation from Plot to Management zone |`foodie:ManagementZone`
+|`foodie:crop` |crop |A relation from Plot to CropSpecies |
+|`foodie:holdingPlot` |holdingPlot |A relation from Plot to Site |`af-inspire:Site`
+|`foodie:holdingSite` |holdingSite |A relation from Site to Holding |`af-inspire:Holding`
+|`foodie:holdingZone` |holdingPlot |A relation from Management Zone to Plot |`foodie:Plot`
+|`foodie:machine` |machine |A relation from Intervention to MachineType |`foodie:MachineType`
+|`foodie:originType` |containsZone |A relation to the origin of a Plot when taking into consideration only two options: manual (created by human/user) and system (produced by the platform |`foodie:OriginTypeValue`
+|`foodie:tractor` |tractor |A relation from Intervention to TractorType |`foodie:TractorType`
+|`ngsi-ld:location` |location |The geo:json encoded polygon / multi-polygon describing this item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon |
+|`saref4agri:contains` |contains |A realtion to represent the contained land parcel |
+|`saref4agri:isContainedIn` |is contained in |A relation inverse of s4agri:contains |
+|===

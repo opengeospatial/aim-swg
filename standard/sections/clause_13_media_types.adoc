@@ -1,0 +1,13 @@
+== Media types
+
+<<table_media_types>> lists the media types used for the encodings specified in this Standard. All of them are registered with IANA, so no new media type is defined.
+
+[[table_media_types]]
+.Media types for AIM encodings
+[cols="2,3,3",options="header"]
+|===
+|Encoding |Media type |File extension
+|Turtle |`text/turtle` |`.ttl`
+|RDF/XML |`application/rdf+xml` |`.rdf`
+|JSON-LD (context and data) |`application/ld+json` |`.jsonld`
+|===

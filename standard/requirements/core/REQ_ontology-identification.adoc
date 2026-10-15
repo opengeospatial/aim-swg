@@ -1,0 +1,16 @@
+[[req_core_ontology-identification]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/core/ontology-identification
+
+[.component,class=part]
+--
+For each AIM ontology module defined of AIM version 3.0, an implementation specification claiming conformance to this standard SHALL identify the module as an ontology resource.
+--
+
+[.component,class=part]
+--
+The implementation specification SHALL preserve the ontology IRI and the `owl:versionIRI` of the module.
+--
+====

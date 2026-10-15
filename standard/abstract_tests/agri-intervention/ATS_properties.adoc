@@ -1,0 +1,26 @@
+[[ats_agri-intervention_properties]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/agri-intervention/properties
+target:: http://www.opengis.net/spec/aim/1.0/req/agri-intervention/properties
+test-purpose:: Verify that every property defined in the AgriIntervention module is represented with the same identifier and characteristics.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+Retrieve the canonical AgriIntervention ontology and the representation under test.
+--
+
+[.component,class=step]
+--
+For each `owl:ObjectProperty` and `owl:DatatypeProperty` declared in the canonical module, check that a construct with the same IRI exists in the representation under test.
+--
+
+[.component,class=step]
+--
+For each such property, check that `rdfs:domain`, `rdfs:range`, `owl:inverseOf` and `rdfs:subPropertyOf` statements of the canonical module are preserved.
+--
+=====
+====

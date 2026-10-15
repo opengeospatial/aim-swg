@@ -1,0 +1,25 @@
+== Encodings
+
+=== General
+
+The canonical representation of AIM version 3.0 is the set of Turtle files in the `v3.0` directory. This clause specifies requirements for that encoding and for the derived RDF/XML and JSON-LD context encodings published by the AIM SWG in the `rdf` and `jsonld` directories.
+
+=== Turtle
+
+include::../requirements/turtle/requirements_class_turtle.adoc[]
+
+include::../requirements/turtle/REQ_encoding.adoc[]
+
+=== RDF/XML
+
+include::../requirements/rdfxml/requirements_class_rdfxml.adoc[]
+
+include::../requirements/rdfxml/REQ_encoding.adoc[]
+
+=== JSON-LD context
+
+A JSON-LD context allows plain JSON documents to be interpreted as AIM data. One context is published per module, and `demeterAgriProfile-context.jsonld` combines them.
+
+include::../requirements/jsonld-context/requirements_class_jsonld-context.adoc[]
+
+include::../requirements/jsonld-context/REQ_terms.adoc[]

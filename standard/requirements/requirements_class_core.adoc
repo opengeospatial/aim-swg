@@ -1,8 +1,0 @@
-[[rc_core]]
-[cols="1,4",width="90%"]
-|===
-2+|*Requirements Class* 
-2+|http://www.opengis.net/spec/AIM/1.0/req/core
-|Target type |Token
-|Dependency |<<rfc2818,RFC 2818 (HTTP over TLS)>>
-|===

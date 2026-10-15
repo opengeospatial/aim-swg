@@ -1,0 +1,16 @@
+[[req_turtle_encoding]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/turtle/encoding
+
+[.component,class=part]
+--
+If an implementation specification provides a Turtle encoding for an AIM ontology module, that encoding SHALL be a valid RDF 1.1 Turtle representation of the module ontology.
+--
+
+[.component,class=part]
+--
+The Turtle representation SHALL be advertised using the media type `text/turtle`.
+--
+====

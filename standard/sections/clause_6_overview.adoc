@@ -1,0 +1,75 @@
+[obligation=informative]
+== AIM overview
+
+=== Design principles
+
+AIM is a domain model for agriculture published as a set of modular OWL ontologies. It follows these principles:
+
+* *Reuse before minting.* Concepts are taken from established vocabularies (SOSA/SSN, GeoSPARQL, OWL-Time, RDF Data Cube, SAREF/SAREF4AGRI, FOODIE, INSPIRE, FIWARE Smart Data Models) and aligned, rather than redefined. Only a small number of terms are minted in AIM namespaces.
+* *Modularity.* Each agricultural sub-domain is a separate module that can be adopted independently. Users import only the modules they need.
+* *Layering.* Generic concepts are kept separate from agriculture-specific ones, so the generic layer can be shared with other domains.
+* *Persistent identification.* Each module has a persistent ontology IRI and a version IRI under `https://w3id.org/demeter/`.
+
+=== Architecture
+
+AIM version 3.0 is organized in four tiers, as shown in <<table_tiers>> and <<fig_aim_architecture>>.
+
+[[table_tiers]]
+.AIM tiers
+[cols="1,2,5",options="header"]
+|===
+|Tier |Module(s) |Role
+|1 |Cross-Domain |Generic concepts applicable to any domain: features and geometry (GeoSPARQL, Simple Features), observations and sensing (SOSA/SSN), time (OWL-Time), quantities and units (QUDT, QU), statistical data (RDF Data Cube), agents (FOAF) and provenance (PROV-O). Imports no other AIM module.
+|2 |AgriCommon |Concepts shared by all agricultural modules, such as farmer, farm holding, agricultural certificate, image and taxonomic rank, and common descriptive properties (identifiers, names, dates, addresses). Imports Cross-Domain.
+|3 |AgriFeature, AgriCrop, AgriIntervention, AgriAlert, AgriProduct, AgriProperty, AgriSystem, AgriPest, FarmAnimal |Agricultural sub-domains. Each imports AgriCommon.
+|4 |AIM Agri Profile |Aggregates all Tier 3 modules and the AIM to NGSI-LD alignment. Defines no terms of its own.
+|===
+
+[[fig_aim_architecture]]
+.AIM module architecture (from the DEMETER project)
+image::images/AIM_general_diagram.png.webp[]
+
+[[fig_aim_imports]]
+.AIM version 3.0 module import graph
+[source]
+----
+                          AIM Agri Profile (agri/3.0)
+                                     |
+   +------+------+-------+-----------+-----------+------+------+------+------------+
+   |      |      |       |           |           |      |      |      |            |
+Feature  Crop  Intervention Alert  Product  Property  System  Pest  FarmAnimal  aim-ngsi-ld
+   |      |      |       |           |           |      |      |      |       (alignment)
+   +------+------+-------+-----+-----+-----------+------+------+------+
+                               |
+                          AgriCommon (agriCommon/3.0)
+                               |
+                          Cross-Domain (crossDomain)
+----
+
+=== Reused vocabularies
+
+Most classes and properties in AIM are reused from external vocabularies. <<table_reuse>> summarizes, per module, the main sources of reused terms.
+
+[[table_reuse]]
+.Main vocabularies reused by AIM modules
+[cols="2,5",options="header"]
+|===
+|Module |Main vocabularies reused
+|Cross-Domain |SOSA, SSN, GeoSPARQL, Simple Features, OWL-Time, RDF Data Cube, QUDT, QU, FOAF, PROV-O, schema.org, ISO 19156
+|AgriCommon |SAREF4AGRI, SAREF, FOODIE, FIWARE Smart Data Models, schema.org, INSPIRE base
+|AgriFeature |FOODIE, SAREF4AGRI, FIWARE Agrifood, INSPIRE Agricultural Facilities and Activity Complex
+|AgriCrop |FOODIE, SAREF4AGRI, FIWARE Agrifood
+|AgriIntervention |FOODIE, FIWARE Agrifood
+|AgriAlert |FOODIE, FIWARE Weather, NGSI-LD
+|AgriProduct |FOODIE, FIWARE Agrifood, OBO
+|AgriProperty |SAREF, CF features and properties, FIWARE Weather and Agrifood, FOODIE, OM
+|AgriSystem |SAREF4AGRI, SAREF, FOODIE
+|AgriPest |FIWARE Agrifood
+|FarmAnimal |SAREF4AGRI, FIWARE Agrifood, INSPIRE Agricultural Facilities, FOODIE
+|===
+
+=== Versioning
+
+Each module declares `owl:versionInfo "3.0"` and a version IRI formed by appending `/3.0` to the ontology IRI. Modules import each other by version IRI, so that a given version of a module always resolves to a consistent set of dependencies.
+
+NOTE: In version 3.0, AgriCommon imports Cross-Domain by its ontology IRI (`https://w3id.org/demeter/crossDomain`) rather than by its version IRI. The AIM Agri Profile likewise imports the NGSI-LD alignment without a version IRI.

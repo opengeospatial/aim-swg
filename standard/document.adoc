@@ -1,31 +1,30 @@
-= OGC (add title text)
+= OGC Agriculture Information Model (AIM) Standard
 :doctype: standard
 :encoding: utf-8
 :lang: en
 :status: swg-draft
 :committee: technical
-:draft: 1.0
-:external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
-:docnumber: YY-999
-:received-date: 2029-03-30
-:issued-date: 2029-03-30
-:published-date: 2029-03-30
-:fullname: Editor One
-:fullname_2: Editor Two
-:docsubtype: implementation
-:keywords: ogcdoc, OGC document, API, openapi, html
-:submitting-organizations: Organization One; Organization Two
+:draft: 0.1
+:external-id: http://www.opengis.net/doc/IS/aim/1.0
+:docnumber: YY-nnn
+:received-date: 2026-10-15
+:issued-date: 2026-10-15
+:published-date: 2026-10-15
+:fullname: Piotr Zaborowski
+:docsubtype: conceptual-model-and-encoding
+:keywords: ogcdoc, OGC document, agriculture, ontology, OWL, RDF, JSON-LD, semantic interoperability, AIM
+:submitting-organizations: TBD
 :mn-document-class: ogc
-:mn-output-extensions: xml,html,doc,pdf
+:mn-output-extensions: xml,html,pdf
 :local-cache-only:
 :data-uri-image:
 :pdf-uri: ./document.pdf
 :xml-uri: ./document.xml
-:doc-uri: ./document.doc
 :edition: 1.0
+:abbrev: AIM
 
 ////
-Make sure to complete each included document
+Front matter: Abstract, Keywords, Preface, Security, Submitting organizations, Submitters
 ////
 include::sections/clause_0_front_material.adoc[]
 
@@ -39,23 +38,34 @@ include::sections/clause_4_terms_and_definitions.adoc[]
 
 include::sections/clause_5_conventions.adoc[]
 
-include::sections/clause_6_informative_text.adoc[]
+include::sections/clause_6_overview.adoc[]
 
-include::sections/clause_7_normative_text.adoc[]
+include::sections/clause_7_core.adoc[]
 
-include::sections/clause_8_media_types.adoc[]
+include::sections/clause_8_cross_domain.adoc[]
+
+include::sections/clause_9_agri_common.adoc[]
+
+include::sections/clause_10_agri_domain_modules.adoc[]
+
+include::sections/clause_11_agri_profile.adoc[]
+
+include::sections/clause_12_encodings.adoc[]
+
+include::sections/clause_13_media_types.adoc[]
 
 ////
-add or remove annexes after "A" as necessary
+Annex A is the normative Abstract Test Suite; informative annexes follow.
+Revision History is the last annex before the Bibliography.
 ////
 include::sections/annex-a.adoc[]
 
-include::sections/annex-n.adoc[]
+include::sections/annex-b-examples.adoc[]
 
-////
-Revision History should be the last annex before the Bibliography
-Bibliography should be the last annex
-////
+include::sections/annex-c-alignments-extensions.adoc[]
+
+include::sections/annex-d-implementation-resources.adoc[]
+
 include::sections/annex-history.adoc[]
 
 include::sections/annex-bibliography.adoc[]

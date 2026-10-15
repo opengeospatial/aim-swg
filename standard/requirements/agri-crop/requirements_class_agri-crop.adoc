@@ -1,0 +1,11 @@
+[[rc_agri-crop]]
+.AgriCrop
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/agri-crop
+subject:: Ontology module representation
+inherit:: http://www.opengis.net/spec/aim/1.0/req/agri-common
+requirement:: http://www.opengis.net/spec/aim/1.0/req/agri-crop/classes
+requirement:: http://www.opengis.net/spec/aim/1.0/req/agri-crop/properties
+====

@@ -1,16 +1,39 @@
 == Conformance
-This standard defines XXXX.
 
-Requirements for N standardization target types are considered:
+This Standard defines requirements for representations of the AIM ontology modules and for encodings of those modules.
 
-* AAAA
-* BBBB
+Requirements for the following standardization targets are considered:
 
-Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.
+* *Ontology module representation*: a representation of one or more AIM ontology modules, such as an OWL ontology, an implementation specification or a schema derived from AIM;
+* *Ontology profile representation*: a representation of the AIM Agri Profile;
+* *Encoded ontology document*: a document that encodes an AIM module in a particular RDF serialization; and
+* *JSON-LD context document*: a JSON-LD context that maps JSON terms to AIM classes and properties.
 
-In order to conform to this OGC® interface standard, a software implementation shall choose to implement:
+Conformance with this Standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts and methodology for testing, and the criteria to be achieved to claim conformance, are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.
 
-* Any one of the conformance levels specified in Annex A (normative).
-* Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).
+All requirements classes and conformance classes described in this document are owned by this Standard. <<table_conformance_classes>> lists them.
 
-All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.
+[[table_conformance_classes]]
+.Conformance classes
+[cols="3,5,3",options="header"]
+|===
+|Conformance class |URI |Requirements class
+|Core |`http://www.opengis.net/spec/aim/1.0/conf/core` |<<rc_core>>
+|Cross-Domain |`http://www.opengis.net/spec/aim/1.0/conf/cross-domain` |<<rc_cross-domain>>
+|AgriCommon |`http://www.opengis.net/spec/aim/1.0/conf/agri-common` |<<rc_agri-common>>
+|AgriFeature |`http://www.opengis.net/spec/aim/1.0/conf/agri-feature` |<<rc_agri-feature>>
+|AgriCrop |`http://www.opengis.net/spec/aim/1.0/conf/agri-crop` |<<rc_agri-crop>>
+|AgriIntervention |`http://www.opengis.net/spec/aim/1.0/conf/agri-intervention` |<<rc_agri-intervention>>
+|AgriAlert |`http://www.opengis.net/spec/aim/1.0/conf/agri-alert` |<<rc_agri-alert>>
+|AgriProduct |`http://www.opengis.net/spec/aim/1.0/conf/agri-product` |<<rc_agri-product>>
+|AgriProperty |`http://www.opengis.net/spec/aim/1.0/conf/agri-property` |<<rc_agri-property>>
+|AgriSystem |`http://www.opengis.net/spec/aim/1.0/conf/agri-system` |<<rc_agri-system>>
+|AgriPest |`http://www.opengis.net/spec/aim/1.0/conf/agri-pest` |<<rc_agri-pest>>
+|FarmAnimal |`http://www.opengis.net/spec/aim/1.0/conf/farm-animal` |<<rc_farm-animal>>
+|AIM Agri Profile |`http://www.opengis.net/spec/aim/1.0/conf/agri-profile` |<<rc_agri-profile>>
+|Turtle encoding |`http://www.opengis.net/spec/aim/1.0/conf/turtle` |<<rc_turtle>>
+|RDF/XML encoding |`http://www.opengis.net/spec/aim/1.0/conf/rdfxml` |<<rc_rdfxml>>
+|JSON-LD context |`http://www.opengis.net/spec/aim/1.0/conf/jsonld-context` |<<rc_jsonld-context>>
+|===
+
+An implementation shall conform to the Core conformance class and to at least one module conformance class. Conformance to the AIM Agri Profile implies conformance to all modules it imports.

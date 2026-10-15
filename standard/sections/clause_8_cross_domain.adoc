@@ -1,0 +1,17 @@
+== Cross-Domain module
+
+=== Overview
+
+The Cross-Domain module is Tier 1 of AIM. It defines or reuses concepts and terms that are generic and apply to many domains, so that agricultural modules do not define conflicting or redundant terms. It covers features and geometry, observations and sensing, time, quantities and units, statistical data, agents and provenance. It imports no other AIM module.
+
+=== Requirements
+
+include::../requirements/cross-domain/requirements_class_cross-domain.adoc[]
+
+include::../requirements/cross-domain/REQ_classes.adoc[]
+
+include::../requirements/cross-domain/REQ_properties.adoc[]
+
+=== Term dictionary
+
+include::generated/module_cross-domain.adoc[]

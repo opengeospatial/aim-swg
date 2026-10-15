@@ -1,9 +1,127 @@
-[appendix]
+[appendix,obligation=normative]
+[[annex_ats]]
 == Conformance Class Abstract Test Suite (Normative)
 
-[NOTE]
-Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+=== General
 
-=== Conformance Class A
+This annex specifies one conformance class for each requirements class and one abstract test for each requirement.
 
+=== Conformance Class Core
 
+include::../abstract_tests/core/ATS_class_core.adoc[]
+
+include::../abstract_tests/core/ATS_ontology-identification.adoc[]
+
+include::../abstract_tests/core/ATS_module-dependencies.adoc[]
+
+=== Conformance Class Cross-Domain
+
+include::../abstract_tests/cross-domain/ATS_class_cross-domain.adoc[]
+
+include::../abstract_tests/cross-domain/ATS_classes.adoc[]
+
+include::../abstract_tests/cross-domain/ATS_properties.adoc[]
+
+=== Conformance Class AgriCommon
+
+include::../abstract_tests/agri-common/ATS_class_agri-common.adoc[]
+
+include::../abstract_tests/agri-common/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-common/ATS_properties.adoc[]
+
+=== Conformance Class AgriFeature
+
+include::../abstract_tests/agri-feature/ATS_class_agri-feature.adoc[]
+
+include::../abstract_tests/agri-feature/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-feature/ATS_properties.adoc[]
+
+=== Conformance Class AgriCrop
+
+include::../abstract_tests/agri-crop/ATS_class_agri-crop.adoc[]
+
+include::../abstract_tests/agri-crop/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-crop/ATS_properties.adoc[]
+
+=== Conformance Class AgriIntervention
+
+include::../abstract_tests/agri-intervention/ATS_class_agri-intervention.adoc[]
+
+include::../abstract_tests/agri-intervention/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-intervention/ATS_properties.adoc[]
+
+=== Conformance Class AgriAlert
+
+include::../abstract_tests/agri-alert/ATS_class_agri-alert.adoc[]
+
+include::../abstract_tests/agri-alert/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-alert/ATS_properties.adoc[]
+
+=== Conformance Class AgriProduct
+
+include::../abstract_tests/agri-product/ATS_class_agri-product.adoc[]
+
+include::../abstract_tests/agri-product/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-product/ATS_properties.adoc[]
+
+=== Conformance Class AgriProperty
+
+include::../abstract_tests/agri-property/ATS_class_agri-property.adoc[]
+
+include::../abstract_tests/agri-property/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-property/ATS_properties.adoc[]
+
+=== Conformance Class AgriSystem
+
+include::../abstract_tests/agri-system/ATS_class_agri-system.adoc[]
+
+include::../abstract_tests/agri-system/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-system/ATS_properties.adoc[]
+
+=== Conformance Class AgriPest
+
+include::../abstract_tests/agri-pest/ATS_class_agri-pest.adoc[]
+
+include::../abstract_tests/agri-pest/ATS_classes.adoc[]
+
+include::../abstract_tests/agri-pest/ATS_properties.adoc[]
+
+=== Conformance Class FarmAnimal
+
+include::../abstract_tests/farm-animal/ATS_class_farm-animal.adoc[]
+
+include::../abstract_tests/farm-animal/ATS_classes.adoc[]
+
+include::../abstract_tests/farm-animal/ATS_properties.adoc[]
+
+=== Conformance Class AIM Agri Profile
+
+include::../abstract_tests/agri-profile/ATS_class_agri-profile.adoc[]
+
+include::../abstract_tests/agri-profile/ATS_imports.adoc[]
+
+=== Conformance Class Turtle encoding
+
+include::../abstract_tests/turtle/ATS_class_turtle.adoc[]
+
+include::../abstract_tests/turtle/ATS_encoding.adoc[]
+
+=== Conformance Class RDF/XML encoding
+
+include::../abstract_tests/rdfxml/ATS_class_rdfxml.adoc[]
+
+include::../abstract_tests/rdfxml/ATS_encoding.adoc[]
+
+=== Conformance Class JSON-LD context
+
+include::../abstract_tests/jsonld-context/ATS_class_jsonld-context.adoc[]
+
+include::../abstract_tests/jsonld-context/ATS_terms.adoc[]

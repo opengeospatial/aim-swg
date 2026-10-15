@@ -1,0 +1,17 @@
+== AgriCommon module
+
+=== Overview
+
+The AgriCommon module is Tier 2 of AIM. It contains the concepts and properties shared by all agricultural modules, such as farmer, farm holding, agricultural certificate and image, and common descriptive properties. It imports the Cross-Domain module and is imported by every agricultural domain module.
+
+=== Requirements
+
+include::../requirements/agri-common/requirements_class_agri-common.adoc[]
+
+include::../requirements/agri-common/REQ_classes.adoc[]
+
+include::../requirements/agri-common/REQ_properties.adoc[]
+
+=== Term dictionary
+
+include::generated/module_agri-common.adoc[]

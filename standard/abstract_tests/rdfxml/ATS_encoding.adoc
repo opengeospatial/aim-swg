@@ -1,0 +1,21 @@
+[[ats_rdfxml_encoding]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/rdfxml/encoding
+target:: http://www.opengis.net/spec/aim/1.0/req/rdfxml/encoding
+test-purpose:: Verify that an RDF/XML encoding of an AIM module is valid and semantically equivalent to the canonical definition.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+Parse the encoding with an RDF/XML parser and check that no syntax errors are reported.
+--
+
+[.component,class=step]
+--
+Check that the parsed graph is isomorphic to the canonical module graph.
+--
+=====
+====

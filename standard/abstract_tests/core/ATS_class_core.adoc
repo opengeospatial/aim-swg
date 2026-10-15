@@ -1,0 +1,11 @@
+[[cc_core]]
+.Core
+[conformance_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/core
+subject:: Ontology module representation
+target:: http://www.opengis.net/spec/aim/1.0/req/core
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/core/ontology-identification
+abstract-test:: http://www.opengis.net/spec/aim/1.0/conf/core/module-dependencies
+====

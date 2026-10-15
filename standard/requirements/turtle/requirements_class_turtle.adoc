@@ -1,0 +1,10 @@
+[[rc_turtle]]
+.Turtle encoding
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/turtle
+subject:: Encoded ontology document
+inherit:: http://www.opengis.net/spec/aim/1.0/req/core
+requirement:: http://www.opengis.net/spec/aim/1.0/req/turtle/encoding
+====

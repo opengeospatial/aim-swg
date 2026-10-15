@@ -1,0 +1,11 @@
+[[rc_cross-domain]]
+.Cross-Domain
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/cross-domain
+subject:: Ontology module representation
+inherit:: http://www.opengis.net/spec/aim/1.0/req/core
+requirement:: http://www.opengis.net/spec/aim/1.0/req/cross-domain/classes
+requirement:: http://www.opengis.net/spec/aim/1.0/req/cross-domain/properties
+====

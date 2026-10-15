@@ -1,0 +1,16 @@
+[[req_rdfxml_encoding]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/rdfxml/encoding
+
+[.component,class=part]
+--
+If an implementation specification provides an RDF/XML encoding for an AIM ontology module, that encoding SHALL be a valid RDF/XML representation of the module ontology.
+--
+
+[.component,class=part]
+--
+The RDF/XML representation SHALL be semantically equivalent to the corresponding canonical ontology definition.
+--
+====

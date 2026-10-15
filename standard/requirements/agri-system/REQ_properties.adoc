@@ -1,0 +1,16 @@
+[[req_agri-system_properties]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/agri-system/properties
+
+[.component,class=part]
+--
+The AgriSystem module does not define module-local `owl:ObjectProperty` or `owl:DatatypeProperty` resources in the AIM version 3.0 ontology.
+--
+
+[.component,class=part]
+--
+An implementation specification claiming conformance to this standard SHALL not introduce additional normative AgriSystem properties unless they are specified as an extension outside this standard.
+--
+====

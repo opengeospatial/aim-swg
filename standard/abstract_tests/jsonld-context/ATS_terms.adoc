@@ -1,0 +1,26 @@
+[[ats_jsonld-context_terms]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/jsonld-context/terms
+target:: http://www.opengis.net/spec/aim/1.0/req/jsonld-context/terms
+test-purpose:: Verify that each term of an AIM JSON-LD context resolves to the identifier of the corresponding AIM class or property.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+Load the JSON-LD context under test.
+--
+
+[.component,class=step]
+--
+For each term defined in the context, expand the term and check that the resulting IRI is declared as a class or property in the corresponding AIM module.
+--
+
+[.component,class=step]
+--
+For each term with a `@type` coercion, check that the coercion is consistent with the `rdfs:range` declared in the ontology.
+--
+=====
+====

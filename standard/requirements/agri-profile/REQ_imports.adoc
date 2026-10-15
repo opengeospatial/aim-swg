@@ -1,0 +1,16 @@
+[[req_agri-profile_imports]]
+[requirement]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/agri-profile/imports
+
+[.component,class=part]
+--
+An implementation specification claiming conformance to the AIM profile defined by this standard SHALL represent the profile ontology as an aggregate of the module ontologies identified by `owl:imports` in `demeterAgriProfile.ttl`.
+--
+
+[.component,class=part]
+--
+At a minimum, the profile representation SHALL identify imports for `agriCommon`, `agriFeature`, `agriCrop`, `agriIntervention`, `agriAlert`, `agriProduct`, `agriProperty`, `agriSystem`, `agriPest`, and `farmAnimal`.
+--
+====

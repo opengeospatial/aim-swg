@@ -1,0 +1,26 @@
+[[ats_agri-system_classes]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/agri-system/classes
+target:: http://www.opengis.net/spec/aim/1.0/req/agri-system/classes
+test-purpose:: Verify that every class defined in the AgriSystem module is represented with the same identifier, superclasses and annotations.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+Retrieve the canonical AgriSystem ontology and the representation under test.
+--
+
+[.component,class=step]
+--
+For each `owl:Class` declared in the canonical module, check that a construct with the same IRI exists in the representation under test.
+--
+
+[.component,class=step]
+--
+For each such class, check that all `rdfs:subClassOf` relationships and `rdfs:label`, `rdfs:comment` and `skos:definition` annotations of the canonical module are preserved.
+--
+=====
+====

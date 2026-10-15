@@ -1,0 +1,13 @@
+== Core
+
+The Core requirements class applies to every representation of an AIM ontology module. It requires that the module identity and the dependencies between modules are preserved.
+
+include::../requirements/core/requirements_class_core.adoc[]
+
+include::../requirements/core/REQ_ontology-identification.adoc[]
+
+The ontology IRIs and version IRIs to be preserved are listed in <<table_modules>>.
+
+include::../requirements/core/REQ_module-dependencies.adoc[]
+
+The import graph that results from the `owl:imports` statements is shown in <<fig_aim_imports>>.

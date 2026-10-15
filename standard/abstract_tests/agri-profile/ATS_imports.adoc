@@ -1,0 +1,26 @@
+[[ats_agri-profile_imports]]
+[abstract_test]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/conf/agri-profile/imports
+target:: http://www.opengis.net/spec/aim/1.0/req/agri-profile/imports
+test-purpose:: Verify that the AIM Agri Profile is represented as the aggregate of its imported modules.
+
+[.component,class=test method]
+=====
+[.component,class=step]
+--
+Retrieve the profile representation under test.
+--
+
+[.component,class=step]
+--
+Check that it declares an import for each of `agriCommon`, `agriFeature`, `agriCrop`, `agriIntervention`, `agriAlert`, `agriProduct`, `agriProperty`, `agriSystem`, `agriPest` and `farmAnimal`.
+--
+
+[.component,class=step]
+--
+Check that the set of imports equals the `owl:imports` of `demeterAgriProfile.ttl`, or document each deviation.
+--
+=====
+====

@@ -1,0 +1,10 @@
+[[rc_jsonld-context]]
+.JSON-LD context
+[requirements_class]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/aim/1.0/req/jsonld-context
+subject:: JSON-LD context document
+inherit:: http://www.opengis.net/spec/aim/1.0/req/core
+requirement:: http://www.opengis.net/spec/aim/1.0/req/jsonld-context/terms
+====

@@ -1,0 +1,167 @@
+== Agricultural domain modules
+
+=== General
+
+This clause specifies the Tier 3 modules of AIM. Each module imports the AgriCommon module (<<rc_agri-common>>) and can be adopted independently of the other domain modules.
+
+=== AgriFeature module
+
+==== Overview
+
+The AgriFeature module describes the physical and administrative features of agriculture: farms, holdings, sites, parcels, plots, management zones, greenhouses and farm buildings.
+
+==== Requirements
+
+include::../requirements/agri-feature/requirements_class_agri-feature.adoc[]
+
+include::../requirements/agri-feature/REQ_classes.adoc[]
+
+include::../requirements/agri-feature/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-feature.adoc[]
+
+=== AgriCrop module
+
+==== Overview
+
+The AgriCrop module describes crops, crop species and crop types, and the production-related data associated with them.
+
+==== Requirements
+
+include::../requirements/agri-crop/requirements_class_agri-crop.adoc[]
+
+include::../requirements/agri-crop/REQ_classes.adoc[]
+
+include::../requirements/agri-crop/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-crop.adoc[]
+
+=== AgriIntervention module
+
+==== Overview
+
+The AgriIntervention module describes interventions and operations carried out on parcels, including treatments, treatment plans, doses and campaign types.
+
+==== Requirements
+
+include::../requirements/agri-intervention/requirements_class_agri-intervention.adoc[]
+
+include::../requirements/agri-intervention/REQ_classes.adoc[]
+
+include::../requirements/agri-intervention/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-intervention.adoc[]
+
+=== AgriAlert module
+
+==== Overview
+
+The AgriAlert module describes alerts raised for agricultural features, including weather alerts.
+
+==== Requirements
+
+include::../requirements/agri-alert/requirements_class_agri-alert.adoc[]
+
+include::../requirements/agri-alert/REQ_classes.adoc[]
+
+include::../requirements/agri-alert/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-alert.adoc[]
+
+=== AgriProduct module
+
+==== Overview
+
+The AgriProduct module describes agricultural products such as fertilizers and plant protection products, with their active ingredients, nutrients and preparations.
+
+==== Requirements
+
+include::../requirements/agri-product/requirements_class_agri-product.adoc[]
+
+include::../requirements/agri-product/REQ_classes.adoc[]
+
+include::../requirements/agri-product/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-product.adoc[]
+
+=== AgriProperty module
+
+==== Overview
+
+The AgriProperty module describes observable properties and measurements relevant to agriculture, including soil, weather observations and forecasts, temperature, humidity and units of measure. It also defines named individuals for CF features and properties.
+
+==== Requirements
+
+include::../requirements/agri-property/requirements_class_agri-property.adoc[]
+
+include::../requirements/agri-property/REQ_classes.adoc[]
+
+include::../requirements/agri-property/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-property.adoc[]
+
+=== AgriSystem module
+
+==== Overview
+
+The AgriSystem module describes devices and systems used in agriculture, such as sensors, actuators, weather stations, watering systems and machinery types. It declares no object or datatype properties of its own.
+
+==== Requirements
+
+include::../requirements/agri-system/requirements_class_agri-system.adoc[]
+
+include::../requirements/agri-system/REQ_classes.adoc[]
+
+include::../requirements/agri-system/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-system.adoc[]
+
+=== AgriPest module
+
+==== Overview
+
+The AgriPest module describes agricultural pests. In version 3.0 it declares a single class and no properties.
+
+==== Requirements
+
+include::../requirements/agri-pest/requirements_class_agri-pest.adoc[]
+
+include::../requirements/agri-pest/REQ_classes.adoc[]
+
+include::../requirements/agri-pest/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_agri-pest.adoc[]
+
+=== FarmAnimal module
+
+==== Overview
+
+The FarmAnimal module describes farm animals and animal groups, their species and identification.
+
+==== Requirements
+
+include::../requirements/farm-animal/requirements_class_farm-animal.adoc[]
+
+include::../requirements/farm-animal/REQ_classes.adoc[]
+
+include::../requirements/farm-animal/REQ_properties.adoc[]
+
+==== Term dictionary
+
+include::generated/module_farm-animal.adoc[]

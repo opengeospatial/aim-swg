@@ -1,0 +1,24 @@
+[[table_agri-profile_summary]]
+.AIM Agri Profile module summary
+[cols="2,5",options="header"]
+|===
+|Item |Value
+|Ontology IRI |`https://w3id.org/demeter/agri`
+|Version IRI |`https://w3id.org/demeter/agri/3.0`
+|Source |`v3.0/demeterAgriProfile.ttl`
+|Imports |`https://w3id.org/demeter/agri/agriAlert/3.0` +
+`https://w3id.org/demeter/agri/agriCommon/3.0` +
+`https://w3id.org/demeter/agri/agriCrop/3.0` +
+`https://w3id.org/demeter/agri/agriFeature/3.0` +
+`https://w3id.org/demeter/agri/agriIntervention/3.0` +
+`https://w3id.org/demeter/agri/agriPest/3.0` +
+`https://w3id.org/demeter/agri/agriProduct/3.0` +
+`https://w3id.org/demeter/agri/agriProperty/3.0` +
+`https://w3id.org/demeter/agri/agriSystem/3.0` +
+`https://w3id.org/demeter/agri/alignments/aim-ngsi-ld` +
+`https://w3id.org/demeter/agri/farmAnimal/3.0`
+|Classes |0
+|Object and datatype properties |0
+|Named individuals |0
+|Description |The DEMETER Agri Profile is a master profile importing focused specific profiles/modules of DEMETER AIM.
+|===
