@@ -27,7 +27,7 @@ AIM version 3.0 is organized in four tiers, as shown in <<table_tiers>> and <<fi
 
 [[fig_aim_architecture]]
 .AIM module architecture (from the DEMETER project)
-image::images/AIM_general_diagram.png.webp[]
+image::images/AIM_general_diagram.png[]
 
 [[fig_aim_imports]]
 .AIM version 3.0 module import graph
